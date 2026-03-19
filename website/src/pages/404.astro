@@ -1,0 +1,81 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Read actual Brain files at build time
+const brainRoot = path.resolve('..', 'company-brain');
+
+const agentsMd = fs.readFileSync(path.join(brainRoot, 'AGENTS.md'), 'utf-8');
+const brandMd = fs.readFileSync(path.join(brainRoot, 'brand-vision.md'), 'utf-8');
+
+// Extract citation rule from AGENTS.md
+const citationRuleMatch = agentsMd.match(/If you can't cite it, don't say it/);
+const citationRule = citationRuleMatch ? "If you can't cite it, don't say it." : 'If a data point isn\'t in the Brain, say: "Not found in Brain — requires verification"';
+
+// Extract error message tone from brand-vision.md
+const errorToneMatch = brandMd.match(/Error messages[^\|]*\|([^\|]*)\|([^\|]*)/);
+const errorTone = errorToneMatch ? errorToneMatch[2].trim() : 'Honest, actionable, non-blaming';
+
+// Get list of Brain files for the "what exists" section
+const brainFiles = [
+  'icp.md', 'brand-vision.md', 'AGENTS.md',
+  'personas/index.md', 'personas/persona-founder.md', 'personas/persona-head-marketing.md',
+  'personas/persona-first-pmm.md', 'personas/persona-vp-product.md',
+  'use-cases/index.md', 'use-cases/uc-001-build-brain.md',
+  'messaging-positioning/core-positioning.md', 'messaging-positioning/messaging-framework.md',
+].filter(f => fs.existsSync(path.join(brainRoot, f)));
+---
+
+<Layout title="Brain Gap — Bravenger">
+  <Navbar />
+
+  <section class="pt-32 pb-20 px-6 min-h-screen flex items-center">
+    <div class="max-w-2xl mx-auto text-center">
+      <div class="font-mono text-sm text-[var(--color-drift)] mb-6">Brain gap detected</div>
+      <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-6">404</h1>
+
+      <!-- Error copy follows brand-vision.md error message tone -->
+      <p class="text-xl text-[var(--color-text-muted)] mb-4 leading-relaxed">
+        This page doesn't exist in the Brain.
+      </p>
+      <p class="text-[var(--color-text-muted)] mb-10">
+        Our agents would say: <span class="text-[var(--color-drift)] font-mono text-sm">"{citationRule}"</span>
+      </p>
+
+      <div class="flex items-center justify-center gap-4 mb-16">
+        <a href="/" class="px-6 py-3 rounded-lg bg-[var(--color-accent)] text-white font-medium hover:bg-[var(--color-accent-hover)] transition-colors">
+          Back to Home
+        </a>
+        <a href="/brain" class="px-6 py-3 rounded-lg border border-[var(--color-border)] text-[var(--color-text-muted)] font-medium hover:text-[var(--color-text)] hover:border-[var(--color-text-muted)] transition-colors">
+          Explore the Brain
+        </a>
+      </div>
+
+      <!-- Show what DOES exist in the Brain -->
+      <div class="bg-[var(--color-bg-code)] rounded-xl p-6 border border-[var(--color-border)] text-left max-w-md mx-auto">
+        <div class="font-mono text-xs text-[var(--color-text-muted)] mb-3">What does exist in the Brain:</div>
+        <div class="space-y-1">
+          {brainFiles.map(f => (
+            <div class="font-mono text-xs">
+              <span class="text-[var(--color-success)]">✓</span>
+              <span class="text-[var(--color-accent)] ml-2">{f}</span>
+            </div>
+          ))}
+        </div>
+        <div class="font-mono text-xs text-[var(--color-text-muted)] mt-3">
+          + {23 - brainFiles.length} more files →
+          <a href="/brain" class="text-[var(--color-accent)] hover:underline">see all</a>
+        </div>
+      </div>
+
+      <!-- Brain sourcing proof -->
+      <div class="mt-12 space-y-2 font-mono text-[10px] text-[var(--color-text-muted)]/60">
+        <div>Error tone: {errorTone} <span class="text-[var(--color-accent)]/40">[Source: brand-vision.md#tone-by-context]</span></div>
+        <div>Citation rule read from AGENTS.md at build time <span class="text-[var(--color-accent)]/40">[Source: AGENTS.md#citation-requirements]</span></div>
+        <div>File list verified against company-brain/ directory</div>
+      </div>
+    </div>
+  </section>
+</Layout>

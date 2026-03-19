@@ -1,0 +1,420 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import BrainTree from '../components/BrainTree.astro';
+import DemoTabs from '../components/DemoTabs.astro';
+---
+
+<Layout title="Bravenger — The Company Brain for B2B Teams">
+  <Navbar />
+
+  <!-- Hero -->
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[var(--color-border)] text-xs text-[var(--color-text-muted)] mb-8 font-mono">
+        <span class="w-2 h-2 rounded-full bg-[var(--color-success)] animate-pulse"></span>
+        Built from our own Company Brain · v1.0 · 23 files
+      </div>
+
+      <h1 class="text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-6">
+        Your positioning is<br/>
+        <span class="text-[var(--color-drift)]">trapped in your<br/>founder's head.</span>
+      </h1>
+
+      <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto mb-10 leading-relaxed">
+        Your team can't access it. Your AI tools can't read it. Your content contradicts itself across every channel.
+        <strong class="text-[var(--color-text)]">Bravenger turns your positioning doc into a system that produces aligned content for every team.</strong>
+      </p>
+
+      <div class="flex items-center justify-center gap-4">
+        <a href="#" class="px-8 py-4 rounded-lg bg-[var(--color-accent)] text-white font-semibold text-lg hover:bg-[var(--color-accent-hover)] transition-colors">
+          Get Your Brain Built
+        </a>
+        <a href="#brain" class="px-8 py-4 rounded-lg border border-[var(--color-border)] text-[var(--color-text-muted)] font-semibold text-lg hover:text-[var(--color-text)] hover:border-[var(--color-text-muted)] transition-colors">
+          See Our Brain
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Drift Problem -->
+  <section class="py-20 px-6 border-t border-[var(--color-border)]">
+    <div class="max-w-6xl mx-auto scroll-reveal">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Five teams. Five stories. One company.</h2>
+        <p class="text-[var(--color-text-muted)] text-lg max-w-2xl mx-auto">
+          Drift compounds silently at Series A/B — one small deviation at a time — until a prospect hears contradictory pitches from the same company.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-[var(--color-bg-card)] rounded-xl p-8 border border-[var(--color-border)]">
+          <div class="text-sm font-mono text-[var(--color-drift)] mb-4">The founder says</div>
+          <p class="text-lg font-medium mb-3">"We're the structured knowledge layer for AI-native GTM teams."</p>
+          <p class="text-sm text-[var(--color-text-muted)]">Based on the pitch they've been refining in their head for 18 months. Never written down. Never shared in a usable format.</p>
+        </div>
+        <div class="bg-[var(--color-bg-card)] rounded-xl p-8 border border-[var(--color-border)]">
+          <div class="text-sm font-mono text-[var(--color-drift)] mb-4">The first marketer says</div>
+          <p class="text-lg font-medium mb-3">"We help companies align their messaging across teams."</p>
+          <p class="text-sm text-[var(--color-text-muted)]">Based on a Notion page titled "messaging v3 FINAL final" that hasn't been updated in 8 months. They inherited it on day one.</p>
+        </div>
+        <div class="bg-[var(--color-bg-card)] rounded-xl p-8 border border-[var(--color-border)]">
+          <div class="text-sm font-mono text-[var(--color-drift)] mb-4">Product builds for</div>
+          <p class="text-lg font-medium mb-3">"Technical users who need API access and workflow automation."</p>
+          <p class="text-sm text-[var(--color-text-muted)]">Based on the last user interview. Which was one person. Who wasn't in the ICP. Nobody documented the use cases.</p>
+        </div>
+      </div>
+
+      <p class="text-center text-[var(--color-text-muted)] mt-8 text-lg">
+        No source of truth means every team invents its own version of the story. <span class="text-[var(--color-drift)]">That's messaging drift.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- What Is a Company Brain -->
+  <section id="brain" class="py-20 px-6 border-t border-[var(--color-border)]">
+    <div class="max-w-6xl mx-auto scroll-reveal">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">A Company Brain,<br/>not a dead doc.</h2>
+          <p class="text-[var(--color-text-muted)] text-lg mb-6 leading-relaxed">
+            A Company Brain is a structured, machine-readable knowledge base that codifies your ICP, personas, use cases, positioning, messaging, and governance rules into a single source of truth that both humans and AI agents consume before producing any output.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded bg-[var(--color-accent)]/10 flex items-center justify-center text-[var(--color-accent)] text-sm mt-0.5 shrink-0">1</div>
+              <div>
+                <div class="font-medium">Use cases as foundation</div>
+                <div class="text-sm text-[var(--color-text-muted)]">Use cases feed every discipline — marketing content, sales discovery, product roadmap, CS onboarding</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded bg-[var(--color-accent)]/10 flex items-center justify-center text-[var(--color-accent)] text-sm mt-0.5 shrink-0">2</div>
+              <div>
+                <div class="font-medium">Five-discipline coverage</div>
+                <div class="text-sm text-[var(--color-text-muted)]">Marketing, Sales, PMM, Product, and CS — each with their own agent guideline</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded bg-[var(--color-accent)]/10 flex items-center justify-center text-[var(--color-accent)] text-sm mt-0.5 shrink-0">3</div>
+              <div>
+                <div class="font-medium">Built in one week</div>
+                <div class="text-sm text-[var(--color-text-muted)]">Fixed price. Clear deliverables. A foundation that would take a quarter to build yourself.</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded bg-[var(--color-accent)]/10 flex items-center justify-center text-[var(--color-accent)] text-sm mt-0.5 shrink-0">4</div>
+              <div>
+                <div class="font-medium">Markdown you own</div>
+                <div class="text-sm text-[var(--color-text-muted)]">Portable, version-controlled, LLM-agnostic. Zero lock-in.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <BrainTree />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Five Disciplines -->
+  <section class="py-20 px-6 border-t border-[var(--color-border)]">
+    <div class="max-w-6xl mx-auto scroll-reveal">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Five disciplines. One Brain. Zero drift.</h2>
+        <p class="text-[var(--color-text-muted)] text-lg max-w-2xl mx-auto">
+          Each discipline gets its own agent guideline. Same source of truth, different output for each team.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div class="bg-[var(--color-bg-card)] rounded-xl p-6 border border-[var(--color-border)] hover:border-[var(--color-accent)]/30 transition-colors">
+          <div class="text-sm font-mono text-[var(--color-accent)] mb-2">Marketing</div>
+          <h3 class="text-lg font-bold mb-2">Content BOMs, campaigns, launch messaging</h3>
+          <p class="text-[var(--color-text-muted)] text-sm mb-4">
+            Blog posts, emails, social — all grounded in personas and approved VPs.
+          </p>
+          <div class="font-mono text-xs text-[var(--color-text-muted)] bg-[var(--color-bg-code)] rounded-lg p-3">
+            <span class="text-[var(--color-success)]">guidelines/</span>marketing-usage.md
+          </div>
+        </div>
+
+        <div class="bg-[var(--color-bg-card)] rounded-xl p-6 border border-[var(--color-border)] hover:border-[var(--color-accent)]/30 transition-colors">
+          <div class="text-sm font-mono text-[var(--color-accent)] mb-2">Sales</div>
+          <h3 class="text-lg font-bold mb-2">Signal-based outbound, discovery prep</h3>
+          <p class="text-[var(--color-text-muted)] text-sm mb-4">
+            Personalized outbound matching your positioning and persona frameworks.
+          </p>
+          <div class="font-mono text-xs text-[var(--color-text-muted)] bg-[var(--color-bg-code)] rounded-lg p-3">
+            <span class="text-[var(--color-success)]">guidelines/</span>sales-usage.md
+          </div>
+        </div>
+
+        <div class="bg-[var(--color-bg-card)] rounded-xl p-6 border border-[var(--color-border)] hover:border-[var(--color-accent)]/30 transition-colors">
+          <div class="text-sm font-mono text-[var(--color-accent)] mb-2">Product Marketing</div>
+          <h3 class="text-lg font-bold mb-2">Positioning briefs, launch plans, enablement</h3>
+          <p class="text-[var(--color-text-muted)] text-sm mb-4">
+            Competitive intel, messaging updates, and talk tracks — all cited.
+          </p>
+          <div class="font-mono text-xs text-[var(--color-text-muted)] bg-[var(--color-bg-code)] rounded-lg p-3">
+            <span class="text-[var(--color-success)]">guidelines/</span>product-marketing-usage.md
+          </div>
+        </div>
+
+        <div class="bg-[var(--color-bg-card)] rounded-xl p-6 border border-[var(--color-border)] hover:border-[var(--color-accent)]/30 transition-colors">
+          <div class="text-sm font-mono text-[var(--color-accent)] mb-2">Product</div>
+          <h3 class="text-lg font-bold mb-2">Feature briefs, persona reactions, roadmap input</h3>
+          <p class="text-[var(--color-text-muted)] text-sm mb-4">
+            Product decisions grounded in the same validated personas every team uses.
+          </p>
+          <div class="font-mono text-xs text-[var(--color-text-muted)] bg-[var(--color-bg-code)] rounded-lg p-3">
+            <span class="text-[var(--color-success)]">guidelines/</span>product-usage.md
+          </div>
+        </div>
+
+        <div class="bg-[var(--color-bg-card)] rounded-xl p-6 border border-[var(--color-border)] hover:border-[var(--color-accent)]/30 transition-colors">
+          <div class="text-sm font-mono text-[var(--color-accent)] mb-2">Customer Success</div>
+          <h3 class="text-lg font-bold mb-2">Onboarding guides, use case walkthroughs</h3>
+          <p class="text-[var(--color-text-muted)] text-sm mb-4">
+            CS paths built from use cases, not improvised from memory.
+          </p>
+          <div class="font-mono text-xs text-[var(--color-text-muted)] bg-[var(--color-bg-code)] rounded-lg p-3">
+            <span class="text-[var(--color-success)]">guidelines/</span>customer-success-usage.md
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo -->
+  <DemoTabs />
+
+  <!-- Stats Bar -->
+  <section class="py-16 px-6 bg-[var(--color-bg-card)] border-y border-[var(--color-border)]">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-3xl md:text-4xl font-black text-[var(--color-accent)]">1 week</div>
+          <div class="text-sm text-[var(--color-text-muted)] mt-1">to build your<br/>Company Brain</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-black text-[var(--color-success)]">5</div>
+          <div class="text-sm text-[var(--color-text-muted)] mt-1">disciplines covered<br/>from one source</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-black text-[var(--color-drift)]">23</div>
+          <div class="text-sm text-[var(--color-text-muted)] mt-1">files in the<br/>Bravenger Brain</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-black text-[var(--color-text)]">3</div>
+          <div class="text-sm text-[var(--color-text-muted)] mt-1">foundational<br/>use cases</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dogfooding -->
+  <section class="py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center scroll-reveal">
+      <div class="font-mono text-sm text-[var(--color-accent)] mb-4">We run on what we sell</div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">This site was generated from our Company Brain.</h2>
+      <p class="text-[var(--color-text-muted)] text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+        Every piece of content Bravenger produces is generated by agents reading our Brain. Same architecture we deliver to you as a productized service. Same files. Same agent instructions. Same citation rules. One week. Fixed price.
+      </p>
+      <div class="bg-[var(--color-bg-code)] rounded-xl p-6 border border-[var(--color-border)] text-left font-mono text-sm max-w-xl mx-auto mb-8">
+        <div class="text-[var(--color-text-muted)]">// Mandatory agent read order (AGENTS.md)</div>
+        <div class="mt-2"><span class="text-[var(--color-accent)]">Step 1:</span> Read brand-vision.md <span class="text-[var(--color-text-muted)]">→ voice, tone, values</span></div>
+        <div><span class="text-[var(--color-accent)]">Step 2:</span> Read icp.md <span class="text-[var(--color-text-muted)]">→ who we sell to</span></div>
+        <div><span class="text-[var(--color-accent)]">Step 3:</span> Read personas/index.md <span class="text-[var(--color-text-muted)]">→ which persona</span></div>
+        <div><span class="text-[var(--color-accent)]">Step 4:</span> Read personas/[persona].md <span class="text-[var(--color-text-muted)]">→ pains, messaging</span></div>
+        <div><span class="text-[var(--color-accent)]">Step 5:</span> Read use-cases/index.md <span class="text-[var(--color-text-muted)]">→ which use case</span></div>
+        <div><span class="text-[var(--color-accent)]">Step 6:</span> Read use-cases/[use-case].md <span class="text-[var(--color-text-muted)]">→ trigger, outcome, gaps</span></div>
+        <div><span class="text-[var(--color-accent)]">Step 7:</span> Read core-positioning.md <span class="text-[var(--color-text-muted)]">→ category, differentiators</span></div>
+        <div><span class="text-[var(--color-accent)]">Step 8:</span> Read messaging-framework.md <span class="text-[var(--color-text-muted)]">→ VPs, objections</span></div>
+        <div><span class="text-[var(--color-accent)]">Step 9:</span> Read AGENTS.md <span class="text-[var(--color-text-muted)]">→ governance rules</span></div>
+        <div><span class="text-[var(--color-accent)]">Step 10:</span> Read guidelines/[discipline].md <span class="text-[var(--color-text-muted)]">→ discipline-specific</span></div>
+        <div class="mt-2 text-[var(--color-success)]">→ Output: cited, drift-checked, persona-appropriate</div>
+      </div>
+      <a href="/brain" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-[var(--color-border)] text-[var(--color-text-muted)] font-medium hover:text-[var(--color-text)] hover:border-[var(--color-text-muted)] transition-colors">
+        Open Our Brain
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="py-20 px-6 border-t border-[var(--color-border)]">
+    <div class="max-w-5xl mx-auto scroll-reveal">
+      <div class="text-center mb-16">
+        <div class="font-mono text-sm text-[var(--color-accent)] mb-4">Pricing</div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">One week. Fixed price. A permanent asset.</h2>
+        <p class="text-[var(--color-text-muted)] text-lg max-w-2xl mx-auto">
+          Not a retainer. Not a subscription. A working system your team owns outright.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Core -->
+        <div class="bg-[var(--color-bg-card)] rounded-xl border border-[var(--color-border)] p-8">
+          <div class="text-sm font-mono text-[var(--color-accent)] mb-2">Brain Build — Core</div>
+          <div class="flex items-baseline gap-1 mb-1">
+            <span class="text-4xl font-black">$10,000</span>
+          </div>
+          <p class="text-sm text-[var(--color-text-muted)] mb-6">Series A · 20–60 employees · First-time GTM foundation</p>
+
+          <div class="space-y-3 mb-8">
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--color-success)] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span class="text-sm">ICP with pains, signals, and anti-ICP</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--color-success)] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span class="text-sm">3 persona files with product/UI/UX hooks</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--color-success)] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span class="text-sm">3 use cases with multi-persona schema and status fields</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--color-success)] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span class="text-sm">Positioning, messaging framework, brand vision</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--color-success)] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span class="text-sm">Agent governance + 3 discipline guidelines</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--color-success)] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span class="text-sm">Approved messaging examples</span>
+            </div>
+          </div>
+
+          <div class="bg-[var(--color-bg-code)] rounded-lg p-3 mb-6">
+            <div class="text-xs font-mono text-[var(--color-text-muted)]">You provide: 2 hours of founder time + existing materials</div>
+          </div>
+
+          <a href="#" class="block text-center px-6 py-3 rounded-lg border border-[var(--color-border)] text-[var(--color-text-muted)] font-medium hover:text-[var(--color-text)] hover:border-[var(--color-text-muted)] transition-colors">
+            Get Started
+          </a>
+        </div>
+
+        <!-- Full -->
+        <div class="bg-[var(--color-bg-card)] rounded-xl border border-[var(--color-accent)]/40 p-8 relative">
+          <div class="absolute -top-3 right-6 px-3 py-0.5 rounded-full bg-[var(--color-accent)] text-xs font-medium text-white">Most popular</div>
+          <div class="text-sm font-mono text-[var(--color-accent)] mb-2">Brain Build — Full</div>
+          <div class="flex items-baseline gap-1 mb-1">
+            <span class="text-4xl font-black">$15,000</span>
+          </div>
+          <p class="text-sm text-[var(--color-text-muted)] mb-6">Series B · 60–150 employees · Multi-team alignment</p>
+
+          <div class="space-y-3 mb-8">
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--color-success)] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span class="text-sm">Everything in Core, plus:</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--color-accent)] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+              <span class="text-sm">4–5 personas (extended coverage)</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--color-accent)] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+              <span class="text-sm">5–8 use cases with connected mapping</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--color-accent)] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+              <span class="text-sm">All 5 discipline guidelines (Marketing, Sales, PMM, Product, CS)</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--color-accent)] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+              <span class="text-sm">Competitive deep-dive</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--color-accent)] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+              <span class="text-sm">1-hour Brain owner onboarding session</span>
+            </div>
+          </div>
+
+          <div class="bg-[var(--color-bg-code)] rounded-lg p-3 mb-6">
+            <div class="text-xs font-mono text-[var(--color-text-muted)]">You provide: 2h founder + 1h marketing/PMM + existing materials</div>
+          </div>
+
+          <a href="#" class="block text-center px-6 py-3 rounded-lg bg-[var(--color-accent)] text-white font-medium hover:bg-[var(--color-accent-hover)] transition-colors">
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- Add-ons -->
+      <div class="mt-8 bg-[var(--color-bg-card)] rounded-xl border border-[var(--color-border)] p-6">
+        <div class="text-sm font-mono text-[var(--color-text-muted)] mb-4">Add-ons (available after delivery)</div>
+        <div class="grid md:grid-cols-3 gap-4 text-sm">
+          <div class="flex items-baseline justify-between">
+            <span class="text-[var(--color-text-muted)]">Additional persona</span>
+            <span class="font-mono">$1,500</span>
+          </div>
+          <div class="flex items-baseline justify-between">
+            <span class="text-[var(--color-text-muted)]">Additional use case</span>
+            <span class="font-mono">$1,000</span>
+          </div>
+          <div class="flex items-baseline justify-between">
+            <span class="text-[var(--color-text-muted)]">Additional guideline</span>
+            <span class="font-mono">$1,500</span>
+          </div>
+          <div class="flex items-baseline justify-between">
+            <span class="text-[var(--color-text-muted)]">Quarterly Brain refresh</span>
+            <span class="font-mono">$5,000</span>
+          </div>
+          <div class="flex items-baseline justify-between">
+            <span class="text-[var(--color-text-muted)]">Brain owner coaching (3 sessions)</span>
+            <span class="font-mono">$2,500</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison -->
+      <div class="mt-8 text-center">
+        <p class="text-sm text-[var(--color-text-muted)]">
+          A positioning consultant charges $15–30K for a slide deck that decays in weeks.
+          An agency retainer is $10–20K/month. A freelance strategist is $8–12K/month.
+          <br/>
+          <span class="text-[var(--color-text)]">Bravenger delivers a permanent asset in one week for a one-time cost.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Architecture -->
+  <section class="py-20 px-6 border-t border-[var(--color-border)]">
+    <div class="max-w-6xl mx-auto scroll-reveal">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="font-mono text-sm text-[var(--color-accent)] mb-4">Open architecture</div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Markdown files you own.<br/>Any LLM can read.<br/>Zero lock-in.</h2>
+          <p class="text-[var(--color-text-muted)] text-lg leading-relaxed">
+            Your Company Brain is Markdown with YAML frontmatter. Store it in Git. Read it in VS Code. Feed it to any model. The Brain itself belongs to you — a permanent asset, not a subscription.
+          </p>
+        </div>
+        <div class="bg-[var(--color-bg-code)] rounded-xl p-6 border border-[var(--color-border)] font-mono text-sm">
+          <div class="text-[var(--color-text-muted)] mb-2">persona-founder.md</div>
+          <div class="text-[var(--color-accent)]">---</div>
+          <div><span class="text-[var(--color-drift)]">title:</span> <span class="text-[var(--color-text)]">"The Technical Founder"</span></div>
+          <div><span class="text-[var(--color-drift)]">persona_id:</span> <span class="text-[var(--color-text)]">"P-001"</span></div>
+          <div><span class="text-[var(--color-drift)]">role:</span> <span class="text-[var(--color-text)]">"CEO/CTO"</span></div>
+          <div><span class="text-[var(--color-drift)]">dmu_function:</span> <span class="text-[var(--color-text)]">"Economic Buyer"</span></div>
+          <div><span class="text-[var(--color-drift)]">company_stage:</span> <span class="text-[var(--color-text)]">"Series A/B"</span></div>
+          <div class="text-[var(--color-accent)]">---</div>
+          <div class="mt-3"><span class="text-[var(--color-text)]"># The Technical Founder</span></div>
+          <div class="mt-2 text-[var(--color-text-muted)]">## Pains</div>
+          <div class="text-[var(--color-text-muted)]">1. Positioning trapped in my head...</div>
+          <div class="text-[var(--color-text-muted)]">2. Can't be on every sales call...</div>
+          <div class="mt-2 text-[var(--color-text-muted)]">## Messaging Guidance</div>
+          <div class="text-[var(--color-text-muted)]">- Use technical language, structured data...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

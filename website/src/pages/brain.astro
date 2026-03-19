@@ -1,0 +1,155 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+const brainFiles = [
+  {
+    category: "Foundation",
+    files: [
+      { name: "icp.md", label: "Ideal Customer Profile", description: "Series A/B B2B SaaS, $5M-$50M raised, 20-150 employees. 8 documented pains. 10 buying signals. Anti-ICP defined. Buying process and budget.", lines: 129, color: "accent" },
+      { name: "brand-vision.md", label: "Brand Vision", description: "Mission, vision, 6 core values (including 'We Run on What We Sell'), voice attributes, tone by context, category definition. Words we use and avoid.", lines: 114, color: "accent" },
+      { name: "data-sources.md", label: "Data Sources", description: "External data sources for ICP research and market intelligence.", lines: 45, color: "accent" },
+    ]
+  },
+  {
+    category: "Personas",
+    files: [
+      { name: "personas/index.md", label: "Persona Registry", description: "4 personas, selection guide (9 scenarios), relationship map showing DMU dynamics, lifecycle rules.", lines: 88, color: "drift" },
+      { name: "personas/persona-founder.md", label: "P-001 The Technical Founder", description: "Economic Buyer. CEO/CTO. Positioning trapped in their head. Cares about architecture quality, agent-native design, and systems thinking.", lines: 120, color: "drift" },
+      { name: "personas/persona-head-marketing.md", label: "P-002 The Head of Marketing", description: "Champion/Buyer. First marketing leader. Inherited a blog with 12 posts and a stale pitch deck. Needs a foundation to build on.", lines: 125, color: "drift" },
+      { name: "personas/persona-first-pmm.md", label: "P-003 The First PMM", description: "Champion/Brain Owner. First product marketer. Needs to establish positioning, build competitive intel, and enable sales in one quarter.", lines: 118, color: "drift" },
+      { name: "personas/persona-vp-product.md", label: "P-004 The VP/Head of Product", description: "Technical Evaluator. Cares about structured data, use case status fields, documented gaps, and product hooks. Not 'Startup Steve.'", lines: 115, color: "drift" },
+    ]
+  },
+  {
+    category: "Use Cases",
+    files: [
+      { name: "use-cases/index.md", label: "Use Case Registry", description: "3 use cases. Schema template with multi-persona mapping, status definitions, lifecycle rules. Use cases are foundational, not appendices.", lines: 99, color: "drift" },
+      { name: "use-cases/uc-001-build-brain.md", label: "UC-001: Build a Company Brain", description: "Fully supported. Trigger: positioning trapped in founder's head. Outcome: working Brain in one week. Gotchas, gaps, connected use cases.", lines: 93, color: "drift" },
+      { name: "use-cases/uc-002-generate-aligned-content.md", label: "UC-002: Generate Aligned Content", description: "Fully supported. Five disciplines produce content from one Brain. Every output cited, drift-checked, persona-appropriate.", lines: 85, color: "drift" },
+      { name: "use-cases/uc-003-detect-drift.md", label: "UC-003: Detect and Fix Messaging Drift", description: "Partially supported. Brain establishes baseline. Manual drift detection today. Gaps: no automated ingestion, no drift scoring algorithm.", lines: 80, color: "drift" },
+    ]
+  },
+  {
+    category: "Messaging & Positioning",
+    files: [
+      { name: "messaging-positioning/core-positioning.md", label: "Core Positioning", description: "Category: The Company Brain. 5 differentiators (each with dogfooding proof). 4 strategic narratives per persona. Competitive landscape. Value prop hierarchy.", lines: 137, color: "success" },
+      { name: "messaging-positioning/messaging-framework.md", label: "Messaging Framework", description: "7 VPs with approved/forbidden language and dogfooding hooks. 6 objection handlers. Funnel-stage messaging. Message testing matrix.", lines: 210, color: "success" },
+      { name: "messaging-positioning/examples/README.md", label: "Approved Examples", description: "5 hero variants, 3 outbound email templates (signal-based), 4 LinkedIn posts, conference messaging with talk title options and abstract.", lines: 232, color: "success" },
+    ]
+  },
+  {
+    category: "Governance",
+    files: [
+      { name: "AGENTS.md", label: "Agent Operating Instructions", description: "10-step mandatory read order. Citation format and rules. Output formats by discipline (5 tables). Behavioral guardrails. The Recursive Layer.", lines: 148, color: "accent" },
+      { name: "guidelines/marketing-usage.md", label: "Marketing Agent Guide", description: "Content BOMs, blog posts, email campaigns, social posts, ad copy. Output formats and key Brain files per output type.", lines: 150, color: "accent" },
+      { name: "guidelines/sales-usage.md", label: "Sales Agent Guide", description: "Signal-based outbound, discovery prep, objection responses, proposal language, competitive response. Output formats per type.", lines: 150, color: "accent" },
+      { name: "guidelines/product-marketing-usage.md", label: "Product Marketing Agent Guide", description: "Positioning briefs, launch briefs, competitive intel, enablement docs, messaging updates. Each with format and key Brain files.", lines: 140, color: "accent" },
+      { name: "guidelines/product-usage.md", label: "Product Agent Guide", description: "Feature briefs, persona reactions, adoption scoring, design concept evaluation, roadmap input from use case gaps.", lines: 135, color: "accent" },
+      { name: "guidelines/customer-success-usage.md", label: "Customer Success Agent Guide", description: "Onboarding guides, migration playbooks, use case walkthroughs, SE handoff docs, health checks.", lines: 130, color: "accent" },
+    ]
+  },
+  {
+    category: "Supporting",
+    files: [
+      { name: "updates/changelog.md", label: "Changelog", description: "Version history and change rationale. Every Brain update logged with date, scope, and reason.", lines: 50, color: "text-muted" },
+    ]
+  },
+];
+
+const totalFiles = brainFiles.reduce((acc, cat) => acc + cat.files.length, 0);
+---
+
+<Layout title="Explore the Brain — Bravenger" description="Browse Bravenger's Company Brain. 23 files. Every file is part of the product we sell.">
+  <Navbar />
+
+  <section class="pt-32 pb-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="font-mono text-sm text-[var(--color-accent)] mb-4">Open architecture</div>
+      <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-[1.1] mb-6">
+        This is our<br/><span class="text-[var(--color-accent)]">Company Brain.</span>
+      </h1>
+      <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto leading-relaxed mb-8">
+        Every file below powers Bravenger's GTM. Every agent reads from these files. Every piece of content we produce is grounded here. This is the exact architecture we build for you.
+      </p>
+      <div class="inline-flex items-center gap-6 text-sm font-mono text-[var(--color-text-muted)]">
+        <span><span class="text-[var(--color-text)]">{totalFiles}</span> files</span>
+        <span class="text-[var(--color-border)]">|</span>
+        <span><span class="text-[var(--color-text)]">4</span> personas</span>
+        <span class="text-[var(--color-border)]">|</span>
+        <span>v1.0.0</span>
+        <span class="text-[var(--color-border)]">|</span>
+        <span class="text-[var(--color-success)]">Markdown + YAML</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-20 px-6">
+    <div class="max-w-4xl mx-auto space-y-12">
+      {brainFiles.map(category => (
+        <div>
+          <h2 class="text-lg font-bold mb-4 flex items-center gap-2">
+            <div class="w-1 h-5 rounded-full bg-[var(--color-accent)]"></div>
+            {category.category}
+          </h2>
+          <div class="space-y-3">
+            {category.files.map(file => (
+              <div class="bg-[var(--color-bg-card)] rounded-xl border border-[var(--color-border)] p-5 hover:border-[var(--color-accent)]/30 transition-colors group">
+                <div class="flex items-start justify-between gap-4">
+                  <div class="min-w-0">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class={`font-mono text-sm font-medium text-[var(--color-${file.color})]`}>{file.name}</span>
+                      <span class="text-xs text-[var(--color-text-muted)] font-mono">{file.lines} lines</span>
+                    </div>
+                    <div class="font-medium mb-1">{file.label}</div>
+                    <p class="text-sm text-[var(--color-text-muted)] leading-relaxed">{file.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Brain Stats -->
+  <section class="py-16 px-6 border-t border-[var(--color-border)] bg-[var(--color-bg-card)]">
+    <div class="max-w-4xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-2xl font-black text-[var(--color-accent)]">23</div>
+          <div class="text-xs text-[var(--color-text-muted)] mt-1">Brain files</div>
+        </div>
+        <div>
+          <div class="text-2xl font-black text-[var(--color-drift)]">4</div>
+          <div class="text-xs text-[var(--color-text-muted)] mt-1">validated personas</div>
+        </div>
+        <div>
+          <div class="text-2xl font-black text-[var(--color-success)]">7</div>
+          <div class="text-xs text-[var(--color-text-muted)] mt-1">value propositions</div>
+        </div>
+        <div>
+          <div class="text-2xl font-black text-[var(--color-text)]">5</div>
+          <div class="text-xs text-[var(--color-text-muted)] mt-1">disciplines</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-6 border-t border-[var(--color-border)]">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Your Brain would have your ICP,<br/>your personas, your use cases.</h2>
+      <p class="text-[var(--color-text-muted)] text-lg mb-8">
+        Same architecture. Same agent governance. Your truth. Built in one week.
+      </p>
+      <a href="#" class="px-8 py-4 rounded-lg bg-[var(--color-accent)] text-white font-semibold text-lg hover:bg-[var(--color-accent-hover)] transition-colors inline-block">
+        Get Your Brain Built
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

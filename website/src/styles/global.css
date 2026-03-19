@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0A0A0F;
+  --color-bg-card: #12121A;
+  --color-bg-code: #1A1A2E;
+  --color-text: #F5F5F7;
+  --color-text-muted: #9CA3AF;
+  --color-accent: #3B82F6;
+  --color-accent-hover: #60A5FA;
+  --color-drift: #F59E0B;
+  --color-drift-red: #EF4444;
+  --color-success: #10B981;
+  --color-border: #1F2937;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: white;
+  }
+}
+
+/* Scroll reveal animations */
+@layer utilities {
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .scroll-reveal.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Stagger children */
+  .scroll-reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .scroll-reveal-stagger.animate-in > *:nth-child(1) { transition-delay: 0ms; opacity: 1; transform: translateY(0); }
+  .scroll-reveal-stagger.animate-in > *:nth-child(2) { transition-delay: 100ms; opacity: 1; transform: translateY(0); }
+  .scroll-reveal-stagger.animate-in > *:nth-child(3) { transition-delay: 200ms; opacity: 1; transform: translateY(0); }
+  .scroll-reveal-stagger.animate-in > *:nth-child(4) { transition-delay: 300ms; opacity: 1; transform: translateY(0); }
+  .scroll-reveal-stagger.animate-in > *:nth-child(5) { transition-delay: 400ms; opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,54 @@
+---
+const navLinks = [
+  { label: 'How It Works', href: '/how-it-works' },
+  { label: 'Explore the Brain', href: '/brain' },
+];
+---
+
+<nav class="fixed top-0 w-full z-50 bg-[var(--color-bg)]/80 backdrop-blur-xl border-b border-[var(--color-border)]">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2 group">
+      <div class="w-8 h-8 rounded-lg bg-[var(--color-accent)] flex items-center justify-center font-mono font-bold text-sm text-white">B</div>
+      <span class="text-lg font-bold tracking-tight text-[var(--color-text)] group-hover:text-[var(--color-accent)] transition-colors">Bravenger</span>
+    </a>
+
+    <!-- Desktop nav -->
+    <div class="hidden md:flex items-center gap-8">
+      {navLinks.map(link => (
+        <a href={link.href} class="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">
+          {link.label}
+        </a>
+      ))}
+      <a href="#" class="text-sm font-medium px-4 py-2 rounded-lg bg-[var(--color-accent)] text-white hover:bg-[var(--color-accent-hover)] transition-colors">
+        Get Your Brain Built
+      </a>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button id="mobile-toggle" class="md:hidden p-2 text-[var(--color-text-muted)] hover:text-[var(--color-text)]" aria-label="Toggle menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--color-border)] bg-[var(--color-bg)]/95 backdrop-blur-xl">
+    <div class="px-6 py-4 space-y-3">
+      {navLinks.map(link => (
+        <a href={link.href} class="block text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text)] py-2">
+          {link.label}
+        </a>
+      ))}
+      <a href="#" class="block text-sm font-medium px-4 py-2 rounded-lg bg-[var(--color-accent)] text-white text-center mt-3">
+        Get Your Brain Built
+      </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.getElementById('mobile-toggle')?.addEventListener('click', () => {
+    document.getElementById('mobile-menu')?.classList.toggle('hidden');
+  });
+</script>
