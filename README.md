@@ -20,8 +20,6 @@ company-brain/          ← Primary example (NovaCRM, a fictional AI-powered CRM
 │   └── messaging-framework.md  Value props, objections, funnel messaging
 └── guidelines/         5 discipline-specific agent instructions
 
-examples/contoso-brain/ ← Second example (Contoso Pipelines, a data platform)
-
 prompts/                ← Pre-configured agent system prompts (one per discipline)
 scripts/                ← Brain validation tools (lint, frontmatter, citations, language)
 ```
@@ -84,11 +82,9 @@ status: production
 
 Personas add `persona_id` and `dmu_function`. Use cases add `use_case_id`, `status`, `personas`, and `connected_use_cases`. See `scripts/schemas/` for the full JSON schemas.
 
-## Two examples included
+## Example included
 
-**NovaCRM** (`company-brain/`) — A fictional AI-powered CRM for mid-market sales teams. Series A, 45 employees. 3 personas, 3 use cases, full messaging framework, all 5 discipline guidelines.
-
-**Contoso Pipelines** (`examples/contoso-brain/`) — A fictional data integration platform. Series B, 85 employees. 4 personas, 4 use cases. Demonstrates the same architecture in a different industry.
+**NovaCRM** (`company-brain/`) — A fictional AI-powered CRM for mid-market sales teams. Series A, 45 employees. 3 personas, 3 use cases, full messaging framework, all 5 discipline guidelines. Replace with your own company data.
 
 ## License
 
