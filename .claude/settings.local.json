@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "WebSearch",
+      "Bash(claude --version)",
+      "WebFetch(domain:sandsdx.com)",
+      "WebFetch(domain:www.positioningpoint.com)",
+      "WebFetch(domain:www.zdimchov.com)",
+      "WebFetch(domain:oleria.com)",
+      "WebFetch(domain:www.oleria.com)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)"
+    ]
+  }
+}

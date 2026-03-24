@@ -1,8 +1,8 @@
 ---
 title: Brand Vision
 version: "1.0.0"
-last_updated: "2026-03-18"
-owner: "Page Sands"
+last_updated: "2026-03-24"
+owner: "Brain Owner"
 status: production
 ---
 
@@ -10,62 +10,59 @@ status: production
 
 ## Mission
 
-Make every team speak from the same source of truth — so positioning compounds instead of decaying.
+Help mid-market sales teams close more deals with AI that learns how they sell — not how the industry average sells.
 
 ## Vision
 
-Every scaling B2B SaaS company has a Company Brain that its people and agents read before producing anything. Messaging drift becomes a solved problem. Bravenger is the company that made it obvious this was necessary.
+Every sales team has an AI copilot trained on their own winning patterns. Forecasts stop being guesses. Coaching stops being generic. Deal intelligence stops being firmographic data dressed up as insight. NovaCRM is the company that made personalized AI deal scoring the obvious default for mid-market B2B sales teams.
 
 ---
 
 ## Category Definition
 
-**The Company Brain.**
+**AI-powered CRM for mid-market B2B sales.**
 
-A Company Brain is a structured, machine-readable knowledge base that codifies a company's ICP, personas, use cases, positioning, messaging, and governance rules. It is the single source of truth that both humans and AI agents read before producing any content, sales material, product brief, or customer-facing communication.
+NovaCRM is a CRM built from the ground up around an AI deal scoring engine that learns from individual rep behavior patterns. It watches how each rep runs discovery, how they multi-thread accounts, what their follow-up cadence looks like on deals they win versus deals they lose — and it turns those patterns into deal scores, coaching signals, and forecasts that reflect how your specific team sells.
 
-Bravenger created this category. We build Company Brains for Series A/B B2B SaaS companies.
+We are not an enterprise CRM with AI features bolted onto a 20-year-old data model. We are not a free-tier CRM hoping you outgrow us and upgrade. We are the CRM for sales teams that have outgrown HubSpot free/starter but are not ready for Salesforce enterprise — and who believe their own selling data should train their own AI, not get averaged into a generic model.
 
 ---
 
 ## Core Values
 
-### 1. We Run on What We Sell
-Bravenger uses its own Company Brain to produce every piece of content. If the system doesn't work for us, it doesn't work for customers. This is not a marketing claim — it is an architectural decision.
+### 1. Data Over Opinions
+Every recommendation NovaCRM makes is traceable to data — rep activity data, deal progression data, win/loss patterns. When a deal score changes, you can see why. When the AI suggests a next step, you can see the pattern it learned from. No black boxes. No "trust the algorithm." Show the work.
 
-### 2. One Source of Truth
-Every fact, every positioning claim, every persona insight lives in one place. If it's not in the Brain, it doesn't get said. If it's wrong in the Brain, we fix it in one place and everything downstream corrects.
+### 2. Reps First
+We build for the people who carry the quota. Every product decision starts with the question: does this make the rep's day easier or harder? If a feature adds friction to the rep's workflow — even if it makes the VP's dashboard prettier — it does not ship until we solve the friction.
 
-### 3. Alignment Over Volume
-We would rather produce 5 pieces of content that all say the same thing than 50 pieces that contradict each other. Consistency is a competitive advantage at Series A/B. Most companies don't have it.
+### 3. Earn Trust Through Results
+Sales leaders have heard every AI pitch. "AI-powered forecasting." "Predictive analytics." "Revenue intelligence." Most of it underwhelms. We don't ask for trust up front. We earn it by showing results on their actual data in the first 30 days. Skepticism is healthy. Our job is to give them proof, not promises.
 
-### 4. Structure Enables Speed
-Markdown files with YAML frontmatter are not bureaucracy. They are the thing that lets agents produce accurate content in seconds instead of humans guessing for hours. Structure is what makes speed possible.
+### 4. Your Data Trains Your AI
+Generic AI models trained on aggregated industry data produce generic insights. NovaCRM's scoring engine trains on each customer's own CRM data — their reps, their deals, their win patterns. The AI gets smarter as the team sells more. It is personalized by design, not by marketing claim.
 
-### 5. Practical Over Theoretical
-We do not write thought leadership about positioning frameworks. We build the system and hand it to you. Every deliverable is usable on day one. If it requires a workshop to explain, it's not done.
-
-### 6. Earn Trust Through Transparency
-The Brain is the product. Prospects can read it. Customers can see exactly what they'll get. We don't hide behind sales decks or demo environments. The work speaks for itself.
+### 5. Forecast Like You Mean It
+Forecasting is the most important and most broken process in B2B sales. We exist to fix it. Every feature, every data point, every AI model ultimately serves one outcome: the forecast reflects reality. When a CRO can trust the number, everything downstream gets better — hiring, investment, board conversations, rep compensation.
 
 ---
 
 ## Voice Attributes
 
 ### Confident
-We know this works because we use it. We don't hedge, we don't qualify with "may" or "might." We state what the system does and back it up with our own output as proof.
+We know our product works because we measure it. We state what the AI does, how it learns, and what results customers see. We don't hedge with "may help improve" or "can potentially enhance." We say what it does and back it up with specifics.
 
 ### Practical
-Every sentence should leave the reader knowing what to do next. No abstraction without application. No framework without an example. No claim without a citation.
+Every piece of content should leave the reader knowing what changes for them. No abstraction without application. No AI buzzwords without an explanation of what the AI actually does. No claim without a way to verify it in their own data.
 
-### Enterprise-trusted
-The content quality, structure, and rigor should make a VP of Product or a Head of PMM trust it immediately. Not enterprise-formal — enterprise-reliable. There's a difference.
+### Data-Driven
+We lead with numbers, patterns, and evidence. "Reps who multi-thread deals close at 2.3x the rate" is better than "multi-threading is important." When we reference AI capabilities, we describe the data inputs, the learning mechanism, and the output — not magic.
 
-### No Hype
-No "revolutionary." No "game-changing." No "unlock the power of." We describe what the system does in plain language. The results are impressive enough without superlatives.
+### Anti-Hype
+Sales leaders are the most skeptical buyers in B2B. They have been burned by "AI-powered" tools that turned out to be hardcoded rules with a chatbot on top. We acknowledge this skepticism directly. We never oversell. We describe what the product does today, not what it might do someday. Credibility is our most valuable asset with this audience.
 
-### Self-referential
-We reference our own Brain constantly. "This file is an example of what we build" is a legitimate and powerful proof point. Dogfooding is not just a value — it is a persuasion mechanism.
+### Empathetic to the Sales Grind
+We understand that sales is hard, quotas are real, and nobody wants another tool that adds work. Our tone acknowledges the pressure sales teams are under without being patronizing about it. We talk like people who have sat in pipeline reviews, not like people who read about them in a blog post.
 
 ---
 
@@ -73,12 +70,12 @@ We reference our own Brain constantly. "This file is an example of what we build
 
 | Context | Tone | Example |
 |---------|------|---------|
-| **Website hero** | Confident, direct, outcome-focused | "Your positioning is trapped in your founder's head. We turn it into a system." |
-| **Sales outbound** | Empathetic, specific, signal-driven | "You just hired your first PMM. She's got a Notion page and a prayer. We can fix that in a week." |
-| **Product documentation** | Clear, structured, no narrative | "The `use-cases/` directory contains one file per use case. Each file follows the schema defined in `use-cases/index.md`." |
-| **Conference talk** | Story-driven, self-referential, practical | "I'll show you our actual Company Brain. This is how we produce every piece of content. You can fork it." |
-| **CS onboarding** | Supportive, methodical, grounded in use cases | "Let's start with the three use cases your team runs most. We'll walk through each one using your Brain." |
-| **LinkedIn** | Opinionated, concise, proof-backed | "Your AI tools are only as good as the context you give them. Most companies give them nothing." |
+| **Website hero** | Direct, outcome-focused, specific | "Your CRM tracks activities. NovaCRM learns which activities actually close deals — for each rep on your team." |
+| **Sales outbound** | Empathetic, signal-driven, no-BS | "You just hired a new VP Sales. If the first forecast call is based on gut feel and spreadsheet math, you've got a problem NovaCRM solves in 30 days." |
+| **Product documentation** | Clear, structured, data-model-aware | "Deal scores update daily based on rep activity patterns from the past 90 days. Scores range from 0-100. Factors include email cadence, meeting frequency, stakeholder breadth, and stage velocity." |
+| **Conference talk** | Story-driven, honest, show-the-data | "I'll show you what our AI actually learns from one sales team's data. No slides about 'the future of AI in sales.' Just real patterns from real deals." |
+| **CS onboarding** | Supportive, methodical, milestone-driven | "Let's connect your CRM data and get your first deal scores in week one. We'll review them together so you understand exactly what the model is learning." |
+| **LinkedIn** | Opinionated, concise, grounded in reality | "Your forecast is wrong because your CRM doesn't know how your best reps sell. It just counts their activities. There's a difference." |
 
 ---
 
@@ -86,28 +83,35 @@ We reference our own Brain constantly. "This file is an example of what we build
 
 | Word/Phrase | Why |
 |-------------|-----|
-| Company Brain | Our category. Always capitalize. |
-| Source of truth | Describes the core function. |
-| Aligned / alignment | The outcome we deliver. |
-| Drift / messaging drift | The problem we solve. |
-| Codify | What we do to tacit knowledge. |
-| Structured | Describes the Brain's format and rigor. |
-| Discipline | Our term for the five functions (Marketing, Sales, PMM, Product, CS). |
-| Dogfooding | What we do. We run on what we sell. |
-| Use case | A foundational unit. Always specific, never vague. |
-| Agent | The AI systems that read the Brain and produce output. |
+| Deal scoring | Our core AI capability. Specific and measurable. |
+| Rep behavior patterns | What the AI learns from. Distinct from firmographic data or generic signals. |
+| Personalized AI / learns from your data | The key differentiator. The AI is trained on each customer's own sales data. |
+| Forecast accuracy | The ultimate outcome we deliver. The metric that matters to CROs. |
+| Pipeline hygiene | A specific, actionable problem we solve. Stale deals, missing data, sandbagged stages. |
+| Deal intelligence | The insights the AI surfaces — next steps, risk signals, coaching opportunities. |
+| Win patterns | What the AI identifies — the specific behaviors that correlate with closed-won deals for each rep. |
+| Mid-market | Our audience. 100-500 employee B2B companies. |
+| Outgrowing HubSpot | Our positioning wedge. The moment a team needs more than a free/starter CRM. |
+| Skeptical / skepticism | We acknowledge it. Sales leaders are skeptical of AI claims. We name it and address it. |
 
 ## Words We Avoid
 
 | Word/Phrase | Why | Use Instead |
 |-------------|-----|-------------|
-| Revolutionary / game-changing | Hype. Everyone says it. Nobody believes it. | Describe the specific outcome. |
-| Platform | We are not a platform yet. We are a productized service. | Company Brain, service. |
-| Solution | Vague. Means nothing. | Say what it actually is. |
-| Leverage | Corporate jargon. | Use. |
-| Unlock | Implies something was locked. Dramatic. | Enable, produce, create. |
-| Best-in-class | Unverifiable. | Describe the specific advantage. |
+| Revolutionary / game-changing | Hype. Sales leaders tune it out immediately. They've heard it from every vendor. | Describe the specific capability and the measurable result. |
+| Magic / automagically | Implies we hide complexity. Sales leaders distrust hidden complexity as much as engineers do. | Describe what the AI learns and how it produces the output. |
+| 10x your pipeline / 5x your revenue | Unverifiable multiplier claims. The fastest way to lose credibility with a CRO. | State the specific improvement and the conditions under which it was measured. |
+| Predictive analytics | Overused to the point of meaninglessness. Every CRM claims predictive analytics. | AI deal scoring trained on your team's data. Be specific. |
+| Revenue intelligence | Category claimed by Gong, Clari, and others. We are a CRM, not a revenue intelligence platform. | AI-powered CRM, deal intelligence, deal scoring. |
+| Just works | Nothing just works. CRM implementations are hard. Be honest about what's required. | Describe the setup, the data requirements, and what happens after. |
+| Seamless integration | Nothing is seamless. There are always edges. | Describe the actual integration: what connects, how long it takes, what's required. |
+| Best-in-class | Unverifiable. | State the specific metric or capability. |
+| Leverage | Corporate jargon. Sales teams don't talk like this. | Use. |
+| Empower | Vague. Soft. | Equip, give, enable, show. |
+| Unlock | Implies something was locked. Dramatic. | Enable, surface, reveal, show. |
+| Solution | Vague. Means nothing. | CRM, platform, deal scoring engine. Say what it actually is. |
+| End-to-end | Overused. Describe the actual scope. | Describe what NovaCRM covers: activity capture, deal scoring, forecasting, coaching signals. |
 | Synergy | No. | No. |
-| Empower | Soft. Vague. | Equip, give, enable. |
-| End-to-end | Overused to the point of meaninglessness. | Describe the actual scope. |
-| Seamless | Nothing is seamless. Be honest about what it takes. | Structured, consistent. |
+| AI-first | Every B2B SaaS company claims to be AI-first now. It means nothing. | Describe what the AI actually does and how it learns. |
+| Disrupt | We are not disrupting the CRM market. We are building a better CRM for a specific segment. | Describe the specific improvement for the specific audience. |
+| Simple / easy | Dismissive of real implementation complexity. CRM migrations are never simple. | Straightforward, well-documented, guided. |

@@ -1,17 +1,17 @@
 ---
 title: Use Case Registry
 version: "1.0.0"
-last_updated: "2026-03-18"
-owner: "Page Sands"
+last_updated: "2026-03-24"
+owner: "Brain Owner"
 status: production
-use_case_count: 4
+use_case_count: 3
 ---
 
 # Use Case Registry
 
 ## Overview
 
-Use cases are foundational to the Bravenger Company Brain. They are not a CS artifact or a product appendix — they feed every discipline. A use case shapes marketing content, sales discovery questions, product roadmap priorities, PMM launch plans, and CS onboarding paths simultaneously.
+Use cases are foundational to the NovaCRM Company Brain. They are not a CS artifact or a product appendix — they feed every discipline. A use case shapes marketing content, sales discovery questions, product roadmap priorities, and CS onboarding paths simultaneously.
 
 Every use case follows the schema below. No exceptions.
 
@@ -21,10 +21,9 @@ Every use case follows the schema below. No exceptions.
 
 | ID | Title | Status | Primary Persona |
 |----|-------|--------|----------------|
-| UC-001 | Build a Company Brain from a positioning doc | fully-supported | P-001 Technical Founder |
-| UC-002 | Generate aligned content from the Brain | fully-supported | P-002 Head of Marketing |
-| UC-003 | Detect and fix messaging drift | partially-supported | P-003 First PMM |
-| UC-004 | Measure Brain impact | partially-supported | P-003 First PMM |
+| UC-001 | Pipeline Forecasting with AI Deal Scoring | fully-supported | P-001 VP Sales |
+| UC-002 | AI-Powered Rep Coaching | fully-supported | P-001 VP Sales |
+| UC-003 | CRM Migration to NovaCRM | partially-supported | P-002 Sales Ops |
 
 ---
 
@@ -39,6 +38,7 @@ use_case_id: "UC-XXX"
 version: "1.0.0"
 last_updated: "YYYY-MM-DD"
 status: "fully-supported | partially-supported | manual-workaround | on-roadmap | not-supported"
+owner: "Brain Owner"
 
 personas:
   setup_by: "persona-id"       # Who configures or initiates this use case
@@ -47,10 +47,10 @@ personas:
   evaluated_by: "persona-id"   # Who judges whether it's working
 
 icp_pain: "Reference to icp.md pain ID (e.g., P1, P2)"
-current_alternative: "What they do today without Bravenger"
+current_alternative: "What they do today without NovaCRM"
 tools_involved:
   - "Tool or system involved"
-proof: "Evidence this use case works — ideally dogfooding"
+proof: "Evidence this use case works"
 
 connected_use_cases:
   - "UC-XXX"
@@ -62,10 +62,10 @@ connected_use_cases:
 After frontmatter, every use case file must include these sections:
 
 1. **Trigger** — What event or condition causes someone to initiate this use case.
-2. **Current State** — What the world looks like before Bravenger. The pain in action.
+2. **Current State** — What the world looks like before NovaCRM. The pain in action.
 3. **Outcome** — What the world looks like after. Specific, measurable, observable.
 4. **Gotchas** — Real-world complications, edge cases, things that can go wrong.
-5. **Gaps** — What Bravenger cannot do yet for this use case. Honest assessment.
+5. **Gaps** — What NovaCRM cannot do yet for this use case. Honest assessment.
 6. **Connected Use Cases** — How this use case relates to others in the registry.
 
 ### What NOT to Include
@@ -80,10 +80,10 @@ After frontmatter, every use case file must include these sections:
 
 | Status | Meaning |
 |--------|---------|
-| **fully-supported** | Bravenger delivers this use case end-to-end in the productized service. |
-| **partially-supported** | The Brain enables this use case but some elements require manual effort or external tools. |
-| **manual-workaround** | Achievable but requires significant manual work outside the Brain. |
-| **on-roadmap** | Planned for a future version of the service or product. |
+| **fully-supported** | NovaCRM delivers this use case completely within the product. |
+| **partially-supported** | NovaCRM enables this use case but some elements require manual effort or external tools. |
+| **manual-workaround** | Achievable but requires significant manual work outside NovaCRM. |
+| **on-roadmap** | Planned for a future version of the product. |
 | **not-supported** | Not currently possible. Documented for transparency and roadmap input. |
 
 ---
@@ -96,4 +96,4 @@ After frontmatter, every use case file must include these sections:
 4. **Status reflects product reality.** Not marketing aspiration. If it's partially supported, say so.
 5. **Connected use cases form a graph.** Use cases don't exist in isolation. Document the relationships.
 6. **Gaps drive the roadmap.** The gaps section in each use case is the product team's backlog input. If a gap is resolved, update the status and log the change.
-7. **Use cases feed every discipline.** Marketing uses them for content topics. Sales uses them for discovery. PMM uses them for launches. Product uses them for prioritization. CS uses them for onboarding.
+7. **Use cases feed every discipline.** Marketing uses them for content topics. Sales uses them for discovery. Product uses them for prioritization. CS uses them for onboarding.

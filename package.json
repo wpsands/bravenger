@@ -1,0 +1,28 @@
+{
+  "name": "brain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "node scripts/lint-brain.js",
+    "lint:frontmatter": "node scripts/validate-frontmatter.js",
+    "lint:citations": "node scripts/check-citations.js",
+    "lint:language": "node scripts/scan-forbidden-language.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpsands/bravenger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wpsands/bravenger/issues"
+  },
+  "homepage": "https://github.com/wpsands/bravenger#readme",
+  "devDependencies": {
+    "js-yaml": "^4.1.1"
+  }
+}

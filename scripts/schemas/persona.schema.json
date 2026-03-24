@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "required": ["title", "persona_id", "version", "last_updated", "owner", "status", "role", "dmu_function"],
+  "properties": {
+    "title": { "type": "string" },
+    "persona_id": { "type": "string", "pattern": "^P-\\d{3}$" },
+    "version": { "type": "string" },
+    "last_updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "owner": { "type": "string" },
+    "status": { "type": "string" },
+    "role": { "type": "string" },
+    "dmu_function": { "type": "string" }
+  }
+}

@@ -1,15 +1,15 @@
 ---
 title: Agent Operating Instructions
 version: "1.0.0"
-last_updated: "2026-03-24"
+last_updated: "2026-03-22"
 scope: "All AI agents consuming this Company Brain"
-owner: "Brain Owner"
+owner: "Jamie Torres"
 status: production
 ---
 
 # Agent Operating Instructions
 
-This file governs all AI agents that consume the NovaCRM Company Brain. Every agent — regardless of discipline, model, or task — must follow these rules before producing any output.
+This file governs all AI agents that consume the Contoso Company Brain. Every agent — regardless of discipline, model, or task — must follow these rules before producing any output.
 
 ---
 
@@ -44,8 +44,8 @@ Every factual claim, positioning statement, persona insight, or use case referen
 
 ### Examples
 - `[Source: icp.md#pains]`
-- `[Source: personas/persona-vp-sales.md#goals-and-kpis]`
-- `[Source: use-cases/uc-001-pipeline-forecasting.md#outcome]`
+- `[Source: personas/persona-head-data.md#goals-and-kpis]`
+- `[Source: use-cases/uc-001-consolidate-pipelines.md#outcome]`
 - `[Source: messaging-positioning/core-positioning.md#differentiators]`
 - `[Source: brand-vision.md#words-we-avoid]`
 
@@ -53,7 +53,7 @@ Every factual claim, positioning statement, persona insight, or use case referen
 1. **Every claim needs a source.** If you can't cite it, don't say it.
 2. **Citations must be accurate.** The cited file and section must actually contain the information. Do not fabricate citations.
 3. **Multiple sources are fine.** If a claim draws from two files, cite both.
-4. **Don't cite for style or tone.** You don't need to cite that you used a confident tone. You do need to cite that our ICP is "100-500 employee B2B companies with 10+ person sales teams."
+4. **Don't cite for style or tone.** You don't need to cite that you used a confident tone. You do need to cite that our ICP is "mid-market B2B SaaS companies with 200-2000 employees."
 5. **Flag gaps.** If the Brain doesn't contain information you need, say so explicitly: "The Brain does not currently document [topic]. This claim is based on inference and should be verified."
 
 ---
@@ -68,7 +68,7 @@ Every factual claim, positioning statement, persona insight, or use case referen
 | Email campaign | Subject + body, 150-250 words per email | personas/, messaging-framework.md, examples/ |
 | Social post | Plain text, 100-200 words, LinkedIn format | brand-vision.md, core-positioning.md |
 | Ad copy | Short form, 25-50 words, A/B variants | messaging-framework.md, examples/ |
-| Case study draft | Markdown, challenge + approach + results, persona-aligned | use-cases/, personas/, icp.md |
+| Developer content | Markdown, code examples, YAML snippets, technical but accessible | use-cases/, brand-vision.md#voice-attributes |
 
 ### Sales
 | Output Type | Format | Key Brain Files |
@@ -78,7 +78,7 @@ Every factual claim, positioning statement, persona insight, or use case referen
 | Objection response | Specific objection + response + proof point | messaging-framework.md#objection-handling |
 | Proposal language | Markdown, positioning + scope + outcomes | core-positioning.md, pricing.md, use-cases/ |
 | Competitive response | Markdown, comparison table + narrative | core-positioning.md#competitive-landscape |
-| Demo talk track | Markdown, use-case-driven, persona-matched | use-cases/, personas/ |
+| Technical demo script | Markdown, use-case-driven, persona-matched | use-cases/, personas/ |
 
 ### Product Marketing
 | Output Type | Format | Key Brain Files |
@@ -102,10 +102,10 @@ Every factual claim, positioning statement, persona insight, or use case referen
 | Output Type | Format | Key Brain Files |
 |-------------|--------|----------------|
 | Onboarding guide | Markdown, use case-based, persona-specific | use-cases/, personas/ |
-| Migration playbook | Markdown, from HubSpot/Pipedrive to NovaCRM | use-cases/#current-state sections |
+| Migration playbook | Markdown, from current-state to Contoso Pipelines | use-cases/#current-state sections |
 | Use case walkthrough | Markdown, trigger to outcome, per use case | use-cases/ (specific file) |
 | SE handoff doc | Markdown, use case status + gaps + gotchas | use-cases/, icp.md |
-| Health check | Markdown, CRM adoption + deal scoring accuracy + revenue impact | use-cases/index.md, metrics.md |
+| Health check | Markdown, pipeline coverage + adoption assessment | use-cases/index.md, metrics.md |
 
 ---
 
@@ -114,20 +114,20 @@ Every factual claim, positioning statement, persona insight, or use case referen
 ### Always
 1. **Read before writing.** Follow the mandatory read order. No exceptions.
 2. **Cite your sources.** Every factual claim gets a `[Source: filename#section]` citation.
-3. **Match the persona.** If the output is for the VP of Sales, lead with forecast accuracy and revenue impact. If it's for the Account Executive, lead with time saved and deal intelligence they can act on today. Read the messaging dos/don'ts.
-4. **Respect the voice.** Confident, practical, data-driven, anti-hype. Review `brand-vision.md#voice-attributes` before writing.
-5. **Use approved language.** Check `brand-vision.md#words-we-use` and `brand-vision.md#words-we-avoid` before writing. Check `messaging-framework.md` for persona-specific approved language.
+3. **Match the persona.** If the output is for the Data Engineering Lead, use technical language and reference YAML config, DAGs, and connectors. If it's for the VP of Engineering, translate to team velocity, operational risk, and total cost of ownership. Read the messaging dos/don'ts.
+4. **Respect the voice.** Technical, precise, no hype. Review `brand-vision.md#voice-attributes` before writing.
+5. **Use approved language.** Check `messaging-framework.md` for each VP's approved and forbidden language.
 6. **Document what you don't know.** If the Brain has a gap, say so. Don't fill gaps with invention.
-7. **Ground claims in data.** NovaCRM sells to sales leaders who are skeptical of AI claims. Every assertion about AI capability must reference a specific, measurable outcome documented in the Brain.
+7. **Include code when relevant.** Contoso is a developer-facing product. YAML snippets, CLI examples, and config fragments make content concrete. But only include code that reflects actual product behavior documented in the Brain.
 
 ### Never
 1. **Never invent facts.** If it's not in the Brain, don't say it. Flag the gap instead.
-2. **Never use forbidden language.** "Revolutionary," "game-changing," "magic," "automagically," "10x your pipeline" — these are explicitly banned in `brand-vision.md#words-we-avoid`.
+2. **Never use forbidden language.** "Revolutionary," "game-changing," "magic," "automagically," "just works" — these are explicitly banned in `brand-vision.md#words-we-avoid`.
 3. **Never skip the persona.** Generic content that doesn't target a specific persona is not aligned content. Pick a persona. Read the file.
-4. **Never overstate AI capabilities.** If the Brain says the scoring engine learns from rep behavior patterns, don't claim it "predicts the future" or "guarantees closed deals." Accuracy over aspiration. Sales leaders will call you on it.
-5. **Never position NovaCRM as enterprise-ready.** We sell to mid-market (100-500 employees). Claiming enterprise capability mispositions us and attracts deals we cannot win. [Source: icp.md#anti-icp]
+4. **Never claim unsupported connectors.** If a connector is not in the documented list, do not promise it exists. Accuracy over aspiration.
+5. **Never describe the product as "no-code."** Contoso Pipelines is config-driven and code-friendly. Calling it no-code mispositions us and alienates our engineering audience.
 6. **Never ignore governance.** These rules are not suggestions. They are the mechanism that makes the Brain work.
-7. **Never disparage competitors by name.** State what NovaCRM does. Let the buyer draw the comparison. We win on specifics — AI trained on their data, not generic models — not on trash talk about Salesforce or HubSpot.
+7. **Never compare by disparaging competitors.** State what Contoso does. Let the buyer draw the comparison. We win on specifics, not on trash talk.
 
 ---
 

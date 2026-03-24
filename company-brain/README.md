@@ -1,54 +1,50 @@
 ---
-title: Bravenger Company Brain
+title: NovaCRM Company Brain
 version: "1.0.0"
-last_updated: "2026-03-18"
-owner: "Page Sands"
+last_updated: "2026-03-24"
+owner: "Brain Owner"
 status: production
-purpose: "Single source of truth for all Bravenger content, messaging, and agent behavior"
+purpose: "Single source of truth for all NovaCRM content, messaging, and agent behavior"
 ---
 
-# Bravenger Company Brain
+# NovaCRM Company Brain
 
-**Bravenger turns your positioning doc into a system that produces aligned content for every team.**
+**NovaCRM is an AI-powered CRM for mid-market B2B sales teams. Our deal scoring learns from individual rep behavior patterns — not just firmographic data — so every forecast is grounded in how your team actually sells.**
 
-One brain. Aligned teams. Zero drift.
+AI that learns how you sell. Not how everyone sells.
 
 ---
 
 ## What This Is
 
-This repository is the Bravenger Company Brain — the single source of truth that every team and every agent reads before producing any output. It contains our ICP, personas, use cases, positioning, messaging, governance rules, and discipline-specific guidelines.
+This repository is the NovaCRM Company Brain — the single source of truth that every team and every agent reads before producing any output. It contains our ICP, personas, use cases, positioning, messaging, governance rules, and discipline-specific guidelines.
 
-This Brain serves two purposes simultaneously:
-
-1. **Internal operating system.** Every piece of content Bravenger produces — marketing pages, sales emails, product briefs, CS playbooks — is generated from this Brain. Agents read these files, cite them, and produce aligned output.
-2. **Product demo.** This is what we build for customers. When a Series A/B SaaS company buys Bravenger's productized service, they get a Brain built to this exact architecture. This repo is proof the system works.
-
-We call this dogfooding. Bravenger runs on what we sell.
+Every piece of content NovaCRM produces — marketing pages, sales emails, product briefs, CS playbooks — is generated from this Brain. Agents read these files, cite them, and produce aligned output. If something in this Brain is wrong, our content will be wrong. That is the point. One source of truth means one place to fix, and every downstream output corrects itself.
 
 ---
 
 ## File Map
 
-### Foundation
+### Foundation Layer
 | File | Purpose |
 |------|---------|
-| `icp.md` | Ideal Customer Profile — firmographics, pains, signals, anti-ICP |
 | `brand-vision.md` | Mission, vision, values, voice, tone, category definition |
+| `icp.md` | Ideal Customer Profile — firmographics, pains, signals, anti-ICP |
+| `goals.md` | Company goals, GTM discipline targets, current quarter priorities |
 | `personas/index.md` | Persona registry, selection guide, relationship map |
-| `personas/persona-founder.md` | The Technical Founder |
-| `personas/persona-head-marketing.md` | The Head of Marketing |
-| `personas/persona-first-pmm.md` | The First PMM |
-| `personas/persona-vp-product.md` | The VP/Head of Product |
+| `personas/persona-vp-sales.md` | The VP of Sales / CRO |
+| `personas/persona-revops-leader.md` | The RevOps Leader |
+| `personas/persona-sales-manager.md` | The Frontline Sales Manager |
+| `personas/persona-ae.md` | The Account Executive (end user) |
 
 ### Use Cases
 | File | Purpose |
 |------|---------|
 | `use-cases/index.md` | Use case registry, schema template, lifecycle rules |
-| `use-cases/uc-001-build-brain.md` | Build a Company Brain from a positioning doc |
-| `use-cases/uc-002-generate-aligned-content.md` | Generate aligned content from the Brain |
-| `use-cases/uc-003-detect-drift.md` | Detect and fix messaging drift |
-| `use-cases/uc-004-measure-brain-impact.md` | Measure whether the Brain is used and working |
+| `use-cases/uc-001-forecast-accuracy.md` | Improve forecast accuracy with AI deal scoring trained on rep behavior |
+| `use-cases/uc-002-rep-coaching.md` | Coach reps with AI insights trained on their own winning patterns |
+| `use-cases/uc-003-pipeline-hygiene.md` | Automatically surface stale deals, missing fields, and sandbagged stages |
+| `use-cases/uc-004-post-mortem.md` | Run data-driven lost deal post-mortems without manual analysis |
 
 ### Messaging & Positioning
 | File | Purpose |
@@ -71,8 +67,7 @@ We call this dogfooding. Bravenger runs on what we sell.
 | File | Purpose |
 |------|---------|
 | `pricing.md` | Packages, pricing, add-ons, proposal language, discount policy (internal) |
-| `metrics.md` | How to measure Brain adoption, health, and impact |
-| `access.md` | How different roles access the Brain — three tiers, per-role setup, anti-patterns |
+| `metrics.md` | How to measure CRM adoption, deal scoring accuracy, and revenue impact |
 | `data-sources.md` | External data sources for ICP research |
 | `updates/changelog.md` | Version history and change rationale |
 
@@ -94,16 +89,15 @@ We call this dogfooding. Bravenger runs on what we sell.
 4. Never invent facts not in the Brain.
 5. When in doubt, say what you don't know.
 
-### For Prospects
-Browse this repo. This is the product. If the content is clear, consistent, and useful — that is the Brain working. If you want the same thing for your company, that is what we build.
-
 ---
 
 ## The Architecture
 
 ```
 Foundation Layer
+├── Brand Vision (who we are, how we sound)
 ├── ICP (who we sell to)
+├── Goals (what we are trying to achieve right now)
 ├── Personas (who we talk to)
 └── Use Cases (what they are trying to do)
     ↓ feeds everything ↓
@@ -116,22 +110,31 @@ Governance Layer
 └── Discipline Guidelines (marketing, sales, PMM, product, CS)
 ```
 
-Use cases are foundational. They feed every discipline — not just CS. A use case like "Build a Company Brain" shapes marketing content, sales discovery, product roadmap, PMM launches, and CS onboarding simultaneously.
+The Foundation Layer is the source of truth. Everything in the Positioning & Messaging Layer is derived from Foundation files. The Governance Layer controls how agents read, cite, and produce output from the other two layers.
+
+Use cases are foundational. They feed every discipline — not just CS. A use case like "Forecast Accuracy" shapes marketing content, sales discovery, product roadmap, PMM launches, and CS onboarding simultaneously.
 
 ---
 
-## Business Model
+## Company Overview
 
-Bravenger is a productized service. We build Company Brains for Series A/B B2B SaaS companies. One week, fixed price. Same architecture every time. Every engagement produces a Brain like this one — tailored to the customer's positioning, personas, and use cases.
+NovaCRM builds an AI-powered CRM for mid-market B2B sales teams. The core differentiator is an AI deal scoring engine that learns from individual rep behavior patterns — how each rep runs discovery, how they multi-thread deals, what their email cadence looks like on deals they win — rather than relying solely on firmographic data or generic scoring models. The result is forecasts and deal intelligence that reflect how your specific team sells, not industry averages.
 
-Revenue from the service funds the eventual software product.
+- **Founded:** 2023, Austin, TX
+- **Stage:** Series A ($12M raised from Gradient Ventures and FirstMark Capital)
+- **Team:** ~45 employees
+- **ARR:** ~$3M
+- **Structure:** Remote-first
+- **Founder:** Technical (ML background), built the scoring engine
+
+We compete in the CRM space alongside Salesforce, HubSpot CRM, Pipedrive, and Close.com, but we are positioned differently. We are not an enterprise CRM with AI bolted on. We are not a free-tier CRM hoping you upgrade. We are the CRM built from the ground up around AI deal intelligence for sales teams that have outgrown HubSpot free/starter but are not ready for Salesforce enterprise — and who believe their own selling data should train their own AI.
 
 ---
 
-## Dogfooding Statement
+## Operating Principle
 
-Every file in this repo was written using the Bravenger architecture. The ICP describes our actual customers. The personas reflect real people we talk to. The use cases document real workflows. The messaging sells a real service.
+Every file in this repo reflects how NovaCRM actually operates. The ICP describes our actual customers. The personas reflect real buyers we engage with. The use cases document real workflows our product supports. The messaging sells a real product.
 
-If something in this Brain is wrong, our content will be wrong. That is the point. One source of truth means one place to fix, and every downstream output corrects itself.
+If something in this Brain is wrong, our content will be wrong. One source of truth means one place to fix.
 
 This is not a template. This is a working system.

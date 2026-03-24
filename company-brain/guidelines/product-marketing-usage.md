@@ -1,29 +1,29 @@
 ---
 title: Product Marketing Agent Usage Guide
 version: "1.0.0"
-last_updated: "2026-03-18"
+last_updated: "2026-03-24"
 scope: "Product Marketing team agents and operators"
-owner: "Page Sands"
+owner: "Brain Owner"
 status: production
 discipline: product-marketing
 ---
 
 # Product Marketing Agent Usage Guide
 
-This guide governs all agents producing product marketing content for Bravenger. Read AGENTS.md first — this file supplements, not replaces, the core governance rules.
+This guide governs all agents producing product marketing content for NovaCRM. Read AGENTS.md first — this file supplements, not replaces, the core governance rules.
 
 ---
 
 ## Role of Product Marketing in the Brain
 
-Product Marketing is the discipline that OWNS the Brain. PMM is responsible for:
-- Maintaining positioning and messaging accuracy
+Product Marketing OWNS the Brain. PMM is responsible for:
+- Maintaining positioning and messaging accuracy across all disciplines
 - Updating personas when customer conversations reveal new insights
 - Ensuring use case status fields reflect current product reality
 - Producing launch content, competitive intel, and sales enablement
-- Measuring and fixing messaging drift
+- Measuring and fixing messaging drift across marketing, sales, and CS output
 
-PMM is the bridge between Product (what we build), Sales (what we sell), Marketing (what we say), and CS (what we deliver). The Brain is the mechanism that makes that bridge work.
+PMM is the bridge between Product (what we build), Sales (what we sell), Marketing (what we say), and CS (what we deliver). The Brain is the mechanism that makes that bridge operational.
 
 ---
 
@@ -32,81 +32,70 @@ PMM is the bridge between Product (what we build), Sales (what we sell), Marketi
 ### Quarterly Positioning Review
 Every quarter, PMM should:
 1. Re-read `messaging-positioning/core-positioning.md` against current market reality.
-2. Verify each differentiator still holds. If a competitor closed a gap, update the competitive landscape.
+2. Verify each differentiator still holds. Has Salesforce or HubSpot closed a gap?
 3. Check strategic narratives against recent customer conversations. Are the pains still accurate?
-4. Review the value proposition hierarchy. Has priority shifted?
-5. Log changes in `updates/changelog.md`.
+4. Review the value proposition hierarchy. Has persona priority shifted?
+5. Validate the "AI-native" category claim still differentiates as competitors adopt similar language.
+6. Log changes in `updates/changelog.md`.
 
 ### When to Update Positioning
-- New competitor enters the market
-- Product ships a major feature that changes capability claims
+- Competitor launches an AI-native CRM or similar category claim
+- NovaCRM ships a capability that changes a use case status field
 - Customer conversations consistently surface a new pain not in `icp.md`
 - Win/loss analysis reveals a positioning weakness
-- The market category is evolving (new terminology, new expectations)
+- The "AI-native CRM" category is evolving (new entrants, analyst coverage, terminology shifts)
 
 ### Update Process
 1. Draft the change in the relevant file.
-2. Check downstream impact: Does this change affect messaging-framework.md? Examples? Agent guidelines?
-3. Update all affected files.
+2. Check downstream impact: Does this change affect messaging-framework.md? Agent guidelines? Sales materials?
+3. Update all affected files in the same commit.
 4. Log in changelog.
-5. Notify relevant disciplines.
+5. Notify Sales, Marketing, and CS of the change and its implications.
 
 ---
 
-## Messaging Frameworks
+## Positioning Briefs
 
-PMM produces and maintains the messaging framework. When updating or creating messaging:
+PMM produces positioning briefs when entering new segments, launching major features, or responding to competitive shifts.
 
-### Value Proposition Creation
-Each VP must have:
-- **Statement:** One sentence describing the value.
-- **Approved language:** 3-5 phrases agents and humans can use verbatim.
-- **Forbidden language:** Phrases that are commonly used but misrepresent the value.
-- **Dogfooding hook:** How Bravenger's own usage proves this VP.
-- **Persona relevance:** Which personas care most (reference the message testing matrix).
+### Positioning Brief Template
 
-### Message Testing Matrix
-Maintain the matrix in `messaging-framework.md#message-testing-matrix`. Update it when:
-- Customer conversations validate or invalidate a message-persona pairing.
-- A/B testing reveals unexpected resonance or failure.
-- New messages are added to the framework.
+```markdown
+## Positioning Brief: [Topic]
 
----
+### Context
+[What changed? New competitor, new feature, new segment?]
 
-## Competitive Intelligence
+### Current positioning
+[Relevant section from core-positioning.md]
 
-### Competitive Intel Structure
-For each significant competitor or alternative, document:
-- **What they are:** Category, product type, target market.
-- **What they deliver:** Specific deliverables, format, timeline.
-- **Gap vs. Bravenger:** What they can't do that the Company Brain does.
-- **When they come up:** Which persona mentions them and in what context.
-- **Response:** Approved talking points for sales and marketing.
+### Proposed change
+[What needs to update and why]
 
-### Competitive Intel Sources
-- Customer and prospect conversations (win/loss analysis)
-- Competitor websites and content
-- G2, Gartner Peer Insights reviews (for adjacent categories)
-- Industry analyst reports
-- Community discussions (Pavilion, PMM Alliance, etc.)
+### Persona impact
+- **P-001 VP Sales:** [How does this affect their narrative?]
+- **P-002 Sales Ops:** [How does this affect their narrative?]
+- **P-003 CTO:** [How does this affect their narrative?]
 
-### Rules
-- Document facts, not opinions. Cite sources.
-- Never disparage competitors by name in external content.
-- Focus on the category gap (system vs. document), not feature-by-feature comparison.
-- Update quarterly or when a material competitive change occurs.
+### Downstream files affected
+[List every Brain file that needs updating]
 
-[Source: messaging-positioning/core-positioning.md#competitive-landscape]
+### Competitive implication
+[How does this change our competitive landscape section?]
+
+### Citations
+[Source files used]
+```
 
 ---
 
-## Launch Planning
+## Launch Briefs
 
 ### Launch Tier Framework
 
 | Tier | Criteria | Content Scope |
 |------|----------|--------------|
-| **Tier 1** | New use case or major capability change | Full launch: blog, email, social, sales enablement, product update, CS notification |
+| **Tier 1** | New use case or major capability | Full launch: blog, email, social, sales enablement, product update, CS notification |
 | **Tier 2** | Significant improvement to existing use case | Blog + email + sales enablement |
 | **Tier 3** | Minor improvement or iteration | Product update + CS notification |
 
@@ -117,52 +106,81 @@ For each significant competitor or alternative, document:
 
 ### Use case impact
 - **Use case:** [UC-XXX from use-cases/]
-- **Status change:** [e.g., "partially-supported → fully-supported"]
-- **New capability:** [What can the customer do now that they couldn't before?]
+- **Status change:** [e.g., "partially-supported -> fully-supported"]
+- **New capability:** [What can the customer do now?]
 
 ### Persona impact
-- **Primary persona:** [Who benefits most?]
-- **Expected reaction:** [Reference persona file — product hooks section]
+- **P-001 VP Sales:** [Expected reaction, relevance]
+- **P-002 Sales Ops:** [Expected reaction, relevance]
+- **P-003 CTO:** [Expected reaction, relevance]
 
 ### Messaging
 - **Primary VP:** [From messaging-framework.md]
 - **Approved language:** [Specific phrases for this launch]
-- **Positioning connection:** [How does this reinforce our category position?]
+- **Category reinforcement:** [How does this reinforce "AI-native CRM"?]
 
 ### Content plan
 - [ ] Brain update (use case file, status field)
 - [ ] Blog post (target persona, use case angle)
-- [ ] Email to customers
+- [ ] Email to customers (persona-specific versions)
 - [ ] Sales enablement (talk track + objection update)
-- [ ] Social post
+- [ ] Social post (LinkedIn, founder voice)
 - [ ] Changelog entry
 
 ### Citations
-[Source files used to build this brief]
+[Source files used]
 ```
+
+---
+
+## Competitive Intelligence
+
+### Competitive Intel Structure
+For each competitor, document:
+- **What they are:** Category, target market, pricing tier.
+- **Their AI story:** What do they claim? How does it actually work?
+- **Gap vs. NovaCRM:** What they can't do that NovaCRM does.
+- **When they come up:** Which persona mentions them and in what context.
+- **Response:** Approved talking points for sales and marketing.
+
+### Competitive Monitoring
+Track quarterly:
+- Salesforce Einstein updates and mid-market positioning shifts
+- HubSpot CRM AI feature releases
+- Pipedrive and Close product announcements
+- New entrants claiming "AI-native CRM" or similar positioning
+- Analyst coverage of AI CRM category
+
+### Rules
+- Document facts, not opinions. Cite sources.
+- Never disparage competitors by name in external content.
+- Focus on category differentiation (AI-native vs. AI-powered), not feature comparison.
+- Update quarterly or when a material competitive change occurs.
+
+[Source: messaging-positioning/core-positioning.md#competitive-landscape]
 
 ---
 
 ## Sales Enablement
 
-PMM produces enablement content that Sales agents and reps consume. Enablement content must:
+PMM produces enablement content that Sales agents and reps consume.
 
 ### Include
-- Talk tracks per persona (reference persona dos/don'ts)
-- Objection handling (from messaging-framework.md, with context)
-- Use case overviews (from use-cases/, with real status)
-- Competitive responses (from competitive intel, approved language only)
-- Proof points (dogfooding examples, customer outcomes)
+- Talk tracks per persona (reference persona language guidance in sales-usage.md)
+- Objection handling updates (from messaging-framework.md, with new context)
+- Use case overviews (from use-cases/, with current status)
+- Competitive battle cards (from competitive intel, approved language only)
+- Proof points (customer outcomes, metrics, case studies)
 
 ### Exclude
 - Internal strategy that shouldn't be shared externally
 - Aspirational claims not supported by use case status
-- Generic feature lists without persona/outcome framing
+- Feature lists without persona/outcome framing
 
 ### Format
 - Short. Sales reps don't read long documents.
-- Structured. Talk track → objection → proof point.
-- Citable. Every claim references a Brain file.
+- Structured. Talk track then objection then proof point.
+- Persona-tagged. Every piece of enablement identifies which persona it serves.
 
 ---
 
@@ -171,19 +189,20 @@ PMM produces enablement content that Sales agents and reps consume. Enablement c
 PMM owns drift detection. This is the discipline's most critical ongoing responsibility.
 
 ### Monthly Drift Check
-1. Select 10-15 pieces of live content (website pages, blog posts, sales decks, email templates).
-2. For each piece, compare claims against the relevant Brain files.
-3. Flag divergences: wrong VP, outdated feature claim, persona mismatch, tone drift.
+1. Select 10-15 pieces of live content (website, blog, sales decks, email sequences, social posts).
+2. For each piece, verify: correct category language ("AI-native"), persona targeting, VP alignment, competitive accuracy.
+3. Flag divergences: "AI-powered" language, feature-leading copy, blurred persona targeting, stale competitive claims.
 4. Categorize: Is the content wrong, or is the Brain outdated?
-5. Fix the source. If the content is wrong, update the content. If the Brain is outdated, update the Brain.
+5. Fix the source. Update content or update the Brain.
 6. Log findings and fixes in changelog.
 
 ### Drift Severity Scale
+
 | Severity | Definition | Action |
 |----------|-----------|--------|
-| **Critical** | Claim contradicts product reality or makes a false promise | Fix immediately. Notify sales and CS. |
-| **High** | VP or positioning is materially different from Brain | Fix within 1 week. |
-| **Medium** | Tone or language drifts from brand-vision.md | Fix in next content update cycle. |
-| **Low** | Minor inconsistency, no customer impact | Log and fix when file is next updated. |
+| **Critical** | Content says "AI-powered" or makes a false product claim | Fix immediately. Notify all disciplines. |
+| **High** | VP or competitive positioning materially different from Brain | Fix within 1 week. |
+| **Medium** | Persona targeting is unclear or tone drifts | Fix in next content update cycle. |
+| **Low** | Minor language inconsistency, no customer impact | Log and fix when file is next updated. |
 
-[Source: use-cases/uc-003-detect-drift.md]
+[Source: messaging-positioning/core-positioning.md] [Source: messaging-positioning/messaging-framework.md]

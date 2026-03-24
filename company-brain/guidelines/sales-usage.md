@@ -1,16 +1,16 @@
 ---
 title: Sales Agent Usage Guide
 version: "1.0.0"
-last_updated: "2026-03-18"
+last_updated: "2026-03-24"
 scope: "Sales team agents and operators"
-owner: "Page Sands"
+owner: "Brain Owner"
 status: production
 discipline: sales
 ---
 
 # Sales Agent Usage Guide
 
-This guide governs all agents producing sales content for Bravenger. Read AGENTS.md first — this file supplements, not replaces, the core governance rules.
+This guide governs all agents producing sales content for NovaCRM. Read AGENTS.md first — this file supplements, not replaces, the core governance rules.
 
 ---
 
@@ -20,27 +20,27 @@ Sales uses the Brain to prepare for conversations, produce outbound sequences, h
 - Reference the specific persona being engaged
 - Connect the conversation to documented pains in `icp.md` and the persona file
 - Use approved messaging from `messaging-positioning/messaging-framework.md`
-- Handle objections using documented responses
-- Never promise capabilities the Brain doesn't support (check use case status fields)
+- Handle objections using documented responses from the messaging framework
+- Never promise capabilities that aren't supported by use case status fields
 
 ---
 
 ## Signal-Based Outbound
 
-Bravenger's outbound motion is signal-driven. Do not send generic sequences. Every outbound message must connect to a specific buying signal from `icp.md#buying-signals`.
+NovaCRM's outbound motion is signal-driven. Do not send generic sequences. Every outbound message must connect to a specific buying signal from `icp.md#buying-signals`.
 
-### Signal → Message Mapping
+### Signal to Message Mapping
 
-| Signal | Primary Message | Persona | Template Reference |
-|--------|----------------|---------|-------------------|
-| New marketing hire | "You need a foundation before you can build" | P-002 Head of Mktg | examples/README.md#template-1 |
-| New PMM hire | "Build the foundation in a week, not a quarter" | P-003 First PMM | Adapt template 1 |
-| Post-funding | "New hires need one story, not five" | P-001 Founder | examples/README.md#template-2 |
-| Website redesign | "What will the new site say?" | P-002 Head of Mktg | Custom |
-| AI content initiative | "Your AI tools need context" | P-001 Founder | examples/README.md#template-3 |
-| SE team changes | "Product knowledge shouldn't leave with people" | P-004 VP Product | Custom |
-| Competitive pressure | "Differentiation requires consistency" | P-001 Founder | Custom |
-| Founder stepping back | "Your team needs to pitch without you" | P-001 Founder | Custom |
+| Signal | Primary Message | Persona | Approach |
+|--------|----------------|---------|----------|
+| VP Sales / CRO new hire | "New CRO, same old CRM. You inherited a reporting tool." | P-001 VP Sales | Pain: forecast accuracy, rep visibility |
+| Sales Ops hire | "You were hired to optimize revenue ops. Your CRM is fighting you." | P-002 Sales Ops | Pain: admin burden, data quality |
+| Series B+ funding | "Scaling the sales team? Scale how they sell, not just headcount." | P-001 VP Sales | Outcome: consistent rep performance |
+| Salesforce complaints (G2, Reddit) | "Salesforce isn't built for teams your size. You know it." | P-002 Sales Ops | Competitive: mid-market positioning |
+| Sales team expansion (10+ reps) | "More reps, more variance. Your best reps' playbook should scale." | P-001 VP Sales | VP3: Learns from YOUR reps |
+| CTO hire at sales-led company | "Your new sales CRM should survive a technical evaluation." | P-003 CTO | Technical: explainability, architecture |
+| Missed earnings / forecast miss | "Forecast misses aren't a rep problem. They're a CRM problem." | P-001 VP Sales | VP2: Forecast from behavior |
+| Competitor CRM contract renewal | "Before you renew, ask: is your CRM helping your reps sell?" | P-002 Sales Ops | Category: reporting vs. selling tool |
 
 [Source: icp.md#buying-signals]
 
@@ -48,89 +48,107 @@ Bravenger's outbound motion is signal-driven. Do not send generic sequences. Eve
 
 ## Discovery Prep
 
-Before every discovery call, the agent should produce a prep doc with:
+Before every discovery call, the agent should produce a prep doc.
 
 ### Company Context
 - **Stage and size:** (from LinkedIn, Crunchbase, or provided data)
 - **ICP fit score:** Does this company match `icp.md`? Flag any anti-ICP signals.
+- **Current CRM:** Which CRM are they on? (Shapes the competitive angle.)
 - **Buying signal:** What triggered this conversation?
 - **Persona match:** Which persona file best describes the person on the call?
 
 ### Pain Hypotheses
-Based on the persona and signal, hypothesize which pains from `icp.md#pains` and the persona file are most likely active. Rank them by probability.
+Based on the persona and signal, hypothesize which pains from `icp.md#pains` and the persona file are most likely active. Rank by probability.
 
 ### Discovery Questions
-Produce 5-8 questions tailored to the persona and hypothesized pains:
 
-**For Technical Founders (P-001):**
-- "Where does your positioning live right now? Notion? A deck? Your head?"
-- "When you hired [marketing person], what did you hand them?"
-- "Are your AI tools producing content about the product? How accurate is it?"
-- "If you couldn't be on the next sales call, would the rep get the pitch right?"
-- "What happened after your last positioning exercise?"
+**For VP Sales / CRO (P-001):**
+- "How accurate was your last quarterly forecast? What drove the variance?"
+- "When a deal stalls, how does your team figure out why?"
+- "How do you know what your best reps do differently?"
+- "How much of your Monday pipeline review is about understanding what happened versus deciding what to do?"
+- "If you could change one thing about your CRM, what would it be?"
 
-**For Head of Marketing (P-002):**
-- "What was waiting for you when you started? What did you inherit?"
-- "How does your team decide what to say about the product?"
-- "When you produce content, where do you go for the source of truth?"
-- "Does your sales team use the materials you create?"
-- "How do you ensure consistency across everything you publish?"
+**For Sales Ops Manager (P-002):**
+- "How much of your week is spent on CRM administration versus strategic work?"
+- "What's your rep adoption rate for CRM data entry?"
+- "How do you build your forecast today? What's the manual piece?"
+- "What broke last time you tried to change something in the CRM?"
+- "If your CRM captured rep behavior automatically, what would you do with your time?"
 
-**For First PMM (P-003):**
-- "What's the state of positioning and messaging documentation?"
-- "How do you handle competitive intel right now?"
-- "What does the launch process look like today?"
-- "How long did it take you to understand the product and market when you joined?"
-- "Who maintains the messaging? Is it a system or a person?"
+**For CTO (P-003):**
+- "How does your current CRM's AI scoring work? Can you audit the model?"
+- "What's your data architecture look like for sales data? Any integration pain?"
+- "What are your security and compliance requirements for sales tools?"
+- "How do you evaluate AI vendors — what does 'explainable AI' mean to you?"
+- "What's the integration story with your existing tech stack?"
 
-**For VP Product (P-004):**
-- "How grounded are your persona definitions? Are they based on data?"
-- "How do you document use cases today?"
-- "When marketing publishes something about the product, is it accurate?"
-- "How do new PMs learn the product, market, and customer landscape?"
-- "What do you wish the sales and marketing teams understood about the product?"
-
-[Source: personas/persona-founder.md#pains] [Source: personas/persona-head-marketing.md#pains] [Source: personas/persona-first-pmm.md#pains] [Source: personas/persona-vp-product.md#pains]
+[Source: personas/persona-vp-sales.md#pains] [Source: personas/persona-sales-ops.md#pains] [Source: personas/persona-cto.md#pains]
 
 ---
 
 ## Objection Handling
 
-Use the objection responses from `messaging-positioning/messaging-framework.md#objection-handling`. These are the six core objections:
+Use the objection responses from `messaging-positioning/messaging-framework.md#objection-handling`. The six core objections:
 
-1. "We already did a positioning exercise."
-2. "We can build this ourselves."
-3. "This is just a fancy wiki."
-4. "$10-15K is expensive for a week of work."
-5. "We don't use AI for content yet."
-6. "How do we know it won't go stale?"
+1. "We're already on Salesforce."
+2. "AI scoring sounds like a black box."
+3. "Our reps won't adopt another tool."
+4. "We just need better reporting."
+5. "We're too small / not ready for AI."
+6. "How long until we see value?"
 
 ### Handling Rules
 - **Listen first.** Let them state the objection fully before responding.
-- **Acknowledge the concern.** It's usually legitimate, not a brush-off.
+- **Acknowledge the concern.** It's usually legitimate.
 - **Use the documented response.** Don't improvise — the messaging framework has tested responses.
 - **Add a proof point.** Every objection response includes one. Use it.
-- **Offer evidence.** "Want to see our Brain?" is the strongest response to most objections.
+- **Offer evidence.** "Want to see how a deal score breaks down?" is the strongest response to the black-box objection.
+
+---
+
+## Persona-Specific Language Guidance
+
+### When Talking to P-001 VP Sales / CRO
+- **Lead with:** Outcomes — forecast accuracy, rep performance, board confidence.
+- **Use:** Revenue language, quota language, pipeline metrics.
+- **Avoid:** Technical implementation details, data architecture, API specs.
+- **Tone:** Peer-to-peer. Confident. Results-oriented.
+- **Key phrase:** "Your CRM should help your team sell, not just report on what they sold."
+
+### When Talking to P-002 Sales Ops Manager
+- **Lead with:** Operational efficiency — less admin, better data, smarter workflows.
+- **Use:** Ops language, adoption metrics, workflow terms.
+- **Avoid:** Board-level outcomes (that's VP Sales territory), deep technical specs.
+- **Tone:** Empathetic to their pain. Practical. Outcome-oriented.
+- **Key phrase:** "You were hired to optimize the sales process. NovaCRM lets you actually do that."
+
+### When Talking to P-003 CTO
+- **Lead with:** Architecture, security, explainability, integration.
+- **Use:** Technical language, data model terms, compliance frameworks.
+- **Avoid:** Sales outcomes, quota language, coaching narratives.
+- **Tone:** Technical peer. Transparent. No hand-waving.
+- **Key phrase:** "Explainable AI. Customer-specific models. API-first. SOC 2 compliant."
 
 ---
 
 ## Proposal Language
 
-When writing proposal or deal language, pull from:
-- **Scope description:** UC-001 outcome section defines what they get.
-- **Pricing:** $10-15K, one-time, fixed price. [Source: icp.md#buying-process]
-- **Timeline:** One week.
-- **Deliverables:** Structured Company Brain including ICP, personas, use cases, positioning, messaging, governance, and discipline guidelines.
+When writing proposal or deal language:
+- **Scope:** Reference UC-001 Pipeline Forecasting, UC-002 Rep Coaching, UC-003 CRM Migration outcomes.
+- **Pricing:** Per-rep/month model. No hidden platform fees.
+- **Timeline:** Onboard in weeks. First deal scores in 30 days. Forecast impact in 90 days.
+- **Deliverables:** AI-native CRM with behavior-based scoring, coaching engine, parallel migration support.
 
 ### Language to Use
-- "A working Company Brain, built in one week."
-- "Structured knowledge base covering ICP, personas, use cases, positioning, messaging, and agent governance."
-- "Same architecture we use for our own Brain — proven, repeatable, durable."
+- "AI-native CRM that learns from your team's selling behavior."
+- "Behavior-based forecasting, rep coaching, and managed migration."
+- "Purpose-built for mid-market B2B sales teams."
 
 ### Language to Avoid
-- "Consulting engagement" (sounds like billable hours and scope creep)
-- "Strategy deliverable" (sounds like a slide deck)
-- "Assessment" or "audit" (sounds like it produces a report, not a system)
+- "Platform" (sounds enterprise and bloated)
+- "Solution" (generic, says nothing)
+- "Best-in-class" or "world-class" (unsubstantiated superlatives)
 
 ---
 
@@ -139,30 +157,14 @@ When writing proposal or deal language, pull from:
 When competitors come up in conversation, reference `messaging-positioning/core-positioning.md#competitive-landscape`.
 
 ### Key Talking Points
-- **vs. Positioning consultants:** "They deliver a deck. We deliver a system. Can their deck be read by AI agents?"
-- **vs. Messaging agencies:** "They produce static documents for one discipline. We produce a structured system for five."
-- **vs. DIY Notion/Wiki:** "A wiki has no schema, no governance, no agent readability. It becomes a graveyard."
-- **vs. AI writing tools:** "They optimize the output. We optimize the input. Without a Brain, their output is a well-formatted guess."
+- **vs. Salesforce:** "Salesforce is a reporting tool with AI features added. NovaCRM is an AI-native CRM. The AI isn't a layer — it's the product."
+- **vs. HubSpot CRM:** "HubSpot's AI is marketing-first. NovaCRM's AI is sales-first — built around rep behavior, not lead scoring."
+- **vs. Pipedrive:** "Pipedrive is a pipeline visualization tool. NovaCRM is a pipeline intelligence tool. Visualization shows you the board. Intelligence tells you which deals to play."
+- **vs. Close:** "Close optimizes the communication workflow. NovaCRM optimizes the selling strategy."
 
 ### Rules
 - Never disparage competitors by name. Describe the category gap.
-- Always bring it back to the system vs. document distinction.
-- Offer to show our Brain as proof. The architecture speaks for itself.
+- Always bring it back to the "reporting tool vs. selling tool" distinction.
+- Position by architecture, not features.
 
 [Source: messaging-positioning/core-positioning.md#competitive-landscape]
-
----
-
-## Anti-ICP Qualification
-
-Before investing time, check the prospect against `icp.md#anti-icp`. Disqualify fast:
-
-| Red Flag | Action |
-|----------|--------|
-| Pre-PMF | "You're still finding product-market fit. The Brain is for companies that have it and need to scale the message." |
-| Enterprise (500+) | "Our motion is built for 20-150 person companies. We'd be happy to refer you to [alternative]." |
-| Resists Markdown | "The Brain is a repo. If that doesn't fit how your team works, it won't deliver value." |
-| No AI intent | "The Brain's value multiplies with AI adoption. If AI isn't on your roadmap, the timing may not be right." |
-| Wants "just messaging" | "We build a system, not a messaging doc. If you need a one-pager, a positioning consultant may be a better fit." |
-
-[Source: icp.md#anti-icp]
