@@ -11,7 +11,7 @@ review_cadence: quarterly
 
 This file defines what NovaCRM is trying to achieve and when. Every agent reads this file to prioritize output — not just produce aligned content, but produce content that serves the current business objectives.
 
-Goals are reviewed quarterly. If a goal changes mid-quarter, update this file and log the change in `updates/changelog.md`.
+Goals are reviewed quarterly. If a goal changes mid-quarter, update this file.
 
 ---
 
@@ -21,10 +21,10 @@ Goals are reviewed quarterly. If a goal changes mid-quarter, update this file an
 
 | Goal | Target | Metric | Connected Brain Files |
 |------|--------|--------|----------------------|
-| **ARR growth** | $3M to $6M ARR by EOY | Net new ARR + expansion | `pricing.md`, `icp.md` |
+| **ARR growth** | $3M to $6M ARR by EOY | Net new ARR + expansion | `icp.md` |
 | **Customer count** | 80 to 200 paying customers | New logos | `icp.md`, `personas/` |
-| **Net revenue retention** | 120% NRR | Expansion + churn | `pricing.md`, `use-cases/` |
-| **Deal scoring accuracy** | 85%+ forecast accuracy for customers using AI scoring for 90+ days | Predicted vs. actual close rates, measured monthly | `use-cases/uc-001-forecast-accuracy.md` |
+| **Net revenue retention** | 120% NRR | Expansion + churn | `use-cases/` |
+| **Deal scoring accuracy** | 85%+ forecast accuracy for customers using AI scoring for 90+ days | Predicted vs. actual close rates, measured monthly | `use-cases/uc-001-pipeline-forecasting.md` |
 | **Mid-market awareness** | NovaCRM recognized in "HubSpot alternative for sales teams" and "AI CRM" conversations | Inbound leads, G2 reviews, community mentions, demo requests | `messaging-positioning/core-positioning.md` |
 | **Product milestones** | Ship coaching signals v2, Salesforce migration tool, and native Gong integration | Features in GA status | `use-cases/uc-002-rep-coaching.md` |
 
@@ -46,9 +46,9 @@ Goals are reviewed quarterly. If a goal changes mid-quarter, update this file an
 
 | Goal | Target | Why It Matters | Primary Persona |
 |------|--------|---------------|----------------|
-| **Signal-based outbound volume** | 25 personalized outbound emails/week | Every email tied to a buying signal from `icp.md#buying-signals`. New VP Sales hires, missed forecasts, RevOps hires, CRM renewal timing. No spray-and-pray. | VP Sales, RevOps Leader |
-| **POC-to-close conversion** | >50% of POCs result in paid contracts | The POC is the decision point. When sales teams see their own deal scores and the AI surfaces patterns they didn't know existed, the product sells itself. Better POC scoping = higher close rate. | VP Sales, Sales Manager |
-| **Average deal size growth** | $30K ACV average (up from $22K) | Move more customers from Team tier to Business tier during initial sale. Lead with coaching signals and forecasting — features that justify the higher tier. | VP Sales, RevOps Leader |
+| **Signal-based outbound volume** | 25 personalized outbound emails/week | Every email tied to a buying signal from `icp.md#buying-signals`. New VP Sales hires, missed forecasts, Sales Ops hires, CRM renewal timing. No spray-and-pray. | VP Sales, Sales Ops |
+| **POC-to-close conversion** | >50% of POCs result in paid contracts | The POC is the decision point. When sales teams see their own deal scores and the AI surfaces patterns they didn't know existed, the product sells itself. Better POC scoping = higher close rate. | VP Sales, Sales Ops |
+| **Average deal size growth** | $30K ACV average (up from $22K) | Move more customers from Team tier to Business tier during initial sale. Lead with coaching signals and forecasting — features that justify the higher tier. | VP Sales, Sales Ops |
 
 [Source: guidelines/sales-usage.md]
 
@@ -99,7 +99,7 @@ These are the 3 things that matter most right now. When an agent produces conten
 - Sales: outbound sequences should lead with the specific pain the signal reveals, not the product. "You missed forecast two quarters in a row" is a better opening than "NovaCRM is an AI-powered CRM."
 - PMM: competitive content is urgent. Battle cards against HubSpot Pro (data model limits, generic AI), Salesforce (overkill, implementation cost), and Pipedrive (limited AI, reporting gaps).
 
-**Connected:** `icp.md#pains`, `personas/persona-vp-sales.md`, `messaging-positioning/core-positioning.md#competitive-landscape`
+**Connected:** `icp.md#pains`, `personas/persona-vp-sales.md`, `personas/persona-sales-ops.md`, `messaging-positioning/core-positioning.md#competitive-landscape`
 
 ### Priority 2: Prove AI Deal Scoring Accuracy
 
@@ -110,7 +110,7 @@ These are the 3 things that matter most right now. When an agent produces conten
 - Sales: POC proposals must include a "proof checkpoint" at day 14 where the customer reviews deal score accuracy against their own judgment. If the scores are good, the deal closes itself. If they're not, we learn and improve the model.
 - CS: collect and document accuracy data from every customer. This is the raw material for marketing proof points. Ask every customer at 90 days: "How does your forecast accuracy compare to before NovaCRM?"
 
-**Connected:** `use-cases/uc-001-forecast-accuracy.md`, `brand-vision.md#core-values`, `messaging-positioning/core-positioning.md#differentiators`
+**Connected:** `use-cases/uc-001-pipeline-forecasting.md`, `brand-vision.md#core-values`, `messaging-positioning/core-positioning.md#differentiators`
 
 ### Priority 3: Ship Coaching Signals v2
 
@@ -121,7 +121,7 @@ These are the 3 things that matter most right now. When an agent produces conten
 - Marketing: when v2 ships, it's the biggest content moment of the quarter. Prepare launch content: blog post, demo video, "before and after" coaching comparison, and a customer story.
 - PMM: update competitive positioning. No competing CRM offers coaching signals trained on the customer's own rep behavior data. This is our most defensible differentiator.
 
-**Connected:** `use-cases/uc-002-rep-coaching.md`, `personas/persona-sales-manager.md`, `messaging-positioning/core-positioning.md#differentiators`
+**Connected:** `use-cases/uc-002-rep-coaching.md`, `personas/persona-vp-sales.md`, `messaging-positioning/core-positioning.md#differentiators`
 
 ---
 

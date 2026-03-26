@@ -94,9 +94,8 @@ These indicate a company is ready for NovaCRM now.
 | Role | Function | File |
 |------|----------|------|
 | VP Sales / CRO | Economic buyer, final sign-off, owns the forecast problem directly | `personas/persona-vp-sales.md` |
-| RevOps Leader | Champion, evaluates CRM stack, runs the implementation | `personas/persona-revops-leader.md` |
-| Frontline Sales Manager | Evaluates coaching and pipeline management capabilities | `personas/persona-sales-manager.md` |
-| Account Executive | End user, evaluates daily workflow impact | `personas/persona-ae.md` |
+| Sales Ops Manager | Champion, evaluates CRM stack, runs the implementation | `personas/persona-sales-ops.md` |
+| CTO | Technical evaluator, security and architecture sign-off | `personas/persona-cto.md` |
 
 ### Typical Process
 1. **Trigger.** One of the buying signals above. Usually a missed forecast, a new sales leader, or CRM contract renewal.

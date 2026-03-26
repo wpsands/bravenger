@@ -36,7 +36,7 @@ Every quarter, PMM should:
 3. Check strategic narratives against recent customer conversations. Are the pains still accurate?
 4. Review the value proposition hierarchy. Has persona priority shifted?
 5. Validate the "AI-native" category claim still differentiates as competitors adopt similar language.
-6. Log changes in `updates/changelog.md`.
+6. Log changes in a commit message with clear rationale.
 
 ### When to Update Positioning
 - Competitor launches an AI-native CRM or similar category claim
@@ -49,8 +49,7 @@ Every quarter, PMM should:
 1. Draft the change in the relevant file.
 2. Check downstream impact: Does this change affect messaging-framework.md? Agent guidelines? Sales materials?
 3. Update all affected files in the same commit.
-4. Log in changelog.
-5. Notify Sales, Marketing, and CS of the change and its implications.
+4. Notify Sales, Marketing, and CS of the change and its implications.
 
 ---
 
@@ -194,7 +193,7 @@ PMM owns drift detection. This is the discipline's most critical ongoing respons
 3. Flag divergences: "AI-powered" language, feature-leading copy, blurred persona targeting, stale competitive claims.
 4. Categorize: Is the content wrong, or is the Brain outdated?
 5. Fix the source. Update content or update the Brain.
-6. Log findings and fixes in changelog.
+6. Log findings and fixes in a commit with clear rationale.
 
 ### Drift Severity Scale
 

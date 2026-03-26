@@ -76,7 +76,7 @@ Every factual claim, positioning statement, persona insight, or use case referen
 | Discovery prep | Markdown, persona-specific questions + signals | personas/, icp.md, use-cases/ |
 | Outbound sequence | 3-5 emails, signal-based, 100-200 words each | icp.md#buying-signals, personas/, examples/ |
 | Objection response | Specific objection + response + proof point | messaging-framework.md#objection-handling |
-| Proposal language | Markdown, positioning + scope + outcomes | core-positioning.md, pricing.md, use-cases/ |
+| Proposal language | Markdown, positioning + scope + outcomes | core-positioning.md, use-cases/ |
 | Competitive response | Markdown, comparison table + narrative | core-positioning.md#competitive-landscape |
 | Demo talk track | Markdown, use-case-driven, persona-matched | use-cases/, personas/ |
 
@@ -105,7 +105,7 @@ Every factual claim, positioning statement, persona insight, or use case referen
 | Migration playbook | Markdown, from HubSpot/Pipedrive to NovaCRM | use-cases/#current-state sections |
 | Use case walkthrough | Markdown, trigger to outcome, per use case | use-cases/ (specific file) |
 | SE handoff doc | Markdown, use case status + gaps + gotchas | use-cases/, icp.md |
-| Health check | Markdown, CRM adoption + deal scoring accuracy + revenue impact | use-cases/index.md, metrics.md |
+| Health check | Markdown, CRM adoption + deal scoring accuracy + revenue impact | use-cases/index.md, goals.md |
 
 ---
 

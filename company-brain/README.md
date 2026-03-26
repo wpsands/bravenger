@@ -33,25 +33,22 @@ Every piece of content NovaCRM produces — marketing pages, sales emails, produ
 | `goals.md` | Company goals, GTM discipline targets, current quarter priorities |
 | `personas/index.md` | Persona registry, selection guide, relationship map |
 | `personas/persona-vp-sales.md` | The VP of Sales / CRO |
-| `personas/persona-revops-leader.md` | The RevOps Leader |
-| `personas/persona-sales-manager.md` | The Frontline Sales Manager |
-| `personas/persona-ae.md` | The Account Executive (end user) |
+| `personas/persona-sales-ops.md` | The Sales Ops Manager |
+| `personas/persona-cto.md` | The CTO / Technical Evaluator |
 
 ### Use Cases
 | File | Purpose |
 |------|---------|
 | `use-cases/index.md` | Use case registry, schema template, lifecycle rules |
-| `use-cases/uc-001-forecast-accuracy.md` | Improve forecast accuracy with AI deal scoring trained on rep behavior |
+| `use-cases/uc-001-pipeline-forecasting.md` | Improve forecast accuracy with AI deal scoring trained on rep behavior |
 | `use-cases/uc-002-rep-coaching.md` | Coach reps with AI insights trained on their own winning patterns |
-| `use-cases/uc-003-pipeline-hygiene.md` | Automatically surface stale deals, missing fields, and sandbagged stages |
-| `use-cases/uc-004-post-mortem.md` | Run data-driven lost deal post-mortems without manual analysis |
+| `use-cases/uc-003-crm-migration.md` | Migrate from HubSpot/Pipedrive/Salesforce to NovaCRM |
 
 ### Messaging & Positioning
 | File | Purpose |
 |------|---------|
 | `messaging-positioning/core-positioning.md` | Category, positioning statement, differentiators, narratives |
 | `messaging-positioning/messaging-framework.md` | Value props, objection handling, funnel-stage messaging |
-| `messaging-positioning/examples/README.md` | Approved heroes, outbound templates, social, conference |
 
 ### Governance & Guidelines
 | File | Purpose |
@@ -62,14 +59,6 @@ Every piece of content NovaCRM produces — marketing pages, sales emails, produ
 | `guidelines/product-marketing-usage.md` | Product Marketing agent guide |
 | `guidelines/product-usage.md` | Product agent guide |
 | `guidelines/customer-success-usage.md` | Customer Success agent guide |
-
-### Supporting
-| File | Purpose |
-|------|---------|
-| `pricing.md` | Packages, pricing, add-ons, proposal language, discount policy (internal) |
-| `metrics.md` | How to measure CRM adoption, deal scoring accuracy, and revenue impact |
-| `data-sources.md` | External data sources for ICP research |
-| `updates/changelog.md` | Version history and change rationale |
 
 ---
 
