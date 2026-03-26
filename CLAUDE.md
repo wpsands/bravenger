@@ -1,36 +1,42 @@
 You are working inside a Company Brain — a structured knowledge base that powers AI agents for Marketing, Sales, Product Marketing, Product, and Customer Success.
 
-## Before producing any output, follow this process:
+## Quick Start: Use Slash Commands
 
-1. Read `company-brain/AGENTS.md` for the mandatory read order and citation rules.
-2. Follow the 11-step read order defined in that file. Do not skip steps.
-3. Every factual claim must include a citation: `[Source: filename#section]`
-4. Never invent facts not in the Brain. If the Brain doesn't contain something, say so.
-5. Use the voice from `company-brain/brand-vision.md`.
-6. Never use forbidden language from `company-brain/brand-vision.md#words-we-avoid`.
+This project uses **split agents** — each discipline has its own scoped command with the shared foundation built in. Use these instead of trying to do everything from one prompt.
 
-## How to interpret requests:
+### Agent Commands (produce content)
+- `/marketing` — Marketing agent: blog posts, emails, social, ads, landing pages
+- `/sales` — Sales agent: outbound sequences, discovery prep, objections, proposals
+- `/pmm` — Product Marketing agent: positioning briefs, launches, competitive intel, enablement
+- `/product` — Product agent: feature briefs, persona reactions, adoption scoring, roadmap input
+- `/cs` — Customer Success agent: onboarding guides, migration playbooks, health checks
+- `/drift-check` — Compare any content against the Brain for violations
 
-When the user says **"marketing agent"** — read `company-brain/guidelines/marketing-usage.md` and produce output in the Marketing format.
+### Update Commands (evolve the Brain)
+- `/update-icp` — Update ideal customer profile (pains, signals, firmographics)
+- `/update-persona` — Update or create a persona
+- `/update-messaging` — Update positioning or messaging framework
+- `/update-brand` — Update brand vision, voice, approved/forbidden language
+- `/update-use-case` — Update or create a use case
+- `/update-goals` — Update company goals and quarterly priorities
 
-When the user says **"sales agent"** — read `company-brain/guidelines/sales-usage.md` and produce output in the Sales format.
+## If not using a slash command
 
-When the user says **"pmm agent"** — read `company-brain/guidelines/product-marketing-usage.md` and produce output in the PMM format.
+If you are asked to produce content or answer questions without a slash command:
 
-When the user says **"product agent"** — read `company-brain/guidelines/product-usage.md` and produce output in the Product format.
+1. Ask: "Which discipline? Marketing, Sales, PMM, Product, or CS?"
+2. Follow the mandatory read order in `company-brain/AGENTS.md`
+3. Cite every factual claim with `[Source: filename#section]`
+4. Never invent facts not in the Brain. Flag gaps instead.
+5. Use the voice from `company-brain/brand-vision.md`
+6. Never use forbidden language from `company-brain/brand-vision.md#words-we-avoid`
 
-When the user says **"cs agent"** — read `company-brain/guidelines/customer-success-usage.md` and produce output in the CS format.
-
-When the user says **"drift check"** — compare the provided content against the Brain's approved messaging, personas, and voice. Flag every violation with a citation.
-
-When the user doesn't specify a discipline, ask: "Which discipline? Marketing, Sales, PMM, Product, or CS?"
-
-## Key files:
+## Key files
 - `company-brain/README.md` — Brain overview and file map
 - `company-brain/AGENTS.md` — Governance rules and read order
 - `company-brain/icp.md` — Who we sell to
-- `company-brain/personas/index.md` — Persona registry with selection guide
-- `company-brain/use-cases/index.md` — Use case registry with schema
+- `company-brain/personas/index.md` — Persona registry
+- `company-brain/use-cases/index.md` — Use case registry
 - `company-brain/messaging-positioning/core-positioning.md` — Category, differentiators, narratives
 - `company-brain/messaging-positioning/messaging-framework.md` — VPs, objections, funnel messaging
 - `company-brain/brand-vision.md` — Voice, values, approved/forbidden language
