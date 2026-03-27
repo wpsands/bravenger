@@ -20,12 +20,41 @@ You are updating or creating a NovaCRM persona based on new information from the
 8. Show the user exactly what changed before writing
 9. Write the updated file(s)
 
+## Cascade Check
+
+After writing the updated persona file(s), perform the cascade check:
+
+1. **Identify what changed.** List each change (e.g., "Added new objection about Clari", "Changed company size in demographics", "Updated messaging dos/don'ts").
+
+2. **Scan for stale references.** For each change, read these files:
+   - `company-brain/personas/index.md` — overview text, selection guide, relationship map
+   - `company-brain/messaging-positioning/messaging-framework.md` — persona-specific messaging packages, message testing matrix, persona relevance notes on each VP
+   - `company-brain/messaging-positioning/core-positioning.md` — strategic narratives (one per persona), competitive "when to compete" table
+   - `company-brain/use-cases/uc-001-pipeline-forecasting.md` — body references to persona roles/pains
+   - `company-brain/use-cases/uc-002-rep-coaching.md` — same
+   - `company-brain/use-cases/uc-003-crm-migration.md` — same
+   - `company-brain/goals.md` — persona references in quarterly priorities and GTM goals
+   - `company-brain/icp.md` — decision-making unit table references persona files
+
+   If pains changed, also check `company-brain/messaging-positioning/messaging-framework.md#objection-handling` — objection responses reference persona pain points.
+
+3. **Report stale instances.** Show a table:
+   | File | Section | Stale Text | Should Be |
+
+4. **Ask the user:** "I found [N] stale references across [M] files. Would you like me to update them all, update selectively, or skip the cascade?"
+
+5. **Apply cascade updates.** For each approved file:
+   - Read the full file
+   - Update only the stale references, preserving all surrounding content and structure
+   - Update `last_updated` in frontmatter to today's date
+   - Show the diff before writing
+   - Write the file
+
 ## Important
 
 - Do NOT remove existing content unless the user explicitly asks to
 - Do NOT change section headers — they're cited as `[Source: personas/persona-xxx.md#section-name]`
-- If the change affects messaging or use cases, flag it: "This persona change may require updates to messaging-positioning/ files."
-- Always update the index.md if persona metadata changes
+- Always update index.md if persona metadata changes
 
 ## What to update
 

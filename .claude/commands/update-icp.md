@@ -14,11 +14,42 @@ You are updating the NovaCRM Ideal Customer Profile based on new information fro
 5. Show the user exactly what changed before writing
 6. Write the updated file
 
+## Cascade Check
+
+After writing the updated `icp.md`, perform the cascade check:
+
+1. **Identify what changed.** List each changed value explicitly (e.g., "Headcount changed from '100-500 employees' to '100-1000 employees'", "Added new pain P9").
+
+2. **Scan for stale references.** For each changed value, read the following files and search for the OLD value:
+   - `company-brain/brand-vision.md` — echoes firmographic numbers in category definition, words-we-use
+   - `company-brain/AGENTS.md` — echoes firmographics in Behavioral Guardrails (#5 "100-500 employees")
+   - `company-brain/messaging-positioning/core-positioning.md` — echoes firmographics in positioning statement, differentiators, competitive tables
+   - `company-brain/messaging-positioning/messaging-framework.md` — echoes firmographics in VP5, Objection 5
+   - `company-brain/personas/index.md` — echoes company size in overview
+   - `company-brain/personas/persona-vp-sales.md` — echoes company size in demographics, summary
+   - `company-brain/personas/persona-sales-ops.md` — same
+   - `company-brain/personas/persona-cto.md` — same
+   - `company-brain/use-cases/*.md` — may reference ICP firmographics or pain IDs
+   - `company-brain/goals.md` — references ICP in priority descriptions
+   - `company-brain/guidelines/marketing-usage.md` — echoes firmographic numbers
+   - `company-brain/README.md` — echoes firmographics in company overview
+
+3. **Report stale instances.** Show a table:
+   | File | Section | Stale Text | Should Be |
+
+4. **Ask the user:** "I found [N] stale references across [M] files. Would you like me to update them all, update selectively, or skip the cascade?"
+
+5. **Apply cascade updates.** For each file the user approves:
+   - Read the full file
+   - Replace only the stale values, preserving all surrounding content and structure
+   - Update `last_updated` in frontmatter to today's date
+   - Show the diff before writing
+   - Write the file
+
 ## Important
 
 - Do NOT remove existing content unless the user explicitly asks to
 - Do NOT change section headers — other files cite them
-- If the change affects personas or messaging, flag it: "This ICP change may require updates to personas/ and messaging-positioning/ files."
 - Always preserve the frontmatter schema (title, version, last_updated, scope, owner, status)
 
 ## What to update
