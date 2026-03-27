@@ -1,7 +1,7 @@
 ---
 title: "AI-Powered Rep Coaching"
 use_case_id: "UC-002"
-version: "1.0.0"
+version: "1.1.0"
 last_updated: "2026-03-24"
 status: "fully-supported"
 owner: "Brain Owner"

@@ -1,6 +1,6 @@
 ---
 title: Use Case Registry
-version: "1.0.0"
+version: "1.1.0"
 last_updated: "2026-03-24"
 owner: "Brain Owner"
 status: production
@@ -35,7 +35,7 @@ Every use case file must include this YAML frontmatter:
 ---
 title: "Use Case Title"
 use_case_id: "UC-XXX"
-version: "1.0.0"
+version: "1.1.0"
 last_updated: "YYYY-MM-DD"
 status: "fully-supported | partially-supported | manual-workaround | on-roadmap | not-supported"
 owner: "Brain Owner"

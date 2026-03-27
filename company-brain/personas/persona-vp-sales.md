@@ -3,7 +3,7 @@ title: "Persona — The VP Sales"
 persona_id: "P-001"
 role: "VP Sales / CRO"
 dmu_function: "Economic Buyer"
-version: "1.0.0"
+version: "1.1.0"
 last_updated: "2026-03-24"
 owner: "Brain Owner"
 status: production

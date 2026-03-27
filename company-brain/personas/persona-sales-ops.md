@@ -3,7 +3,7 @@ title: "Persona — The Sales Ops Leader"
 persona_id: "P-002"
 role: "Sales Ops / RevOps Manager"
 dmu_function: "Champion"
-version: "1.0.0"
+version: "1.1.0"
 last_updated: "2026-03-24"
 owner: "Brain Owner"
 status: production

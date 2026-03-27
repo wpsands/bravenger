@@ -1,6 +1,6 @@
 ---
 title: Customer Success Agent Usage Guide
-version: "1.0.0"
+version: "1.1.0"
 last_updated: "2026-03-24"
 scope: "Customer Success team agents and operators"
 owner: "Brain Owner"

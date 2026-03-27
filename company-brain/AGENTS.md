@@ -1,6 +1,6 @@
 ---
 title: Agent Operating Instructions
-version: "1.0.0"
+version: "1.1.0"
 last_updated: "2026-03-24"
 scope: "All AI agents consuming this Company Brain"
 owner: "Brain Owner"
