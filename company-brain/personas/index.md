@@ -1,19 +1,19 @@
 ---
 title: Persona Registry
 version: "1.1.0"
-last_updated: "2026-03-24"
+last_updated: "2026-04-02"
 owner: "Brain Owner"
 status: production
-persona_count: 3
+persona_count: 4
 ---
 
 # Persona Registry
 
 ## Overview
 
-NovaCRM has three primary personas. Each represents a real buyer, champion, or evaluator we encounter in the 100-500 employee B2B companies we sell to. These personas map to the Decision-Making Unit (DMU) for a CRM purchase: the economic buyer who signs the check, the champion who evaluates and implements, and the technical evaluator who gates security and integration.
+Natter has four primary personas. Each represents a real buyer, champion, or use case sponsor we encounter in the Fortune 500 and Global Enterprise organizations we sell to. These personas map to the Decision-Making Unit (DMU) for a conversational insights platform purchase: the economic buyer who owns workforce strategy, the champion who evaluates listening tools and builds the business case, and use case sponsors who drive adoption within their domain.
 
-These personas are used by every discipline — Marketing, Sales, Product, and CS — to tailor content, prioritize features, and structure conversations.
+These personas are used by every discipline — Marketing, Sales, Product Marketing, Product, and CS — to tailor content, prioritize features, and structure conversations.
 
 ---
 
@@ -21,9 +21,10 @@ These personas are used by every discipline — Marketing, Sales, Product, and C
 
 | ID | Name | Role | DMU Function | File |
 |----|------|------|-------------|------|
-| P-001 | The VP Sales | VP Sales / CRO | Economic Buyer | `persona-vp-sales.md` |
-| P-002 | The Sales Ops Leader | Sales Ops / RevOps Manager | Champion | `persona-sales-ops.md` |
-| P-003 | The CTO | CTO / VP Engineering | Technical Evaluator | `persona-cto.md` |
+| P-001 | The CHRO | CHRO / Chief People Officer | Economic Buyer | `persona-chro.md` |
+| P-002 | The People Analytics Leader | VP/Head of People Analytics | Champion | `persona-people-analytics.md` |
+| P-003 | The Transformation Leader | VP Strategy / Chief Transformation Officer | Use Case Sponsor | `persona-vp-strategy.md` |
+| P-004 | The Revenue Leader | Head of Revenue / VP Sales | Use Case Sponsor | `persona-vp-revenue.md` |
 
 ---
 
@@ -33,17 +34,20 @@ Use this to pick the right persona for your content or conversation.
 
 | Scenario | Primary Persona | Secondary |
 |----------|----------------|-----------|
-| Cold outbound to sales leader | P-001 VP Sales | — |
-| Inbound from RevOps evaluating CRMs | P-002 Sales Ops | P-001 for budget |
-| Security questionnaire or API review | P-003 CTO | P-002 for use cases |
-| Website hero messaging | P-001 VP Sales | P-002 Sales Ops |
-| Case study / proof point | P-001 VP Sales | P-002 Sales Ops |
-| Sales discovery call prep | P-001 VP Sales | P-003 CTO |
-| Product demo prep | P-002 Sales Ops | P-003 CTO |
-| Migration planning conversation | P-002 Sales Ops | P-003 CTO |
-| Board-level forecast discussion | P-001 VP Sales | — |
-| Integration / API documentation | P-003 CTO | P-002 Sales Ops |
-| Rep coaching pitch | P-001 VP Sales | P-002 Sales Ops |
+| Cold outbound to people leader | P-001 CHRO | — |
+| Inbound from analytics team evaluating listening tools | P-002 People Analytics | P-001 for budget |
+| Roundtable invitation for senior executives | P-001 CHRO | P-003 Transformation |
+| Website hero messaging | P-001 CHRO | P-002 People Analytics |
+| Case study / proof point | P-001 CHRO | P-002 People Analytics |
+| Sales discovery call prep | P-001 CHRO | P-002 People Analytics |
+| Session design conversation | P-002 People Analytics | P-001 CHRO |
+| Transformation / change management pitch | P-003 Transformation | P-001 CHRO |
+| Revenue / sales coaching pitch | P-004 Revenue | P-001 CHRO |
+| Board-level workforce insight discussion | P-001 CHRO | P-003 Transformation |
+| Data privacy / compliance review | P-002 People Analytics | P-001 CHRO |
+| Thought leadership research report | P-001 CHRO | P-002 People Analytics |
+| DEI initiative listening program | P-001 CHRO | P-002 People Analytics |
+| Post-M&A culture integration | P-003 Transformation | P-001 CHRO |
 
 ---
 
@@ -52,7 +56,7 @@ Use this to pick the right persona for your content or conversation.
 ```
                     +----------------------+
                     |  P-001               |
-                    |  VP Sales / CRO      |
+                    |  CHRO / CPO          |
                     |  (Economic Buyer)    |
                     +----------+-----------+
                                |
@@ -61,24 +65,28 @@ Use this to pick the right persona for your content or conversation.
                   v                         v
        +------------------+     +------------------+
        | P-002            |     | P-003            |
-       | Sales Ops /      |     | CTO /            |
-       | RevOps Manager   |     | VP Engineering   |
-       | (Champion)       |     | (Tech Evaluator) |
+       | VP/Head People   |     | VP Strategy /    |
+       | Analytics        |     | CTO (Transform)  |
+       | (Champion)       |     | (Use Case Sponsor)|
        +------------------+     +------------------+
-              |                         |
-              |                         |
-        Day-to-day CRM            Security, API,
-        admin, reporting,         integration, and
-        implementation            data architecture
-        and adoption              review
+              |
+              |
+              v
+       +------------------+
+       | P-004            |
+       | Head of Revenue  |
+       | / VP Sales       |
+       | (Use Case Sponsor)|
+       +------------------+
 ```
 
 ### Key Relationships
 
-- **VP Sales -> Sales Ops:** The VP Sales relies on Sales Ops to evaluate CRM tools, run the implementation, and maintain data quality. Budget authority sits with the VP Sales, but the recommendation comes from Sales Ops.
-- **VP Sales -> CTO:** The VP Sales needs the CTO to approve any tool that touches customer data, integrates with the tech stack, or requires engineering resources for implementation.
-- **Sales Ops -> CTO:** Sales Ops surfaces integration requirements and data mapping needs. The CTO evaluates whether the tool meets security, API, and architecture standards.
-- **Sales Ops -> VP Sales:** Sales Ops is the champion who builds the internal business case. If Sales Ops says no, the deal is dead before it reaches the VP Sales.
+- **CHRO -> People Analytics:** The CHRO relies on the People Analytics leader to evaluate listening tools, design the measurement strategy, and build the business case. Budget authority sits with the CHRO, but the recommendation and technical validation come from People Analytics.
+- **CHRO -> VP Strategy:** The CHRO partners with the VP Strategy on transformation programs, M&A integration, and strategic alignment initiatives. When Natter is used for transformation listening, both are involved in the buying decision.
+- **People Analytics -> CHRO:** People Analytics is the champion who evaluates the platform, runs the pilot session, and presents the insight report. If People Analytics says the data is robust and actionable, the CHRO moves to procurement.
+- **People Analytics -> VP Strategy:** People Analytics provides the data infrastructure and analytical rigor. The VP Strategy provides the use case and executive sponsorship for transformation-related sessions.
+- **Revenue Leader (P-004):** Typically a separate buying center within the same organization. The Revenue solution (sales coaching, customer voice) is sold independently or as an expansion after the People solution is established.
 
 ---
 
@@ -86,6 +94,6 @@ Use this to pick the right persona for your content or conversation.
 
 1. **Every persona must have a file.** No personas exist only in conversation or memory.
 2. **Each file follows a standard structure.** Demographics, goals/KPIs, pains, decision process, content preferences, messaging guidance, product/UI/UX hooks.
-3. **Personas are grounded in reality.** Every attribute should be traceable to actual customer conversations, not invented archetypes.
-4. **Update when the market teaches you something new.** If a discovery call reveals a pain we haven't documented, add it to the persona file.
+3. **Personas are grounded in reality.** Every attribute should be traceable to actual customer conversations, research reports, or roundtable data — not invented archetypes.
+4. **Update when the market teaches you something new.** If a roundtable or discovery conversation reveals a pain we haven't documented, add it to the persona file.
 5. **Use cases reference personas.** Every use case in `use-cases/` must specify which personas set it up, use it, and evaluate it.
