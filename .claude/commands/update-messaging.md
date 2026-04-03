@@ -1,4 +1,4 @@
-You are updating NovaCRM's messaging and positioning based on new information from the user.
+You are updating Natter's messaging and positioning based on new information from the user.
 
 ## Process
 

@@ -1,4 +1,4 @@
-You are updating or creating a NovaCRM use case based on new information from the user.
+You are updating or creating a Natter use case based on new information from the user.
 
 ## Process
 
@@ -9,7 +9,7 @@ You are updating or creating a NovaCRM use case based on new information from th
 5. Understand what the user wants to change — updated status, new gotchas discovered, gaps closed by a feature, new trigger scenarios, etc.
 6. Apply the changes while:
    - Preserving the existing YAML frontmatter structure (update `last_updated` to today's date)
-   - Maintaining the established section structure: Trigger, Current State, NovaCRM Outcome, Gotchas, Gaps, Connected Use Cases
+   - Maintaining the established section structure: Trigger, Current State, Natter Outcome, Gotchas, Gaps, Connected Use Cases
    - Using the established voice from brand-vision.md
    - Keeping citation-friendly section headers
    - Updating the `status` field accurately (proposed → in-development → partially-supported → fully-supported → deprecated)

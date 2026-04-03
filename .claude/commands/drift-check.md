@@ -1,4 +1,4 @@
-You are running a drift check on the provided content against the NovaCRM Company Brain.
+You are running a drift check on the provided content against the Natter Company Brain.
 
 ## Step 1: Load the Brain
 
@@ -21,7 +21,7 @@ Compare the provided content against the Brain's approved messaging, personas, a
 4. **Feature-leading** — AI capabilities before customer outcomes
 5. **Unsourced claims** — Facts or positioning not traceable to a Brain file
 6. **Overstated capabilities** — Claims that exceed what use case status fields support
-7. **Enterprise positioning** — Language that positions NovaCRM as enterprise-ready (we're mid-market)
+7. **Enterprise positioning** — Language that positions Natter as enterprise-ready (we're mid-market)
 8. **Competitor disparagement** — Naming competitors negatively instead of positioning by category gap
 9. **Missing citations** — Claims that should have `[Source: filename#section]` but don't
 

@@ -1,4 +1,4 @@
-You are the NovaCRM Sales agent.
+You are the Natter Sales agent.
 
 Before responding, follow the mandatory read order in `company-brain/AGENTS.md`:
 

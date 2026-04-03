@@ -1,17 +1,17 @@
 ---
 title: Use Case Registry
 version: "1.1.0"
-last_updated: "2026-03-24"
+last_updated: "2026-04-02"
 owner: "Brain Owner"
 status: production
-use_case_count: 3
+use_case_count: 5
 ---
 
 # Use Case Registry
 
 ## Overview
 
-Use cases are foundational to the NovaCRM Company Brain. They are not a CS artifact or a product appendix — they feed every discipline. A use case shapes marketing content, sales discovery questions, product roadmap priorities, and CS onboarding paths simultaneously.
+Use cases are foundational to the Natter Company Brain. They are not a CS artifact or a product appendix — they feed every discipline. A use case shapes marketing content, sales discovery questions, product roadmap priorities, and CS onboarding paths simultaneously.
 
 Every use case follows the schema below. No exceptions.
 
@@ -21,9 +21,11 @@ Every use case follows the schema below. No exceptions.
 
 | ID | Title | Status | Primary Persona |
 |----|-------|--------|----------------|
-| UC-001 | Pipeline Forecasting with AI Deal Scoring | fully-supported | P-001 VP Sales |
-| UC-002 | AI-Powered Rep Coaching | fully-supported | P-001 VP Sales |
-| UC-003 | CRM Migration to NovaCRM | partially-supported | P-002 Sales Ops |
+| UC-001 | Employee Listening & Engagement | fully-supported | P-001 CHRO |
+| UC-002 | Thought Leadership & Executive Roundtables | fully-supported | P-001 CHRO |
+| UC-003 | GenAI Change Management & Workforce Transformation | fully-supported | P-003 VP Strategy |
+| UC-004 | DEI & Inclusive Voice Capture | fully-supported | P-001 CHRO |
+| UC-005 | Product Research at Scale | partially-supported | P-002 People Analytics |
 
 ---
 
@@ -47,7 +49,7 @@ personas:
   evaluated_by: "persona-id"   # Who judges whether it's working
 
 icp_pain: "Reference to icp.md pain ID (e.g., P1, P2)"
-current_alternative: "What they do today without NovaCRM"
+current_alternative: "What they do today without Natter"
 tools_involved:
   - "Tool or system involved"
 proof: "Evidence this use case works"
@@ -62,10 +64,10 @@ connected_use_cases:
 After frontmatter, every use case file must include these sections:
 
 1. **Trigger** — What event or condition causes someone to initiate this use case.
-2. **Current State** — What the world looks like before NovaCRM. The pain in action.
+2. **Current State** — What the world looks like before Natter. The pain in action.
 3. **Outcome** — What the world looks like after. Specific, measurable, observable.
 4. **Gotchas** — Real-world complications, edge cases, things that can go wrong.
-5. **Gaps** — What NovaCRM cannot do yet for this use case. Honest assessment.
+5. **Gaps** — What Natter cannot do yet for this use case. Honest assessment.
 6. **Connected Use Cases** — How this use case relates to others in the registry.
 
 ### What NOT to Include
@@ -80,10 +82,10 @@ After frontmatter, every use case file must include these sections:
 
 | Status | Meaning |
 |--------|---------|
-| **fully-supported** | NovaCRM delivers this use case completely within the product. |
-| **partially-supported** | NovaCRM enables this use case but some elements require manual effort or external tools. |
-| **manual-workaround** | Achievable but requires significant manual work outside NovaCRM. |
-| **on-roadmap** | Planned for a future version of the product. |
+| **fully-supported** | Natter delivers this use case completely within the platform. |
+| **partially-supported** | Natter enables this use case but some elements require manual effort or external tools. |
+| **manual-workaround** | Achievable but requires significant manual work outside Natter. |
+| **on-roadmap** | Planned for a future version of the platform. |
 | **not-supported** | Not currently possible. Documented for transparency and roadmap input. |
 
 ---

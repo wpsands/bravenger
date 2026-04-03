@@ -1,7 +1,7 @@
 ---
 title: Brand Vision
 version: "1.1.0"
-last_updated: "2026-03-24"
+last_updated: "2026-04-02"
 owner: "Brain Owner"
 status: production
 ---
@@ -10,59 +10,61 @@ status: production
 
 ## Mission
 
-Help mid-market sales teams close more deals with AI that learns how they sell — not how the industry average sells.
+Give every employee a voice — and give every leader the insight to act on it. Natter runs thousands of simultaneous peer-to-peer conversations and uses AI to instantly surface decision-ready insights, replacing shallow surveys with deep human connection at scale.
 
 ## Vision
 
-Every sales team has an AI copilot trained on their own winning patterns. Forecasts stop being guesses. Coaching stops being generic. Deal intelligence stops being firmographic data dressed up as insight. NovaCRM is the company that made personalized AI deal scoring the obvious default for mid-market B2B sales teams.
+Every organization hears what its people really think — not through surveys they ignore, but through real conversations they value. Natter is the company that made it possible to run the equivalent of a 10,000-person focus group in under an hour, combining the depth of qualitative research with the scale of a survey. We proved that when you give people a safe space to talk to each other, the insights that emerge are 100x richer than anything a Likert scale can capture.
 
 ---
 
 ## Category Definition
 
-**AI-powered CRM for mid-market B2B sales.**
+**Conversational Insights Platform — a new category that replaces traditional employee listening (surveys, interviews, focus groups).**
 
-NovaCRM is a CRM built from the ground up around an AI deal scoring engine that learns from individual rep behavior patterns. It watches how each rep runs discovery, how they multi-thread accounts, what their follow-up cadence looks like on deals they win versus deals they lose — and it turns those patterns into deal scores, coaching signals, and forecasts that reflect how your specific team sells.
+Natter is a conversation intelligence engine that matches participants into 1:1 peer-to-peer video conversations using intelligent algorithms, then uses AI to transcribe, analyze themes, detect sentiment, and deliver decision-ready insights — all within an hour. It runs 1 to 20,000+ participants in a single session, in three formats: live sessions, on-demand, and an always-on AI agent ("Natalie AI").
 
-We are not an enterprise CRM with AI features bolted onto a 20-year-old data model. We are not a free-tier CRM hoping you outgrow us and upgrade. We are the CRM for sales teams that have outgrown HubSpot free/starter but are not ready for Salesforce enterprise — and who believe their own selling data should train their own AI, not get averaged into a generic model.
+We are not a survey platform with an AI layer bolted on. We are not a focus group tool limited to 8 people. We are not a chatbot pretending to listen. We are the only platform that orchestrates thousands of simultaneous peer-to-peer video conversations and delivers AI-summarized insights at the speed of a survey with the depth of a qualitative study.
+
+A 7-minute Natter conversation yields 1,000+ words of rich qualitative data versus approximately 10 words from a typical survey answer. That is 100x more insight per participant — and the insight comes from what people actually say to each other when given a safe space to talk, not what they click on a form.
 
 ---
 
 ## Core Values
 
-### 1. Data Over Opinions
-Every recommendation NovaCRM makes is traceable to data — rep activity data, deal progression data, win/loss patterns. When a deal score changes, you can see why. When the AI suggests a next step, you can see the pattern it learned from. No black boxes. No "trust the algorithm." Show the work.
+### 1. Human-First Technology
+Technology should amplify human connection, not replace it. Every feature Natter builds exists to make a human conversation better, safer, or more actionable. The AI serves the conversation — the conversation does not serve the AI. When we design a product decision, we ask: does this make the human experience richer or does it just make the algorithm faster?
 
-### 2. Reps First
-We build for the people who carry the quota. Every product decision starts with the question: does this make the rep's day easier or harder? If a feature adds friction to the rep's workflow — even if it makes the VP's dashboard prettier — it does not ship until we solve the friction.
+### 2. Every Voice Matters
+Natter exists because traditional listening tools systematically exclude voices. Surveys miss the quiet majority. Town halls amplify the loudest voices. Focus groups are limited to 8-12 people. We believe the voice of the silent majority is just as important as that of the vocal minority. Our product is engineered to give every employee — frontline, remote, multilingual, non-desk — a genuine opportunity to be heard.
 
-### 3. Earn Trust Through Results
-Sales leaders have heard every AI pitch. "AI-powered forecasting." "Predictive analytics." "Revenue intelligence." Most of it underwhelms. We don't ask for trust up front. We earn it by showing results on their actual data in the first 30 days. Skepticism is healthy. Our job is to give them proof, not promises.
+### 3. Evidence Over Assertion
+Every claim we make is traceable to real data — real conversations, real research, real customer outcomes. When we say 58 CHROs generated 700+ collaborative ideas in a single session, that happened. When we say fewer than half of leaders rate their current employee listening as effective, we cite the study. No vaporware. No hypothetical outcomes. Show the evidence.
 
-### 4. Your Data Trains Your AI
-Generic AI models trained on aggregated industry data produce generic insights. NovaCRM's scoring engine trains on each customer's own CRM data — their reps, their deals, their win patterns. The AI gets smarter as the team sells more. It is personalized by design, not by marketing claim.
+### 4. Trust Through Transparency
+Trust is the precondition for honest conversation. We earn it through action, not promises. ISO 27001 certified. PII redacted at the point of transcription. True anonymity, not just confidentiality. When employees see that their input led to visible change within weeks — not months — participation and honesty compound. The insight-to-action loop is our most important product feature.
 
-### 5. Forecast Like You Mean It
-Forecasting is the most important and most broken process in B2B sales. We exist to fix it. Every feature, every data point, every AI model ultimately serves one outcome: the forecast reflects reality. When a CRO can trust the number, everything downstream gets better — hiring, investment, board conversations, rep compensation.
+### 5. Depth at Scale
+The false choice between depth and scale defined employee listening for decades: surveys gave you scale without depth, interviews gave you depth without scale. Natter eliminates this tradeoff. We run 20,000 simultaneous peer-to-peer conversations and deliver AI-summarized themes, sentiment, and priorities in under an hour. This is a genuine technical and operational moat, not a marketing claim.
 
 ---
 
 ## Voice Attributes
 
-### Confident
-We know our product works because we measure it. We state what the AI does, how it learns, and what results customers see. We don't hedge with "may help improve" or "can potentially enhance." We say what it does and back it up with specifics.
+### Confident, Not Arrogant
+We have done the research. We have the data. We have run sessions with 142 senior leaders, 58 CHROs, and thousands of employees across 34+ countries. We state what Natter does and back it up with specifics. We do not hedge with "may help improve" or "can potentially enhance." We say what it does and cite the evidence.
 
-### Practical
-Every piece of content should leave the reader knowing what changes for them. No abstraction without application. No AI buzzwords without an explanation of what the AI actually does. No claim without a way to verify it in their own data.
+### Human-First
+We believe technology should amplify human connection, not replace it. Every feature exists to make a human conversation better. Our language reflects this: we talk about people, voices, conversations, and connection — not data points, inputs, or engagement metrics.
 
-### Data-Driven
-We lead with numbers, patterns, and evidence. "Reps who multi-thread deals close at 2.3x the rate" is better than "multi-threading is important." When we reference AI capabilities, we describe the data inputs, the learning mechanism, and the output — not magic.
+### Evidence-Led
+We lead with numbers, research, and real customer outcomes. "58 CHROs generated 700+ collaborative ideas in a 90-minute Natter session" is better than "Natter drives collaboration." When we reference AI capabilities, we describe the data inputs, the analysis, and the output — not magic.
 
-### Anti-Hype
-Sales leaders are the most skeptical buyers in B2B. They have been burned by "AI-powered" tools that turned out to be hardcoded rules with a chatbot on top. We acknowledge this skepticism directly. We never oversell. We describe what the product does today, not what it might do someday. Credibility is our most valuable asset with this audience.
+### Inclusive by Design
+Our product exists to give every employee a voice. Our language reflects that commitment. We write for global audiences, avoid jargon that excludes, and never assume that the reader sits in an office, speaks English as a first language, or has used enterprise software before.
 
-### Empathetic to the Sales Grind
-We understand that sales is hard, quotas are real, and nobody wants another tool that adds work. Our tone acknowledges the pressure sales teams are under without being patronizing about it. We talk like people who have sat in pipeline reviews, not like people who read about them in a blog post.
+### Direct
+Enterprise does not mean boring. Say what you mean. Avoid consultant-speak. A sentence that could appear in a McKinsey deck without anyone noticing is a sentence that needs rewriting. We respect our audience enough to be clear.
 
 ---
 
@@ -70,12 +72,13 @@ We understand that sales is hard, quotas are real, and nobody wants another tool
 
 | Context | Tone | Example |
 |---------|------|---------|
-| **Website hero** | Direct, outcome-focused, specific | "Your CRM tracks activities. NovaCRM learns which activities actually close deals — for each rep on your team." |
-| **Sales outbound** | Empathetic, signal-driven, no-BS | "You just hired a new VP Sales. If the first forecast call is based on gut feel and spreadsheet math, you've got a problem NovaCRM solves in 30 days." |
-| **Product documentation** | Clear, structured, data-model-aware | "Deal scores update daily based on rep activity patterns from the past 90 days. Scores range from 0-100. Factors include email cadence, meeting frequency, stakeholder breadth, and stage velocity." |
-| **Conference talk** | Story-driven, honest, show-the-data | "I'll show you what our AI actually learns from one sales team's data. No slides about 'the future of AI in sales.' Just real patterns from real deals." |
-| **CS onboarding** | Supportive, methodical, milestone-driven | "Let's connect your CRM data and get your first deal scores in week one. We'll review them together so you understand exactly what the model is learning." |
-| **LinkedIn** | Opinionated, concise, grounded in reality | "Your forecast is wrong because your CRM doesn't know how your best reps sell. It just counts their activities. There's a difference." |
+| **Website hero** | Direct, outcome-focused, specific | "Not another survey. A conversation intelligence engine that turns 20,000 employee voices into decision-ready insights in under an hour." |
+| **Sales outbound** | Empathetic, signal-driven, no-BS | "Your last engagement survey had a 34% response rate and took 8 weeks to analyze. What if you could hear from every employee — in their own words — by Friday?" |
+| **Product documentation** | Clear, structured, capability-aware | "Sessions support 1 to 20,000+ participants. Intelligent matching pairs participants into 1:1 video conversations. AI transcription, theme detection, and sentiment analysis deliver a complete insight report within 60 minutes of session close." |
+| **Conference talk** | Story-driven, honest, show-the-data | "We ran a session with 142 senior workforce leaders. In 90 minutes, they generated more qualitative insight than most organizations get from a year of surveys. Let me show you what emerged." |
+| **CS onboarding** | Supportive, methodical, milestone-driven | "Let's design your first session together. We'll define the conversation prompts, configure matching rules, and run a pilot with 50 participants so you can see the insight report before scaling to the full organization." |
+| **LinkedIn** | Opinionated, concise, grounded in reality | "A 7-minute conversation yields 1,000+ words. A survey answer yields 10. The math is not complicated. The question is why we spent 20 years pretending surveys were enough." |
+| **Thought leadership report** | Research-driven, authoritative, balanced | "Across 240 interviews and 420 peer-to-peer conversations, we captured 29,810 qualitative statements — 492,184 words transcribed, 96 themes generated. Here is what the data reveals." |
 
 ---
 
@@ -83,35 +86,39 @@ We understand that sales is hard, quotas are real, and nobody wants another tool
 
 | Word/Phrase | Why |
 |-------------|-----|
-| Deal scoring | Our core AI capability. Specific and measurable. |
-| Rep behavior patterns | What the AI learns from. Distinct from firmographic data or generic signals. |
-| Personalized AI / learns from your data | The key differentiator. The AI is trained on each customer's own sales data. |
-| Forecast accuracy | The ultimate outcome we deliver. The metric that matters to CROs. |
-| Pipeline hygiene | A specific, actionable problem we solve. Stale deals, missing data, sandbagged stages. |
-| Deal intelligence | The insights the AI surfaces — next steps, risk signals, coaching opportunities. |
-| Win patterns | What the AI identifies — the specific behaviors that correlate with closed-won deals for each rep. |
-| Mid-market | Our audience. 100-500 employee B2B companies. |
-| Outgrowing HubSpot | Our positioning wedge. The moment a team needs more than a free/starter CRM. |
-| Skeptical / skepticism | We acknowledge it. Sales leaders are skeptical of AI claims. We name it and address it. |
+| Conversation intelligence | Our core capability. Specific and measurable. Defines the category. |
+| Employee voice | What we capture. Positions the employee as the subject, not the object. |
+| Conversational insights | The output we deliver. More specific than "analytics" or "data." |
+| Peer-to-peer | The conversation format. Distinguishes from top-down town halls or 1:1 interviews with a moderator. |
+| Psychologically safe | The design principle. Anonymity, PII redaction, and 1:1 matching create the conditions for honest conversation. |
+| Decision-ready | The speed and format of our insights. Leaders can act on them immediately, not after months of analysis. |
+| Action-ready | Reinforces that insights are designed to drive change, not sit in a report. |
+| Always-on listening | The continuous capability via Natalie AI agent. Listening is not an annual event. |
+| Inclusive by design | Our product is engineered to hear every voice, not just the loudest. |
+| Scale meets depth | Our core positioning. The false choice between surveys and focus groups is over. |
+| Insight-to-action loop | The compressed cycle from conversation to visible organizational change. |
 
 ## Words We Avoid
 
 | Word/Phrase | Why | Use Instead |
 |-------------|-----|-------------|
-| Revolutionary / game-changing | Hype. Sales leaders tune it out immediately. They've heard it from every vendor. | Describe the specific capability and the measurable result. |
-| Magic / automagically | Implies we hide complexity. Sales leaders distrust hidden complexity as much as engineers do. | Describe what the AI learns and how it produces the output. |
-| 10x your pipeline / 5x your revenue | Unverifiable multiplier claims. The fastest way to lose credibility with a CRO. | State the specific improvement and the conditions under which it was measured. |
-| Predictive analytics | Overused to the point of meaninglessness. Every CRM claims predictive analytics. | AI deal scoring trained on your team's data. Be specific. |
-| Revenue intelligence | Category claimed by Gong, Clari, and others. We are a CRM, not a revenue intelligence platform. | AI-powered CRM, deal intelligence, deal scoring. |
-| Just works | Nothing just works. CRM implementations are hard. Be honest about what's required. | Describe the setup, the data requirements, and what happens after. |
-| Seamless integration | Nothing is seamless. There are always edges. | Describe the actual integration: what connects, how long it takes, what's required. |
-| Best-in-class | Unverifiable. | State the specific metric or capability. |
-| Leverage | Corporate jargon. Sales teams don't talk like this. | Use. |
-| Empower | Vague. Soft. | Equip, give, enable, show. |
-| Unlock | Implies something was locked. Dramatic. | Enable, surface, reveal, show. |
-| Solution | Vague. Means nothing. | CRM, platform, deal scoring engine. Say what it actually is. |
-| End-to-end | Overused. Describe the actual scope. | Describe what NovaCRM covers: activity capture, deal scoring, forecasting, coaching signals. |
+| Survey replacement | We complement existing listening strategies, not replace them. Framing as replacement creates unnecessary resistance from teams invested in survey platforms. | Describe how Natter adds conversational depth to existing listening programs. |
+| Chatbot | Natter facilitates real human conversations. Calling any part of our product a chatbot undermines the human-first positioning. | AI agent, conversational AI, Natalie AI. |
+| AI-first | Every enterprise vendor claims to be AI-first. It means nothing. We are human-first — the AI serves the conversation. | Human-first. Describe what the AI actually does. |
+| Disrupt / disruption | Overused. Signals that marketing wrote the copy, not someone who understands the space. | Describe the specific improvement for the specific audience. |
+| Revolutionize | Same problem. Hyperbolic. Erodes credibility with enterprise buyers. | State the capability and the evidence. |
+| Game-changer | Sales leaders and CHROs tune this out immediately. They have heard it from every vendor. | Describe the specific outcome and cite the proof point. |
 | Synergy | No. | No. |
-| AI-first | Every B2B SaaS company claims to be AI-first now. It means nothing. | Describe what the AI actually does and how it learns. |
-| Disrupt | We are not disrupting the CRM market. We are building a better CRM for a specific segment. | Describe the specific improvement for the specific audience. |
-| Simple / easy | Dismissive of real implementation complexity. CRM migrations are never simple. | Straightforward, well-documented, guided. |
+| Leverage (as a verb) | Corporate jargon. People do not talk like this. | Use. |
+| Circle back | Filler language that signals a lack of commitment. | Follow up, revisit, return to. |
+| Touch base | Vague. Says nothing about what will actually happen. | Meet, discuss, review. |
+| Unpack | Overused in consulting and HR. | Examine, explore, analyze. |
+| Deep dive (overused) | Every platform promises a "deep dive." The phrase has lost all meaning. | Detailed analysis, comprehensive review, thorough examination. |
+| "Not just another survey" | Our tagline is "Not another survey" — note the difference. "Not just another" implies we are still a survey. "Not another" declares we are something entirely different. | "Not another survey." |
+| Simple / easy | Dismissive of real implementation complexity. Enterprise deployments involve stakeholders, change management, and organizational trust. | Straightforward, well-supported, guided. |
+| Seamless | Nothing is seamless. There are always edges. Enterprise buyers know this and distrust vendors who claim otherwise. | Describe the actual integration: what connects, how long it takes, what support is provided. |
+| Best-in-class | Unverifiable. | State the specific metric or capability. |
+| End-to-end | Overused. Describe the actual scope. | Describe what Natter covers: conversation orchestration, AI analysis, insight delivery, action tracking. |
+| Empower | Vague. Soft. | Give voice to, enable, equip, surface. |
+| Unlock | Implies something was locked. Dramatic. | Surface, reveal, capture, deliver. |
+| Solution | Vague. Means nothing. | Platform, conversation intelligence engine. Say what it actually is. |

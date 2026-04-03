@@ -2,22 +2,22 @@
 
 A Company Brain is a structured knowledge base that powers AI agents across Marketing, Sales, Product Marketing, Product, and Customer Success. Every agent reads from the same source of truth. Every output is cited, consistent, and aligned.
 
-This repo is a working template. Fork it, replace the example company with yours, and your AI agents have context from day one.
+This repo is populated with **Natter** (trynatter.com), a conversation intelligence platform for employee listening and workforce insights.
 
 ## What's inside
 
 ```
-company-brain/          ← Primary example (NovaCRM, a fictional AI-powered CRM)
+company-brain/          ← Natter Company Brain
 ├── README.md           Brain overview and file map
 ├── AGENTS.md           Governance rules and 11-step read order
 ├── brand-vision.md     Mission, voice, values, words we use/avoid
 ├── icp.md              Ideal customer profile
 ├── goals.md            Company and quarterly goals
-├── personas/           3 personas (VP Sales, Sales Ops, CTO)
-├── use-cases/          3 use cases (forecasting, coaching, migration)
+├── personas/           4 personas (CHRO, People Analytics, VP Strategy, Revenue Leader)
+├── use-cases/          5 use cases (employee listening, roundtables, GenAI change mgmt, DEI, product research)
 ├── messaging-positioning/
 │   ├── core-positioning.md     Category, differentiators, narratives
-│   └── messaging-framework.md  Value props, objections, funnel messaging
+│   └── messaging-framework.md  Value props, objections, funnel messaging, sales methodology
 └── guidelines/         5 discipline-specific agent instructions
 
 prompts/                ← Pre-configured agent system prompts (one per discipline)
@@ -39,18 +39,19 @@ An 11-step read order, citation requirements, discipline-specific guidelines, an
 
 ## Quick start
 
-1. **Fork this repo**
-2. **Replace `company-brain/`** with your own company data. Keep the file structure and YAML frontmatter schema.
-3. **Run the linter** to validate your Brain:
+1. **Clone or fork this repo**
+2. **Run the linter** to validate the Brain:
    ```bash
    npm install
    npm run lint
    ```
-4. **Use the agents** in Claude Code:
+3. **Use the agents** in Claude Code:
    ```
-   marketing agent — write a blog post targeting [persona] about [use case]
-   sales agent — prep me for a discovery call with [prospect type]
-   pmm agent — write a competitive response to [competitor]
+   /marketing — write a blog post targeting [persona] about [use case]
+   /sales — prep me for a discovery call with [prospect type]
+   /pmm — write a competitive response to [competitor]
+   /cs — write an onboarding guide for [use case]
+   /product — write a feature brief for [capability]
    ```
 
 See `prompts/README.md` for the full list of agent commands and examples.
@@ -74,7 +75,7 @@ Every Brain file uses YAML frontmatter:
 ---
 title: "File title"
 version: "1.0.0"
-last_updated: "2026-03-24"
+last_updated: "2026-04-02"
 owner: "Brain Owner"
 status: production
 ---
@@ -82,9 +83,9 @@ status: production
 
 Personas add `persona_id` and `dmu_function`. Use cases add `use_case_id`, `status`, `personas`, and `connected_use_cases`. See `scripts/schemas/` for the full JSON schemas.
 
-## Example included
+## Company: Natter
 
-**NovaCRM** (`company-brain/`) — A fictional AI-powered CRM for mid-market sales teams. Series A, 45 employees. 3 personas, 3 use cases, full messaging framework, all 5 discipline guidelines. Replace with your own company data.
+**Natter** (`company-brain/`) — A conversation intelligence engine that runs thousands of simultaneous peer-to-peer video conversations and uses AI to surface decision-ready insights. London & New York, remote-first. 4 personas, 5 use cases, full messaging framework, all 5 discipline guidelines. Trusted by 150+ enterprises including Legal & General, Accenture, SAP, Deloitte, PwC, Verizon, ServiceNow, and more.
 
 ## License
 
