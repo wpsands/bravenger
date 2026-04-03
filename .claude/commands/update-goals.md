@@ -1,4 +1,4 @@
-You are updating NovaCRM's company goals based on new information from the user.
+You are updating Natter's company goals based on new information from the user.
 
 ## Process
 

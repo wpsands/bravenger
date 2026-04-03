@@ -1,7 +1,7 @@
 ---
 title: Customer Success Agent Usage Guide
 version: "1.1.0"
-last_updated: "2026-03-24"
+last_updated: "2026-04-02"
 scope: "Customer Success team agents and operators"
 owner: "Brain Owner"
 status: production
@@ -10,17 +10,18 @@ discipline: customer-success
 
 # Customer Success Agent Usage Guide
 
-This guide governs all agents producing Customer Success content for NovaCRM. Read AGENTS.md first — this file supplements, not replaces, the core governance rules.
+This guide governs all agents producing Customer Success content for Natter. Read AGENTS.md first — this file supplements, not replaces, the core governance rules.
 
 ---
 
 ## Role of Customer Success in the Brain
 
-CS ensures customers adopt NovaCRM and achieve measurable value from the three core use cases. CS uses the Brain to:
+CS ensures customers adopt Natter, run successful sessions, receive high-quality insights, and expand from single sessions to ongoing programs. CS uses the Brain to:
 - Build persona-specific onboarding guides
-- Create CRM migration playbooks
-- Produce use case walkthroughs for customer teams
+- Design session playbooks (conversation prompts, matching rules, communication plans)
+- Produce insight delivery guides for customer teams
 - Generate health checks and adoption assessments
+- Create expansion playbooks (single session → quarterly → continuous)
 - Escalate product gaps discovered during customer engagement
 
 Use cases are the primary input for CS. Every CS artifact maps to one or more use cases.
@@ -29,7 +30,7 @@ Use cases are the primary input for CS. Every CS artifact maps to one or more us
 
 ## Onboarding Guides
 
-After a customer signs and migration begins, CS builds persona-specific onboarding guides.
+After a customer signs the MSA, CS builds persona-specific onboarding guides.
 
 ### Onboarding Guide Template
 
@@ -44,8 +45,11 @@ After a customer signs and migration begins, CS builds persona-specific onboardi
 ### What this use case does
 [Outcome section from the use case file, adapted for the customer's context]
 
-### When to use it
-[Trigger section from the use case file, adapted for the customer's workflow]
+### Session design
+[Conversation prompts, matching rules, and session format — designed for the customer's specific objectives]
+
+### Communication plan
+[Internal communication to employees: what Natter is, how anonymity works, what to expect, what happens with the data]
 
 ### What to watch for
 [Gotchas section from the use case file]
@@ -54,7 +58,7 @@ After a customer signs and migration begins, CS builds persona-specific onboardi
 [Gaps section from the use case file — be transparent]
 
 ### Related use cases
-[Connected use cases the customer should know about]
+[Connected use cases the customer should explore after the first session]
 
 ### Success indicators
 [How the customer knows this use case is working]
@@ -62,128 +66,148 @@ After a customer signs and migration begins, CS builds persona-specific onboardi
 
 ### Persona-Specific Onboarding Sequences
 
-**For P-001 VP Sales / CRO:**
-1. **Week 1:** Forecast dashboard walkthrough. Show behavior-based scores vs. deal-stage forecasts. Demonstrate the coaching alert feed.
-2. **Week 2:** First AI-generated forecast review. Compare NovaCRM forecast to their existing process. Highlight where scores diverged from gut feel.
-3. **Week 3:** Coaching workflow activation. Show how to act on coaching alerts. Connect alerts to 1:1 meeting prep.
-4. **Week 4:** Board reporting setup. Configure the forecast views the VP Sales needs for board and exec meetings.
+**For P-001 CHRO / Chief People Officer:**
+1. **Week 1:** Strategic alignment session. Define objectives: What does the CHRO want to learn? Which population? What actions will they take based on the data? Design the conversation prompts together.
+2. **Week 2:** Session design review. Finalize conversation prompts, matching rules, and communication plan. CHRO approves the employee communication.
+3. **Week 3:** Pilot session (30 participants). Run Session 1. Deliver insight report within 24 hours. Walk through themes, sentiment, and recommended actions with the CHRO.
+4. **Week 4:** Session 2 planning. Based on Session 1 results, plan full-scale deployment (5,000-20,000 participants). Prepare the CHRO's board presentation with Session 1 data.
 
-**For P-002 Sales Ops Manager:**
-1. **Week 1:** System configuration walkthrough. Scoring rules, pipeline stages, integration setup. Confirm data flowing correctly from email, calendar, and meeting tools.
-2. **Week 2:** Migration validation. Run parallel reports — old CRM vs. NovaCRM. Verify data integrity. Flag discrepancies.
-3. **Week 3:** Rep adoption monitoring. Track which reps are active. Address adoption blockers. Configure team-level dashboards.
-4. **Week 4:** Handoff to steady state. Sales Ops owns configuration going forward. CS shifts to support.
+**For P-002 VP/Head of People Analytics:**
+1. **Week 1:** Methodology review. Walk through Natter's matching algorithms, AI transcription, theme detection, and sentiment analysis. Address statistical validity questions. Demonstrate the validation dashboard.
+2. **Week 2:** Integration setup. Configure HRIS integration for matching and demographic analysis. Set up API export to analytics stack (Visier, Power BI, Tableau). Verify data flows.
+3. **Week 3:** Session design collaboration. People Analytics team co-designs conversation prompts and matching rules. Review demographic representation targets.
+4. **Week 4:** Pilot session analysis. Review Session 1 insight report in depth. People Analytics validates themes against expert coding. Calibrate AI sensitivity settings.
 
-**For P-003 CTO:**
-1. **Week 1:** Architecture review. Walk through data model, API endpoints, security posture. Answer integration questions.
-2. **Week 2:** AI model explainability session. Show how deal scores are computed. Walk through a sample score's behavior inputs.
-3. **Week 3:** Security and compliance validation. SOC 2 documentation review. Data residency confirmation. Audit trail demonstration.
-4. **Week 4:** Technical sign-off. CTO confirms architecture meets requirements. No open technical blockers.
+**For P-003 VP Strategy / Transformation Leader:**
+1. **Week 1:** Transformation brief. Understand the strategic initiative. Design conversation prompts that surface readiness, concerns, and alignment data.
+2. **Week 2:** Session deployment. Run transformation readiness session. Deliver insight report within 24 hours.
+3. **Week 3:** Insight presentation. Help VP Strategy prepare board-quality transformation readiness report using Natter data. Include heatmaps by business unit and geography.
+4. **Week 4:** Longitudinal plan. Design follow-up sessions at 90-day and 6-month intervals to track transformation progress.
+
+**For P-004 Head of Revenue / VP Sales:**
+1. **Week 1:** Use case scoping. Define whether the focus is sales coaching (peer-to-peer rep conversations), customer voice (customer roundtables), or both.
+2. **Week 2:** Session design. Design peer coaching conversation prompts or customer roundtable topics. Configure matching for sales context.
+3. **Week 3:** Pilot session. Run first coaching or customer roundtable session.
+4. **Week 4:** Revenue integration. Connect Natter insights to Salesforce account records. Design ongoing cadence.
 
 ### Onboarding Rules
-- Always ground onboarding in use cases, not features. The customer cares about "what can I achieve," not "what buttons exist."
+- Always ground onboarding in use cases, not features. The customer cares about "what insight will I get," not "what buttons exist."
 - Be transparent about gaps. If a use case is "partially-supported," say so during onboarding. Don't let the customer discover limitations on their own.
-- Tailor every walkthrough to the persona. The VP Sales wants to see the forecast. The Sales Ops Manager wants to see the configuration. The CTO wants to see the architecture.
+- Tailor every walkthrough to the persona. The CHRO wants to see the board-ready insight report. The People Analytics leader wants to see the methodology and API. The VP Strategy wants to see the transformation readiness heatmap.
+- Session design is the most important onboarding activity. The quality of conversation prompts determines the quality of insight.
 
-[Source: use-cases/uc-001-pipeline-forecasting.md#outcome] [Source: use-cases/uc-002-rep-coaching.md#outcome] [Source: use-cases/uc-003-crm-migration.md#outcome]
+[Source: use-cases/uc-001-employee-listening.md#outcome] [Source: use-cases/uc-002-thought-leadership-roundtables.md#outcome]
 
 ---
 
-## Migration Playbooks
+## Session Design Playbooks
 
-Migration playbooks help customers transition from their current CRM to NovaCRM.
+Session design is the single most important factor in insight quality. CS owns session design.
 
-### Migration Playbook Template
+### Session Design Template
 
 ```markdown
-## Migration: [Current CRM] to NovaCRM
+## Session Design: [Customer Name] — [Topic]
 
-### Current state
-[Which CRM? How long have they been on it? Key customizations?]
+### Objective
+[What does the customer want to learn?]
 
-### What changes
-[Specific changes to the customer's sales workflow]
+### Conversation prompts
+[2-3 specific, provocative questions designed to surface actionable insight]
+- Prompt 1: [...]
+- Prompt 2: [...]
+- Prompt 3: [...]
 
-### What stays the same
-[Tools, processes, or habits that don't change — reduce perceived disruption]
+### Matching rules
+- Match across: [functions, geographies, levels, etc.]
+- Avoid matching: [direct reports, same team, etc.]
+- Demographic targets: [representation goals]
 
-### Migration path
-1. Phase 1: NovaCRM deployed in parallel. Historical data imported. AI begins learning.
-2. Phase 2: Reps begin using NovaCRM for forecasting and coaching. Old CRM still live for reference.
-3. Phase 3: NovaCRM is primary CRM. Old CRM deprecated. Parallel run ends.
+### Session format
+- Live / On-demand / Natalie AI
+- Participant count: [target]
+- Conversation duration: [7 minutes standard]
 
-### Risks
-[From use case gotchas + customer-specific risks]
+### Communication plan
+- Employee invite: [who sends, what it says, when]
+- Manager briefing: [what managers should know]
+- Anonymity assurance: [specific language about PII redaction]
 
-### Success criteria
-[How we know migration is complete and successful]
+### Insight delivery
+- Report delivery: [within X hours]
+- Recipient: [CHRO, People Analytics, VP Strategy]
+- Format: [executive summary, detailed report, API export]
 ```
 
-### Common Migration Sources
-
-| From | Key Challenge | NovaCRM Advantage |
-|------|---------------|-------------------|
-| **Salesforce** | Complex customizations, admin dependency, data sprawl | Parallel migration. No admin required. AI learns from historical Salesforce data before cutover. |
-| **HubSpot CRM** | Marketing-sales data entanglement, limited sales AI | Clean separation of marketing and sales data. Sales-first AI from day one. |
-| **Pipedrive** | Lightweight tool to sophisticated tool transition, team readjustment | Familiar pipeline UX with AI layer. Reps don't lose the visual model they know. |
-| **Close** | Communication workflow dependency, call data migration | Communication integrations preserved. Call data imported for AI behavior analysis. |
-| **Spreadsheets / no CRM** | No historical data, no process discipline | AI starts learning from day one. No legacy data problems. Clean start advantage. |
-
-### Migration Rules
-- **Never force a big-bang cutover.** Parallel migration is mandatory. The old CRM stays live until the team is confident.
-- **Validate data integrity before declaring migration complete.** Run comparison reports between old and new systems.
-- **Set realistic timelines.** Straightforward migrations (Pipedrive, Close) take 2-4 weeks. Complex migrations (Salesforce) take 4-8 weeks.
-- **Flag customization risk early.** If the customer has heavy Salesforce customizations, scope the migration carefully and set expectations about what translates and what doesn't.
+### Prompt Design Principles
+- **Specific beats generic.** "What's the one thing that would make the biggest difference to your ability to do your job well?" beats "How do you feel about work?"
+- **Provocative beats safe.** "What's the most important thing leadership doesn't understand about the frontline?" produces richer data than "How would you rate your relationship with leadership?"
+- **Future-oriented beats backward-looking.** "What should the company do differently in the next 6 months?" produces more actionable data than "How was the last 6 months?"
+- **Two prompts per session maximum.** More prompts means less depth per topic. Go deep, not wide.
 
 ---
 
-## Use Case Walkthroughs
+## Expansion Playbook
 
-CS produces walkthroughs for each active use case, adapted to the customer's context.
+Expansion from single session to ongoing program is the primary revenue growth lever.
 
-### Walkthrough Structure
-1. **Name and context.** What is this use case and why does this customer care?
-2. **Trigger.** When should the customer use this? (From use case trigger section.)
-3. **What NovaCRM provides.** Which features and data drive this use case.
-4. **Expected outcome.** What does good look like? (From use case outcome section.)
-5. **Common gotchas.** What can go wrong? (From use case gotchas section.)
-6. **Known gaps.** What NovaCRM can't do yet. (From use case gaps section.)
+### Expansion Path
 
-### Rules
-- Walkthroughs explain the "what" and "why," not step-by-step clicks. NovaCRM has product documentation for the "how."
-- Adapt to the customer's context. Reference their team size, their sales process, their industry.
-- Include gaps. Transparency prevents support tickets and builds trust.
+| Stage | Trigger | CS Action |
+|-------|---------|-----------|
+| **Session 1 → Session 2** | CHRO sees insight report and wants to scale | Help plan full-scale deployment. Prepare board presentation with Session 1 data. |
+| **Session 2 → Quarterly program** | Board requests recurring insight | Design quarterly session cadence with rotating topics. Show longitudinal theme tracking. |
+| **Quarterly → Continuous (Natalie AI)** | Customer wants always-on listening | Deploy Natalie AI agent. Design always-on conversation library. Train customer team on continuous insight dashboard. |
+| **People → Additional use cases** | Customer sees value in People and wants Revenue, DEI, or Product Research | Cross-sell additional use case. Design new session with new persona stakeholders. |
+| **Single BU → Enterprise-wide** | One business unit's success creates demand from others | Help champion present results to other BU leaders. Standardize session design across the enterprise. |
+
+### Expansion Signals
+- CHRO asks to present Natter insights at board meeting
+- People Analytics asks about API integration for continuous data feed
+- VP Strategy requests a transformation readiness session
+- Customer asks about pricing for larger participant counts
+- Customer refers Natter to a peer organization
+
+### Expansion Blockers
+- Insight report didn't surface surprising or actionable themes (session design problem)
+- Participation rate was low (communication/trust problem)
+- Customer couldn't translate insights into visible action (insight-to-action gap)
+- Champion left the organization (relationship risk)
+- Budget cycle doesn't align with expansion timing (timing problem)
 
 ---
 
 ## Health Checks
 
-CS should periodically assess whether the customer is getting value from NovaCRM.
+CS should periodically assess whether the customer is getting value from Natter.
 
 ### Health Indicators
 
 | Indicator | Healthy | At Risk | Unhealthy |
 |-----------|---------|---------|-----------|
-| **Forecast usage** | Weekly AI forecast reviewed by VP Sales | Monthly or sporadic | Never reviewed |
-| **Coaching alerts** | Alerts acknowledged and acted upon weekly | Alerts generated but ignored | Alerts disabled |
-| **Rep adoption** | 80%+ of reps active in NovaCRM weekly | 50-80% active | Below 50% active |
-| **Data quality** | Behavior data flowing from all integrations | Some integrations broken | Manual entry only |
-| **Migration status** | Old CRM deprecated | Parallel run past 8 weeks | Team reverted to old CRM |
+| **Session frequency** | Quarterly or continuous sessions running | Annual or irregular | No sessions run in 6+ months |
+| **Participation rate** | 80%+ of target population participates | 50-80% participation | Below 50% participation |
+| **Insight quality** | Themes are specific, actionable, and surprising | Themes are expected and generic | Customer doesn't review insight report |
+| **Action taken** | Customer acts on themes within 4 weeks | Customer acknowledges themes but delays action | No visible action taken |
+| **Expansion signal** | Customer asks about additional use cases or larger scale | Customer is satisfied but not growing | Customer questions renewal |
+| **Champion engagement** | Champion (P-002) is active, engaged, and promoting internally | Champion is passive | Champion has left or disengaged |
 
 ### Remediation Actions
 
 | Risk Level | Action |
 |------------|--------|
-| **Healthy** | Quarterly check-in. Offer new feature walkthroughs as product evolves. |
-| **At Risk** | Schedule an adoption review. Identify which persona is disengaged and why. Re-run relevant onboarding walkthrough. |
-| **Unhealthy** | Escalate immediately. Diagnose root cause: Is it an adoption problem (reps won't use it)? A data problem (integrations broken)? A champion problem (Sales Ops left)? A value problem (AI scores aren't accurate yet)? |
+| **Healthy** | Quarterly check-in. Share new feature updates. Propose expansion opportunities. |
+| **At Risk** | Schedule session design review. Diagnose: Is it a prompt quality issue? A communication/trust issue? An insight-to-action issue? Re-design the next session to address the gap. |
+| **Unhealthy** | Escalate immediately. Diagnose root cause: Is it a participation problem (employees won't join)? A value problem (insights aren't actionable)? A champion problem (key stakeholder left)? A trust problem (employees don't believe in anonymity)? |
 
 ### Persona-Specific Health Signals
 
-**P-001 VP Sales disengaged:** They're not reviewing the AI forecast. The coaching alerts aren't reaching them. Re-engage with a forecast accuracy comparison — show them what NovaCRM caught that their old process missed.
+**P-001 CHRO disengaged:** They're not reviewing insight reports or presenting to the board. Re-engage with a "what would you ask your workforce right now?" conversation. Redesign the next session around a topic the CHRO cares about today — GenAI readiness, transformation progress, culture measurement.
 
-**P-002 Sales Ops disengaged:** They've stopped configuring and optimizing. They may feel the system is "set and forget" or they've hit a wall. Re-engage with a configuration optimization session.
+**P-002 People Analytics disengaged:** They've stopped requesting API exports or analyzing demographic breakdowns. Re-engage with a methodology improvement session — new matching algorithms, enhanced theme detection, or integration with a new analytics tool.
 
-**P-003 CTO raising concerns:** Technical debt, security questions, or integration issues surfacing post-deployment. Schedule a technical review. Address concerns with documentation and architecture transparency.
+**P-003 VP Strategy requesting different data:** They want transformation readiness data but the sessions are producing engagement themes. Re-design conversation prompts to address strategic questions, not HR questions. The session design determines the data.
 
-[Source: use-cases/uc-001-pipeline-forecasting.md] [Source: use-cases/uc-002-rep-coaching.md] [Source: use-cases/uc-003-crm-migration.md]
+**P-004 Revenue Leader not seeing ROI:** Sales coaching sessions aren't producing measurable coaching insights. Review conversation prompts — are they specific enough? Review matching — are reps being paired effectively? Consider a customer roundtable format instead if coaching isn't landing.
+
+[Source: use-cases/uc-001-employee-listening.md] [Source: use-cases/uc-002-thought-leadership-roundtables.md] [Source: goals.md#gtm-goals-by-discipline]

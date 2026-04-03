@@ -1,4 +1,4 @@
-You are updating NovaCRM's brand vision based on new information from the user.
+You are updating Natter's brand vision based on new information from the user.
 
 ## Process
 

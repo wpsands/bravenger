@@ -1,4 +1,4 @@
-You are updating or creating a NovaCRM persona based on new information from the user.
+You are updating or creating a Natter persona based on new information from the user.
 
 ## Process
 
@@ -30,9 +30,11 @@ After writing the updated persona file(s), perform the cascade check:
    - `company-brain/personas/index.md` — overview text, selection guide, relationship map
    - `company-brain/messaging-positioning/messaging-framework.md` — persona-specific messaging packages, message testing matrix, persona relevance notes on each VP
    - `company-brain/messaging-positioning/core-positioning.md` — strategic narratives (one per persona), competitive "when to compete" table
-   - `company-brain/use-cases/uc-001-pipeline-forecasting.md` — body references to persona roles/pains
-   - `company-brain/use-cases/uc-002-rep-coaching.md` — same
-   - `company-brain/use-cases/uc-003-crm-migration.md` — same
+   - `company-brain/use-cases/uc-001-employee-listening.md` — body references to persona roles/pains
+   - `company-brain/use-cases/uc-002-thought-leadership-roundtables.md` — same
+   - `company-brain/use-cases/uc-003-genai-change-management.md` — same
+   - `company-brain/use-cases/uc-004-dei-inclusive-voice.md` — same
+   - `company-brain/use-cases/uc-005-product-research.md` — same
    - `company-brain/goals.md` — persona references in quarterly priorities and GTM goals
    - `company-brain/icp.md` — decision-making unit table references persona files
 

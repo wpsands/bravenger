@@ -1,4 +1,4 @@
-You are updating the NovaCRM Ideal Customer Profile based on new information from the user.
+You are updating the Natter Ideal Customer Profile based on new information from the user.
 
 ## Process
 
@@ -26,9 +26,10 @@ After writing the updated `icp.md`, perform the cascade check:
    - `company-brain/messaging-positioning/core-positioning.md` — echoes firmographics in positioning statement, differentiators, competitive tables
    - `company-brain/messaging-positioning/messaging-framework.md` — echoes firmographics in VP5, Objection 5
    - `company-brain/personas/index.md` — echoes company size in overview
-   - `company-brain/personas/persona-vp-sales.md` — echoes company size in demographics, summary
-   - `company-brain/personas/persona-sales-ops.md` — same
-   - `company-brain/personas/persona-cto.md` — same
+   - `company-brain/personas/persona-chro.md` — echoes company size in demographics, summary
+   - `company-brain/personas/persona-people-analytics.md` — same
+   - `company-brain/personas/persona-vp-strategy.md` — same
+   - `company-brain/personas/persona-vp-revenue.md` — same
    - `company-brain/use-cases/*.md` — may reference ICP firmographics or pain IDs
    - `company-brain/goals.md` — references ICP in priority descriptions
    - `company-brain/guidelines/marketing-usage.md` — echoes firmographic numbers
