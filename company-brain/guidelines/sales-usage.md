@@ -1,7 +1,7 @@
 ---
 title: Sales Agent Usage Guide
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 scope: "Sales team agents and operators"
 owner: "Brain Owner"
 status: production
@@ -113,6 +113,20 @@ Based on the persona and signal, hypothesize which pains from `icp.md#pains` and
 - "If you could hear from 20,000 employees in under an hour — on any strategic topic — what would you ask?"
 
 [Source: personas/persona-chro.md#pains] [Source: personas/persona-people-analytics.md#pains] [Source: personas/persona-vp-strategy.md#pains]
+
+### Third-Party Validation Talk Track (Marc Solow, Deloitte)
+
+Marc Solow (Managing Director, Human Capital Analytics & Insights, Deloitte) is a named contributor to Natter's Employee Voice report. His insights are approved for paraphrased use in discovery conversations and proposals: [Source: research/employee-voice-report.md]
+
+**Key talk track points:**
+- "The biggest challenge isn't collecting sentiment — it's the last mile: what do you do with it, how do you close the loop." Use when surfacing the insight-to-action gap pain.
+- "Organizations want to move away from traditional annual surveys toward always-on listening." Use when positioning Natter as the future of listening.
+- "Survey fatigue isn't about frequency — it's about lack of tangible outcomes from feedback." Use when countering the "we already have surveys" objection.
+- "There are amazing products like Natter that help conduct focus groups and develop insights at scale." Direct third-party endorsement — use sparingly and only in high-value conversations.
+- "It's early days for AI in employee listening — most tools are nascent in NLP insight development." Use when positioning Natter's AI maturity advantage.
+- "Huge opportunity for technology to gather data at scale and develop insights quickly." Use when framing the market opportunity for the prospect.
+
+**Usage rules:** Paraphrase only — do not present as direct quotes. Attribute to "a senior Deloitte leader in human capital analytics" or "Marc Solow, Deloitte" with permission. These are from a published research report, not a private conversation.
 
 ---
 

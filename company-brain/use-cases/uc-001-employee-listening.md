@@ -2,7 +2,7 @@
 title: "Employee Listening & Engagement"
 use_case_id: "UC-001"
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 status: "fully-supported"
 owner: "Brain Owner"
 
@@ -22,7 +22,7 @@ tools_involved:
   - "Sentiment analysis"
   - "Insight dashboard and reporting"
   - "HRIS integration for matching and demographics"
-proof: "240 interviews + 420 peer conversations capturing 29,810 qualitative statements, 492,184 words transcribed, 96 themes generated. [Source: Employee Voice report]. 58 CHROs generating 700+ collaborative ideas in a 90-minute session. [Source: CHRO report]."
+proof: "240 interviews + 420 peer conversations capturing 29,810 qualitative statements, 492,184 words transcribed, 96 themes generated. [Source: research/employee-voice-report.md]. 58 CHROs generating 700+ collaborative ideas in a 90-minute session. [Source: research/chro-report.md]. Fewer than half of leaders rate current listening initiatives as effective. [Source: research/employee-voice-report.md]. Employees who highly trust their employers are 50% less likely to look for a new job and 180% more likely to feel motivated. [Source: research/deloitte-white-paper.md]."
 
 connected_use_cases:
   - "UC-003"
@@ -63,6 +63,33 @@ After deploying Natter for employee listening:
 - **Board-ready insight report.** The CHRO presents themes, sentiment analysis, priority areas, and recommended actions to the board — generated from the actual words employees said to each other, not from survey clicks.
 - **Insight-to-action loop compressed from months to weeks.** Because insights are available within hours, leadership can act within days. When employees see visible change within weeks of a Natter session, participation and honesty compound in the next session.
 - **Qualitative depth at quantitative scale.** 20,000 conversations × 1,000+ words each = 20 million+ words of qualitative data from a single session. This is more qualitative data than a decade of focus groups would produce.
+
+## Proof Points
+
+### Trust and Business Impact
+- Employees who highly trust their employers are 50% less likely to look for a new job and 180% more likely to feel motivated. [Source: research/deloitte-white-paper.md]
+- Employees view employers as 188% less empathetic and human when AI tools are offered without proper trust-building. [Source: research/deloitte-white-paper.md]
+- 56% of conversations in Natter research cited concern about ethical use of AI for data security and privacy — validating Natter's ISO 27001 approach. [Source: research/deloitte-white-paper.md]
+
+### The Listening Gap
+- Fewer than half of interviewees rated current employee listening initiatives as "effective." [Source: research/employee-voice-report.md]
+- A super majority of interviewees rated Employee Voice as the most important factor for understanding overall organizational health. [Source: research/employee-voice-report.md]
+- Survey fatigue is not about frequency — it's about lack of tangible outcomes from feedback. [Source: research/employee-voice-report.md]
+- Less than 40% of participants agree they get enough real-time, insightful feedback from their frontline to help navigate change management. [Source: research/chro-report.md]
+
+### What Leaders Want
+- 58% of conversations discussed wanting to use AI to facilitate more effective feedback loops — a direct validation of Natter's value proposition. [Source: research/deloitte-white-paper.md]
+- Approximately one-third of conversations cited AI's ability to unlock time for meaningful human interactions. [Source: research/deloitte-white-paper.md]
+- Just over half of interviewees are already leveraging GenAI tools to capture employee sentiment. [Source: research/employee-voice-report.md]
+- The vast majority indicated GenAI will make the employee listening process easier. [Source: research/employee-voice-report.md]
+
+### Theme Prevalence (from Employee Voice report)
+- 61% conversation coverage on "Challenges and Barriers to Effective Communication." [Source: research/employee-voice-report.md]
+- 59% coverage on "Feedback Mechanisms and Survey Practices." [Source: research/employee-voice-report.md]
+- 54% coverage on "Survey Methodology and Feedback Fatigue." [Source: research/employee-voice-report.md]
+
+### Platform Proof
+- 96 themes and insights generated from a single study of 240 interviews and 420 conversations. [Source: research/employee-voice-report.md]
 
 ## Gotchas
 

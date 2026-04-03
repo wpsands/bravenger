@@ -1,7 +1,7 @@
 ---
 title: Core Positioning
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 owner: "Brain Owner"
 status: production
 ---
@@ -31,19 +31,19 @@ For enterprise organizations that need to hear what their workforce really think
 
 **Why it matters:** For decades, organizations faced a false choice: surveys gave you scale without depth (10 words per answer), interviews gave you depth without scale (20-30 people per study). Natter eliminates this tradeoff. A 7-minute conversation yields 1,000+ words — 100x more insight per participant than a survey answer. Multiply by 20,000 participants and you have more qualitative data than a decade of focus groups.
 
-**Proof point:** 240 interviews + 420 peer conversations capturing 29,810 qualitative statements, 492,184 words transcribed, 96 themes generated in a single study. [Source: Employee Voice report]
+**Proof point:** 240 interviews + 420 peer conversations capturing 29,810 qualitative statements, 492,184 words transcribed, 96 themes generated in a single study. 420 peer-to-peer conversations enabled across 34 countries in just 40 minutes. [Source: research/employee-voice-report.md]. 142 senior workforce leaders participated in a 90-minute roundtable, and 700+ collaborative ideas were generated and summarized instantly. [Source: research/deloitte-white-paper.md] [Source: research/chro-report.md]
 
 ### 2. Decision-Ready in Hours, Not Months {#differentiator-2}
 **What it means:** Natter's AI delivers action-ready insights — clear priorities and actions straight from employees' voices — within an hour of session close. The typical survey cycle (collection → analysis → report → leadership review → action planning) takes 3-6 months. Natter compresses this to hours.
 
 **Why it matters:** The insight-to-action gap is the single biggest threat to employee trust in listening programs. When employees give feedback in January and see change in September (if ever), trust erodes. Natter's speed means leadership can act within days. When employees see visible change within weeks, participation and honesty compound.
 
-**Proof point:** 58 CHROs generated 700+ collaborative ideas in a 90-minute Natter session. Insight report delivered within 48 hours. [Source: CHRO report]
+**Proof point:** 58 CHROs generated 700+ collaborative ideas in a 90-minute Natter session. Insight report delivered within 48 hours. 7.4 million+ global employees represented across participants' organizations. [Source: research/chro-report.md]
 
 ### 3. Psychologically Safe by Design {#differentiator-3}
 **What it means:** ISO 27001 certified. GDPR, UK GDPR, EU AI Act compliant. CCPA aligned. PII redacted at the point of transcription — not after analysis, not during review, at the moment of transcription. True anonymity, not just confidentiality. Peer-to-peer matching eliminates power dynamics. The system is engineered so that honest conversation has no negative consequences.
 
-**Why it matters:** Trust is the precondition for honest conversation. Employees are 188% less likely to view their employer as empathetic and human when AI tools are offered without proper trust-building. [Source: Deloitte TrustID survey] If employees don't believe the conversation is truly anonymous, they self-censor. Natter's architecture makes self-censorship unnecessary.
+**Why it matters:** Trust is the precondition for honest conversation. Employees are 188% less likely to view their employer as empathetic and human when AI tools are offered without proper trust-building. [Source: research/deloitte-white-paper.md] If employees don't believe the conversation is truly anonymous, they self-censor. Natter's architecture makes self-censorship unnecessary.
 
 **Proof point:** Natter sessions consistently achieve 80%+ participation rates — significantly higher than typical survey response rates — because employees experience the format as fundamentally different from traditional listening.
 
@@ -57,7 +57,7 @@ For enterprise organizations that need to hear what their workforce really think
 ### 5. Insight-to-Action Loop That Compounds Trust {#differentiator-5}
 **What it means:** Natter doesn't just generate insight — it compresses the cycle from insight to visible organizational action. When leadership acts on Natter data within weeks (not months), employees see the impact. When employees see impact, they participate more honestly in the next session. Trust compounds. Data quality improves. Organizational intelligence deepens.
 
-**Why it matters:** The biggest challenge in employee listening is not collecting sentiment — it's the last mile: once you collect it, what do you do with it? [Source: Deloitte white paper] Survey platforms excel at data collection but provide no mechanism for closing the loop. Natter's speed and specificity make visible action possible within days of a session.
+**Why it matters:** The biggest challenge in employee listening is not collecting sentiment — it's the last mile: once you collect it, what do you do with it? [Source: research/deloitte-white-paper.md] Survey platforms excel at data collection but provide no mechanism for closing the loop. Natter's speed and specificity make visible action possible within days of a session. 58% of conversations in Natter research discussed wanting to use AI to facilitate more effective feedback loops — validating that leaders want exactly this. [Source: research/deloitte-white-paper.md]
 
 **Proof point:** From the Employee Voice report: fewer than half of interviewees rated current employee listening initiatives as "effective." The gap is not data collection — it's action. Natter closes the gap by delivering specific, prioritized, actionable themes that leadership can act on immediately.
 
@@ -77,6 +77,20 @@ For enterprise organizations that need to hear what their workforce really think
 | **SurveyMonkey/Momentive** | Survey tool | Self-serve survey platform. Basic analytics. | Self-serve survey. No AI conversation analysis. No enterprise-grade conversation orchestration. Different market segment entirely. |
 | **McKinsey/Deloitte consulting** | Professional services | $600K+ per engagement. 30 structured interviews. Consultant-written report 6-8 weeks later. | Not scalable. Not repeatable. Not technology. $600K for 30 data points versus $200-400K for 20,000 conversations with AI analysis in under an hour. |
 | **Town halls / focus groups** | Traditional methods | CEO speaks. 5 people ask questions. Or: 8-12 people in a room for 90 minutes with a facilitator. | Max 8-12 people. Dominant voice bias. Weeks of scheduling. No AI analysis. Not anonymous. Power dynamics suppress honesty. |
+
+### Research Evidence: Why Conversations Beat Every Other Method
+
+Independent research comparing traditional interviews with Natter peer conversations revealed five structural advantages that validate the entire category thesis: [Source: research/employee-voice-report.md]
+
+1. **Breadth vs. Depth:** Interviews captured broad themes but lacked nuanced exploration. Conversations went deeper into cultural barriers, psychological safety, and actionable strategies.
+2. **Problem vs. Solution focus:** Interviews centered on identifying problems. Conversations emphasized solutions — practical ways forward, multi-channel feedback systems, inclusive designs.
+3. **Cultural/Geographic perspectives:** Conversations uniquely highlighted cultural and geographic distinctions that were entirely absent in interviews.
+4. **Employee-centric vs. Organizational-centric:** Conversations explored employee wellbeing, mental health, job satisfaction. Interviews leaned toward organizational/system considerations.
+5. **Obligation vs. Motivation:** Interviewees are reactive respondents to an authority. Conversation participants are proactive collaborators motivated to teach and learn from peers.
+
+These five differences explain why Natter exists and why conversations produce better insights than any other method — including interviews, surveys, focus groups, and town halls.
+
+Additionally, 41% of leaders believe AI will cause a decrease in quality of human connections — reinforcing why platform-mediated peer conversations (not AI chatbots or survey forms) are the right instrument for the age of AI. [Source: research/deloitte-white-paper.md]
 
 ### Category Differentiation
 
@@ -201,3 +215,39 @@ When the CHRO evaluates "which survey platform has the best analytics," Qualtric
 - **Never say:** "AI listening tool" (vague, could mean anything)
 - **Always compare:** "What people click vs. what people actually say" (this is our category frame)
 - **Always frame the choice:** "The question isn't which listening tool has the best analytics. The question is whether your listening tool captures what people actually think."
+
+---
+
+## Social Proof {#social-proof}
+
+The following organizations' leaders have participated in Natter-hosted research roundtables across three published studies. Confirm active customer status separately before claiming them as "customers" vs. "research participants."
+
+### Research Participant Organizations (alphabetical)
+
+ABB, Accenture, Adidas, AlphaSense, ASML, Arizona State University, AWS, Bank of America, Bayer, BlackRock, Builders FirstSource, Burberry, Coca-Cola, Colgate-Palmolive, Coty, CVS, Deloitte, Diageo, Dyson, EDF, Edelman, Expedia, Ford, General Mills, GroupM, GSK, H&M, Hilton, IKEA, Kraft Heinz, Legal & General, LEGO, LVMH, Mambu, Marriott, Miro, Mondelez International, Morningstar, NASA, Nestle, Nissan, NTT, PepsiCo, Pfizer, PwC, Red Bull, Roche, Royal Caribbean, Salesforce, SAP, ServiceNow, Siemens, State Farm, Swarovski, Sweco, Target, Teleperformance, Tupperware, U.S. Air Force, U.S. Army, U.S. Olympic Committee, Ubisoft, Unicomer, Unilever, Verizon
+
+[Source: research/deloitte-white-paper.md] [Source: research/chro-report.md] [Source: research/employee-voice-report.md]
+
+### Named Expert Contributors (approved for proposals and outbound)
+
+| Name | Title | Organization | Report |
+|------|-------|-------------|--------|
+| Amelia Dunlop | CXO | Deloitte Digital | R-001 |
+| John Reid-Dodick | CPO | AlphaSense | R-001, R-002 |
+| Samantha Hammock | EVP & CHRO | Verizon | R-002 |
+| Jacqui Canney | Chief People Officer | ServiceNow | R-002 |
+| Yaarit Silverstone | Senior Managing Director | Accenture Strategy | R-002 |
+| Marilyn Chaplin | CHRO | NTT | R-002 |
+| Christian Schmeichel | SVP, People and Culture Services | SAP | R-002 |
+| Soni Basi | Former Global CPO | Edelman | R-002 |
+| Josefin Erseus | CHRO Nordic | Teleperformance | R-002 |
+| Volker Schrank | VP HR & Employee Experience | Mondelez International | R-002 |
+| Marc Solow | Managing Director, Human Capital Analytics | Deloitte | R-003 |
+| David Meza | Head of People Analytics | NASA | R-003 |
+| Ann-Marie Johnson | Senior Director, People Strategy & Analytics | Salesforce | R-003 |
+| Bill Morrissey | Head of Employee Listening System & Products | Amazon/AWS | R-003 |
+
+### Scale of Participation
+- **R-001 (Deloitte White Paper):** 142 senior workforce leaders, 304 pre-roundtable interviews, 78% C-Suite or Department Heads. [Source: research/deloitte-white-paper.md]
+- **R-002 (CHRO Report):** 58 CHROs, 163 1:1 conversations, 7.4M+ global employees represented across 6 continents. [Source: research/chro-report.md]
+- **R-003 (Employee Voice Report):** 240 interviews + 420 conversations, 34 countries, 29,810 qualitative statements, 492,184 words transcribed. [Source: research/employee-voice-report.md]

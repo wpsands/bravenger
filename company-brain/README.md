@@ -1,7 +1,7 @@
 ---
 title: Natter Company Brain
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 owner: "Brain Owner"
 status: production
 purpose: "Single source of truth for all Natter content, messaging, and agent behavior"
@@ -47,11 +47,16 @@ Every piece of content Natter produces — marketing pages, roundtable invitatio
 | `use-cases/uc-004-dei-inclusive-voice.md` | DEI and inclusive voice capture for underrepresented populations |
 | `use-cases/uc-005-product-research.md` | Product research at scale using peer-to-peer user conversations |
 
+### Research Library
+| File | Purpose |
+|------|---------|
+| `research/index.md` | Research library — report metadata, named participants, citation keys, usage rules |
+
 ### Messaging & Positioning
 | File | Purpose |
 |------|---------|
-| `messaging-positioning/core-positioning.md` | Category, positioning statement, differentiators, narratives |
-| `messaging-positioning/messaging-framework.md` | Value props, objection handling, funnel-stage messaging, sales methodology |
+| `messaging-positioning/core-positioning.md` | Category, positioning statement, differentiators, narratives, social proof |
+| `messaging-positioning/messaging-framework.md` | Value props, objection handling, funnel-stage messaging, sales methodology, research evidence |
 
 ### Governance & Guidelines
 | File | Purpose |
@@ -91,11 +96,12 @@ Foundation Layer
 ├── ICP (who we sell to)
 ├── Goals (what we are trying to achieve right now)
 ├── Personas (who we talk to)
-└── Use Cases (what they are trying to do)
+├── Use Cases (what they are trying to do)
+└── Research Library (published reports, proof points, named participants)
     ↓ feeds everything ↓
 Positioning & Messaging Layer
-├── Core Positioning (category, differentiators, narratives)
-└── Messaging Framework (value props, objections, approved language)
+├── Core Positioning (category, differentiators, narratives, social proof)
+└── Messaging Framework (value props, objections, approved language, research evidence)
     ↓ governed by ↓
 Governance Layer
 ├── AGENTS.md (rules for all agents)

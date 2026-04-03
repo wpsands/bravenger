@@ -2,7 +2,7 @@
 title: "DEI & Inclusive Voice Capture"
 use_case_id: "UC-004"
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 status: "fully-supported"
 owner: "Brain Owner"
 
@@ -21,7 +21,7 @@ tools_involved:
   - "AI transcription and theme detection"
   - "Anonymization and PII redaction"
   - "Demographic analysis with privacy safeguards"
-proof: "The voice of the silent majority is just as important as that of the vocal minority. Legacy power structures often empower a vocal minority to speak up. [Source: Employee Voice report]. Natter's design — 1:1 peer matching, PII redaction, anonymity — creates conditions for psychological safety that traditional listening tools cannot."
+proof: "The voice of the silent majority is just as important as that of the vocal minority. Legacy power structures often empower a vocal minority to speak up. [Source: research/employee-voice-report.md]. 46% conversation coverage on 'Diversity and Inclusion in Feedback Mechanisms' — the fourth most discussed theme. [Source: research/employee-voice-report.md]. Approximately one-third of Deloitte roundtable conversations cited concern for bias and inclusion challenges of AI. [Source: research/deloitte-white-paper.md]. Natter's design — 1:1 peer matching, PII redaction, anonymity — creates conditions for psychological safety that traditional listening tools cannot."
 
 connected_use_cases:
   - "UC-001"
@@ -48,7 +48,7 @@ Before Natter, DEI-focused voice capture looks like this:
 - **ERG-hosted focus groups reach a fraction.** Employee Resource Groups host listening sessions with 10-15 members. The conversation is moderated by an ERG leader who may have their own agenda. Dominant voices shape the discussion. Introverted members stay silent. The output is a qualitative anecdote from a non-representative sample.
 - **Town halls amplify the majority.** When the CEO hosts a town hall on inclusion, the people who speak up are disproportionately senior, confident, and from majority demographics. The people with the most important perspectives — those experiencing exclusion — are the least likely to raise their hand in a 500-person auditorium.
 - **Anonymous comment boxes collect fragments.** Platforms like anonymous pulse tools or suggestion boxes collect short text inputs. "More diverse leadership." "Inclusion training isn't enough." These fragments lack context, depth, and the conversational nuance that reveals what employees actually experience.
-- **Legacy power structures suppress honest voice.** "The voice of the silent majority is just as important as that of the vocal minority. Legacy power structures often empower a vocal minority to speak up." [Source: Employee Voice report] Traditional listening tools reinforce these power structures rather than equalizing them.
+- **Legacy power structures suppress honest voice.** "The voice of the silent majority is just as important as that of the vocal minority. Legacy power structures often empower a vocal minority to speak up." [Source: research/employee-voice-report.md] Traditional listening tools reinforce these power structures rather than equalizing them.
 
 ## Outcome
 
@@ -60,6 +60,16 @@ After deploying Natter for DEI and inclusive voice capture:
 - **Rich qualitative data from underrepresented voices.** 1,000+ words per conversation, captured from populations that typically produce 0 words in surveys and town halls. This is not a data point. This is understanding.
 - **Themes disaggregated by demographic (with privacy safeguards).** The insight report shows how themes differ across demographics — while maintaining anonymity through minimum group sizes and aggregation rules. The CHRO sees: "Employees in [demographic group] are 3x more likely to mention lack of career progression as a concern."
 - **Evidence for board-level DEI reporting.** Qualitative evidence that the organization is actively listening to all voices — not just counting heads. The DEI report moves from "we have X% representation" to "here's what employees from underrepresented populations actually told us, and here's what we did about it."
+
+## Proof Points
+
+### DEI as a Listening Priority
+- 46% conversation coverage on "Diversity and Inclusion in Feedback Mechanisms" — making it one of the most discussed themes across the Employee Voice study. [Source: research/employee-voice-report.md]
+- Approximately one-third of conversations in the Deloitte roundtable cited concern for bias and inclusion challenges of AI — indicating that DEI considerations are top of mind as organizations deploy AI. [Source: research/deloitte-white-paper.md]
+
+### The Voice Gap
+- Legacy power structures empower a vocal minority to speak up while the silent majority remains unheard. Natter's peer-to-peer format equalizes voice by design. [Source: research/employee-voice-report.md]
+- Conversations in the Employee Voice study uniquely highlighted cultural and geographic distinctions that were entirely absent in traditional interview data — demonstrating that Natter's format surfaces perspectives other methods miss. [Source: research/employee-voice-report.md]
 
 ## Gotchas
 

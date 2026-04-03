@@ -4,7 +4,7 @@ persona_id: "P-002"
 role: "VP/Head of People Analytics / Employee Listening"
 dmu_function: "Champion"
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 owner: "Brain Owner"
 status: production
 ---
@@ -17,7 +17,7 @@ The VP or Head of People Analytics at a Fortune 500 or Global Enterprise organiz
 
 They are the champion for Natter. They evaluate the methodology, run the pilot session, build the business case, and present the insight report to the CHRO. If they don't believe in the data quality and analytical rigor, the deal never reaches the CHRO. If they do believe, they will sell it internally harder than any Natter rep ever could.
 
-"The biggest challenge isn't collecting sentiment. It's the last mile challenge: once you collect it, what do you do with it?" — Marc Solow, Deloitte [Source: Deloitte white paper]
+"The biggest challenge isn't collecting sentiment. It's the last mile challenge: once you collect it, what do you do with it?" — Marc Solow, Deloitte [Source: research/deloitte-white-paper.md]
 
 ---
 
@@ -55,15 +55,15 @@ They are the champion for Natter. They evaluate the methodology, run the pilot s
 
 1. **"I can't get qualitative data at scale."** Interviews produce rich insight but max out at 20-30 per study. Focus groups are limited to 8-12 people, take weeks to schedule, and produce biased results from dominant voices. The People Analytics leader knows surveys lack depth but has no scalable alternative. They are stuck coding 50,000 open-ended survey responses that average 10 words each.
 
-2. **"Selling the vision to the C-suite is an uphill battle."** Executive buy-in for people analytics is fragile. The CHRO supports it, but the CFO asks for ROI, the CEO wants simple dashboards, and business unit leaders want their own data, not aggregate insights. The People Analytics leader spends as much time justifying their function as doing the analysis. [Source: Employee Voice report]
+2. **"Selling the vision to the C-suite is an uphill battle."** Executive buy-in for people analytics is fragile. The CHRO supports it, but the CFO asks for ROI, the CEO wants simple dashboards, and business unit leaders want their own data, not aggregate insights. The People Analytics leader spends as much time justifying their function as doing the analysis. Executive buy-in was cited as the #1 barrier to Employee Voice effectiveness in Natter's research. [Source: research/employee-voice-report.md]
 
-3. **"My tech stack is a mess of silos."** Survey data in Qualtrics, engagement data in CultureAmp, HRIS data in Workday, qualitative notes in SharePoint. Nothing connects. Every analysis requires manual data wrangling. The dream is a unified listening architecture. The reality is 6 tools that don't talk to each other.
+3. **"My tech stack is a mess of silos."** Survey data in Qualtrics, engagement data in CultureAmp, HRIS data in Workday, qualitative notes in SharePoint. Nothing connects. Every analysis requires manual data wrangling. The dream is a unified listening architecture. The reality is 6 tools that don't talk to each other. "Technological limitations" was cited as a key barrier to effective Employee Voice — specifically frustration over "tech silos" and inability to link data sources. [Source: research/employee-voice-report.md]
 
 4. **"Survey fatigue is undermining my data quality."** Response rates are dropping. Employees are survey-fatigued. The People Analytics leader knows that a 35% response rate means the data is biased toward employees who bother to respond — typically the most engaged or the most frustrated. The silent majority is missing.
 
 5. **"GenAI tools promise a lot but I worry about bias."** AI-powered analysis tools are proliferating but the People Analytics leader is concerned about bias amplification, hallucination, and the inability to audit AI-generated themes. They want AI that they can validate, not AI they have to trust blindly.
 
-6. **"The feedback loop is broken."** Closing the feedback loop — demonstrating to employees that their input was heard and acted upon — is the hardest part of any listening program. Without visible action, participation declines. Without participation, data quality degrades. It's a vicious cycle. [Source: Employee Voice report]
+6. **"The feedback loop is broken."** Closing the feedback loop — demonstrating to employees that their input was heard and acted upon — is the hardest part of any listening program. Without visible action, participation declines. Without participation, data quality degrades. It's a vicious cycle. [Source: research/employee-voice-report.md]
 
 ---
 

@@ -2,7 +2,7 @@
 title: "Thought Leadership & Executive Roundtables"
 use_case_id: "UC-002"
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 status: "fully-supported"
 owner: "Brain Owner"
 
@@ -22,7 +22,7 @@ tools_involved:
   - "Sentiment analysis"
   - "Executive insight report generation"
   - "Roundtable invitation and registration system"
-proof: "142 senior workforce leaders in a 90-minute Deloitte Digital + Natter roundtable. [Source: Deloitte white paper]. 58 CHROs from Verizon, ServiceNow, SAP, Mondelez, NTT, Edelman, etc. generating 700+ collaborative ideas instantly. [Source: CHRO report]."
+proof: "142 senior workforce leaders in a 90-minute Deloitte Digital + Natter roundtable. [Source: research/deloitte-white-paper.md]. 58 CHROs, 163 1:1 conversations, 309 qualitative insights, 684 data points — generating 700+ collaborative ideas instantly. [Source: research/chro-report.md]. 420 peer-to-peer conversations across 34 countries in 40 minutes, capturing 29,810 qualitative statements. [Source: research/employee-voice-report.md]."
 
 connected_use_cases:
   - "UC-001"
@@ -65,8 +65,39 @@ After deploying Natter for executive roundtables:
 - **AI-generated insight report within 48 hours.** Themes, sentiment, consensus areas, and divergence points — all extracted from the actual words executives said to each other. Not a consultant's interpretation. The executives' own voices.
 - **The experience IS the product demo.** Executives who participate in a Natter roundtable understand immediately what the platform does. They felt the quality of the conversation. They see the quality of the insight report. The sales conversation shifts from "let me show you a demo" to "you already experienced it — shall we run this inside your organization?"
 - **Graduated trial converts to MSA.** Roundtable attendee → Session 1 with 30 of their employees → Session 2 with 20,000 employees → MSA. Each step builds confidence and demonstrates value on their own data.
-- **Thought leadership authority.** Natter-hosted roundtables produce publishable research: "What 142 Senior Workforce Leaders Think About AI and Employees" [Source: Deloitte white paper]. This content feeds marketing, builds brand authority, and attracts new roundtable participants.
+- **Thought leadership authority.** Natter-hosted roundtables produce publishable research: "What 142 Senior Workforce Leaders Think About AI and Employees" [Source: research/deloitte-white-paper.md]. This content feeds marketing, builds brand authority, and attracts new roundtable participants.
 - **Customer-hosted roundtables generate intelligence.** Enterprise customers use the platform to host their own roundtables — internal leadership sessions, customer advisory events, stakeholder consultations — using the same AI-powered methodology.
+
+## Proof Points
+
+### Platform Scale Demonstrations
+- 142 senior workforce leaders participated in a 90-minute Deloitte Digital + Natter roundtable (36% Chief People Officers, 28% Employee Experience leadership, 78% C-Suite or Department Heads). [Source: research/deloitte-white-paper.md]
+- 58 CHROs participated in deep-dive conversations generating 163 1:1 conversations, 309 qualitative insights, and 684 data points. 700+ collaborative ideas were generated and summarized instantly using Natter's technology. [Source: research/chro-report.md]
+- 129 participants engaged in 420 1:1 conversations, producing 462 qualitative insights and 8,100 data points in 40 minutes. [Source: research/employee-voice-report.md]
+- 29,810 qualitative statements captured from 240 interviews, with 492,184 words transcribed. [Source: research/employee-voice-report.md]
+- 420 peer-to-peer conversations enabled across 34 countries in 40 minutes. [Source: research/employee-voice-report.md]
+
+### Interview vs. Conversation — Why Natter's Format Wins
+Research comparing traditional interviews with Natter peer conversations revealed five key differences that validate the platform thesis: [Source: research/employee-voice-report.md]
+
+1. **Breadth vs. Depth:** Interviews captured broad themes but lacked nuanced exploration. Conversations went deeper into cultural barriers, psychological safety, and actionable strategies.
+2. **Problem vs. Solution focus:** Interviews centered on identifying problems. Conversations emphasized solutions — practical ways forward, multi-channel feedback systems, inclusive designs.
+3. **Cultural/Geographic perspectives:** Conversations uniquely highlighted cultural and geographic distinctions. This was absent in interviews.
+4. **Employee-centric vs. Organizational-centric:** Conversations explored employee wellbeing, mental health, job satisfaction. Interviews leaned toward organizational/system considerations.
+5. **Obligation vs. Motivation:** Interviewees are reactive respondents to an authority. Conversation participants are proactive collaborators motivated to teach and learn from peers.
+
+### Named Participants (approved for proposals and outbound)
+
+**From R-001 (Deloitte White Paper):** Pfizer (Wendy Mayer, VP Candidate Experience), AlphaSense (John Reid-Dodick, CPO), Legal & General (Emmajane Varley), Square (Tracy Krilich, Head of EX), SAP (Lynne Krishna, Global Change Lead), AWS (Cassandra Babilya, EX Leader), Mambu (Vivienne Heffernan). [Source: research/deloitte-white-paper.md]
+
+**From R-002 (CHRO Report):** Samantha Hammock (EVP & CHRO, Verizon), Jacqui Canney (CPO, ServiceNow), Yaarit Silverstone (Senior MD, Accenture Strategy), Marilyn Chaplin (CHRO, NTT), Christian Schmeichel (SVP, SAP), Soni Basi (Former Global CPO, Edelman), Josefin Erseus (CHRO Nordic, Teleperformance), Volker Schrank (VP HR & EX, Mondelez International). [Source: research/chro-report.md]
+
+**From R-003 (Employee Voice Report):** Marc Solow (MD, Deloitte), David Meza (Head of People Analytics, NASA), Ann-Marie Johnson (Senior Director, Salesforce), Bill Morrissey (Head of Employee Listening, Amazon/AWS). [Source: research/employee-voice-report.md]
+
+### Organization Logos (research participants)
+**R-002:** LVMH, Unilever, Hilton, State Farm, Diageo, PepsiCo, AlphaSense, U.S. Army, ServiceNow, Siemens, Coca-Cola, IKEA, Red Bull, ABB, SAP, CVS, GSK, Verizon, Mondelez, Edelman, ASML, NTT, Coty, Teleperformance, Marriott, U.S. Air Force, Burberry, Nestle, Ubisoft, U.S. Olympic Committee, Morningstar, Sweco, Arizona State University, Builders FirstSource, GroupM. [Source: research/chro-report.md]
+
+**R-003:** Bank of America, Salesforce, Expedia, PepsiCo, Nissan, Target, Dyson, Swarovski, Roche, Colgate-Palmolive, IKEA, NASA, General Mills, H&M, Bayer, Ford, LEGO, Adidas, BlackRock, AWS, Kraft Heinz, Royal Caribbean, GSK, EDF. [Source: research/employee-voice-report.md]
 
 ## Gotchas
 
