@@ -1,7 +1,7 @@
 ---
 title: Messaging Framework
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 owner: "Brain Owner"
 status: production
 ---
@@ -34,7 +34,7 @@ status: production
 **Approved language:**
 - "1,000+ words per conversation. 10 words per survey answer. That's not a marginal improvement."
 - "More qualitative data in one session than a year of focus groups."
-- "29,810 qualitative statements captured in a single study." [Source: Employee Voice report]
+- "29,810 qualitative statements captured in a single study." [Source: research/R-003]
 
 **Forbidden language:**
 - "Big data" (wrong framing — this is rich data, not just large volume)
@@ -103,12 +103,12 @@ status: production
 ### Objection 1: "We already have Qualtrics/Glint/Peakon."
 **Response:** We know. Most of our customers do too. Natter doesn't replace your survey platform — it adds the qualitative depth your surveys are missing. Your survey tells you engagement is down 4 points. Natter tells you why — in employees' own words — and gives you specific themes to act on. Think of it as the qualitative layer that makes your survey investment more valuable.
 
-**Proof point:** "What's your response rate on open-ended survey questions? And how many words does the average response contain? If the answer is under 50%, you have a voice gap that surveys can't close." [Source: icp.md#pains]
+**Proof point:** "What's your response rate on open-ended survey questions? And how many words does the average response contain? If the answer is under 50%, you have a voice gap that surveys can't close." Fewer than half of People Listening leaders rate current employee listening initiatives as "effective." [Source: research/R-003] Survey fatigue isn't about frequency — it's about lack of tangible outcomes from feedback. [Source: research/R-003]
 
 ### Objection 2: "How is this different from a survey?"
 **Response:** A survey asks a question and records a click or a short text response. Natter matches two employees into a video conversation and captures what they actually say to each other — 1,000+ words in 7 minutes. AI analyzes every conversation simultaneously and delivers themes, sentiment, and priorities in under an hour. It's the difference between counting opinions and understanding them.
 
-**Proof point:** "In one Natter study, 420 peer conversations captured 29,810 qualitative statements — 492,184 words transcribed, 96 themes generated. Compare that to 420 survey responses averaging 10 words each: 4,200 words, maybe 3 themes. Same people, 100x the insight." [Source: Employee Voice report]
+**Proof point:** "In one Natter study, 420 peer conversations captured 29,810 qualitative statements — 492,184 words transcribed, 96 themes generated. Compare that to 420 survey responses averaging 10 words each: 4,200 words, maybe 3 themes. Same people, 100x the insight." [Source: research/R-003]
 
 ### Objection 3: "My employees won't talk on video."
 **Response:** This is the most common concern and the least supported by data. Natter sessions consistently achieve 80%+ participation rates — significantly higher than most survey programs. The 1:1 peer format feels fundamentally different from a town hall or a recorded interview. Employees are talking to a colleague, not presenting to an audience. And because PII is redacted at transcription, there's genuine anonymity. Employees speak freely when the format is designed for it.
@@ -118,7 +118,7 @@ status: production
 ### Objection 4: "What about data privacy?"
 **Response:** Lead with credentials: ISO 27001 certified. GDPR, UK GDPR, EU AI Act compliant. CCPA aligned. PII is redacted at the point of transcription — not during analysis, not after review, at the moment the audio is transcribed. Data is anonymized, not just confidential. We can brief your DPO on the specific data flow and redaction mechanisms.
 
-**Proof point:** Walk through the data flow diagram: conversation → transcription (PII redacted here) → AI analysis → insight report. No path from insight to individual identity. Offer to share the ISO 27001 certificate and the data processing agreement.
+**Proof point:** Walk through the data flow diagram: conversation → transcription (PII redacted here) → AI analysis → insight report. No path from insight to individual identity. 56% of conversations in Natter's research cited concern about ethical use of AI for data security and privacy — Natter's ISO 27001 certification is the direct response. [Source: research/R-001] Offer to share the ISO 27001 certificate and the data processing agreement.
 
 ### Objection 5: "This sounds expensive."
 **Response:** The comparison matters. A McKinsey listening exercise costs $600K+ and reaches 30 people. Qualtrics enterprise costs $250K+ and gives you survey data — clicks on a form. Natter costs $200–$400K and gives you real human conversations with 20,000+ employees, AI-analyzed insights in under an hour, and board-ready reports. The question is not whether it's expensive. The question is what it costs to make a $50M transformation decision without hearing what your workforce actually thinks.
@@ -239,3 +239,55 @@ Best Alternative to a Negotiated Agreement. Strong PREDICT = weak customer BATNA
 4. Monday: 30-min meeting — deal clinic, playbook tension, priorities → Brain commits
 
 [Source: guidelines/sales-usage.md]
+
+---
+
+## Research Evidence
+
+Research proof points for use across all messaging. Every stat below is sourced from Natter's published research — produced USING the platform.
+
+### AI Adoption and Change Management
+- Only 10% of leaders currently use AI often for decisions, but 74% anticipate using AI often within 5 years. [Source: research/R-001]
+- Only 24% of leaders have deployed GenAI company-wide. [Source: research/R-002]
+- 70% of conversations cited the need for education and transparency to drive trust with AI. [Source: research/R-001]
+- Less than 40% of participants agree they get enough real-time, insightful feedback from their frontline to navigate change management. [Source: research/R-002]
+
+### Trust Deficit — The Core Problem
+- Employees view employers as 188% less empathetic and human when AI tools are offered without trust-building. [Source: research/R-001]
+- Employees who highly trust their employers are 50% less likely to look for a new job and 180% more likely to feel motivated. [Source: research/R-001]
+
+### The Listening Gap
+- Fewer than half of People Listening leaders rate current employee listening initiatives as "effective." [Source: research/R-003]
+- Survey fatigue is not about frequency — it's about lack of tangible outcomes from feedback. [Source: research/R-003]
+- Almost every leader noted an increase in employee listening initiatives over the past two years — the market is growing. [Source: research/R-003]
+
+### Platform Scale Proof
+- 420 peer-to-peer conversations across 34 countries in 40 minutes. 29,810 qualitative statements. 492,184 words transcribed. 96 themes generated. [Source: research/R-003]
+- 142 senior workforce leaders in a single 90-minute roundtable. [Source: research/R-001]
+- 58 CHROs, 700+ collaborative ideas summarized instantly. [Source: research/R-002]
+
+### Third-Party Validation (paraphrased expert insights for objection handling and VP support)
+
+**Marc Solow, Managing Director, Human Capital Analytics & Insights, Deloitte:** [Source: research/R-003]
+- The biggest challenge isn't collecting sentiment — it's the last mile: what do you do with it, how do you close the loop
+- Organizations want to move away from traditional annual surveys toward always-on listening
+- Survey fatigue isn't about frequency — it's about lack of tangible outcomes from feedback
+- There are products like Natter that help conduct focus groups and develop insights at scale
+- It's early days for AI in employee listening — most tools are nascent in NLP insight development
+- Huge opportunity for technology to gather data at scale and develop insights quickly
+
+**John Reid-Dodick, CPO, AlphaSense:** [Source: research/R-002]
+- The CHRO role is profoundly important in the GenAI moment — don't underestimate it
+- Take risk, take risk, take risk — this is not the time to be overly cautious
+
+**Samantha Hammock, EVP & CHRO, Verizon:** HR should lead AI initiatives — enhancing workforce capabilities and evolving strategic approach. [Source: research/R-002]
+
+**Jacqui Canney, CPO, ServiceNow:** [Source: research/R-002]
+- Elevate people who embrace AI technology — they push CHROs to gain the lens they didn't grow up with
+- HR professionals experimenting and being OK with failures will be key to changing how companies work
+
+**Yaarit Silverstone, Senior MD, Accenture Strategy:** Every single role will be impacted by GenAI from boardroom to frontline. [Source: research/R-002]
+
+**Soni Basi, Former Global CPO, Edelman:** Baseline education sets context for GenAI, increases knowledge, and reduces fear. [Source: research/R-002]
+
+**Josefin Erséus, CHRO Nordic, Teleperformance:** GenAI trains customer service agents for difficult conversations — building muscle memory through AI. [Source: research/R-002]

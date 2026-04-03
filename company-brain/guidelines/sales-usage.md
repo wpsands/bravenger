@@ -1,7 +1,7 @@
 ---
 title: Sales Agent Usage Guide
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 scope: "Sales team agents and operators"
 owner: "Brain Owner"
 status: production
@@ -113,6 +113,17 @@ Based on the persona and signal, hypothesize which pains from `icp.md#pains` and
 - "If you could hear from 20,000 employees in under an hour — on any strategic topic — what would you ask?"
 
 [Source: personas/persona-chro.md#pains] [Source: personas/persona-people-analytics.md#pains] [Source: personas/persona-vp-strategy.md#pains]
+
+### Research-Backed Discovery Talk Track (Marc Solow, Deloitte)
+
+Use these paraphrased insights from Marc Solow (Managing Director, Human Capital Analytics & Insights, Deloitte) to validate pain points during discovery: [Source: research/R-003]
+
+- **On the last-mile problem:** "The biggest challenge isn't collecting sentiment — it's what you do with it after. How do you close the loop?" Use this when the prospect describes a listening program that produces data but no action.
+- **On the shift from annual surveys:** "The market is moving from traditional annual surveys toward always-on listening." Use this to validate prospects who are frustrated with survey cadence.
+- **On survey fatigue:** "Survey fatigue isn't about frequency — it's about lack of tangible outcomes." Use this to reframe when prospects say "our employees are tired of surveys."
+- **On Natter's category:** "There are products that help conduct focus groups and develop insights at scale." Use this as third-party validation when explaining what Natter does.
+- **On AI maturity:** "It's early days for AI in employee listening — most tools are nascent in NLP insight development." Use this when competing against Qualtrics or Glint AI features.
+- **On the opportunity:** "Huge opportunity for technology to gather data at scale and develop insights quickly." Use this to reinforce urgency and market timing.
 
 ---
 

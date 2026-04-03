@@ -2,7 +2,7 @@
 title: "Employee Listening & Engagement"
 use_case_id: "UC-001"
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 status: "fully-supported"
 owner: "Brain Owner"
 
@@ -22,7 +22,7 @@ tools_involved:
   - "Sentiment analysis"
   - "Insight dashboard and reporting"
   - "HRIS integration for matching and demographics"
-proof: "240 interviews + 420 peer conversations capturing 29,810 qualitative statements, 492,184 words transcribed, 96 themes generated. [Source: Employee Voice report]. 58 CHROs generating 700+ collaborative ideas in a 90-minute session. [Source: CHRO report]."
+proof: "240 interviews + 420 peer conversations capturing 29,810 qualitative statements, 492,184 words transcribed, 96 themes generated. [Source: research/R-003]. 58 CHROs generating 700+ collaborative ideas in a 90-minute session. [Source: research/R-002]."
 
 connected_use_cases:
   - "UC-003"
@@ -78,6 +78,28 @@ After deploying Natter for employee listening:
 - **Real-time translation for multilingual sessions.** Natter supports conversations in multiple languages and AI analysis across languages, but real-time translation during the conversation itself is not yet available. Participants are matched by language preference.
 - **Integration with existing survey platforms.** Natter's insight data can be exported via API, but native integration with Qualtrics, CultureAmp, or Glint for unified dashboards is not yet available.
 - **Automated action tracking.** The insight report includes recommended actions, but tracking whether those actions were taken — and their impact on subsequent session themes — requires manual follow-up. An automated insight-to-action tracking dashboard is on the roadmap.
+
+## Proof Points
+
+### Trust and Business Case
+- Employees who highly trust their employers are 50% less likely to look for a new job and 180% more likely to feel motivated — making trust-building through authentic listening a direct driver of retention and productivity. [Source: research/R-001]
+- Employees view employers as 188% less empathetic and human when AI tools are offered without proper trust-building — demonstrating why conversation-based listening builds trust where survey tools erode it. [Source: research/R-001]
+- 56% of conversations in Natter's Deloitte research cited concern about ethical use of AI for data security and privacy — validating Natter's ISO 27001 approach as a direct response to the market's top concern. [Source: research/R-001]
+
+### The Listening Gap
+- Fewer than half of interviewees in the Employee Voice study rated current employee listening initiatives as "effective" — confirming the gap Natter fills. [Source: research/R-003]
+- Less than 40% of participants in the CHRO study agree they get enough real-time, insightful feedback from their frontline to help navigate change management. [Source: research/R-002]
+- Survey fatigue is not about frequency — it's about lack of tangible outcomes from feedback. This reframes the common objection and validates Natter's insight-to-action loop as the real solution. [Source: research/R-003]
+
+### Platform Capability
+- 58% of conversations in Natter's Deloitte research discussed wanting to use AI to facilitate more effective feedback loops — a direct validation of Natter's core value proposition. [Source: research/R-001]
+- Approximately one-third of conversations cited AI's ability to unlock time for meaningful human interactions — supporting Natter's narrative that AI enables deeper human connection, not replaces it. [Source: research/R-001]
+- 96 themes and insights generated from 29,810 qualitative statements and 492,184 words transcribed in a single study — demonstrating Natter's AI summarization capability at scale. [Source: research/R-003]
+
+### Market Validation
+- A super majority of interviewees in the Employee Voice study rated Employee Voice as the most important factor for understanding overall organizational health. [Source: research/R-003]
+- Just over half of interviewees are already leveraging GenAI tools to capture employee sentiment, and the vast majority indicated GenAI will make the process easier. [Source: research/R-003]
+- 61% conversation coverage on "Challenges and Barriers to Effective Communication," 59% on "Feedback Mechanisms and Survey Practices," and 54% on "Survey Methodology and Feedback Fatigue" — showing these are dominant concerns among listening leaders. [Source: research/R-003]
 
 ## Connected Use Cases
 

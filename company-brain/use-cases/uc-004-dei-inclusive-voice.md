@@ -2,7 +2,7 @@
 title: "DEI & Inclusive Voice Capture"
 use_case_id: "UC-004"
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 status: "fully-supported"
 owner: "Brain Owner"
 
@@ -21,7 +21,7 @@ tools_involved:
   - "AI transcription and theme detection"
   - "Anonymization and PII redaction"
   - "Demographic analysis with privacy safeguards"
-proof: "The voice of the silent majority is just as important as that of the vocal minority. Legacy power structures often empower a vocal minority to speak up. [Source: Employee Voice report]. Natter's design — 1:1 peer matching, PII redaction, anonymity — creates conditions for psychological safety that traditional listening tools cannot."
+proof: "The voice of the silent majority is just as important as that of the vocal minority. Legacy power structures often empower a vocal minority to speak up. [Source: research/R-003]. Natter's design — 1:1 peer matching, PII redaction, anonymity — creates conditions for psychological safety that traditional listening tools cannot."
 
 connected_use_cases:
   - "UC-001"
@@ -48,7 +48,7 @@ Before Natter, DEI-focused voice capture looks like this:
 - **ERG-hosted focus groups reach a fraction.** Employee Resource Groups host listening sessions with 10-15 members. The conversation is moderated by an ERG leader who may have their own agenda. Dominant voices shape the discussion. Introverted members stay silent. The output is a qualitative anecdote from a non-representative sample.
 - **Town halls amplify the majority.** When the CEO hosts a town hall on inclusion, the people who speak up are disproportionately senior, confident, and from majority demographics. The people with the most important perspectives — those experiencing exclusion — are the least likely to raise their hand in a 500-person auditorium.
 - **Anonymous comment boxes collect fragments.** Platforms like anonymous pulse tools or suggestion boxes collect short text inputs. "More diverse leadership." "Inclusion training isn't enough." These fragments lack context, depth, and the conversational nuance that reveals what employees actually experience.
-- **Legacy power structures suppress honest voice.** "The voice of the silent majority is just as important as that of the vocal minority. Legacy power structures often empower a vocal minority to speak up." [Source: Employee Voice report] Traditional listening tools reinforce these power structures rather than equalizing them.
+- **Legacy power structures suppress honest voice.** "The voice of the silent majority is just as important as that of the vocal minority. Legacy power structures often empower a vocal minority to speak up." [Source: research/R-003] Traditional listening tools reinforce these power structures rather than equalizing them.
 
 ## Outcome
 
@@ -75,6 +75,17 @@ After deploying Natter for DEI and inclusive voice capture:
 - **Multi-language conversation support.** Natter supports multiple languages for analysis, but matching two participants who speak different languages requires either pre-matching by language or real-time translation (not yet available).
 - **Intersectional analysis.** Demographic analysis currently supports single-dimension cuts (gender, ethnicity, geography, etc.). Intersectional analysis (e.g., women of color in senior roles in APAC) requires sufficient sample size and is limited by minimum group sizes. Enhanced intersectional analysis is on the roadmap.
 - **ERG integration.** Native integration with ERG management platforms to streamline invitation, participation tracking, and reporting to ERG leaders is not yet available.
+
+## Proof Points
+
+### Inclusion in Feedback Mechanisms
+- 46% conversation coverage on "Diversity and Inclusion in Feedback Mechanisms" in the Employee Voice study — showing DEI in listening is a top-of-mind concern for People leaders globally. [Source: research/R-003]
+- Approximately one-third of conversations in the Deloitte white paper cited concern for bias and inclusion challenges of AI — demonstrating that DEI concerns are central to AI transformation conversations. [Source: research/R-001]
+
+### The Conversation Advantage for Inclusive Voice
+- Conversations uniquely highlighted cultural and geographic distinctions that were absent in traditional interviews — validating Natter's peer-to-peer format as inherently more inclusive than structured research methods. [Source: research/R-003]
+- Conversations explored employee wellbeing, mental health, and job satisfaction, while interviews leaned toward organizational and system considerations — showing that peer-to-peer formats surface the human experience that DEI programs need to hear. [Source: research/R-003]
+- Conversation participants are proactive collaborators motivated to teach and learn from peers, unlike interviewees who are reactive respondents to an authority — a fundamental shift in power dynamics that serves underrepresented voices. [Source: research/R-003]
 
 ## Connected Use Cases
 

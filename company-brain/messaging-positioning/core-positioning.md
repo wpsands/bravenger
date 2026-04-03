@@ -1,7 +1,7 @@
 ---
 title: Core Positioning
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 owner: "Brain Owner"
 status: production
 ---
@@ -31,19 +31,19 @@ For enterprise organizations that need to hear what their workforce really think
 
 **Why it matters:** For decades, organizations faced a false choice: surveys gave you scale without depth (10 words per answer), interviews gave you depth without scale (20-30 people per study). Natter eliminates this tradeoff. A 7-minute conversation yields 1,000+ words — 100x more insight per participant than a survey answer. Multiply by 20,000 participants and you have more qualitative data than a decade of focus groups.
 
-**Proof point:** 240 interviews + 420 peer conversations capturing 29,810 qualitative statements, 492,184 words transcribed, 96 themes generated in a single study. [Source: Employee Voice report]
+**Proof point:** 240 interviews + 420 peer conversations capturing 29,810 qualitative statements, 492,184 words transcribed, 96 themes generated in a single study. [Source: research/R-003]
 
 ### 2. Decision-Ready in Hours, Not Months {#differentiator-2}
 **What it means:** Natter's AI delivers action-ready insights — clear priorities and actions straight from employees' voices — within an hour of session close. The typical survey cycle (collection → analysis → report → leadership review → action planning) takes 3-6 months. Natter compresses this to hours.
 
 **Why it matters:** The insight-to-action gap is the single biggest threat to employee trust in listening programs. When employees give feedback in January and see change in September (if ever), trust erodes. Natter's speed means leadership can act within days. When employees see visible change within weeks, participation and honesty compound.
 
-**Proof point:** 58 CHROs generated 700+ collaborative ideas in a 90-minute Natter session. Insight report delivered within 48 hours. [Source: CHRO report]
+**Proof point:** 58 CHROs generated 700+ collaborative ideas in a 90-minute Natter session. Insight report delivered within 48 hours. [Source: research/R-002]
 
 ### 3. Psychologically Safe by Design {#differentiator-3}
 **What it means:** ISO 27001 certified. GDPR, UK GDPR, EU AI Act compliant. CCPA aligned. PII redacted at the point of transcription — not after analysis, not during review, at the moment of transcription. True anonymity, not just confidentiality. Peer-to-peer matching eliminates power dynamics. The system is engineered so that honest conversation has no negative consequences.
 
-**Why it matters:** Trust is the precondition for honest conversation. Employees are 188% less likely to view their employer as empathetic and human when AI tools are offered without proper trust-building. [Source: Deloitte TrustID survey] If employees don't believe the conversation is truly anonymous, they self-censor. Natter's architecture makes self-censorship unnecessary.
+**Why it matters:** Trust is the precondition for honest conversation. Employees are 188% less likely to view their employer as empathetic and human when AI tools are offered without proper trust-building. [Source: research/R-001] If employees don't believe the conversation is truly anonymous, they self-censor. Natter's architecture makes self-censorship unnecessary.
 
 **Proof point:** Natter sessions consistently achieve 80%+ participation rates — significantly higher than typical survey response rates — because employees experience the format as fundamentally different from traditional listening.
 
@@ -52,14 +52,14 @@ For enterprise organizations that need to hear what their workforce really think
 
 **Why it matters:** Competitors can add AI to surveys (Qualtrics has). They can add conversation features to engagement platforms (CultureAmp might). But orchestrating thousands of simultaneous conversations with intelligent matching, real-time transcription, and instant AI analysis requires infrastructure that was purpose-built for this challenge. It cannot be retrofitted onto a survey platform.
 
-**Proof point:** Trusted by Legal & General, Accenture, SAP, Mondelez, Deloitte, PwC, Miro, Verizon, ServiceNow, Hilton, PepsiCo, LVMH, Coca-Cola, IKEA, AWS, Salesforce, NASA, Bank of America, Target, BlackRock, Ford, and 150+ others across 34+ countries.
+**Proof point:** Leaders from ABB, Accenture, Adidas, AlphaSense, AWS, Bank of America, BlackRock, Burberry, Coca-Cola, Deloitte, Diageo, Ford, GSK, Hilton, IKEA, Kraft Heinz, LEGO, LVMH, Marriott, Mondelez, NASA, Nestlé, NTT, PepsiCo, Pfizer, Roche, Salesforce, SAP, ServiceNow, Siemens, Target, Unilever, Verizon, and 150+ other organizations across 34+ countries have participated in Natter-hosted research and roundtables. [Source: research/R-001] [Source: research/R-002] [Source: research/R-003]
 
 ### 5. Insight-to-Action Loop That Compounds Trust {#differentiator-5}
 **What it means:** Natter doesn't just generate insight — it compresses the cycle from insight to visible organizational action. When leadership acts on Natter data within weeks (not months), employees see the impact. When employees see impact, they participate more honestly in the next session. Trust compounds. Data quality improves. Organizational intelligence deepens.
 
-**Why it matters:** The biggest challenge in employee listening is not collecting sentiment — it's the last mile: once you collect it, what do you do with it? [Source: Deloitte white paper] Survey platforms excel at data collection but provide no mechanism for closing the loop. Natter's speed and specificity make visible action possible within days of a session.
+**Why it matters:** The biggest challenge in employee listening is not collecting sentiment — it's the last mile: once you collect it, what do you do with it? [Source: research/R-001] Survey platforms excel at data collection but provide no mechanism for closing the loop. Natter's speed and specificity make visible action possible within days of a session.
 
-**Proof point:** From the Employee Voice report: fewer than half of interviewees rated current employee listening initiatives as "effective." The gap is not data collection — it's action. Natter closes the gap by delivering specific, prioritized, actionable themes that leadership can act on immediately.
+**Proof point:** From the Employee Voice report: fewer than half of interviewees rated current employee listening initiatives as "effective." [Source: research/R-003] 58% of conversations in the Deloitte research discussed wanting to use AI to facilitate more effective feedback loops — validating the market demand for Natter's insight-to-action architecture. [Source: research/R-001] The gap is not data collection — it's action. Natter closes the gap by delivering specific, prioritized, actionable themes that leadership can act on immediately.
 
 ---
 
@@ -110,6 +110,55 @@ When competitors come up in conversation, follow these rules:
 | No executive sponsor for employee voice | Qualify carefully | Walk away if no path to sponsorship |
 | Procurement-only conversation (no champion) | Nurture, don't compete | — |
 | Professional services firm wanting client-facing research | Yes — secondary ICP, strong use case | — |
+
+---
+
+## Social Proof
+
+### Research Participants
+
+Organizations whose senior leaders have participated in Natter-hosted research roundtables (confirm active customer status separately before claiming as "customers" vs "research participants"):
+
+ABB, Accenture, Adidas, AlphaSense, ASML, Arizona State University, AWS, Bank of America, Bayer, BlackRock, Builders FirstSource, Burberry, Coca-Cola, Colgate-Palmolive, Coty, CVS, Deloitte, Diageo, Dyson, EDF, Edelman, Expedia, Ford, General Mills, GroupM, GSK, H&M, Hilton, IKEA, Kraft Heinz, Legal & General, LEGO, LVMH, Mambu, Marriott, Miro, Mondelez International, Morningstar, NASA, Nestlé, Nissan, NTT, PepsiCo, Pfizer, PwC, Red Bull, Roche, Royal Caribbean, Salesforce, SAP, ServiceNow, Siemens, State Farm, Swarovski, Sweco, Target, Teleperformance, Tupperware, U.S. Air Force, U.S. Army, U.S. Olympic Committee, Ubisoft, Unicomer, Unilever, Verizon
+
+[Source: research/R-001] [Source: research/R-002] [Source: research/R-003]
+
+### Named Executive Voices (approved for proposals and outbound)
+
+| Name | Title | Organization | Report |
+|------|-------|-------------|--------|
+| Samantha Hammock | EVP & CHRO | Verizon | R-002 |
+| Jacqui Canney | Chief People Officer | ServiceNow | R-002 |
+| Yaarit Silverstone | Senior Managing Director, Talent & Organization | Accenture Strategy | R-002 |
+| Marilyn Chaplin | CHRO | NTT | R-002 |
+| Christian Schmeichel | SVP & Global Head of People and Culture Services | SAP | R-002 |
+| Marc Solow | Managing Director, Human Capital Analytics & Insights | Deloitte | R-003 |
+| David Meza | Head of People Analytics | NASA | R-003 |
+| Ann-Marie Johnson | Senior Director, People Strategy & Analytics | Salesforce | R-003 |
+| Bill Morrissey | Head of Employee Listening System & Products | Amazon/AWS | R-003 |
+| Wendy Mayer | VP Candidate Experience | Pfizer | R-001 |
+| John Reid-Dodick | CPO | AlphaSense | R-001, R-002 |
+
+### Scale Proof Points
+
+- 7.4 million+ global employees represented by participants in the CHRO report alone. [Source: research/R-002]
+- 492,184 words transcribed in a single Employee Voice study. [Source: research/R-003]
+- 420 peer-to-peer conversations enabled across 34 countries in 40 minutes. [Source: research/R-003]
+- 142 senior workforce leaders in a single 90-minute roundtable. [Source: research/R-001]
+
+---
+
+## Why Conversations Beat Every Other Method {#conversations-vs-interviews}
+
+The Employee Voice report documented five key differences between traditional interviews and Natter peer-to-peer conversations. These differences ARE the product thesis — they explain why Natter exists and why conversations produce better insights than any other method: [Source: research/R-003]
+
+1. **Breadth vs Depth:** Interviews captured broad themes but lacked nuanced exploration. Conversations went deeper into cultural barriers, psychological safety, and actionable strategies.
+2. **Problem vs Solution focus:** Interviews centered on identifying problems. Conversations emphasized solutions — practical ways forward, multi-channel feedback systems, inclusive designs.
+3. **Cultural/Geographic perspectives:** Conversations uniquely highlighted cultural and geographic distinctions. This was absent in interviews.
+4. **Employee-centric vs Organizational-centric:** Conversations explored employee wellbeing, mental health, job satisfaction. Interviews leaned toward organizational/system considerations.
+5. **Obligation vs Motivation:** Interviewees are reactive respondents to an authority. Conversation participants are proactive collaborators motivated to teach and learn from peers.
+
+Additionally: 41% of leaders believe AI will cause a decrease in quality of human connections — reinforcing why authentic peer-to-peer conversations are more valuable than ever. [Source: research/R-001]
 
 ---
 

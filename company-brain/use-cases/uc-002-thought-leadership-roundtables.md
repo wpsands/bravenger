@@ -2,7 +2,7 @@
 title: "Thought Leadership & Executive Roundtables"
 use_case_id: "UC-002"
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 status: "fully-supported"
 owner: "Brain Owner"
 
@@ -22,7 +22,7 @@ tools_involved:
   - "Sentiment analysis"
   - "Executive insight report generation"
   - "Roundtable invitation and registration system"
-proof: "142 senior workforce leaders in a 90-minute Deloitte Digital + Natter roundtable. [Source: Deloitte white paper]. 58 CHROs from Verizon, ServiceNow, SAP, Mondelez, NTT, Edelman, etc. generating 700+ collaborative ideas instantly. [Source: CHRO report]."
+proof: "142 senior workforce leaders in a 90-minute Deloitte Digital + Natter roundtable. [Source: research/R-001]. 58 CHROs from Verizon, ServiceNow, SAP, Mondelez, NTT, Edelman, etc. generating 700+ collaborative ideas instantly. [Source: research/R-002]."
 
 connected_use_cases:
   - "UC-001"
@@ -65,7 +65,7 @@ After deploying Natter for executive roundtables:
 - **AI-generated insight report within 48 hours.** Themes, sentiment, consensus areas, and divergence points — all extracted from the actual words executives said to each other. Not a consultant's interpretation. The executives' own voices.
 - **The experience IS the product demo.** Executives who participate in a Natter roundtable understand immediately what the platform does. They felt the quality of the conversation. They see the quality of the insight report. The sales conversation shifts from "let me show you a demo" to "you already experienced it — shall we run this inside your organization?"
 - **Graduated trial converts to MSA.** Roundtable attendee → Session 1 with 30 of their employees → Session 2 with 20,000 employees → MSA. Each step builds confidence and demonstrates value on their own data.
-- **Thought leadership authority.** Natter-hosted roundtables produce publishable research: "What 142 Senior Workforce Leaders Think About AI and Employees" [Source: Deloitte white paper]. This content feeds marketing, builds brand authority, and attracts new roundtable participants.
+- **Thought leadership authority.** Natter-hosted roundtables produce publishable research: "What 142 Senior Workforce Leaders Think About AI and Employees" [Source: research/R-001]. This content feeds marketing, builds brand authority, and attracts new roundtable participants.
 - **Customer-hosted roundtables generate intelligence.** Enterprise customers use the platform to host their own roundtables — internal leadership sessions, customer advisory events, stakeholder consultations — using the same AI-powered methodology.
 
 ## Gotchas
@@ -82,6 +82,30 @@ After deploying Natter for executive roundtables:
 - **Multi-round conversation formats.** Current roundtables are a single round of 1:1 conversations. A format with multiple rounds (different pairings each round) would produce richer, more diverse insight. On the roadmap.
 - **White-label roundtable hosting.** Enterprise customers who want to host their own roundtables under their brand need white-label capabilities. Currently requires Natter branding.
 - **Automated roundtable-to-pipeline tracking.** The conversion from roundtable attendee to Session 1 to MSA is tracked manually in Salesforce. Automated tracking and analytics for the graduated trial funnel is on the roadmap.
+
+## Proof Points
+
+### Scale Demonstrations
+- 142 senior workforce leaders participated in a 90-minute Deloitte Digital × Natter roundtable — the largest peer-to-peer executive conversation on AI and the workforce experience ever conducted. 36% were Chief People Officers, 78% C-Suite or Department Heads. [Source: research/R-001]
+- 58 CHROs participated in deep-dive conversations, generating 163 1:1 conversations, 309 qualitative insights, and 684 data points. 7.4 million+ global employees represented across 6 continents. [Source: research/R-002]
+- 700+ collaborative ideas were generated amongst CHROs and summarized instantly using Natter's technology — demonstrating platform speed and scale for executive audiences. [Source: research/R-002]
+- 129 participants enabled 420 1:1 conversations, producing 462 qualitative insights and 8,100 data points in the Employee Voice study's Natter conversation portion. [Source: research/R-003]
+- 420 peer-to-peer conversations enabled across 34 countries in 40 minutes — demonstrating global scale and speed. [Source: research/R-003]
+- 29,810 qualitative statements captured, 492,184 words transcribed, 96 themes generated from a single study combining interviews and Natter conversations. [Source: research/R-003]
+
+### Interview vs Conversation — Why Roundtables Produce Better Insight
+The Employee Voice report documented five key differences between traditional interviews and Natter peer-to-peer conversations — these differences ARE the product thesis for roundtables: [Source: research/R-003]
+
+1. **Breadth vs Depth:** Interviews captured broad themes but lacked nuanced exploration. Conversations went deeper into cultural barriers, psychological safety, and actionable strategies.
+2. **Problem vs Solution focus:** Interviews centered on identifying problems. Conversations emphasized solutions — practical ways forward, multi-channel feedback systems, inclusive designs.
+3. **Cultural/Geographic perspectives:** Conversations uniquely highlighted cultural and geographic distinctions. This was absent in interviews.
+4. **Employee-centric vs Organizational-centric:** Conversations explored employee wellbeing, mental health, job satisfaction. Interviews leaned toward organizational/system considerations.
+5. **Obligation vs Motivation:** Interviewees are reactive respondents to an authority. Conversation participants are proactive collaborators motivated to teach and learn from peers.
+
+### Named Participants (approved for proposals and outbound)
+**From R-001 (Deloitte White Paper):** Pfizer, AlphaSense, Legal & General, Square, SAP, AWS, Mambu
+**From R-002 (CHRO Report):** Verizon (Samantha Hammock, EVP & CHRO), ServiceNow (Jacqui Canney, CPO), Accenture (Yaarit Silverstone), NTT (Marilyn Chaplin, CHRO), SAP (Christian Schmeichel, SVP), Edelman (Soni Basi), Teleperformance (Josefin Erséus), Mondelez (Volker Schrank)
+**From R-003 (Employee Voice):** Deloitte (Marc Solow, MD), NASA (David Meza), Salesforce (Ann-Marie Johnson), AWS (Bill Morrissey)
 
 ## Connected Use Cases
 

@@ -91,13 +91,16 @@ for (const file of files) {
       const citedFile = parts[0].trim();
       const citedSection = parts.length > 1 ? parts.slice(1).join("#").trim() : null;
 
-      // Resolve the file path — citations may omit directory prefixes
+      // Resolve the file path — citations may omit directory prefixes or .md extension
       let resolvedPath = null;
+      const citedFileWithMd = citedFile.endsWith(".md") ? citedFile : citedFile + ".md";
       const candidates = [
         citedFile,
+        citedFileWithMd,
         // Common patterns: just filename without directory
         ...Array.from(headingCache.keys()).filter(
-          (k) => k.endsWith("/" + citedFile) || k === citedFile
+          (k) => k.endsWith("/" + citedFile) || k === citedFile ||
+                 k.endsWith("/" + citedFileWithMd) || k === citedFileWithMd
         ),
       ];
 

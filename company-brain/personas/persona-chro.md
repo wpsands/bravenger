@@ -4,7 +4,7 @@ persona_id: "P-001"
 role: "CHRO / Chief People Officer"
 dmu_function: "Economic Buyer"
 version: "1.1.0"
-last_updated: "2026-04-02"
+last_updated: "2026-04-03"
 owner: "Brain Owner"
 status: production
 ---
@@ -17,7 +17,7 @@ The CHRO or Chief People Officer at a Fortune 500 or Global Enterprise organizat
 
 They are the economic buyer for Natter. They sign the MSA. But they won't sign it based on a demo alone — they need to experience the product through a roundtable or pilot session, see the insight report, and believe it will give them data they cannot get from their existing survey platform.
 
-"We must not underestimate how profoundly important the CHRO role is going to be in this moment." — John Reid-Dodick, CPO AlphaSense [Source: CHRO report]
+"We must not underestimate how profoundly important the CHRO role is going to be in this moment." — John Reid-Dodick, CPO AlphaSense [Source: research/R-002]
 
 ---
 
@@ -55,15 +55,26 @@ They are the economic buyer for Natter. They sign the MSA. But they won't sign i
 
 1. **"Survey fatigue is killing our listening program."** Response rates are declining year over year. Employees are tired of giving feedback with no visible change. The CHRO presents engagement scores to the board, but privately knows the data is increasingly unrepresentative. Less than 50% response rate means the loudest voices dominate the results.
 
-2. **"The board expects me to lead AI adoption and I'm not ready."** GenAI pressure is real. Only 24% of leaders have deployed GenAI company-wide. The CEO wants the CHRO to lead the human side of AI transformation — upskilling, change management, trust-building — but the CHRO lacks the tools to gauge workforce readiness at scale. [Source: CHRO report]
+2. **"The board expects me to lead AI adoption and I'm not ready."** GenAI pressure is real. Only 24% of leaders have deployed GenAI company-wide. The CEO wants the CHRO to lead the human side of AI transformation — upskilling, change management, trust-building — but the CHRO lacks the tools to gauge workforce readiness at scale. [Source: research/R-002]
 
 3. **"I can't hear the frontline."** Standardized surveys miss cultural and language nuances. Non-desk workers are excluded. Town halls amplify the loudest voices. The CHRO knows that the 200,000 frontline workers have a fundamentally different experience than the 5,000 corporate employees — but the listening tools were designed for the corporate office.
 
 4. **"It takes us 6 months to go from data to action."** Annual survey in Q1. Analysis through Q2. Leadership review in Q3. Action planning in Q4. Employees see change... maybe next year. The insight-to-action gap is the single biggest threat to trust in the listening program.
 
-5. **"Employees think AI tools are surveillance."** When AI tools are offered without proper trust-building, employees are 188% less likely to view their employer as empathetic and human. The CHRO needs tools that build trust, not erode it. [Source: Deloitte TrustID survey]
+5. **"Employees think AI tools are surveillance."** When AI tools are offered without proper trust-building, employees are 188% less likely to view their employer as empathetic and human. The CHRO needs tools that build trust, not erode it. [Source: research/R-001]
 
 6. **"Employee Voice is seen as an HR thing, not a strategic lever."** The CEO and board view engagement surveys as an HR metric, not a strategic input. The CHRO struggles to reframe workforce voice as intelligence that informs business decisions — unless they can show data that directly connects employee insight to business outcomes.
+
+### ROI of Trust (for business case conversations)
+- Employees who highly trust their employers are 50% less likely to look for a new job and 180% more likely to feel motivated. Trust-building through authentic listening is a direct driver of retention and productivity. [Source: research/R-001]
+- Among leaders who HAVE deployed GenAI, 100% are confident their frontline is ready to adopt. Among those still planning or piloting, only 49% are confident. The confidence gap closes when leaders do the work of listening. [Source: research/R-002]
+
+### What Peer CHROs Are Saying
+- The CHRO role is profoundly important in the GenAI moment — don't underestimate it (John Reid-Dodick, CPO, AlphaSense). [Source: research/R-002]
+- HR should lead AI initiatives — enhancing workforce capabilities and evolving strategic approach (Samantha Hammock, EVP & CHRO, Verizon). [Source: research/R-002]
+- Elevate people who embrace AI technology — they push CHROs to gain the lens they didn't grow up with (Jacqui Canney, CPO, ServiceNow). [Source: research/R-002]
+- HR professionals experimenting and being OK with failures will be key to changing how companies work (Jacqui Canney, CPO, ServiceNow). [Source: research/R-002]
+- Take risk, take risk, take risk — this is not the time to be overly cautious (John Reid-Dodick, CPO, AlphaSense). [Source: research/R-002]
 
 ---
 
