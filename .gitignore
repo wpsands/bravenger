@@ -6,3 +6,4 @@ dist/
 .DS_Store
 .env
 *.log
+scripts/brain-manifest.json

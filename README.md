@@ -20,7 +20,8 @@ company-brain/          ← Primary example (NovaCRM, a fictional AI-powered CRM
 │   └── messaging-framework.md  Value props, objections, funnel messaging
 └── guidelines/         5 discipline-specific agent instructions
 
-prompts/                ← Pre-configured agent system prompts (one per discipline)
+prompts/                ← Canonical agent system prompts (one per discipline)
+.claude/commands/       ← Thin wrappers that load prompts/ + pass $ARGUMENTS
 scripts/                ← Brain validation tools (lint, frontmatter, citations, language)
 ```
 

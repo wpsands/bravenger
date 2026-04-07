@@ -9,6 +9,7 @@
 const fs = require("fs");
 const path = require("path");
 const yaml = require("js-yaml");
+const { getAllMdFiles, rel } = require("./utils");
 
 const BRAIN_DIR = path.resolve(__dirname, "..", "company-brain");
 
@@ -43,19 +44,6 @@ function extractFrontmatter(content) {
   }
 }
 
-function getAllMdFiles(dir) {
-  const results = [];
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      results.push(...getAllMdFiles(full));
-    } else if (entry.name.endsWith(".md")) {
-      results.push(full);
-    }
-  }
-  return results;
-}
-
 function validateRequired(frontmatter, schema, filePath) {
   const errors = [];
   for (const field of schema.required || []) {
@@ -80,10 +68,6 @@ function validatePattern(value, pattern, field, filePath) {
     return [`${rel(filePath)}: "${field}" value "${value}" doesn't match pattern ${pattern}`];
   }
   return [];
-}
-
-function rel(filePath) {
-  return path.relative(path.resolve(__dirname, ".."), filePath).replace(/\\/g, "/");
 }
 
 function getFileType(filePath) {
@@ -270,18 +254,30 @@ function validate(files) {
   return errors;
 }
 
-// --- Main ---
-const files = getAllMdFiles(BRAIN_DIR);
-collectIds(files);
-const errors = validate(files);
+// --- Exported run function ---
+function run() {
+  knownPersonaIds.clear();
+  knownUseCaseIds.clear();
+  knownPainIds.clear();
+  const files = getAllMdFiles(BRAIN_DIR);
+  collectIds(files);
+  const errors = validate(files);
+  return { passed: errors.length === 0, errors };
+}
 
-if (errors.length > 0) {
-  console.error(`\n❌ Frontmatter validation failed (${errors.length} errors):\n`);
-  for (const e of errors) {
-    console.error(`  • ${e}`);
+module.exports = { run };
+
+// --- Standalone CLI ---
+if (require.main === module) {
+  const { passed, errors } = run();
+  if (!passed) {
+    console.error(`\n❌ Frontmatter validation failed (${errors.length} errors):\n`);
+    for (const e of errors) {
+      console.error(`  • ${e}`);
+    }
+    console.error("");
+    process.exit(1);
+  } else {
+    console.log("✅ Frontmatter validation passed — all files valid.");
   }
-  console.error("");
-  process.exit(1);
-} else {
-  console.log("✅ Frontmatter validation passed — all files valid.");
 }
