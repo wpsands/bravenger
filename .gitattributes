@@ -1,0 +1,9 @@
+# Normalize line endings across platforms
+* text=auto
+
+# Force LF for files that scripts parse with regex
+*.md text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf

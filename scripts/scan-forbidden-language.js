@@ -7,26 +7,10 @@
 
 const fs = require("fs");
 const path = require("path");
+const { getAllMdFiles, rel } = require("./utils");
 
 const BRAIN_DIR = path.resolve(__dirname, "..", "company-brain");
 const BRAND_VISION = path.join(BRAIN_DIR, "brand-vision.md");
-
-function getAllMdFiles(dir) {
-  const results = [];
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      results.push(...getAllMdFiles(full));
-    } else if (entry.name.endsWith(".md")) {
-      results.push(full);
-    }
-  }
-  return results;
-}
-
-function rel(filePath) {
-  return path.relative(path.resolve(__dirname, ".."), filePath).replace(/\\/g, "/");
-}
 
 // Extract forbidden words from brand-vision.md
 function extractForbiddenWords() {
@@ -35,11 +19,10 @@ function extractForbiddenWords() {
 
   // Look for the "Words We Avoid" section and extract from table
   const section = content.match(
-    /## Words We Avoid\n([\s\S]*?)(?=\n## |\n---|$)/
+    /## Words We Avoid\r?\n([\s\S]*?)(?=\r?\n## |\r?\n---|$)/
   );
   if (!section) {
-    console.error("Could not find 'Words We Avoid' section in brand-vision.md");
-    process.exit(1);
+    throw new Error("Could not find 'Words We Avoid' section in brand-vision.md");
   }
 
   // Extract first column from each table row
@@ -100,96 +83,107 @@ function isExemptLine(line) {
   );
 }
 
-// --- Main ---
-const forbiddenWords = extractForbiddenWords();
+// --- Exported run function ---
+function run() {
+  const forbiddenWords = extractForbiddenWords();
 
-if (forbiddenWords.length === 0) {
-  console.error("No forbidden words found. Check brand-vision.md format.");
-  process.exit(1);
-}
+  if (forbiddenWords.length === 0) {
+    return { passed: false, errors: ["No forbidden words found. Check brand-vision.md format."] };
+  }
 
-const files = getAllMdFiles(BRAIN_DIR);
-const violations = [];
+  // Pre-compile all forbidden word patterns once at startup
+  const compiledPatterns = forbiddenWords.map(word => ({
+    word,
+    re: new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i"),
+  }));
 
-for (const file of files) {
-  const relPath = path.relative(BRAIN_DIR, file).replace(/\\/g, "/");
-  if (SKIP_FILES.has(relPath)) continue;
+  const files = getAllMdFiles(BRAIN_DIR);
+  const violations = [];
 
-  const content = fs.readFileSync(file, "utf8");
-  const lines = content.split("\n");
+  for (const file of files) {
+    const relPath = path.relative(BRAIN_DIR, file).replace(/\\/g, "/");
+    if (SKIP_FILES.has(relPath)) continue;
 
-  // Track if we're inside a "Forbidden language:" block
-  let inForbiddenBlock = false;
+    const content = fs.readFileSync(file, "utf8");
+    const lines = content.split("\n");
 
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
+    // Track if we're inside a "Forbidden language:" block
+    let inForbiddenBlock = false;
 
-    // Detect forbidden language definition blocks (in messaging framework)
-    if (/^\*\*Forbidden language:\*\*/.test(line)) {
-      inForbiddenBlock = true;
-      continue;
-    }
-    if (inForbiddenBlock) {
-      // Block ends at next section, heading, or non-list line
-      if (/^(\*\*|###|---|$)/.test(line) && !/^- /.test(line)) {
-        inForbiddenBlock = false;
-      } else {
-        continue; // Skip lines inside forbidden language definition blocks
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+
+      // Detect forbidden language definition blocks (in messaging framework)
+      if (/^\*\*Forbidden language:\*\*/.test(line)) {
+        inForbiddenBlock = true;
+        continue;
       }
-    }
-
-    if (isExemptLine(line)) continue;
-
-    const lower = line.toLowerCase();
-    for (const word of forbiddenWords) {
-      // Word boundary match to avoid false positives
-      const re = new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
-      if (re.test(lower)) {
-        // Context-aware exemptions:
-        // - "platform" referring to an external platform (LinkedIn, etc.) is fine
-        if (word === "platform" && /\b(linkedin|twitter|slack|github|notion)\b/i.test(lower)) {
+      if (inForbiddenBlock) {
+        // Block ends at next section, heading, or non-list line
+        if (/^(\*\*|###|---|$)/.test(line) && !/^- /.test(line)) {
+          inForbiddenBlock = false;
+        } else {
           continue;
         }
-        // - Words inside code blocks or inline code
-        if (line.trim().startsWith("```") || line.trim().startsWith("`")) {
-          continue;
-        }
-        // - Words used critically — quoting what competitors say, mocking bad language
-        if (
-          lower.includes("competitor") ||
-          lower.includes("everyone says") ||
-          lower.includes("none of those") ||
-          lower.includes("overused") ||
-          lower.includes("meaningless") ||
-          /[""\u201C\u201D]/.test(line) && lower.includes(word)
-        ) {
-          continue;
-        }
+      }
 
-        violations.push({
-          file: rel(file),
-          line: i + 1,
-          word: word,
-          context: line.trim().substring(0, 120),
-        });
+      if (isExemptLine(line)) continue;
+
+      const lower = line.toLowerCase();
+      for (const { word, re } of compiledPatterns) {
+        if (re.test(lower)) {
+          if (word === "platform" && /\b(linkedin|twitter|slack|github|notion)\b/i.test(lower)) {
+            continue;
+          }
+          if (line.trim().startsWith("```") || line.trim().startsWith("`")) {
+            continue;
+          }
+          if (
+            lower.includes("competitor") ||
+            lower.includes("everyone says") ||
+            lower.includes("none of those") ||
+            lower.includes("overused") ||
+            lower.includes("meaningless") ||
+            /[""\u201C\u201D]/.test(line) && lower.includes(word)
+          ) {
+            continue;
+          }
+
+          violations.push({
+            file: rel(file),
+            line: i + 1,
+            word: word,
+            context: line.trim().substring(0, 120),
+          });
+        }
       }
     }
   }
+
+  return {
+    passed: violations.length === 0,
+    errors: violations.map(v => `${v.file}:${v.line} — "${v.word}"\n    ${v.context}`),
+    forbiddenWordCount: forbiddenWords.length,
+  };
 }
 
-// --- Output ---
-if (violations.length > 0) {
-  console.error(
-    `\n❌ Forbidden language scan found ${violations.length} violation(s):\n`
-  );
-  for (const v of violations) {
-    console.error(`  • ${v.file}:${v.line} — "${v.word}"`);
-    console.error(`    ${v.context}`);
+module.exports = { run };
+
+// --- Standalone CLI ---
+if (require.main === module) {
+  const { passed, errors, forbiddenWordCount } = run();
+  if (!passed) {
+    console.error(
+      `\n❌ Forbidden language scan found ${errors.length} violation(s):\n`
+    );
+    for (const e of errors) {
+      console.error(`  • ${e}`);
+    }
+    console.error("");
+    process.exit(1);
+  } else {
+    console.log(
+      `✅ Forbidden language scan passed — no violations found (checked ${forbiddenWordCount} forbidden terms).`
+    );
   }
-  console.error("");
-  process.exit(1);
-} else {
-  console.log(
-    `✅ Forbidden language scan passed — no violations found (checked ${forbiddenWords.length} forbidden terms).`
-  );
 }

@@ -1,41 +1,45 @@
 #!/usr/bin/env node
 /**
- * Main Brain lint runner. Executes all validators and reports results.
+ * Main Brain lint runner. Imports validators as modules and reports results.
  * Usage: node scripts/lint-brain.js
  * Exit code: 0 if all pass, 1 if any fail.
  */
 
-const { execSync } = require("child_process");
-const path = require("path");
-
-const checks = [
-  { name: "Frontmatter Validation", script: "validate-frontmatter.js" },
-  { name: "Citation Check", script: "check-citations.js" },
-  { name: "Forbidden Language Scan", script: "scan-forbidden-language.js" },
-];
-
-let failed = false;
+const { run: runFrontmatter } = require('./validate-frontmatter');
+const { run: runCitations }   = require('./check-citations');
+const { run: runLanguage }    = require('./scan-forbidden-language');
 
 console.log("🔍 Running Brain lint checks...\n");
 
-for (const check of checks) {
-  const scriptPath = path.join(__dirname, check.script);
+function safe(name, fn) {
   try {
-    const output = execSync(`node "${scriptPath}"`, {
-      encoding: "utf8",
-      stdio: ["pipe", "pipe", "pipe"],
-    });
-    console.log(output.trim());
+    return { name, ...fn() };
   } catch (err) {
-    failed = true;
-    // Print both stdout and stderr
-    if (err.stdout) console.log(err.stdout.trim());
-    if (err.stderr) console.error(err.stderr.trim());
+    return { name, passed: false, errors: [err.message] };
   }
-  console.log("");
 }
 
-if (failed) {
+const results = [
+  safe('Frontmatter Validation', runFrontmatter),
+  safe('Citation Check',         runCitations),
+  safe('Language Scan',          runLanguage),
+];
+
+const failed = results.filter(r => !r.passed);
+
+results.forEach(r => {
+  if (r.passed) {
+    console.log(`✅ ${r.name}`);
+  } else {
+    console.error(`❌ ${r.name} (${r.errors.length} errors)`);
+    for (const e of r.errors) {
+      console.error(`  • ${e}`);
+    }
+  }
+  console.log("");
+});
+
+if (failed.length) {
   console.error("❌ Brain lint failed. Fix the errors above before committing.");
   process.exit(1);
 } else {
