@@ -22,8 +22,7 @@ function extractForbiddenWords() {
     /## Words We Avoid\n([\s\S]*?)(?=\n## |\n---|$)/
   );
   if (!section) {
-    console.error("Could not find 'Words We Avoid' section in brand-vision.md");
-    process.exit(1);
+    throw new Error("Could not find 'Words We Avoid' section in brand-vision.md");
   }
 
   // Extract first column from each table row

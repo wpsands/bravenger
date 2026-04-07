@@ -153,8 +153,8 @@ function validate(files) {
 
     // Example files have a different schema — just need title and type
     if (fileType === "example") {
-      if (!fm.title) errors.push(`${rel(filePath)}: missing required field "title"`);
-      if (!fm.type) errors.push(`${rel(filePath)}: missing required field "type"`);
+      if (!fm.title) errors.push(`${rel(file)}: missing required field "title"`);
+      if (!fm.type) errors.push(`${rel(file)}: missing required field "type"`);
       continue;
     }
 
