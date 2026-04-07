@@ -11,10 +11,18 @@ const { run: runLanguage }    = require('./scan-forbidden-language');
 
 console.log("🔍 Running Brain lint checks...\n");
 
+function safe(name, fn) {
+  try {
+    return { name, ...fn() };
+  } catch (err) {
+    return { name, passed: false, errors: [err.message] };
+  }
+}
+
 const results = [
-  { name: 'Frontmatter Validation', ...runFrontmatter() },
-  { name: 'Citation Check',         ...runCitations() },
-  { name: 'Language Scan',          ...runLanguage() },
+  safe('Frontmatter Validation', runFrontmatter),
+  safe('Citation Check',         runCitations),
+  safe('Language Scan',          runLanguage),
 ];
 
 const failed = results.filter(r => !r.passed);

@@ -86,7 +86,7 @@ Goals are reviewed quarterly. If a goal changes mid-quarter, update this file.
 
 ---
 
-## Current Quarter Priorities — Q1 2026
+## Current Quarter Priorities — Q2 2026
 
 These are the 3 things that matter most right now. When an agent produces content and multiple directions are equally valid, weight toward these priorities.
 

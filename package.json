@@ -2,7 +2,6 @@
   "name": "bravenger",
   "version": "1.2.0",
   "description": "A structured company brain that powers AI agents across GTM disciplines.",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "node scripts/lint-brain.js",

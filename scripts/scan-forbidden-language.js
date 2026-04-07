@@ -19,7 +19,7 @@ function extractForbiddenWords() {
 
   // Look for the "Words We Avoid" section and extract from table
   const section = content.match(
-    /## Words We Avoid\n([\s\S]*?)(?=\n## |\n---|$)/
+    /## Words We Avoid\r?\n([\s\S]*?)(?=\r?\n## |\r?\n---|$)/
   );
   if (!section) {
     throw new Error("Could not find 'Words We Avoid' section in brand-vision.md");

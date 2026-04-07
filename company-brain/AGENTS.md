@@ -65,16 +65,16 @@ Every factual claim, positioning statement, persona insight, or use case referen
 |-------------|--------|----------------|
 | Blog post | Markdown, 800-1500 words, H2/H3 structure | personas/, use-cases/, core-positioning.md |
 | Landing page copy | Markdown, hero + 3-5 sections, CTA | core-positioning.md, messaging-framework.md |
-| Email campaign | Subject + body, 150-250 words per email | personas/, messaging-framework.md, examples/ |
+| Email campaign | Subject + body, 150-250 words per email | personas/, messaging-framework.md |
 | Social post | Plain text, 100-200 words, LinkedIn format | brand-vision.md, core-positioning.md |
-| Ad copy | Short form, 25-50 words, A/B variants | messaging-framework.md, examples/ |
+| Ad copy | Short form, 25-50 words, A/B variants | messaging-framework.md |
 | Case study draft | Markdown, challenge + approach + results, persona-aligned | use-cases/, personas/, icp.md |
 
 ### Sales
 | Output Type | Format | Key Brain Files |
 |-------------|--------|----------------|
 | Discovery prep | Markdown, persona-specific questions + signals | personas/, icp.md, use-cases/ |
-| Outbound sequence | 3-5 emails, signal-based, 100-200 words each | icp.md#buying-signals, personas/, examples/ |
+| Outbound sequence | 3-5 emails, signal-based, 100-200 words each | icp.md#buying-signals, personas/ |
 | Objection response | Specific objection + response + proof point | messaging-framework.md#objection-handling |
 | Proposal language | Markdown, positioning + scope + outcomes | core-positioning.md, use-cases/ |
 | Competitive response | Markdown, comparison table + narrative | core-positioning.md#competitive-landscape |

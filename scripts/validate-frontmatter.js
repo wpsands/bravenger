@@ -35,7 +35,7 @@ const knownUseCaseIds = new Set();
 const knownPainIds = new Set();
 
 function extractFrontmatter(content) {
-  const match = content.match(/^---\n([\s\S]*?)\n---/);
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!match) return null;
   try {
     return yaml.load(match[1]);
