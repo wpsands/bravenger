@@ -1,22 +1,32 @@
 {
   "name": "bravenger",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "A structured company brain that powers AI agents across GTM disciplines.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test",
     "lint": "node scripts/lint-brain.js",
     "lint:frontmatter": "node scripts/validate-frontmatter.js",
     "lint:citations": "node scripts/check-citations.js",
-    "lint:language": "node scripts/scan-forbidden-language.js"
+    "lint:language": "node scripts/scan-forbidden-language.js",
+    "check": "npm run lint && npm test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wpsands/bravenger.git"
   },
-  "keywords": [],
+  "keywords": [
+    "company-brain",
+    "ai-agents",
+    "knowledge-base",
+    "gtm",
+    "claude"
+  ],
   "author": "Page Sands <page@sandsdx.com>",
   "license": "MIT",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/wpsands/bravenger/issues"
   },

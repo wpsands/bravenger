@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Uploads all Brain markdown files to Anthropic Files API.
+ * Uploads all Brain markdown files to the Anthropic Files API.
  * Writes a manifest to scripts/brain-manifest.json mapping
  * relative file paths to Files API IDs.
  *
@@ -9,12 +9,12 @@
  *        --force    (re-upload even if file_id exists in manifest)
  */
 
-const fs = require('fs');
-const path = require('path');
-const { getAllMdFiles, rel } = require('./utils');
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { getAllMdFiles, rel, BRAIN_DIR } from './utils.js';
 
-const BRAIN_DIR = path.resolve(__dirname, '..', 'company-brain');
-const MANIFEST_PATH = path.join(__dirname, 'brain-manifest.json');
+const MANIFEST_PATH = path.join(path.dirname(fileURLToPath(import.meta.url)), 'brain-manifest.json');
 const API_KEY = process.env.ANTHROPIC_API_KEY;
 
 const args = process.argv.slice(2);
@@ -34,16 +34,19 @@ function saveManifest(manifest) {
 }
 
 async function uploadFile(filePath) {
+  // The Files API expects multipart/form-data with a `file` field
+  const form = new FormData();
   const content = fs.readFileSync(filePath, 'utf8');
+  form.append('file', new Blob([content], { type: 'text/markdown' }), path.basename(filePath));
+
   const response = await fetch('https://api.anthropic.com/v1/files', {
     method: 'POST',
     headers: {
       'x-api-key': API_KEY,
       'anthropic-version': '2023-06-01',
       'anthropic-beta': 'files-api-2025-04-14',
-      'content-type': 'application/json',
     },
-    body: JSON.stringify({ content, filename: path.basename(filePath) }),
+    body: form,
   });
 
   if (!response.ok) {
@@ -80,6 +83,7 @@ async function main() {
 
   let uploaded = 0;
   let skipped = 0;
+  let failed = 0;
 
   for (const file of files) {
     const relPath = rel(file);
@@ -97,15 +101,17 @@ async function main() {
       uploaded++;
     } catch (err) {
       console.error(`  ❌ ${relPath}: ${err.message}`);
+      failed++;
     }
   }
 
   saveManifest(manifest);
-  console.log(`\nDone. Uploaded: ${uploaded}, Skipped: ${skipped}`);
+  console.log(`\nDone. Uploaded: ${uploaded}, Skipped: ${skipped}, Failed: ${failed}`);
   console.log(`Manifest written to ${MANIFEST_PATH}`);
+  if (failed > 0) process.exitCode = 1;
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error(`Fatal error: ${err.message}`);
   process.exit(1);
 });

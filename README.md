@@ -1,5 +1,7 @@
 # Bravenger — Company Brain Template
 
+[![CI](https://github.com/wpsands/bravenger/actions/workflows/ci.yml/badge.svg)](https://github.com/wpsands/bravenger/actions/workflows/ci.yml)
+
 A Company Brain is a structured knowledge base that powers AI agents across Marketing, Sales, Product Marketing, Product, and Customer Success. Every agent reads from the same source of truth. Every output is cited, consistent, and aligned.
 
 This repo is a working template. Fork it, replace the example company with yours, and your AI agents have context from day one.
@@ -23,6 +25,7 @@ company-brain/          ← Primary example (NovaCRM, a fictional AI-powered CRM
 prompts/                ← Canonical agent system prompts (one per discipline)
 .claude/commands/       ← Thin wrappers that load prompts/ + pass $ARGUMENTS
 scripts/                ← Brain validation tools (lint, frontmatter, citations, language)
+test/                   ← Test suite for the validators (Node built-in test runner)
 ```
 
 ## How it works
@@ -39,6 +42,8 @@ Category definition, differentiators, value propositions, objection handlers, an
 An 11-step read order, citation requirements, discipline-specific guidelines, and forbidden language. This ensures every agent produces aligned output.
 
 ## Quick start
+
+Requires [Node.js](https://nodejs.org) 20 or later.
 
 1. **Fork this repo**
 2. **Replace `company-brain/`** with your own company data. Keep the file structure and YAML frontmatter schema.
@@ -67,6 +72,15 @@ The Brain ships with four validation scripts:
 | `npm run lint:citations` | `[Source: filename#section]` citations point to real files and headings |
 | `npm run lint:language` | No forbidden words from `brand-vision.md` appear in Brain files |
 
+The validators themselves are covered by a test suite built on Node's built-in test runner — no test framework dependency:
+
+```bash
+npm test          # run the test suite
+npm run check     # lint + test, same as CI
+```
+
+CI runs lint and tests on Node 20 and 22 for every pull request and every push to `main`.
+
 ## File schema
 
 Every Brain file uses YAML frontmatter:
@@ -75,7 +89,7 @@ Every Brain file uses YAML frontmatter:
 ---
 title: "File title"
 version: "1.0.0"
-last_updated: "2026-03-24"
+last_updated: "2026-07-07"
 owner: "Brain Owner"
 status: production
 ---
