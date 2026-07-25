@@ -89,7 +89,7 @@ Every Brain file uses YAML frontmatter:
 ---
 title: "File title"
 version: "1.0.0"
-last_updated: "2026-07-07"
+last_updated: "2026-07-25"
 owner: "Brain Owner"
 status: production
 ---
