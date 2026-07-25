@@ -1,7 +1,7 @@
 ---
 title: Company Goals
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-07-07"
 owner: "Brain Owner"
 status: production
 review_cadence: quarterly
@@ -86,48 +86,49 @@ Goals are reviewed quarterly. If a goal changes mid-quarter, update this file.
 
 ---
 
-## Current Quarter Priorities — Q2 2026
+## Current Quarter Priorities — Q3 2026
 
 These are the 3 things that matter most right now. When an agent produces content and multiple directions are equally valid, weight toward these priorities.
 
-### Priority 1: Win the "Outgrowing HubSpot" Buyer
+### Priority 1: Convert "Outgrowing HubSpot" Awareness into Pipeline
 
-**Why:** Our product is strong but our awareness is weak. Mid-market VP Sales and RevOps leaders don't know NovaCRM exists. When they search for a better CRM, they find Salesforce (too heavy), HubSpot Pro/Enterprise (same platform, different pricing), and Pipedrive (not enough AI). We need to own the conversation about what comes after HubSpot free/starter for serious sales teams.
+**Why:** Q2 built the awareness engine — comparison content, battle cards, and customer proof points targeting the "outgrowing HubSpot" buyer. That bet is starting to pay: mid-market VP Sales and RevOps leaders are finding us. Q3 is about conversion. The $6M ARR target requires acceleration in the second half of the year, and the gap between "they know we exist" and "they're running a POC" is where deals are won or lost. Every discipline should now optimize for demo requests, POC starts, and POC-to-close conversion — not just reach.
 
 **What this means for agents:**
-- Marketing: every piece of content should target a specific sales pain from `icp.md#pains`. Write for the VP Sales persona first, then RevOps Leader second. Prioritize comparison content ("NovaCRM vs. HubSpot Pro for teams with 15+ reps"), customer proof points, and practical guides over thought leadership.
-- Sales: outbound sequences should lead with the specific pain the signal reveals, not the product. "You missed forecast two quarters in a row" is a better opening than "NovaCRM is an AI-powered CRM."
-- PMM: competitive content is urgent. Battle cards against HubSpot Pro (data model limits, generic AI), Salesforce (overkill, implementation cost), and Pipedrive (limited AI, reporting gaps).
+- Marketing: shift weight from top-of-funnel comparison content toward mid-funnel proof: customer stories, POC walkthroughs, and switching guides that de-risk the migration decision. Still write for the VP Sales persona first, then RevOps Leader second, targeting specific pains from `icp.md#pains`.
+- Sales: every POC proposal includes the day-14 proof checkpoint. Follow up with the prospect's own accuracy numbers, not generic claims. The >50% POC-to-close target is the metric that matters this quarter.
+- PMM: keep battle cards current — HubSpot Pro (data model limits, generic AI), Salesforce (overkill, implementation cost), and Pipedrive (limited AI, reporting gaps) — and arm sales with objection handlers for the late-stage "why not just upgrade HubSpot?" conversation.
 
 **Connected:** `icp.md#pains`, `personas/persona-vp-sales.md`, `personas/persona-sales-ops.md`, `messaging-positioning/core-positioning.md#competitive-landscape`
 
-### Priority 2: Prove AI Deal Scoring Accuracy
+### Priority 2: Launch Coaching Signals v2 and Drive Business-Tier Expansion
 
-**Why:** Skepticism is our biggest headwind. Sales leaders have been burned by "AI-powered" tools that didn't deliver. Our deal scoring engine actually works — customers who've been on the platform for 90+ days see 80-85% forecast accuracy compared to their previous 60-70%. But we haven't told this story effectively. Q1 is about building the proof layer: case studies, accuracy reports, and POC win data that we can reference in every piece of content.
-
-**What this means for agents:**
-- Marketing: every AI claim must be grounded in a specific data point. "Customers see 20+ percentage point improvement in forecast accuracy within 90 days" is good. "AI-powered forecasting" with no proof is forbidden.
-- Sales: POC proposals must include a "proof checkpoint" at day 14 where the customer reviews deal score accuracy against their own judgment. If the scores are good, the deal closes itself. If they're not, we learn and improve the model.
-- CS: collect and document accuracy data from every customer. This is the raw material for marketing proof points. Ask every customer at 90 days: "How does your forecast accuracy compare to before NovaCRM?"
-
-**Connected:** `use-cases/uc-001-pipeline-forecasting.md`, `brand-vision.md#core-values`, `messaging-positioning/core-positioning.md#differentiators`
-
-### Priority 3: Ship Coaching Signals v2
-
-**Why:** Deal scoring gets us in the door. Coaching signals keep us in the account. V1 surfaces rep behavior patterns — "this rep multi-threads at 40% the rate of your top closer." V2 turns those patterns into specific coaching recommendations — "this rep should add a second stakeholder before stage 3 based on your team's win patterns." This moves NovaCRM from a forecasting tool to a coaching platform, which justifies the Business tier and drives expansion revenue.
+**Why:** Shipping coaching signals v2 was the top product priority of Q2. Q3 is the launch quarter. V1 surfaced rep behavior patterns — "this rep multi-threads at 40% the rate of your top closer." V2 turns those patterns into specific coaching recommendations grounded in each team's own win patterns. This is our most defensible differentiator and the feature that justifies the Business tier, so the launch is also the engine for the 120% NRR target and the goal of 30% of Team-tier customers evaluating Business tier.
 
 **What this means for agents:**
-- Product: feature briefs for each v2 coaching capability. Every recommendation must trace to a specific win pattern identified in the customer's own data. No generic advice. Acceptance criteria must reference the Sales Manager persona.
-- Marketing: when v2 ships, it's the biggest content moment of the quarter. Prepare launch content: blog post, demo video, "before and after" coaching comparison, and a customer story.
-- PMM: update competitive positioning. No competing CRM offers coaching signals trained on the customer's own rep behavior data. This is our most defensible differentiator.
+- Marketing: the v2 launch is the biggest content moment of the quarter. Ship the launch package: blog post, demo video, "before and after" coaching comparison, and a customer story.
+- PMM: update competitive positioning and enablement. No competing CRM offers coaching recommendations trained on the customer's own rep behavior data — make sure every rep can say that credibly.
+- CS: identify Team-tier accounts where managers are already asking coaching questions and run structured Business-tier evaluations with them. The expansion trigger is usually "we want coaching signals for our managers too."
+- Product: instrument v2 adoption. Every recommendation must trace to a specific win pattern in the customer's own data — no generic advice.
 
 **Connected:** `use-cases/uc-002-rep-coaching.md`, `personas/persona-vp-sales.md`, `messaging-positioning/core-positioning.md#differentiators`
+
+### Priority 3: Publish the First Model Accuracy Report
+
+**Why:** Skepticism is still our biggest headwind — sales leaders have been burned by "AI-powered" tools that didn't deliver. Q2 built the proof layer: accuracy data collected from every customer at 90 days, POC win data, and case studies. Q3 turns that raw material into the first public quarterly model accuracy report, showing aggregate deal scoring performance — including where the model is wrong. Publishing our numbers, misses included, builds the credibility no ad campaign can buy and gives every other piece of content a proof point to cite.
+
+**What this means for agents:**
+- Marketing: the report is the anchor content of the quarter after the v2 launch. Every AI claim must be grounded in a specific data point from it. "Customers see 20+ percentage point improvement in forecast accuracy within 90 days" is good. "AI-powered forecasting" with no proof is forbidden.
+- Sales: reference the report in outbound and POC proposals. "Here are our published numbers, including where we miss" is the most disarming answer to AI skepticism a rep can give.
+- CS: keep the data pipeline running. Ask every customer at 90 days: "How does your forecast accuracy compare to before NovaCRM?" The report is only as good as the data behind it.
+
+**Connected:** `use-cases/uc-001-pipeline-forecasting.md`, `brand-vision.md#core-values`, `messaging-positioning/core-positioning.md#differentiators`
 
 ---
 
 ## How Agents Use This File
 
 1. **Read this file after `icp.md` and before `personas/`.** Goals provide the "why now" context that shapes which personas and use cases to prioritize.
-2. **Weight output toward current quarter priorities.** If a blog post could target the VP Sales or the Account Executive and both are valid, check which one serves Priority 1 (win the "outgrowing HubSpot" buyer) better.
+2. **Weight output toward current quarter priorities.** If a blog post could target the VP Sales or the Account Executive and both are valid, check which one serves Priority 1 (convert "outgrowing HubSpot" awareness into pipeline) better.
 3. **Cite this file when relevant.** If a piece of content is specifically designed to serve a goal, cite it: `[Source: goals.md#priority-1]`.
 4. **Do not invent goals.** If the user requests content that doesn't connect to any goal in this file, produce the content but note: "This output does not directly serve a current quarter priority. Consider whether it should."

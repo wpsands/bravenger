@@ -5,11 +5,11 @@
  * Exit code: 0 if all pass, 1 if any fail.
  */
 
-const { run: runFrontmatter } = require('./validate-frontmatter');
-const { run: runCitations }   = require('./check-citations');
-const { run: runLanguage }    = require('./scan-forbidden-language');
+import { run as runFrontmatter } from './validate-frontmatter.js';
+import { run as runCitations } from './check-citations.js';
+import { run as runLanguage } from './scan-forbidden-language.js';
 
-console.log("🔍 Running Brain lint checks...\n");
+console.log('🔍 Running Brain lint checks...\n');
 
 function safe(name, fn) {
   try {
@@ -21,27 +21,22 @@ function safe(name, fn) {
 
 const results = [
   safe('Frontmatter Validation', runFrontmatter),
-  safe('Citation Check',         runCitations),
-  safe('Language Scan',          runLanguage),
+  safe('Citation Check', runCitations),
+  safe('Language Scan', runLanguage),
 ];
 
-const failed = results.filter(r => !r.passed);
-
-results.forEach(r => {
+for (const r of results) {
   if (r.passed) {
     console.log(`✅ ${r.name}`);
   } else {
     console.error(`❌ ${r.name} (${r.errors.length} errors)`);
-    for (const e of r.errors) {
-      console.error(`  • ${e}`);
-    }
+    for (const e of r.errors) console.error(`  • ${e}`);
   }
-  console.log("");
-});
-
-if (failed.length) {
-  console.error("❌ Brain lint failed. Fix the errors above before committing.");
-  process.exit(1);
-} else {
-  console.log("✅ All Brain lint checks passed.");
+  console.log('');
 }
+
+if (results.some((r) => !r.passed)) {
+  console.error('❌ Brain lint failed. Fix the errors above before committing.');
+  process.exit(1);
+}
+console.log('✅ All Brain lint checks passed.');
