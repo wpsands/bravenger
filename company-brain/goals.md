@@ -1,7 +1,7 @@
 ---
 title: Company Goals
 version: "1.2.0"
-last_updated: "2026-07-07"
+last_updated: "2026-07-25"
 owner: "Brain Owner"
 status: production
 review_cadence: quarterly
