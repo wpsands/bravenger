@@ -39,7 +39,12 @@ export function extractForbiddenWords(brandVisionContent) {
 }
 
 // Files to skip entirely — they define or discuss forbidden language
-const SKIP_FILES = new Set(['brand-vision.md', 'updates/v2-spec.md', 'updates/changelog.md']);
+const SKIP_FILES = new Set([
+  'brand-vision.md',
+  'updates/v2-spec.md',
+  'updates/changelog.md',
+  'drift-log.md', // records drift violations, so it references banned terms by design
+]);
 
 /** Lines that are defining/referencing forbidden language, not using it. */
 function isExemptLine(line) {
