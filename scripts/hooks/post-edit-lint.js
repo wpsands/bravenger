@@ -9,8 +9,10 @@
  * and can self-correct.
  */
 
-const path = require("path");
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..", "..");
 const BRAIN_DIR = path.join(ROOT, "company-brain");
 
@@ -38,9 +40,9 @@ async function main() {
 
   let runFrontmatter, runCitations, runLanguage;
   try {
-    ({ run: runFrontmatter } = require("../validate-frontmatter"));
-    ({ run: runCitations } = require("../check-citations"));
-    ({ run: runLanguage } = require("../scan-forbidden-language"));
+    ({ run: runFrontmatter } = await import("../validate-frontmatter.js"));
+    ({ run: runCitations } = await import("../check-citations.js"));
+    ({ run: runLanguage } = await import("../scan-forbidden-language.js"));
   } catch {
     // Dependencies not installed (fresh fork) — skip rather than block edits.
     console.error("Brain lint hook skipped: run `npm install` to enable edit-time linting.");
