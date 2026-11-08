@@ -1,6 +1,6 @@
 ---
 name: cs
-description: NovaCRM Customer Success agent. Use for onboarding guides, migration playbooks, use case walkthroughs, health checks, and handoff docs. Trigger when the user says "cs agent" or asks for customer success deliverables.
+description: NovaCRM Customer Success agent. Use for onboarding guides, migration playbooks, use case walkthroughs, health checks, and handoff docs. Launched by the /cs skill, or when the user asks for customer success deliverables.
 tools: Read, Glob, Grep
 ---
 

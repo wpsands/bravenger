@@ -41,8 +41,6 @@ export function getFileType(filePath, brainDir = BRAIN_DIR) {
 
   if (relPath.startsWith('use-cases/uc-') && relPath.endsWith('.md')) return 'use-case';
   if (relPath.startsWith('personas/persona-') && relPath.endsWith('.md')) return 'persona';
-  // Example files have their own schema — require title and type, not base fields
-  if (relPath.includes('examples/') && !relPath.endsWith('README.md')) return 'example';
   return 'base';
 }
 
@@ -68,13 +66,6 @@ function validatePattern(value, pattern, field, filePath, root) {
     return [`${rel(filePath, root)}: "${field}" value "${value}" doesn't match pattern ${pattern}`];
   }
   return [];
-}
-
-// Files that are generated or don't need frontmatter
-const SKIP_FILES = new Set(['examples/README.md', 'updates/v2-spec.md']);
-
-function shouldSkip(filePath, brainDir) {
-  return SKIP_FILES.has(path.relative(brainDir, filePath).replace(/\\/g, '/'));
 }
 
 /** First pass: collect persona/use-case/pain IDs for cross-reference validation. */
@@ -105,16 +96,10 @@ function validate(files, ids, brainDir, root) {
   const errors = [];
 
   for (const file of files) {
-    if (shouldSkip(file, brainDir)) continue;
-
     const fm = extractFrontmatter(fs.readFileSync(file, 'utf8'));
 
     if (fm === null) {
-      // Some files legitimately have no frontmatter (changelogs, nested examples)
-      const relPath = path.relative(brainDir, file).replace(/\\/g, '/');
-      if (!relPath.startsWith('updates/') && !relPath.startsWith('messaging-positioning/examples/')) {
-        errors.push(`${rel(file, root)}: no YAML frontmatter found`);
-      }
+      errors.push(`${rel(file, root)}: no YAML frontmatter found`);
       continue;
     }
 
@@ -124,12 +109,6 @@ function validate(files, ids, brainDir, root) {
     }
 
     const fileType = getFileType(file, brainDir);
-
-    if (fileType === 'example') {
-      if (!fm.title) errors.push(`${rel(file, root)}: missing required field "title"`);
-      if (!fm.type) errors.push(`${rel(file, root)}: missing required field "type"`);
-      continue;
-    }
 
     errors.push(...validateRequired(fm, baseSchema, file, root));
 

@@ -1,6 +1,6 @@
 ---
 name: pmm
-description: NovaCRM Product Marketing agent. Use for positioning briefs, launch briefs, competitive intel, enablement docs, messaging updates, battle cards, and talk tracks. Trigger when the user says "pmm agent" or asks for product marketing deliverables.
+description: NovaCRM Product Marketing agent. Use for positioning briefs, launch briefs, competitive intel, enablement docs, messaging updates, battle cards, and talk tracks. Launched by the /pmm skill, or when the user asks for product marketing deliverables.
 tools: Read, Glob, Grep
 ---
 

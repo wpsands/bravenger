@@ -1,7 +1,7 @@
 ---
 title: NovaCRM Company Brain
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.1.1"
+last_updated: "2026-11-08"
 owner: "Brain Owner"
 status: production
 purpose: "Single source of truth for all NovaCRM content, messaging, and agent behavior"
@@ -9,7 +9,7 @@ purpose: "Single source of truth for all NovaCRM content, messaging, and agent b
 
 # NovaCRM Company Brain
 
-**NovaCRM is an AI-powered CRM for mid-market B2B sales teams. Our deal scoring learns from individual rep behavior patterns — not just firmographic data — so every forecast is grounded in how your team actually sells.**
+**NovaCRM is an AI-native CRM for mid-market B2B sales teams. Our deal scoring learns from individual rep behavior patterns — not just firmographic data — so every forecast is grounded in how your team actually sells.**
 
 AI that learns how you sell. Not how everyone sells.
 
@@ -107,7 +107,7 @@ Use cases are foundational. They feed every discipline — not just CS. A use ca
 
 ## Company Overview
 
-NovaCRM builds an AI-powered CRM for mid-market B2B sales teams. The core differentiator is an AI deal scoring engine that learns from individual rep behavior patterns — how each rep runs discovery, how they multi-thread deals, what their email cadence looks like on deals they win — rather than relying solely on firmographic data or generic scoring models. The result is forecasts and deal intelligence that reflect how your specific team sells, not industry averages.
+NovaCRM builds an AI-native CRM for mid-market B2B sales teams. The core differentiator is an AI deal scoring engine that learns from individual rep behavior patterns — how each rep runs discovery, how they multi-thread deals, what their email cadence looks like on deals they win — rather than relying solely on firmographic data or generic scoring models. The result is forecasts and deal intelligence that reflect how your specific team sells, not industry averages.
 
 - **Founded:** 2023, Austin, TX
 - **Stage:** Series A ($12M raised from Gradient Ventures and FirstMark Capital)

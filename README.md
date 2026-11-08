@@ -9,7 +9,7 @@ This repo is a working template. Fork it, run `/setup` in Claude Code, and your 
 ## What's inside
 
 ```
-company-brain/          ← Primary example (NovaCRM, a fictional AI-powered CRM)
+company-brain/          ← Primary example (NovaCRM, a fictional AI-native CRM)
 ├── README.md           Brain overview and file map
 ├── AGENTS.md           Governance rules and 11-step read order
 ├── brand-vision.md     Mission, voice, values, words we use/avoid
@@ -24,7 +24,7 @@ company-brain/          ← Primary example (NovaCRM, a fictional AI-powered CRM
 └── guidelines/         5 discipline-specific agent instructions
 
 .claude/agents/         ← 6 subagents: marketing, sales, pmm, product, cs, drift-check
-.claude/skills/         ← 17 skills: content, governance, Brain evolution, setup
+.claude/skills/         ← 16 skills: content, governance, Brain evolution, setup
 .claude/workflows/      ← 4 multi-agent workflows: cascade-check, citation-audit, brain-audit, eval
 .claude/settings.json   ← PostToolUse hook: every Brain edit is linted instantly
 evals/                  ← Golden briefs + rubric: proof the Brain works
@@ -48,7 +48,7 @@ An 11-step read order, citation requirements, and forbidden language (`company-b
 
 ## The agent layer (Claude Code)
 
-**Discipline subagents.** `/marketing`, `/sales`, `/pmm`, `/product`, `/cs` each launch an isolated subagent that does the full 9-file Brain read in its own context and returns cited output. Your main conversation stays clean, and independent deliverables run in parallel. Content agents are read-only — they cannot edit the Brain.
+**Discipline subagents.** `/marketing`, `/sales`, `/pmm`, `/product`, `/cs` each launch an isolated subagent that does the full Brain read in its own context and returns cited output. Your main conversation stays clean, and independent deliverables run in parallel. Content agents are read-only — they cannot edit the Brain.
 
 **Drift checking.** `/drift-check` reviews any content against the Brain with a skeptical, isolated reviewer. Systemic violations are logged to `company-brain/drift-log.md`; when the same violation recurs, that's treated as evidence the Brain may be stale, not the content.
 
@@ -118,7 +118,7 @@ Personas add `persona_id` and `dmu_function`. Use cases add `use_case_id`, `stat
 
 ## Example included
 
-**NovaCRM** (`company-brain/`) — A fictional AI-powered CRM for mid-market sales teams. Series A, 45 employees. 3 personas, 3 use cases, full messaging framework, all 5 discipline guidelines. Replace with your own company data via `/setup`.
+**NovaCRM** (`company-brain/`) — A fictional AI-native CRM for mid-market sales teams. Series A, 45 employees. 3 personas, 3 use cases, full messaging framework, all 5 discipline guidelines. Replace with your own company data via `/setup`.
 
 ## License
 

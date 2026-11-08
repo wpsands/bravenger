@@ -1,6 +1,6 @@
 ---
 name: drift-check
-description: NovaCRM drift checker. Use to compare any content (draft, published page, email, deck copy) against the Company Brain for messaging, voice, persona, and positioning violations. Trigger when the user says "drift check" or asks whether content is on-message.
+description: NovaCRM drift checker. Use to compare any content (draft, published page, email, deck copy) against the Company Brain for messaging, voice, persona, and positioning violations. Launched by the /drift-check skill, or when the user asks whether content is on-message.
 tools: Read, Glob, Grep
 ---
 

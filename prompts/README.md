@@ -1,8 +1,10 @@
 # Agent Prompts
 
-Five pre-configured prompts, one per discipline. Each loads the right Brain files in the right order.
+Six tool-agnostic prompts, one per discipline plus drift-check. Each loads the right Brain files in the right order.
 
-**Using Claude Code?** You don't need these files directly — the repo ships native subagents (`.claude/agents/`) built from these prompts, invoked via `/marketing`, `/sales`, `/pmm`, `/product`, `/cs`, and `/drift-check`. Each runs in isolated context and returns cited output. These prompt files remain the canonical, tool-agnostic versions; if you change one, make the same change in the matching `.claude/agents/` file (and vice versa).
+**These files are generated.** The source of truth is `.claude/agents/`. Edit the agent file, then run `npm run sync:prompts`. A test (`test/sync-prompts.test.js`) fails CI if the two drift apart, so there is exactly one copy of each agent's instructions to maintain.
+
+**Using Claude Code?** You don't need these files directly — the subagents in `.claude/agents/` are invoked via `/marketing`, `/sales`, `/pmm`, `/product`, `/cs`, and `/drift-check`. Each runs in isolated context and returns cited output.
 
 ## Usage outside Claude Code
 
@@ -21,7 +23,7 @@ Read prompts/marketing.md and follow those instructions. Then write a blog post 
 | `/pmm` — `prompts/pmm.md` | Product Marketing | `guidelines/product-marketing-usage.md` |
 | `/product` — `prompts/product.md` | Product | `guidelines/product-usage.md` |
 | `/cs` — `prompts/cs.md` | Customer Success | `guidelines/customer-success-usage.md` |
-| `/drift-check` | Any (compares against Brain) | `brand-vision.md` + `messaging-framework.md` |
+| `/drift-check` — `prompts/drift-check.md` | Drift checker (compares against Brain) | `brand-vision.md` + `messaging-framework.md` |
 
 ## Example prompts
 

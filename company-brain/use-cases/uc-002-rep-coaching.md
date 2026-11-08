@@ -1,8 +1,8 @@
 ---
-title: "AI-Powered Rep Coaching"
+title: "Rep Coaching Signals"
 use_case_id: "UC-002"
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.1.1"
+last_updated: "2026-11-08"
 status: "fully-supported"
 owner: "Brain Owner"
 
@@ -27,7 +27,7 @@ connected_use_cases:
   - "UC-003"
 ---
 
-# UC-002: AI-Powered Rep Coaching
+# UC-002: Rep Coaching Signals
 
 ## Trigger
 

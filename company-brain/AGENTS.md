@@ -1,7 +1,7 @@
 ---
 title: Agent Operating Instructions
-version: "1.2.0"
-last_updated: "2026-07-07"
+version: "1.2.1"
+last_updated: "2026-11-08"
 scope: "All AI agents consuming this Company Brain"
 owner: "Brain Owner"
 status: production
@@ -87,7 +87,7 @@ Every factual claim, positioning statement, persona insight, or use case referen
 | Launch brief | Markdown, feature + persona impact + messaging | use-cases/, personas/, messaging-framework.md |
 | Competitive intel | Markdown, comparison + gaps + narrative | core-positioning.md#competitive-landscape |
 | Enablement doc | Markdown, talk track + objections + proof | messaging-framework.md, personas/ |
-| Messaging update | Markdown, what changed + why + new approved language | messaging-framework.md, changelog |
+| Messaging update | Markdown, what changed + why + new approved language | messaging-framework.md, drift-log.md |
 
 ### Product
 | Output Type | Format | Key Brain Files |
@@ -138,14 +138,16 @@ When a user requests content without specifying a discipline, ask:
 
 > "Which discipline? Marketing, Sales, PMM, Product, or CS?"
 
-When the user specifies a discipline:
-- **"marketing agent"** — read `guidelines/marketing-usage.md`, produce output in Marketing format.
-- **"sales agent"** — read `guidelines/sales-usage.md`, produce output in Sales format.
-- **"pmm agent"** — read `guidelines/product-marketing-usage.md`, produce output in PMM format.
-- **"product agent"** — read `guidelines/product-usage.md`, produce output in Product format.
-- **"cs agent"** — read `guidelines/customer-success-usage.md`, produce output in CS format.
+Each discipline has a skill that launches the matching subagent (`.claude/agents/`):
+- **`/marketing`** — read `guidelines/marketing-usage.md`, produce output in Marketing format.
+- **`/sales`** — read `guidelines/sales-usage.md`, produce output in Sales format.
+- **`/pmm`** — read `guidelines/product-marketing-usage.md`, produce output in PMM format.
+- **`/product`** — read `guidelines/product-usage.md`, produce output in Product format.
+- **`/cs`** — read `guidelines/customer-success-usage.md`, produce output in CS format.
 
-When the user says **"drift check"** — compare the provided content against the Brain's approved messaging, personas, and voice. Flag every violation with a citation.
+**`/drift-check`** — compare the provided content against the Brain's approved messaging, personas, and voice. Flag every violation with a citation.
+
+Outside Claude Code, the same instructions are in `prompts/`, generated from the agent files.
 
 ---
 

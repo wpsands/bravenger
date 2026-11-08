@@ -1,7 +1,7 @@
 ---
 title: Brand Vision
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.1.1"
+last_updated: "2026-11-08"
 owner: "Brain Owner"
 status: production
 ---
@@ -20,7 +20,7 @@ Every sales team has an AI copilot trained on their own winning patterns. Foreca
 
 ## Category Definition
 
-**AI-powered CRM for mid-market B2B sales.**
+**AI-native CRM for mid-market B2B sales.**
 
 NovaCRM is a CRM built from the ground up around an AI deal scoring engine that learns from individual rep behavior patterns. It watches how each rep runs discovery, how they multi-thread accounts, what their follow-up cadence looks like on deals they win versus deals they lose — and it turns those patterns into deal scores, coaching signals, and forecasts that reflect how your specific team sells.
 
@@ -102,7 +102,7 @@ We understand that sales is hard, quotas are real, and nobody wants another tool
 | Magic / automagically | Implies we hide complexity. Sales leaders distrust hidden complexity as much as engineers do. | Describe what the AI learns and how it produces the output. |
 | 10x your pipeline / 5x your revenue | Unverifiable multiplier claims. The fastest way to lose credibility with a CRO. | State the specific improvement and the conditions under which it was measured. |
 | Predictive analytics | Overused to the point of meaninglessness. Every CRM claims predictive analytics. | AI deal scoring trained on your team's data. Be specific. |
-| Revenue intelligence | Category claimed by Gong, Clari, and others. We are a CRM, not a revenue intelligence platform. | AI-powered CRM, deal intelligence, deal scoring. |
+| Revenue intelligence | Category claimed by Gong, Clari, and others. We are a CRM, not a revenue intelligence platform. | AI-native CRM, deal intelligence, deal scoring. |
 | Just works | Nothing just works. CRM implementations are hard. Be honest about what's required. | Describe the setup, the data requirements, and what happens after. |
 | Seamless integration | Nothing is seamless. There are always edges. | Describe the actual integration: what connects, how long it takes, what's required. |
 | Best-in-class | Unverifiable. | State the specific metric or capability. |
