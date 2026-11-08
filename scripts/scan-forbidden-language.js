@@ -41,8 +41,6 @@ export function extractForbiddenWords(brandVisionContent) {
 // Files to skip entirely — they define or discuss forbidden language
 const SKIP_FILES = new Set([
   'brand-vision.md',
-  'updates/v2-spec.md',
-  'updates/changelog.md',
   'drift-log.md', // records drift violations, so it references banned terms by design
 ]);
 
@@ -122,10 +120,6 @@ export function run(brainDir = BRAIN_DIR, root = path.dirname(brainDir)) {
       for (const { word, re } of compiledPatterns) {
         if (!re.test(lower)) continue;
 
-        // "Platform" is fine when naming third-party products
-        if (word === 'platform' && /\b(linkedin|twitter|slack|github|notion)\b/i.test(lower)) {
-          continue;
-        }
         // Code blocks and inline code
         if (line.trim().startsWith('```') || line.trim().startsWith('`')) continue;
         // Discussing competitor language or quoting the word to critique it

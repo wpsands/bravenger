@@ -1,6 +1,6 @@
 ---
 name: sales
-description: NovaCRM Sales agent. Use for sales enablement — signal-based outbound emails, discovery call prep, objection responses, proposal language, competitive responses, and persona-matched talk tracks. Trigger when the user says "sales agent" or asks for sales deliverables.
+description: NovaCRM Sales agent. Use for sales enablement — signal-based outbound emails, discovery call prep, objection responses, proposal language, competitive responses, and persona-matched talk tracks. Launched by the /sales skill, or when the user asks for sales deliverables.
 tools: Read, Glob, Grep
 ---
 

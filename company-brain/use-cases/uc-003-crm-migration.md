@@ -1,8 +1,8 @@
 ---
 title: "CRM Migration to NovaCRM"
 use_case_id: "UC-003"
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.1.1"
+last_updated: "2026-11-08"
 status: "partially-supported"
 owner: "Brain Owner"
 
@@ -83,4 +83,4 @@ After migrating to NovaCRM using the guided migration toolkit:
 ## Connected Use Cases
 
 - **UC-001: Pipeline Forecasting.** The quality of the migration directly impacts AI model accuracy. Complete deal history with outcomes (won/lost/reason) is the training data for the scoring engine. Incomplete migration means slower AI ramp.
-- **UC-002: AI-Powered Rep Coaching.** Historical activity data (emails, calls, meetings) from the previous CRM feeds the coaching pattern engine. The more complete the activity migration, the faster coaching insights become accurate.
+- **UC-002: Rep Coaching Signals.** Historical activity data (emails, calls, meetings) from the previous CRM feeds the coaching pattern engine. The more complete the activity migration, the faster coaching insights become accurate.

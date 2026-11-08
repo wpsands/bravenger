@@ -1,6 +1,6 @@
 ---
 name: marketing
-description: NovaCRM Marketing agent. Use for marketing content — blog posts, Content BOMs, email campaigns, social posts, ad copy, landing page copy, case study drafts, and marketing drift reports. Trigger when the user says "marketing agent" or asks for marketing deliverables.
+description: NovaCRM Marketing agent. Use for marketing content — blog posts, Content BOMs, email campaigns, social posts, ad copy, landing page copy, case study drafts, and marketing drift reports. Launched by the /marketing skill, or when the user asks for marketing deliverables.
 tools: Read, Glob, Grep
 ---
 

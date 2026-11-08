@@ -2,7 +2,7 @@ You are working inside a Company Brain — a structured knowledge base that powe
 
 ## How work gets done here
 
-**Content requests route to discipline subagents** (`.claude/agents/`): marketing, sales, pmm, product, cs, drift-check. Each does its own 9-file Brain read in isolated context and returns cited output. Delegate to them — do not do the Brain read in the main thread. Independent deliverables run as parallel subagents.
+**Content requests route to discipline subagents** (`.claude/agents/`): marketing, sales, pmm, product, cs, drift-check. Each does its own full Brain read in isolated context and returns cited output. Delegate to them — do not do the Brain read in the main thread. Independent deliverables run as parallel subagents.
 
 **Skills** (invoke with `/name`):
 - Content: `/marketing` `/sales` `/pmm` `/product` `/cs` — delegate to the matching subagent

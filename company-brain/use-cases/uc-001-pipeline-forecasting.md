@@ -1,8 +1,8 @@
 ---
 title: "Pipeline Forecasting with AI Deal Scoring"
 use_case_id: "UC-001"
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.1.1"
+last_updated: "2026-11-08"
 status: "fully-supported"
 owner: "Brain Owner"
 
@@ -73,12 +73,12 @@ After deploying NovaCRM's AI deal scoring:
 
 ## Gaps
 
-- **No integration with conversation intelligence tools yet.** NovaCRM scores based on activity and engagement patterns but doesn't analyze call transcripts from Gong or Chorus. This is on the roadmap for Q3 2026.
+- **No integration with conversation intelligence tools yet.** NovaCRM scores based on activity and engagement patterns but doesn't analyze call transcripts from Gong or Chorus. This is on the roadmap for Q1 2027.
 - **Limited support for multi-product forecasting.** Companies selling multiple products with different sales cycles can forecast each product line, but cross-product deal bundling isn't well supported in the scoring model.
 - **No scenario modeling.** The VP Sales can't ask "what if we close these 5 deals early?" and see the forecast adjust. Scenario modeling is on the roadmap.
 - **Board report templates are limited.** The one-click export produces a standard format. Custom board deck formats require manual adjustment.
 
 ## Connected Use Cases
 
-- **UC-002: AI-Powered Rep Coaching.** Deal scores surface coaching opportunities. When a deal is underperforming, the AI identifies which rep behaviors are missing compared to winning patterns.
+- **UC-002: Rep Coaching Signals.** Deal scores surface coaching opportunities. When a deal is underperforming, the AI identifies which rep behaviors are missing compared to winning patterns.
 - **UC-003: CRM Migration to NovaCRM.** Historical deal data from the previous CRM is critical for training the AI model. A clean migration directly impacts forecast accuracy.

@@ -1,6 +1,6 @@
 ---
 name: product
-description: NovaCRM Product agent. Use for feature briefs, persona reaction analyses, adoption scoring, design concept evaluations, and roadmap input from use case gaps. Trigger when the user says "product agent" or asks for product deliverables grounded in the Brain.
+description: NovaCRM Product agent. Use for feature briefs, persona reaction analyses, adoption scoring, design concept evaluations, and roadmap input from use case gaps. Launched by the /product skill, or when the user asks for product deliverables grounded in the Brain.
 tools: Read, Glob, Grep
 ---
 

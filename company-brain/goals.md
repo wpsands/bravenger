@@ -1,7 +1,7 @@
 ---
 title: Company Goals
-version: "1.2.0"
-last_updated: "2026-07-25"
+version: "1.3.0"
+last_updated: "2026-11-08"
 owner: "Brain Owner"
 status: production
 review_cadence: quarterly
@@ -86,13 +86,13 @@ Goals are reviewed quarterly. If a goal changes mid-quarter, update this file.
 
 ---
 
-## Current Quarter Priorities — Q3 2026
+## Current Quarter Priorities — Q4 2026
 
 These are the 3 things that matter most right now. When an agent produces content and multiple directions are equally valid, weight toward these priorities.
 
 ### Priority 1: Convert "Outgrowing HubSpot" Awareness into Pipeline
 
-**Why:** Q2 built the awareness engine — comparison content, battle cards, and customer proof points targeting the "outgrowing HubSpot" buyer. That bet is starting to pay: mid-market VP Sales and RevOps leaders are finding us. Q3 is about conversion. The $6M ARR target requires acceleration in the second half of the year, and the gap between "they know we exist" and "they're running a POC" is where deals are won or lost. Every discipline should now optimize for demo requests, POC starts, and POC-to-close conversion — not just reach.
+**Why:** Q3 built the awareness engine — comparison content, battle cards, and customer proof points targeting the "outgrowing HubSpot" buyer. That bet is starting to pay: mid-market VP Sales and RevOps leaders are finding us. Q4 is about conversion. The $6M ARR target requires a strong close to the year, and the gap between "they know we exist" and "they're running a POC" is where deals are won or lost. Every discipline should now optimize for demo requests, POC starts, and POC-to-close conversion — not just reach.
 
 **What this means for agents:**
 - Marketing: shift weight from top-of-funnel comparison content toward mid-funnel proof: customer stories, POC walkthroughs, and switching guides that de-risk the migration decision. Still write for the VP Sales persona first, then RevOps Leader second, targeting specific pains from `icp.md#pains`.
@@ -103,7 +103,7 @@ These are the 3 things that matter most right now. When an agent produces conten
 
 ### Priority 2: Launch Coaching Signals v2 and Drive Business-Tier Expansion
 
-**Why:** Shipping coaching signals v2 was the top product priority of Q2. Q3 is the launch quarter. V1 surfaced rep behavior patterns — "this rep multi-threads at 40% the rate of your top closer." V2 turns those patterns into specific coaching recommendations grounded in each team's own win patterns. This is our most defensible differentiator and the feature that justifies the Business tier, so the launch is also the engine for the 120% NRR target and the goal of 30% of Team-tier customers evaluating Business tier.
+**Why:** Shipping coaching signals v2 was the top product priority of Q3. Q4 is the launch quarter. V1 surfaced rep behavior patterns — "this rep multi-threads at 40% the rate of your top closer." V2 turns those patterns into specific coaching recommendations grounded in each team's own win patterns. This is our most defensible differentiator and the feature that justifies the Business tier, so the launch is also the engine for the 120% NRR target and the goal of 30% of Team-tier customers evaluating Business tier.
 
 **What this means for agents:**
 - Marketing: the v2 launch is the biggest content moment of the quarter. Ship the launch package: blog post, demo video, "before and after" coaching comparison, and a customer story.
@@ -115,7 +115,7 @@ These are the 3 things that matter most right now. When an agent produces conten
 
 ### Priority 3: Publish the First Model Accuracy Report
 
-**Why:** Skepticism is still our biggest headwind — sales leaders have been burned by "AI-powered" tools that didn't deliver. Q2 built the proof layer: accuracy data collected from every customer at 90 days, POC win data, and case studies. Q3 turns that raw material into the first public quarterly model accuracy report, showing aggregate deal scoring performance — including where the model is wrong. Publishing our numbers, misses included, builds the credibility no ad campaign can buy and gives every other piece of content a proof point to cite.
+**Why:** Skepticism is still our biggest headwind — sales leaders have been burned by "AI-powered" tools that didn't deliver. Q3 built the proof layer: accuracy data collected from every customer at 90 days, POC win data, and case studies. Q4 turns that raw material into the first public quarterly model accuracy report, showing aggregate deal scoring performance — including where the model is wrong. Publishing our numbers, misses included, builds the credibility no ad campaign can buy and gives every other piece of content a proof point to cite.
 
 **What this means for agents:**
 - Marketing: the report is the anchor content of the quarter after the v2 launch. Every AI claim must be grounded in a specific data point from it. "Customers see 20+ percentage point improvement in forecast accuracy within 90 days" is good. "AI-powered forecasting" with no proof is forbidden.

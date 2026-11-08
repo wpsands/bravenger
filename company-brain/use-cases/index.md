@@ -1,7 +1,7 @@
 ---
 title: Use Case Registry
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.1.1"
+last_updated: "2026-11-08"
 owner: "Brain Owner"
 status: production
 use_case_count: 3
@@ -22,7 +22,7 @@ Every use case follows the schema below. No exceptions.
 | ID | Title | Status | Primary Persona |
 |----|-------|--------|----------------|
 | UC-001 | Pipeline Forecasting with AI Deal Scoring | fully-supported | P-001 VP Sales |
-| UC-002 | AI-Powered Rep Coaching | fully-supported | P-001 VP Sales |
+| UC-002 | Rep Coaching Signals | fully-supported | P-001 VP Sales |
 | UC-003 | CRM Migration to NovaCRM | partially-supported | P-002 Sales Ops |
 
 ---
