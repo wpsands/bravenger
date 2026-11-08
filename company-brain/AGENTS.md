@@ -1,7 +1,7 @@
 ---
 title: Agent Operating Instructions
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-07-07"
 scope: "All AI agents consuming this Company Brain"
 owner: "Brain Owner"
 status: production
@@ -128,6 +128,7 @@ Every factual claim, positioning statement, persona insight, or use case referen
 5. **Never position NovaCRM as enterprise-ready.** We sell to mid-market (100-500 employees). Claiming enterprise capability mispositions us and attracts deals we cannot win. [Source: icp.md#anti-icp]
 6. **Never ignore governance.** These rules are not suggestions. They are the mechanism that makes the Brain work.
 7. **Never disparage competitors by name.** State what NovaCRM does. Let the buyer draw the comparison. We win on specifics — AI trained on their data, not generic models — not on trash talk about Salesforce or HubSpot.
+8. **Never present internal targets as customer commitments.** `goals.md` documents what NovaCRM is trying to achieve internally — time-to-value targets, adoption goals, revenue metrics. Use them to prioritize; never reframe them as customer-facing promises, milestones, or SLAs. Customer-facing capability and timeline claims come only from use case `status` fields and `messaging-framework.md` funnel-stage messaging — and a `partially-supported` status must be surfaced, not papered over.
 
 ---
 

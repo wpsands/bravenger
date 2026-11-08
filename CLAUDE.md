@@ -1,42 +1,23 @@
-You are working inside a Company Brain — a structured knowledge base that powers AI agents for Marketing, Sales, Product Marketing, Product, and Customer Success.
+You are working inside a Company Brain — a structured knowledge base that powers AI agents for Marketing, Sales, Product Marketing, Product, and Customer Success. The example company is NovaCRM (fictional). Run `/setup` to replace it with a real one.
 
-## Quick Start: Use Slash Commands
+## How work gets done here
 
-This project uses **split agents** — each discipline has its own scoped command with the shared foundation built in. Use these instead of trying to do everything from one prompt.
+**Content requests route to discipline subagents** (`.claude/agents/`): marketing, sales, pmm, product, cs, drift-check. Each does its own 9-file Brain read in isolated context and returns cited output. Delegate to them — do not do the Brain read in the main thread. Independent deliverables run as parallel subagents.
 
-### Agent Commands (produce content)
-- `/marketing` — Marketing agent: blog posts, emails, social, ads, landing pages
-- `/sales` — Sales agent: outbound sequences, discovery prep, objections, proposals
-- `/pmm` — Product Marketing agent: positioning briefs, launches, competitive intel, enablement
-- `/product` — Product agent: feature briefs, persona reactions, adoption scoring, roadmap input
-- `/cs` — Customer Success agent: onboarding guides, migration playbooks, health checks
-- `/drift-check` — Compare any content against the Brain for violations
+**Skills** (invoke with `/name`):
+- Content: `/marketing` `/sales` `/pmm` `/product` `/cs` — delegate to the matching subagent
+- Governance: `/drift-check` (content vs Brain), `/brain-audit` (Brain vs itself), `/eval` (does the Brain work)
+- Evolution: `/update-icp` `/update-persona` `/update-messaging` `/update-brand` `/update-use-case` `/update-goals` — each ends with the `cascade-check` workflow
+- Feedback loop: `/propose-update` — field evidence in, cited Brain amendments out
+- Fork setup: `/setup`
 
-### Update Commands (evolve the Brain)
-- `/update-icp` — Update ideal customer profile (pains, signals, firmographics)
-- `/update-persona` — Update or create a persona
-- `/update-messaging` — Update positioning or messaging framework
-- `/update-brand` — Update brand vision, voice, approved/forbidden language
-- `/update-use-case` — Update or create a use case
-- `/update-goals` — Update company goals and quarterly priorities
+**Workflows** (`.claude/workflows/`): cascade-check, citation-audit, brain-audit, eval.
 
-## If not using a slash command
+**Hook**: every Edit/Write to `company-brain/**` is auto-linted (frontmatter, citations, forbidden language). If the hook reports violations, fix them in the same turn.
 
-If you are asked to produce content or answer questions without a slash command:
+## Non-negotiables (all contexts)
 
-1. Ask: "Which discipline? Marketing, Sales, PMM, Product, or CS?"
-2. Follow the mandatory read order in `company-brain/AGENTS.md`
-3. Cite every factual claim with `[Source: filename#section]`
-4. Never invent facts not in the Brain. Flag gaps instead.
-5. Use the voice from `company-brain/brand-vision.md`
-6. Never use forbidden language from `company-brain/brand-vision.md#words-we-avoid`
-
-## Key files
-- `company-brain/README.md` — Brain overview and file map
-- `company-brain/AGENTS.md` — Governance rules and read order
-- `company-brain/icp.md` — Who we sell to
-- `company-brain/personas/index.md` — Persona registry
-- `company-brain/use-cases/index.md` — Use case registry
-- `company-brain/messaging-positioning/core-positioning.md` — Category, differentiators, narratives
-- `company-brain/messaging-positioning/messaging-framework.md` — VPs, objections, funnel messaging
-- `company-brain/brand-vision.md` — Voice, values, approved/forbidden language
+1. Every factual claim about the company cites `[Source: filename#section]` — see `company-brain/AGENTS.md`
+2. Never invent facts not in the Brain; flag gaps instead
+3. Voice and forbidden language come from `company-brain/brand-vision.md`
+4. Never edit `company-brain/` outside an `/update-*` or `/propose-update` flow — cascades and lint exist for a reason

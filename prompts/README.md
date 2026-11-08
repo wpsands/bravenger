@@ -2,21 +2,11 @@
 
 Five pre-configured prompts, one per discipline. Each loads the right Brain files in the right order.
 
-## Usage
+**Using Claude Code?** You don't need these files directly — the repo ships native subagents (`.claude/agents/`) built from these prompts, invoked via `/marketing`, `/sales`, `/pmm`, `/product`, `/cs`, and `/drift-check`. Each runs in isolated context and returns cited output. These prompt files remain the canonical, tool-agnostic versions; if you change one, make the same change in the matching `.claude/agents/` file (and vice versa).
 
-### In Claude Code (recommended)
+## Usage outside Claude Code
 
-Open your terminal in the project root. Then:
-
-```
-marketing agent — write a blog post targeting the VP Sales persona about UC-001
-```
-
-Claude Code reads the `CLAUDE.md` at the repo root, which routes "marketing agent" to the Marketing discipline. The agent follows the 10-step read order automatically.
-
-### Using prompt files directly
-
-If the `CLAUDE.md` routing isn't enough context, reference a prompt file:
+Paste a prompt file into any tool that can read the repo (ChatGPT with the repo uploaded, the Claude API, a custom agent framework):
 
 ```
 Read prompts/marketing.md and follow those instructions. Then write a blog post targeting the VP Sales persona about UC-001.
@@ -24,38 +14,38 @@ Read prompts/marketing.md and follow those instructions. Then write a blog post 
 
 ### Quick reference
 
-| Say this | Agent activates | Guideline used |
-|----------|----------------|----------------|
-| "marketing agent" | Marketing | `guidelines/marketing-usage.md` |
-| "sales agent" | Sales | `guidelines/sales-usage.md` |
-| "pmm agent" | Product Marketing | `guidelines/product-marketing-usage.md` |
-| "product agent" | Product | `guidelines/product-usage.md` |
-| "cs agent" | Customer Success | `guidelines/customer-success-usage.md` |
-| "drift check" | Any (compares against Brain) | `brand-vision.md` + `messaging-framework.md` |
+| Command / prompt | Agent | Guideline used |
+|------------------|-------|----------------|
+| `/marketing` — `prompts/marketing.md` | Marketing | `guidelines/marketing-usage.md` |
+| `/sales` — `prompts/sales.md` | Sales | `guidelines/sales-usage.md` |
+| `/pmm` — `prompts/pmm.md` | Product Marketing | `guidelines/product-marketing-usage.md` |
+| `/product` — `prompts/product.md` | Product | `guidelines/product-usage.md` |
+| `/cs` — `prompts/cs.md` | Customer Success | `guidelines/customer-success-usage.md` |
+| `/drift-check` | Any (compares against Brain) | `brand-vision.md` + `messaging-framework.md` |
 
 ## Example prompts
 
 **Marketing:**
-- "marketing agent — write a blog post about why forecast accuracy matters more than pipeline volume"
-- "marketing agent — write 3 LinkedIn posts targeting the Sales Ops persona about UC-002"
-- "marketing agent — drift check this email: [paste]"
+- `/marketing write a blog post about why forecast accuracy matters more than pipeline volume`
+- `/marketing write 3 LinkedIn posts targeting the Sales Ops persona about UC-002`
+- `/drift-check [paste an email]`
 
 **Sales:**
-- "sales agent — write an outbound email for a VP Sales who just missed forecast two quarters in a row"
-- "sales agent — prep me for a discovery call with a CTO who thinks AI scoring is a black box"
-- "sales agent — how do I respond to 'we're already on Salesforce'?"
+- `/sales write an outbound email for a VP Sales who just missed forecast two quarters in a row`
+- `/sales prep me for a discovery call with a CTO who thinks AI scoring is a black box`
+- `/sales how do I respond to "we're already on Salesforce"?`
 
 **PMM:**
-- "pmm agent — write a positioning brief for the pipeline forecasting use case"
-- "pmm agent — competitive response: prospect is comparing us to HubSpot's AI features"
-- "pmm agent — launch brief for the new coaching signals feature"
+- `/pmm write a positioning brief for the pipeline forecasting use case`
+- `/pmm competitive response: prospect is comparing us to HubSpot's AI features`
+- `/pmm launch brief for the new coaching signals feature`
 
 **Product:**
-- "product agent — run a persona reaction analysis on a deal risk dashboard feature"
-- "product agent — extract roadmap candidates from all use case gaps"
-- "product agent — write a feature brief for automated CRM migration tooling"
+- `/product run a persona reaction analysis on a deal risk dashboard feature`
+- `/product extract roadmap candidates from all use case gaps`
+- `/product write a feature brief for automated CRM migration tooling`
 
 **CS:**
-- "cs agent — generate an onboarding guide for UC-001 for a customer migrating from HubSpot"
-- "cs agent — write a use case walkthrough for UC-002 targeting the Sales Ops persona"
-- "cs agent — run a health check: what should we measure at 30/60/90 days?"
+- `/cs generate an onboarding guide for UC-001 for a customer migrating from HubSpot`
+- `/cs write a use case walkthrough for UC-002 targeting the Sales Ops persona`
+- `/cs run a health check: what should we measure at 30/60/90 days?`
