@@ -84,7 +84,7 @@ status: production
 **Approved language:**
 - "Built for your stage. Not an enterprise CRM with features turned off."
 - "Onboard in weeks, not months. No dedicated admin required."
-- "Mid-market pricing. Mid-market onboarding. Enterprise-grade AI."
+- "Mid-market pricing. Mid-market onboarding. AI trained on your own team."
 
 **Forbidden language:**
 - "Affordable alternative" (positions us as cheap, not purposeful)

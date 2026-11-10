@@ -1,8 +1,8 @@
 ---
 title: "Pipeline Forecasting with AI Deal Scoring"
 use_case_id: "UC-001"
-version: "1.1.1"
-last_updated: "2026-11-08"
+version: "1.2.0"
+last_updated: "2026-11-10"
 status: "fully-supported"
 owner: "Brain Owner"
 
@@ -11,7 +11,7 @@ personas:
   used_by:
     - "P-001"
     - "P-002"
-  evaluated_by: "P-003"
+  evaluated_by: "P-001"
 
 icp_pain: "P1, P2"
 current_alternative: "Reps self-report deal stages in Salesforce/HubSpot. Manager does a gut-check. VP Sales adds a haircut to the number. Board gets a forecast that's off by 20-40%."

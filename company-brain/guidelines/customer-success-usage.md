@@ -126,7 +126,7 @@ Migration playbooks help customers transition from their current CRM to NovaCRM.
 |------|---------------|-------------------|
 | **Salesforce** | Complex customizations, admin dependency, data sprawl | Parallel migration. No admin required. AI learns from historical Salesforce data before cutover. |
 | **HubSpot CRM** | Marketing-sales data entanglement, limited sales AI | Clean separation of marketing and sales data. Sales-first AI from day one. |
-| **Pipedrive** | Lightweight tool to sophisticated tool transition, team readjustment | Familiar pipeline UX with AI layer. Reps don't lose the visual model they know. |
+| **Pipedrive** | Lightweight tool to sophisticated tool transition, team readjustment | Familiar pipeline view; the AI reads the same pipeline the reps already know. Reps don't lose the visual model they know. |
 | **Close** | Not covered by the migration toolkit — uses the generic CSV import. Communication workflow dependency. | Historical deals and contacts import via CSV, so the AI still learns from history. Communication and calling integrations must be reconnected (`use-cases/uc-003-crm-migration.md#gaps`). |
 | **Spreadsheets / no CRM** | No historical data, no process discipline. Anti-ICP per `icp.md#anti-icp`; onboard only by exception. | Longest calibration path: the AI needs about 6 months of deal history before scores are accurate (`use-cases/uc-001-pipeline-forecasting.md#gotchas`). Set expectations that scores are directional until then. |
 

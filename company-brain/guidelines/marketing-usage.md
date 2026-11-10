@@ -92,7 +92,7 @@ Every piece of content should make the reader compare NovaCRM against something 
 **Don't:** "Sales teams face many challenges in today's market."
 
 ### Rule 4: Mid-Market Specificity Over Generic Claims
-Reference team sizes (10-50 reps), company sizes (100-500 employees), and mid-market realities (no dedicated CRM admin, tight budgets, fast onboarding requirements). Generic "enterprise" or "business" language signals we don't understand our audience.
+Reference team sizes (10-50 reps), company sizes (100-500 employees), and mid-market realities (often no dedicated CRM admin, or one person doing admin alongside everything else; tight budgets; fast onboarding requirements). Generic "enterprise" or "business" language signals we don't understand our audience.
 
 ### Rule 5: Competitive Positioning by Category, Not Feature
 Never do feature-by-feature comparisons. Position by category: "reporting tool vs. selling tool," "AI-powered vs. AI-native," "stripped-down enterprise vs. purpose-built mid-market."

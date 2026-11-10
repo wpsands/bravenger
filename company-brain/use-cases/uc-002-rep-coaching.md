@@ -13,7 +13,7 @@ personas:
     - "P-002"
   evaluated_by: "P-001"
 
-icp_pain: "P3, P4"
+icp_pain: "P4, P5, P7"
 current_alternative: "Managers coach based on gut feel and ride-alongs. No data on what top reps do differently. Coaching is inconsistent across managers and unscalable."
 tools_involved:
   - "NovaCRM behavior pattern engine"

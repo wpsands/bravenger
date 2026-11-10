@@ -89,7 +89,7 @@ They are the champion for NovaCRM. They evaluate tools, run the implementation, 
 - Detailed over glossy
 - Architecture diagrams over screenshots
 - Migration timelines with real milestones
-- Comparison tables (NovaCRM vs. Salesforce vs. HubSpot for specific operational tasks)
+- Comparison tables (they want NovaCRM vs. Salesforce vs. HubSpot for specific operational tasks). Serve this with architecture-level comparisons per `messaging-positioning/core-positioning.md#competitive-response-principles`; vendor-named feature tables only in 1:1 sales conversations.
 - Templates and playbooks they can use immediately
 - Honest about limitations — they'll find them anyway
 
@@ -123,7 +123,7 @@ They are the champion for NovaCRM. They evaluate tools, run the implementation, 
 | **"Our Salesforce instance is too customized to leave."** | Ask what percentage of those customizations are actually used. Most Salesforce instances have accumulated years of unused fields, triggers, and workflows. NovaCRM migration is a chance to clean house. Help them audit what matters vs. what's legacy. |
 | **"I don't have time to evaluate another tool."** | Respect their time. Offer a low-effort evaluation: a sandbox with their data schema pre-loaded, API documentation they can review asynchronously, and a migration assessment that takes 2 hours, not 2 weeks. |
 | **"What happens if NovaCRM doesn't work out?"** | Data export is available at any time in standard formats. No vendor lock-in. If they need to leave, their data leaves with them. This is a genuine differentiator against Salesforce's data portability challenges. |
-| **"The AI features sound nice but I need basic CRM to work first."** | Agree completely. Lead with the operational fundamentals: data model, workflow automation, reporting, integrations. The AI is a layer on top of a solid CRM foundation, not a substitute for one. |
+| **"The AI features sound nice but I need basic CRM to work first."** | Agree completely. Lead with the operational fundamentals: data model, workflow automation, reporting, integrations. The fundamentals — data model, workflow automation, reporting, integrations — are built around the AI engine, not bolted on beside it. Show the fundamentals first, then show that the AI is what makes them work. |
 
 ---
 
@@ -152,5 +152,5 @@ These are the features and design decisions that will resonate with this persona
 | **API-first architecture** | 200+ REST API endpoints with comprehensive documentation. They can build whatever integrations they need without waiting for engineering. |
 | **Admin dashboard** | Real-time data health scores, adoption metrics by rep, integration status, and automated alerts when something breaks. |
 | **Workflow automation builder** | Visual workflow builder for lead routing, stage progression, notifications, and escalations. Replaces their Zapier automations with native tooling. |
-| **Smart field suggestions** | AI suggests field values based on email and call context. Reps confirm with one click instead of typing. Reduces friction while improving data quality. |
+| **Smart field suggestions** | AI suggests field values based on email and meeting activity context. Reps confirm with one click instead of typing. Reduces friction while improving data quality. |
 | **Comparison mode during migration** | Side-by-side view of old CRM vs. NovaCRM data during parallel running. Lets them validate that nothing was lost. |

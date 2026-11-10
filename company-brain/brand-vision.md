@@ -31,7 +31,7 @@ We are not an enterprise CRM with AI features bolted onto a two-decade-old data 
 ## Core Values
 
 ### 1. Data Over Opinions
-Every recommendation NovaCRM makes is traceable to data — rep activity data, deal progression data, win/loss patterns. When a deal score changes, you can see why. When the AI suggests a next step, you can see the pattern it learned from. No black boxes. No "trust the algorithm." Show the work.
+Every recommendation NovaCRM makes is traceable to data — rep activity data, deal progression data, win/loss patterns. When a deal score changes, you can see why. When the AI flags a risk or a divergence from winning patterns, you can see the pattern it learned from. No black boxes. No "trust the algorithm." Show the work.
 
 ### 2. Reps First
 We build for the people who carry the quota. Every product decision starts with the question: does this make the rep's day easier or harder? If a feature adds friction to the rep's workflow — even if it makes the VP's dashboard prettier — it does not ship until we solve the friction.
@@ -71,7 +71,7 @@ We understand that sales is hard, quotas are real, and nobody wants another tool
 | Context | Tone | Example |
 |---------|------|---------|
 | **Website hero** | Direct, outcome-focused, specific | "Your CRM tracks activities. NovaCRM learns which activities actually close deals — for each rep on your team." |
-| **Sales outbound** | Empathetic, signal-driven, no-BS | "You just hired a new VP Sales. If the first forecast call is based on gut feel and spreadsheet math, you've got a problem NovaCRM solves in 30 days." |
+| **Sales outbound** | Empathetic, signal-driven, no-BS | "You just hired a new VP Sales. If the first forecast call is based on gut feel and spreadsheet math, you've got a problem NovaCRM starts fixing in 30 days — behavior-based scores replace gut feel in the first month, and forecast accuracy lands within 90." |
 | **Product documentation** | Clear, structured, data-model-aware | "Deal scores update daily based on rep activity patterns from the past 90 days. Scores range from 0-100. Factors include email cadence, meeting frequency, stakeholder breadth, and stage velocity." |
 | **Conference talk** | Story-driven, honest, show-the-data | "I'll show you what our AI actually learns from one sales team's data. No slides about 'the future of AI in sales.' Just real patterns from real deals." |
 | **CS onboarding** | Supportive, methodical, milestone-driven | "Let's connect your CRM data this week. You'll see your first deal scores inside the first 30 days, and we'll review them together so you understand exactly what the model is learning." |
@@ -88,7 +88,7 @@ We understand that sales is hard, quotas are real, and nobody wants another tool
 | Personalized AI / learns from your data | The key differentiator. The AI is trained on each customer's own sales data. |
 | Forecast accuracy | The ultimate outcome we deliver. The metric that matters to CROs. |
 | Pipeline hygiene | A specific, actionable problem we solve. Stale deals, missing data, sandbagged stages. |
-| Deal intelligence | The insights the AI surfaces — next steps, risk signals, coaching opportunities. |
+| Deal intelligence | The insights the AI surfaces — risk signals, divergence from winning patterns, coaching opportunities. ("Next steps" and "recommendations" are reserved until coaching signals v2 ships; see `goals.md#priority-2`.) |
 | Win patterns | What the AI identifies — the specific behaviors that correlate with closed-won deals for each rep. |
 | Mid-market | Our audience. 100-500 employee B2B companies. |
 | Outgrowing HubSpot | Our positioning wedge. The moment a team needs more than a free/starter CRM. |

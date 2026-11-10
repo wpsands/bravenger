@@ -156,7 +156,7 @@ NovaCRM learns how your best reps close deals and helps every rep sell that way.
 1. **Forecast accuracy:** Behavior-based forecasting replaces deal-stage guesswork.
 2. **Rep performance:** AI coaching surfaces what works and what doesn't — per rep, per deal.
 3. **Operational efficiency:** Sales Ops spends time on strategy, not CRM administration.
-4. **Migration confidence:** Parallel migration means no lost quarter and no lost data.
+4. **Migration confidence:** Parallel migration means no lost quarter, with data validated before cutover.
 5. **Technical trust:** Explainable AI, customer-specific models, clean data architecture.
 
 ---
