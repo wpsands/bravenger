@@ -39,7 +39,8 @@ After a customer signs and migration begins, CS builds persona-specific onboardi
 ### Use case
 - **ID:** [UC-XXX]
 - **Status:** [from use case file]
-- **Primary user:** [persona who uses this day-to-day]
+- **Primary user:** [the hands-on persona: the use case's `setup_by` persona unless the customer names someone else. Write the guide for this persona and cite their persona file.]
+- **Who does what:** [one line per persona in the use case's `personas` block: who sets up, who uses, who evaluates]
 
 ### What this use case does
 [Outcome section from the use case file, adapted for the customer's context]
