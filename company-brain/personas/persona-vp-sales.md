@@ -131,7 +131,7 @@ They are the economic buyer for NovaCRM. They sign the check. But they won't sig
 Understanding how this persona spends their time helps NovaCRM show up at the right moments.
 
 - **7:00 AM** — Checks phone before coffee. Looks at pipeline dashboard, overnight deal movement, and any alerts. This is when the mobile-first forecast view matters.
-- **8:30 AM** — Team standup or manager sync. Reviews at-risk deals, new pipeline, and this week's commit number. NovaCRM's risk alerts and coaching suggestions feed this meeting.
+- **8:30 AM** — Team standup or manager sync. Reviews at-risk deals, new pipeline, and this week's commit number. NovaCRM's risk alerts and coaching signals feed this meeting.
 - **10:00 AM** — One-on-ones with managers or direct deal involvement on strategic accounts. Uses deal scoring to prioritize which deals need VP-level engagement.
 - **1:00 PM** — Internal meetings: product roadmap review, board prep, cross-functional alignment. Needs pipeline data they can trust without spending 30 minutes scrubbing.
 - **3:00 PM** — Reviews end-of-day pipeline. Compares this week's forecast to last week's. Looks for deals that moved backward and asks why.

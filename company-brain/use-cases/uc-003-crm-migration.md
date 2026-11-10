@@ -11,7 +11,7 @@ personas:
   used_by:
     - "P-002"
     - "P-001"
-  evaluated_by: "P-003"
+  evaluated_by: "P-002"
 
 icp_pain: "P6"
 current_alternative: "Stay on Salesforce/HubSpot/Pipedrive despite dissatisfaction. Or hire a Salesforce consultant ($50-100K) to 'fix' the current implementation. Or attempt a DIY migration with CSV exports and months of pain."

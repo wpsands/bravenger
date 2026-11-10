@@ -66,7 +66,7 @@ After deploying NovaCRM's coaching insights:
 - **Top-rep patterns are correlations, not guaranteed causes.** The AI identifies behaviors that correlate with winning. It doesn't prove causation. A rep might multi-thread because they're skilled, not because multi-threading causes wins. Coaching must be applied with judgment.
 - **Small teams produce noisy data.** With fewer than 10 reps, the pattern detection has less statistical power. The insights are directional but the confidence intervals are wide. NovaCRM is transparent about confidence levels.
 - **Reps can game the metrics.** If reps know the AI tracks follow-up speed, some will send meaningless follow-ups to hit the metric. The AI includes quality signals (response rates, meeting conversions) to mitigate this, but managers must watch for gaming.
-- **Coaching insights require manager buy-in.** The AI surfaces recommendations, but managers have to act on them. If managers ignore the insights or use them punitively, the feature backfires. Rollout should include manager training.
+- **Coaching insights require manager buy-in.** The AI surfaces coaching signals, but managers have to act on them. If managers ignore the insights or use them punitively, the feature backfires. Rollout should include manager training.
 - **Privacy expectations vary.** Some reps are comfortable with activity analysis. Others feel surveilled. NovaCRM anonymizes comparisons by default (compare against team averages, not named individuals) but the VP Sales must set the cultural tone.
 
 ## Gaps
@@ -75,7 +75,7 @@ After deploying NovaCRM's coaching insights:
 - **No call transcript analysis.** Coaching insights are based on activity patterns (email, meetings, deal progression), not conversation content. Integration with Gong/Chorus for talk-time ratios, question frequency, and objection handling is on the roadmap.
 - **No custom coaching playbooks.** Managers can't yet create their own coaching sequences triggered by AI insights. The current experience is "here's what to coach" — the delivery mechanism is the manager's 1:1.
 - **Limited support for non-English selling.** Behavior pattern analysis works regardless of language, but any NLP-based features (email sentiment, subject line analysis) are currently English-only.
-- **No integration with LMS or training platforms.** When the AI recommends coaching on multi-threading, it can't yet link to the company's training content on that skill. Manual connection required.
+- **No integration with LMS or training platforms.** When the AI flags a multi-threading gap, it can't yet link to the company's training content on that skill. Manual connection required.
 
 ## Connected Use Cases
 

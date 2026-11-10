@@ -102,7 +102,7 @@ When competitors come up in conversation, follow these rules:
 | Company has 10-50 reps, B2B, complex sales cycle | Yes — core ICP | — |
 | Company has 1,000+ employees or enterprise procurement | — | Yes — we don't serve enterprise at this stage (`icp.md#anti-icp`) |
 | Company just signed a 3-year Salesforce contract | Nurture, don't compete | — |
-| Company is evaluating CRMs for the first time | Yes — strongest position, no migration friction | — |
+| Company is evaluating CRMs for the first time | Qualify first — no CRM and no defined sales process is anti-ICP (`icp.md#anti-icp`), and the AI calibrates slowest without history. Pursue only if a defined pipeline process exists. | Walk away if there is no structured sales process |
 | Company wants "just a better pipeline view" | Qualify carefully | Walk away if they don't value coaching/forecasting |
 | CTO is sole decision maker, no VP Sales involvement | Qualify — CTO alone rarely buys a CRM | — |
 
