@@ -97,7 +97,7 @@ They are the economic buyer for NovaCRM. They sign the check. But they won't sig
 ## Messaging Dos and Don'ts
 
 ### Do
-- Lead with forecast accuracy. "What if your forecast was within 5% every quarter?" lands immediately.
+- Lead with forecast accuracy. "What if your forecast was within 10% every quarter?" lands immediately.
 - Show the AI working on real (anonymized) deal data. Let them see scores and explanations for deals they understand.
 - Reference the pain of the status quo. "You're already paying for a CRM your reps don't use."
 - Acknowledge that CRM migration is hard — and show exactly how NovaCRM reduces the risk.
@@ -151,5 +151,5 @@ These are the features and design decisions that will resonate with this persona
 | **One-click board report** | They spend hours building the board deck. A one-click export of forecast, pipeline, and rep performance saves real time every quarter. |
 | **Migration risk dashboard** | Shows exactly what data maps cleanly, what needs manual review, and what the adoption curve looks like during transition. Reduces the "open-heart surgery" fear. |
 | **Mobile-first design** | VP Sales lives on their phone. If they can check pipeline and forecast from the Uber to the airport, they'll use it every day. |
-| **Rep-facing value (not just manager dashboards)** | If the CRM helps reps sell (smart reminders, deal insights, next-best-action), adoption happens naturally instead of being forced. |
+| **Rep-facing value (not just manager dashboards)** | If the CRM helps reps sell (smart reminders, deal insights, coaching signals), adoption happens naturally instead of being forced. |
 | **Pilot program on real data** | A 30-day pilot where NovaCRM ingests their current CRM data and shows what the AI would have scored — before they commit to migration. |

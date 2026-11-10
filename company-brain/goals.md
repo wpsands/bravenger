@@ -63,7 +63,7 @@ Discipline targets below are set by the Brain owner at the quarterly goals revie
 | Goal | Target | Why It Matters |
 |------|--------|---------------|
 | **Coaching signals v2** | Surface rep-specific coaching recommendations based on win pattern analysis | Coaching is a documented ICP pain (`icp.md#pains`, P5 and P7). V1 shows patterns. V2 tells managers specifically what each rep should do differently, grounded in data from their own team's top performers. |
-| **Salesforce migration tool v2** | Extend the migration toolkit's Salesforce path to custom objects, CPQ data, and workflow conversion — the pieces that are manual today (`use-cases/uc-003-crm-migration.md#gaps`) | Our sweet spot is companies outgrowing HubSpot, but some prospects are on Salesforce Essentials or overbuilt Salesforce instances they hate. Migration friction is the biggest objection. |
+| **Salesforce migration tool v2** | Extend the migration toolkit's Salesforce path to custom objects, CPQ data, and workflow conversion — the pieces that are manual today (`use-cases/uc-003-crm-migration.md#gotchas`, `#gaps`) | Our sweet spot is companies outgrowing HubSpot, but some prospects are on Salesforce Essentials or overbuilt Salesforce instances they hate. Migration friction is the biggest objection. |
 | **Native Gong integration** | Beta by EOY; GA targeted for Q1 2027 (`use-cases/uc-001-pipeline-forecasting.md#gaps`). Bi-directional sync — Gong conversation data feeds NovaCRM's scoring engine, deal scores surface in Gong | Gong or Chorus customers are a documented buying signal (`icp.md#buying-signals`). Integrating conversation intelligence with deal scoring creates a compound insight that neither tool provides alone. |
 | **Self-serve onboarding** | Time-to-first-deal-score under 48 hours for Team tier (internal target — the customer-facing commitment stays "first deal scores in 30 days" per `messaging-positioning/messaging-framework.md#funnel-stage-messaging`) | Sales teams evaluate tools between deals. If they can't connect their CRM and see deal scores within two days, they'll move to the next demo on their list. |
 
@@ -99,7 +99,7 @@ These are the 3 things that matter most right now. When an agent produces conten
 
 **What this means for agents:**
 - Marketing: the v2 launch is the biggest content moment of the quarter. Ship the launch package: blog post, demo video, "before and after" coaching comparison, and a customer story.
-- PMM: update competitive positioning and enablement. No competing CRM offers coaching recommendations trained on the customer's own rep behavior data — make sure every rep can say that credibly.
+- PMM: update competitive positioning and enablement. Once v2 ships and `use-cases/uc-002-rep-coaching.md` is updated, make sure every rep can credibly say that no competing CRM offers coaching recommendations trained on the customer's own rep behavior data. Until then, the claim is coaching signals, not recommendations.
 - CS: identify Team-tier accounts where managers are already asking coaching questions and run structured Business-tier evaluations with them. The expansion trigger is usually "we want coaching signals for our managers too."
 - Product: instrument v2 adoption. Every recommendation must trace to a specific win pattern in the customer's own data — no generic advice.
 

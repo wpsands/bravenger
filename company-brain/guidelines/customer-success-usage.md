@@ -63,8 +63,8 @@ After a customer signs and migration begins, CS builds persona-specific onboardi
 ### Persona-Specific Onboarding Sequences
 
 **For P-001 VP Sales / CRO:**
-1. **Week 1:** Forecast dashboard walkthrough. Show behavior-based scores vs. deal-stage forecasts. Demonstrate the coaching alert feed.
-2. **Week 2:** First AI-generated forecast review. Compare NovaCRM forecast to their existing process. Highlight where scores diverged from gut feel.
+1. **Week 1:** Data-connection status and forecast dashboard tour. Show how behavior-based scores differ from deal-stage forecasts and when the first scores land (inside the 30-day window). Demonstrate the coaching alert feed.
+2. **Week 2:** First AI-generated forecast review, as soon as the first scores land. Compare NovaCRM forecast to their existing process. Highlight where scores diverged from gut feel.
 3. **Week 3:** Coaching workflow activation. Show how to act on coaching alerts. Connect alerts to 1:1 meeting prep.
 4. **Week 4:** Board reporting setup. Configure the forecast views the VP Sales needs for board and exec meetings.
 
@@ -127,7 +127,7 @@ Migration playbooks help customers transition from their current CRM to NovaCRM.
 | **HubSpot CRM** | Marketing-sales data entanglement, limited sales AI | Clean separation of marketing and sales data. Sales-first AI from day one. |
 | **Pipedrive** | Lightweight tool to sophisticated tool transition, team readjustment | Familiar pipeline UX with AI layer. Reps don't lose the visual model they know. |
 | **Close** | Not covered by the migration toolkit — uses the generic CSV import. Communication workflow dependency. | Historical deals and contacts import via CSV, so the AI still learns from history. Communication and calling integrations must be reconnected (`use-cases/uc-003-crm-migration.md#gaps`). |
-| **Spreadsheets / no CRM** | No historical data, no process discipline | AI starts learning from day one. No legacy data problems. Clean start advantage. |
+| **Spreadsheets / no CRM** | No historical data, no process discipline. Anti-ICP per `icp.md#anti-icp`; onboard only by exception. | Longest calibration path: the AI needs about 6 months of deal history before scores are accurate (`use-cases/uc-001-pipeline-forecasting.md#gotchas`). Set expectations that scores are directional until then. |
 
 ### Migration Rules
 - **Never force a big-bang cutover.** Parallel migration is mandatory. The old CRM stays live until the team is confident.

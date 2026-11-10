@@ -22,6 +22,8 @@ This is a new category. We do not compete on features within the existing CRM ca
 
 For mid-market B2B sales teams whose CRM is a reporting tool instead of a selling tool, NovaCRM is the first CRM that learns how your best reps close deals and helps every rep sell that way. Unlike Salesforce, HubSpot CRM, Pipedrive, and Close — which treat AI as a feature add-on to a database — NovaCRM is AI-native: the intelligence is the product, not a layer on top of it.
 
+The positioning statement is the internal reference. Public hero copy derives from it using the paradigm language in `#competitive-response-principles` ("reporting-tool CRM"), not the vendor list.
+
 ---
 
 ## Five Differentiators
@@ -41,14 +43,14 @@ For mid-market B2B sales teams whose CRM is a reporting tool instead of a sellin
 **Proof point:** Behavior-based forecasting reduces forecast error by catching stalled deals that look active and surfacing real deals that look stalled.
 
 ### 3. Built for Mid-Market, Not Stripped-Down Enterprise
-**What it means:** NovaCRM is designed for 100-500 employee B2B companies. The data model, the onboarding, the pricing, the support model — all built for teams with 10-50 reps, not 5,000. This is not Salesforce with features turned off.
+**What it means:** NovaCRM is designed for 100-500 employee B2B companies. The data model, the onboarding, the pricing, the support model — all built for teams with 10-50 reps, not 5,000. This is not an enterprise CRM with features turned off.
 
 **Why it matters:** Mid-market sales teams get squeezed between tools built for startups (too basic) and tools built for enterprise (too complex, too expensive). NovaCRM is purpose-built for the middle: enough sophistication to handle complex B2B selling, without the admin overhead that requires a dedicated ops team.
 
-**Proof point:** Average onboarding time is weeks, not months. No dedicated Salesforce admin required. The system is designed to be configured by a Sales Ops Manager, not a systems integrator.
+**Proof point:** Average onboarding time is weeks, not months. No dedicated CRM admin required. The system is designed to be configured by a Sales Ops Manager, not a systems integrator.
 
 ### 4. Coaching Engine, Not Just a Dashboard
-**What it means:** NovaCRM doesn't just show managers what happened. It tells reps what to do next. The AI identifies coaching moments — deals where a behavior change could improve the outcome — and surfaces them to managers and reps daily.
+**What it means:** NovaCRM doesn't just show managers what happened. It shows where each rep diverges from the team's winning patterns. The AI identifies coaching moments — deals where a behavior change could improve the outcome — and surfaces them to managers and reps daily. Prescriptive per-rep recommendations ship with coaching signals v2 in Q4 2026 (`use-cases/uc-002-rep-coaching.md#gaps`).
 
 **Why it matters:** Sales managers spend 80% of their time on reporting and pipeline reviews. NovaCRM automates the reporting layer so managers can focus on the coaching layer. The system identifies which reps need help, on which deals, and which winning behavior is missing.
 
@@ -57,7 +59,7 @@ For mid-market B2B sales teams whose CRM is a reporting tool instead of a sellin
 ### 5. Migration That Doesn't Break Your Quarter
 **What it means:** NovaCRM provides a guided, self-serve migration toolkit for Salesforce, HubSpot, and Pipedrive (other CRMs import via CSV) that runs parallel to the existing CRM. Data is validated before cutover. No quarter disruption. The AI starts learning from historical data before the team fully transitions.
 
-**Why it matters:** CRM migration is the #1 reason mid-market companies stay on tools they've outgrown. The switching cost feels too high. NovaCRM eliminates the migration risk by running in parallel, validating data integrity, and letting the AI build its models from historical behavior before the team switches over.
+**Why it matters:** CRM migration is the #1 reason mid-market companies stay on tools they've outgrown. The switching cost feels too high. NovaCRM reduces the migration risk by running in parallel, validating data integrity, and letting the AI build its models from historical behavior before the team switches over. The residual risks stay visible: workflows are rebuilt by hand, integrations are reconnected, and after cutover the old CRM is kept read-only for 90 days as insurance (`use-cases/uc-003-crm-migration.md#gaps`).
 
 **Proof point:** Parallel migration means the old CRM stays live until the team is confident. Historical data import means the AI doesn't start from zero — it has context from day one.
 
@@ -98,7 +100,7 @@ When competitors come up in conversation, follow these rules:
 | Scenario | Compete | Walk Away |
 |----------|---------|-----------|
 | Company has 10-50 reps, B2B, complex sales cycle | Yes — core ICP | — |
-| Company has 5,000+ reps, enterprise procurement | — | Yes — we don't serve enterprise at this stage |
+| Company has 1,000+ employees or enterprise procurement | — | Yes — we don't serve enterprise at this stage (`icp.md#anti-icp`) |
 | Company just signed a 3-year Salesforce contract | Nurture, don't compete | — |
 | Company is evaluating CRMs for the first time | Yes — strongest position, no migration friction | — |
 | Company wants "just a better pipeline view" | Qualify carefully | Walk away if they don't value coaching/forecasting |
@@ -113,7 +115,7 @@ One narrative per persona, tailored to their primary pain and decision criteria.
 ### For the VP Sales / CRO (P-001 — Economic Buyer)
 **Narrative: "Your CRM tells you what happened. It should tell you what to do."**
 
-You review pipeline every Monday. Your reps update deal stages on Friday afternoon. Half the forecasts are wrong. You know it, your board knows it, and your reps know you know it. The CRM is a reporting tool — it tells you what happened last quarter, not what will happen this quarter.
+You review pipeline every Monday. Your reps update deal stages on Friday afternoon. The forecast is a number you don't believe. You know it, your board knows it, and your reps know you know it. The CRM is a reporting tool — it tells you what happened last quarter, not what will happen this quarter.
 
 NovaCRM replaces the guesswork. The AI watches what your reps actually do — their cadence, their stakeholder engagement, their timing — and forecasts from behavior, not deal stages. Your best reps' patterns become visible. Your coaching becomes targeted. Your forecast becomes defensible.
 
@@ -133,7 +135,7 @@ You were hired to optimize the sales process. NovaCRM lets you actually do that.
 [Source: personas/persona-sales-ops.md#pains]
 
 ### For the CTO (P-003 — Technical Evaluator)
-**Narrative: "AI that's explainable, auditable, and yours."**
+**Narrative: "An architecture you can audit — and AI you can explain."**
 
 You've seen AI sales tools before. Black-box scoring. Vendor lock-in. Data leaving your environment. Promises about "AI miracles" with no explanation of how the model works.
 
@@ -141,7 +143,7 @@ NovaCRM is different. The AI model is trained on your data — not a shared mode
 
 Your sales team gets a better tool. You get an architecture you can defend to your board.
 
-[Source: personas/persona-cto.md#pains]
+[Source: personas/persona-cto.md#pains] [Source: personas/persona-cto.md#decision-process] [Source: personas/persona-cto.md#product-ui-ux-hooks] [Source: brand-vision.md#core-values]
 
 ---
 

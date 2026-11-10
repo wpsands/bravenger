@@ -11,7 +11,7 @@ status: production
 ## Value Propositions
 
 ### VP1: Your CRM Should Sell, Not Just Report
-**Statement:** NovaCRM replaces the CRM-as-database paradigm with a CRM that actively helps reps close deals. The AI learns from winning behavior and surfaces coaching every day.
+**Statement:** NovaCRM replaces the CRM-as-database paradigm with a CRM that actively helps reps close deals. The AI learns from winning behavior and surfaces coaching every day. "What to do" means which deals need attention and which winning behavior is missing — the coaching-moment level documented in `use-cases/uc-002-rep-coaching.md#outcome`. It does not claim prescriptive per-rep recommendations, which ship with coaching signals v2.
 
 **Approved language:**
 - "Your CRM tells you what happened. NovaCRM tells you what to do."
@@ -82,7 +82,7 @@ status: production
 **Statement:** NovaCRM is purpose-built for 100-500 employee B2B companies. The pricing, onboarding, data model, and support are designed for teams with 10-50 reps — not stripped-down enterprise and not scaled-up SMB.
 
 **Approved language:**
-- "Built for your stage. Not Salesforce with features turned off."
+- "Built for your stage. Not an enterprise CRM with features turned off."
 - "Onboard in weeks, not months. No dedicated admin required."
 - "Mid-market pricing. Mid-market onboarding. Enterprise-grade AI."
 
@@ -108,7 +108,7 @@ status: production
 - "One-click import" (oversimplifies a real process)
 - "Zero downtime" (implies a technical SLA we shouldn't promise casually)
 
-**Persona relevance:** Moderate with P-001 VP Sales (cares about quarter protection), Strong with P-002 Sales Ops (they manage the migration), Strong with P-003 CTO (cares about data integrity and architecture).
+**Persona relevance:** Strong with P-001 VP Sales (switching CRMs is a documented core pain; quarter protection is the ask), Strong with P-002 Sales Ops (they manage the migration), Strong with P-003 CTO (cares about data integrity and architecture).
 
 ---
 
@@ -159,7 +159,7 @@ status: production
 **Goal:** Position NovaCRM as the right choice for mid-market B2B sales teams.
 
 - "NovaCRM learns how your best reps close deals and helps every rep sell that way."
-- "Behavior-based forecasting. AI coaching. Built for mid-market. No Salesforce admin required."
+- "Behavior-based forecasting. AI coaching. Built for mid-market. No dedicated CRM admin required."
 - "Run it in parallel with your current CRM. Prove the value before you switch."
 
 ### Decision
@@ -186,7 +186,7 @@ status: production
 | "Behavior doesn't lie. Deal stages do." | Strong | Strong | Neutral |
 | "Trained on your team's data. Not someone else's." | Strong | Moderate | Strong |
 | "Sales coaching every day, not once a quarter." | Strong | Moderate | Neutral |
-| "Built for your stage. Not Salesforce with features turned off." | Strong | Strong | Strong |
+| "Built for your stage. Not an enterprise CRM with features turned off." | Strong | Strong | Strong |
 | "Migrate without breaking your quarter." | Strong | Strong | Moderate |
 | "Explainable AI — audit every score." | Moderate | Moderate | Strong |
 | "No dedicated admin required." | Moderate | Strong | Strong |
@@ -199,7 +199,7 @@ status: production
 **Lead with:** Forecast accuracy and rep performance.
 **Support with:** Coaching engine, behavior-based scoring.
 **Close with:** 90-day value timeline, board-ready forecasts.
-**Avoid:** Technical architecture details, implementation specifics.
+**Avoid:** Data architecture and API specifics. Do walk through the migration plan and timeline in detail — they have been burned before (`personas/persona-vp-sales.md#messaging-dos-and-donts`).
 
 ### P-002 Sales Ops Manager
 **Lead with:** Operational efficiency, no admin overhead.
@@ -208,7 +208,7 @@ status: production
 **Avoid:** Abstract AI claims, enterprise jargon.
 
 ### P-003 CTO
-**Lead with:** Explainable AI, data architecture, security posture.
-**Support with:** Customer-specific models, API-first design, SOC 2.
+**Lead with:** Security posture (SOC 2, encryption, data residency), data architecture, API quality.
+**Support with:** Explainable AI, customer-specific models, API-first design.
 **Close with:** Clean integration, no vendor lock-in, auditable system.
 **Avoid:** Sales outcome language, quota metrics, coaching narratives.

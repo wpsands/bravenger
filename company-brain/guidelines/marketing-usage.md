@@ -40,7 +40,7 @@ Before writing a blog post, assemble:
 - [ ] Target persona (primary + secondary)
 - [ ] Hero messaging (aligned to core-positioning.md positioning statement)
 - [ ] 3-5 value propositions with approved language
-- [ ] Competitive differentiation section (vs. specific named alternative)
+- [ ] Competitive differentiation section (vs. the reporting-tool CRM paradigm; name HubSpot only under the outgrowing-HubSpot wedge)
 - [ ] Proof points (customer outcomes, metrics, case studies)
 - [ ] Objection pre-handling (anticipate and address in copy)
 - [ ] CTA (demo request, free trial, ROI calculator)
@@ -92,7 +92,7 @@ Every piece of content should make the reader compare NovaCRM against something 
 **Don't:** "Sales teams face many challenges in today's market."
 
 ### Rule 4: Mid-Market Specificity Over Generic Claims
-Reference team sizes (10-50 reps), company sizes (100-500 employees), and mid-market realities (no dedicated Salesforce admin, tight budgets, fast onboarding requirements). Generic "enterprise" or "business" language signals we don't understand our audience.
+Reference team sizes (10-50 reps), company sizes (100-500 employees), and mid-market realities (no dedicated CRM admin, tight budgets, fast onboarding requirements). Generic "enterprise" or "business" language signals we don't understand our audience.
 
 ### Rule 5: Competitive Positioning by Category, Not Feature
 Never do feature-by-feature comparisons. Position by category: "reporting tool vs. selling tool," "AI-powered vs. AI-native," "stripped-down enterprise vs. purpose-built mid-market."
@@ -130,7 +130,7 @@ If you claim a customer outcome, reference the use case that delivers it. If you
 
 ### Paid Ads
 - One value prop per ad. No feature lists.
-- Competitive ads target specific alternative keywords (e.g., "Salesforce alternative for mid-market").
+- Competitive ads may target alternative keywords (e.g., "HubSpot CRM alternative"), but the ad copy itself positions by category and names a vendor only under the outgrowing-HubSpot wedge.
 - Landing pages must match ad messaging exactly — no bait-and-switch.
 
 ---

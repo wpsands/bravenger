@@ -1,7 +1,7 @@
 ---
 title: Persona Registry
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 owner: "Brain Owner"
 status: production
 persona_count: 3

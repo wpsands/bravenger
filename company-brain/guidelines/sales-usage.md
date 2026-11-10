@@ -40,7 +40,7 @@ NovaCRM's outbound motion is signal-driven. Do not send generic sequences. Every
 | Sales team grew 50%+ in the past year | "More reps, more variance. Your best reps' playbook should scale." | P-001 VP Sales | VP3: Learns from YOUR Reps |
 | Posted a Sales Enablement or Sales Training role | "You're hiring to fix ramp and coaching. Your CRM should show what your top reps do differently." | P-001 VP Sales | VP4: Coaching Engine, Not Just a Dashboard |
 | Gong or Chorus customer | "You already analyze calls. Extend that to every deal activity." | P-001 VP Sales | VP3: Learns from YOUR Reps (conversation intelligence integration is on the roadmap — see `use-cases/uc-001-pipeline-forecasting.md#gaps`) |
-| Engineering or product blog post about AI/ML | "Your team already trusts AI that explains itself. Your CRM should too." | P-003 CTO | Technical: explainability, architecture |
+| Engineering or product blog post about AI/ML | "Your team already trusts AI that explains itself. Your CRM should too." | P-002 Sales Ops (CTO-facing material travels through the champion; the CTO almost never reads vendor email) | Technical: explainability, architecture |
 
 [Source: icp.md#buying-signals]
 
@@ -112,23 +112,23 @@ Use the objection responses from `messaging-positioning/messaging-framework.md#o
 ### When Talking to P-001 VP Sales / CRO
 - **Lead with:** Outcomes — forecast accuracy, rep performance, board confidence.
 - **Use:** Revenue language, quota language, pipeline metrics.
-- **Avoid:** Technical implementation details, data architecture, API specs.
+- **Avoid:** Data architecture, API specs. Do walk through the migration plan in detail — that is the implementation they want to see.
 - **Tone:** Peer-to-peer. Confident. Results-oriented.
 - **Key phrase:** "Your CRM should help your team sell, not just report on what they sold."
 
 ### When Talking to P-002 Sales Ops Manager
 - **Lead with:** Operational efficiency — less admin, better data, smarter workflows.
 - **Use:** Ops language, adoption metrics, workflow terms.
-- **Avoid:** Board-level outcomes (that's VP Sales territory), deep technical specs.
+- **Avoid:** Board-level outcomes (that's VP Sales territory). Be concrete on integrations and API specifics — treat them as a technical peer.
 - **Tone:** Empathetic to their pain. Practical. Outcome-oriented.
 - **Key phrase:** "You were hired to optimize the sales process. NovaCRM lets you actually do that."
 
 ### When Talking to P-003 CTO
-- **Lead with:** Architecture, security, explainability, integration.
+- **Lead with:** Security and compliance, data architecture, API quality, integration. Explainability comes second.
 - **Use:** Technical language, data model terms, compliance frameworks.
 - **Avoid:** Sales outcomes, quota language, coaching narratives.
 - **Tone:** Technical peer. Transparent. No hand-waving.
-- **Key phrase:** "Explainable AI. Customer-specific models. API-first. SOC 2 compliant."
+- **Key phrase:** "SOC 2 compliant. API-first. Customer-specific models. Explainable AI."
 
 ---
 
@@ -137,7 +137,7 @@ Use the objection responses from `messaging-positioning/messaging-framework.md#o
 When writing proposal or deal language:
 - **Scope:** Reference UC-001 Pipeline Forecasting, UC-002 Rep Coaching, UC-003 CRM Migration outcomes.
 - **Pricing:** Per-rep/month model. No hidden platform fees.
-- **Timeline:** Onboard in weeks. First deal scores in 30 days. Forecast impact in 90 days.
+- **Timeline:** Onboard in weeks. First deal scores in 30 days. Forecast impact in 90 days. POC track: a day-14 accuracy checkpoint on the prospect's own data (`goals.md#priority-1`), separate from the standard onboarding commitment.
 - **Deliverables:** AI-native CRM with behavior-based scoring, coaching engine, parallel migration support.
 
 ### Language to Use

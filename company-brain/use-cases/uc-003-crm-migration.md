@@ -13,7 +13,7 @@ personas:
     - "P-001"
   evaluated_by: "P-003"
 
-icp_pain: "P5, P6"
+icp_pain: "P6"
 current_alternative: "Stay on Salesforce/HubSpot/Pipedrive despite dissatisfaction. Or hire a Salesforce consultant ($50-100K) to 'fix' the current implementation. Or attempt a DIY migration with CSV exports and months of pain."
 tools_involved:
   - "NovaCRM migration toolkit"

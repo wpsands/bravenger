@@ -83,7 +83,7 @@ They are the champion for NovaCRM. They evaluate tools, run the implementation, 
 | **LinkedIn** | Follows RevOps thought leaders. Engages with tactical posts about process, automation, and tool comparisons. |
 | **Webinars** | Will attend if the topic is operational (migration playbook, integration architecture, data model design). Will not attend product marketing webinars. |
 | **Documentation** | Reads API docs, admin guides, and migration playbooks before requesting a demo. The quality of docs is a trust signal. |
-| **Email** | Reads emails that are specific to their operational challenges. "How Company X migrated 50K deals from HubSpot in 3 weeks" will get opened. |
+| **Email** | Reads emails that are specific to their operational challenges. "How Company X migrated 50K deals from HubSpot in 4 weeks" will get opened. |
 
 ### Content Preferences
 - Detailed over glossy

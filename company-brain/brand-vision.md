@@ -74,7 +74,7 @@ We understand that sales is hard, quotas are real, and nobody wants another tool
 | **Sales outbound** | Empathetic, signal-driven, no-BS | "You just hired a new VP Sales. If the first forecast call is based on gut feel and spreadsheet math, you've got a problem NovaCRM solves in 30 days." |
 | **Product documentation** | Clear, structured, data-model-aware | "Deal scores update daily based on rep activity patterns from the past 90 days. Scores range from 0-100. Factors include email cadence, meeting frequency, stakeholder breadth, and stage velocity." |
 | **Conference talk** | Story-driven, honest, show-the-data | "I'll show you what our AI actually learns from one sales team's data. No slides about 'the future of AI in sales.' Just real patterns from real deals." |
-| **CS onboarding** | Supportive, methodical, milestone-driven | "Let's connect your CRM data and get your first deal scores in week one. We'll review them together so you understand exactly what the model is learning." |
+| **CS onboarding** | Supportive, methodical, milestone-driven | "Let's connect your CRM data this week. You'll see your first deal scores inside the first 30 days, and we'll review them together so you understand exactly what the model is learning." |
 | **LinkedIn** | Opinionated, concise, grounded in reality | "Your forecast is wrong because your CRM doesn't know how your best reps sell. It just counts their activities. There's a difference." |
 
 ---
@@ -109,7 +109,7 @@ We understand that sales is hard, quotas are real, and nobody wants another tool
 | Leverage | Corporate jargon. Sales teams don't talk like this. | Use. |
 | Empower | Vague. Soft. | Equip, give, enable, show. |
 | Unlock | Implies something was locked. Dramatic. | Enable, surface, reveal, show. |
-| Solution | Vague. Means nothing. | CRM, platform, deal scoring engine. Say what it actually is. |
+| Solution | Vague. Means nothing. | CRM, deal scoring engine. Say what it actually is. |
 | End-to-end | Overused. Describe the actual scope. | Describe what NovaCRM covers: activity capture, deal scoring, forecasting, coaching signals. |
 | Synergy | No. | No. |
 | AI-first | Every B2B SaaS company claims to be AI-first now. It means nothing. | Describe what the AI actually does and how it learns. |
