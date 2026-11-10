@@ -3,8 +3,8 @@ title: "Persona — The CTO"
 persona_id: "P-003"
 role: "CTO / VP Engineering"
 dmu_function: "Technical Evaluator"
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 owner: "Brain Owner"
 status: production
 ---
@@ -25,7 +25,7 @@ They are the technical evaluator for NovaCRM. They can block a deal single-hande
 |-----------|--------|
 | **Title** | CTO, VP Engineering, Head of Engineering, Principal Architect |
 | **Company size** | 100-500 employees, B2B |
-| **Company stage** | Series B through pre-IPO |
+| **Company stage** | Series A through Series C (or bootstrapped at equivalent scale) |
 | **Age range** | 30-45 |
 | **Background** | Software engineer who moved into leadership. 8-15 years of experience. Has built systems, managed teams, and evaluated dozens of vendors. |
 | **Education** | CS degree or equivalent experience. May have an MS or PhD if they're in an ML-adjacent domain. |

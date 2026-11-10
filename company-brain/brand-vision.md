@@ -1,7 +1,7 @@
 ---
 title: Brand Vision
-version: "1.1.1"
-last_updated: "2026-11-08"
+version: "1.2.0"
+last_updated: "2026-11-10"
 owner: "Brain Owner"
 status: production
 ---
@@ -24,7 +24,7 @@ Every sales team has an AI copilot trained on their own winning patterns. Foreca
 
 NovaCRM is a CRM built from the ground up around an AI deal scoring engine that learns from individual rep behavior patterns. It watches how each rep runs discovery, how they multi-thread accounts, what their follow-up cadence looks like on deals they win versus deals they lose — and it turns those patterns into deal scores, coaching signals, and forecasts that reflect how your specific team sells.
 
-We are not an enterprise CRM with AI features bolted onto a 20-year-old data model. We are not a free-tier CRM hoping you outgrow us and upgrade. We are the CRM for sales teams that have outgrown HubSpot free/starter but are not ready for Salesforce enterprise — and who believe their own selling data should train their own AI, not get averaged into a generic model.
+We are not an enterprise CRM with AI features bolted onto a two-decade-old data model. We are not a free-tier CRM hoping you outgrow us and upgrade. We are the CRM for sales teams that have outgrown HubSpot free/starter but are not ready for Salesforce enterprise — and who believe their own selling data should train their own AI, not get averaged into a generic model.
 
 ---
 
@@ -113,5 +113,5 @@ We understand that sales is hard, quotas are real, and nobody wants another tool
 | End-to-end | Overused. Describe the actual scope. | Describe what NovaCRM covers: activity capture, deal scoring, forecasting, coaching signals. |
 | Synergy | No. | No. |
 | AI-first | Every B2B SaaS company claims to be AI-first now. It means nothing. | Describe what the AI actually does and how it learns. |
-| Disrupt | We are not disrupting the CRM market. We are building a better CRM for a specific segment. | Describe the specific improvement for the specific audience. |
+| Disrupt | We are not disrupting the CRM market. We are building a different kind of CRM — AI-native — for a specific segment. | Describe the specific improvement for the specific audience. |
 | Simple / easy | Dismissive of real implementation complexity. CRM migrations are never simple. | Straightforward, well-documented, guided. |

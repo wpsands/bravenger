@@ -3,8 +3,8 @@ title: "Persona — The VP Sales"
 persona_id: "P-001"
 role: "VP Sales / CRO"
 dmu_function: "Economic Buyer"
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 owner: "Brain Owner"
 status: production
 ---
@@ -25,12 +25,12 @@ They are the economic buyer for NovaCRM. They sign the check. But they won't sig
 |-----------|--------|
 | **Title** | VP Sales, CRO, SVP Revenue, Head of Sales |
 | **Company size** | 100-500 employees, B2B |
-| **Company stage** | Series B through pre-IPO, $10M-$100M ARR |
+| **Company stage** | Series A through Series C (or bootstrapped at equivalent scale), $10M-$75M ARR |
 | **Age range** | 35-50 |
 | **Background** | Career sales leader. Started as an individual contributor, promoted through management. 10-20 years in B2B sales. |
 | **Education** | Business degree, MBA possible but not required. They value street smarts over credentials. |
 | **Reports to** | CEO or COO |
-| **Direct reports** | 5-15 AEs, 2-4 managers, possibly SDR team |
+| **Direct reports** | 10-50 reps, 2-5 frontline managers, possibly SDR team |
 | **Location** | Major metros or remote-first with quarterly offsites |
 
 ---
@@ -146,7 +146,7 @@ These are the features and design decisions that will resonate with this persona
 | Hook | Why It Matters |
 |------|---------------|
 | **AI deal scores with plain-English explanations** | They don't trust black-box scores. If the AI says a deal is at 72%, they need to know why — "Rep sent proposal but hasn't gotten a response in 8 days, champion went dark." |
-| **Forecast dashboard that updates in real time** | They check the forecast daily. A dashboard that reflects actual rep behavior (not just stage changes) is worth the entire investment. |
+| **Forecast dashboard that updates daily from rep behavior** | They check the forecast daily. A dashboard that reflects actual rep behavior (not just stage changes) is worth the entire investment. |
 | **Rep behavior pattern analysis** | The differentiator. NovaCRM learns what winning reps do — email cadence, call timing, multi-threading — and surfaces it. This is what they can't get from Salesforce. |
 | **One-click board report** | They spend hours building the board deck. A one-click export of forecast, pipeline, and rep performance saves real time every quarter. |
 | **Migration risk dashboard** | Shows exactly what data maps cleanly, what needs manual review, and what the adoption curve looks like during transition. Reduces the "open-heart surgery" fear. |

@@ -1,7 +1,7 @@
 ---
 title: Ideal Customer Profile
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 authority: primary
 owner: "Brain Owner"
 status: production
@@ -123,6 +123,6 @@ Do not pursue these companies. They will waste time and not succeed with the pro
 | **Companies without a structured sales process** | If there's no defined pipeline stages, no CRM, no pipeline reviews — NovaCRM has nothing to augment. They need process before they need AI. |
 | **Purely PLG / self-serve motion with no sales team** | NovaCRM is built for human-led sales teams. If there are no reps running deals through a pipeline, the product has no surface area. |
 | **Salesforce enterprise customers who are happy** | If they've invested $200K+ in Salesforce customization and their team is trained on it, ripping it out is not realistic. We compete where Salesforce is overkill, not where it's entrenched. |
-| **Companies looking for an AI SDR or outbound automation** | NovaCRM is a CRM with AI deal scoring. We are not an outbound prospecting tool. If they want AI to write cold emails, point them to Apollo or Instantly. |
+| **Companies looking for an AI SDR or outbound automation** | NovaCRM is an AI-native CRM built around deal scoring. We are not an outbound prospecting tool. If they want AI to write cold emails, point them to Apollo or Instantly. |
 | **Organizations that won't connect their CRM data** | The AI needs data to learn. If legal, compliance, or cultural resistance prevents them from connecting their sales data, the product cannot deliver value. No data, no deal scores. |
 | **Companies with sales cycles under 7 days** | Very short sales cycles don't produce enough in-deal activity data for the AI to learn patterns. Transactional sales are better served by simpler tools. |

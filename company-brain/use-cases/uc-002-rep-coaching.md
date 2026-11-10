@@ -1,8 +1,8 @@
 ---
 title: "Rep Coaching Signals"
 use_case_id: "UC-002"
-version: "1.1.1"
-last_updated: "2026-11-08"
+version: "1.2.0"
+last_updated: "2026-11-10"
 status: "fully-supported"
 owner: "Brain Owner"
 
@@ -19,7 +19,7 @@ tools_involved:
   - "NovaCRM behavior pattern engine"
   - "Rep activity analytics"
   - "Coaching insights dashboard"
-  - "Manager alerts and recommendations"
+  - "Manager alerts and coaching signals"
 proof: "Beta customers saw bottom-quartile reps improve win rate by 15% within 90 days of coaching insight deployment. Top-rep patterns were identified and documented for the first time."
 
 connected_use_cases:
@@ -41,7 +41,7 @@ A VP Sales or front-line manager realizes they can't answer the question: "What 
 
 ## Current State
 
-Before NovaCRM, coaching in a 100-500 person B2B sales team works like this:
+Before NovaCRM, coaching at a 100-500 person B2B company works like this:
 
 - **Coaching is manager-dependent.** Good managers coach well. Average managers run deal reviews and call it coaching. Bad managers don't coach at all. There's no standard and no visibility into coaching quality.
 - **"What top reps do differently" is tribal knowledge.** Everyone knows Sarah closes more deals. Nobody can articulate specifically what she does differently — the email timing, the stakeholder mapping, the follow-up cadence. It's observed but never codified.
@@ -56,7 +56,7 @@ The result: the performance gap between top and bottom reps is wide and persiste
 After deploying NovaCRM's coaching insights:
 
 - **Top-rep behavior patterns are identified and documented.** The AI analyzes activity data across all reps and identifies statistically significant patterns that correlate with winning. Example: "Top reps send a follow-up within 2 hours of a demo, multi-thread to 3+ stakeholders by stage 3, and schedule the next meeting before ending the current one."
-- **Managers receive coaching recommendations per rep, per deal.** Instead of guessing what to coach on, managers see specific, data-backed suggestions: "Rep X has 4 deals in stage 3 with only 1 stakeholder engaged. Top reps at this stage have 3+. Recommend multi-threading coaching."
+- **Managers see coaching signals per rep, per deal.** Instead of guessing what to coach on, managers see where a rep's behavior diverges from the team's winning patterns, with the evidence: "Rep X has 4 deals in stage 3 with only 1 stakeholder engaged. Top reps at this stage have 3+." The manager decides the coaching action.
 - **Reps see their own patterns compared to top performers.** Self-serve coaching insights let reps identify their own gaps. "You average 4 days between follow-ups. Top closers average 1.5 days."
 - **Ramp time for new reps decreases measurably.** New reps get a data-driven playbook of winning behaviors specific to the company, not generic sales training. Target: reduce ramp time from 6 months to 4 months.
 - **Coaching becomes a system, not a personality trait.** Even average managers can deliver effective coaching because the AI identifies what to coach on and provides the evidence.
@@ -71,6 +71,7 @@ After deploying NovaCRM's coaching insights:
 
 ## Gaps
 
+- **No prescriptive coaching recommendations yet.** V1 shows where a rep diverges from the team's winning patterns. It does not yet tell the manager what specific action to take. Coaching signals v2, which turns those patterns into specific per-rep recommendations, is in development with launch planned for Q4 2026 (see `goals.md#priority-2`).
 - **No call transcript analysis.** Coaching insights are based on activity patterns (email, meetings, deal progression), not conversation content. Integration with Gong/Chorus for talk-time ratios, question frequency, and objection handling is on the roadmap.
 - **No custom coaching playbooks.** Managers can't yet create their own coaching sequences triggered by AI insights. The current experience is "here's what to coach" — the delivery mechanism is the manager's 1:1.
 - **Limited support for non-English selling.** Behavior pattern analysis works regardless of language, but any NLP-based features (email sentiment, subject line analysis) are currently English-only.

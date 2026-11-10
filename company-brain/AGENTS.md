@@ -1,7 +1,7 @@
 ---
 title: Agent Operating Instructions
-version: "1.2.1"
-last_updated: "2026-11-08"
+version: "1.3.0"
+last_updated: "2026-11-10"
 scope: "All AI agents consuming this Company Brain"
 owner: "Brain Owner"
 status: production
@@ -114,7 +114,7 @@ Every factual claim, positioning statement, persona insight, or use case referen
 ### Always
 1. **Read before writing.** Follow the mandatory read order. No exceptions.
 2. **Cite your sources.** Every factual claim gets a `[Source: filename#section]` citation.
-3. **Match the persona.** If the output is for the VP of Sales, lead with forecast accuracy and revenue impact. If it's for the Account Executive, lead with time saved and deal intelligence they can act on today. Read the messaging dos/don'ts.
+3. **Match the persona.** If the output is for the VP of Sales, lead with forecast accuracy and revenue impact. If it's for the Sales Ops leader, lead with data quality and the admin hours it removes. Read the messaging dos/don'ts.
 4. **Respect the voice.** Confident, practical, data-driven, anti-hype. Review `brand-vision.md#voice-attributes` before writing.
 5. **Use approved language.** Check `brand-vision.md#words-we-use` and `brand-vision.md#words-we-avoid` before writing. Check `messaging-framework.md` for persona-specific approved language.
 6. **Document what you don't know.** If the Brain has a gap, say so. Don't fill gaps with invention.

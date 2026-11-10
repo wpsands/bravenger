@@ -1,8 +1,8 @@
 ---
 title: "CRM Migration to NovaCRM"
 use_case_id: "UC-003"
-version: "1.1.1"
-last_updated: "2026-11-08"
+version: "1.2.0"
+last_updated: "2026-11-10"
 status: "partially-supported"
 owner: "Brain Owner"
 
@@ -37,7 +37,7 @@ A Sales Ops leader or VP Sales decides to evaluate CRM alternatives. The trigger
 - The current CRM renewal is coming up and the price increase is significant. The team asks "are we getting value from this?"
 - A new VP Sales joins and inherits a CRM that doesn't match their operating model. They want a clean start.
 - Sales Ops has spent 6+ months trying to fix data quality in the current CRM and is losing the battle. They start to wonder if the tool itself is part of the problem.
-- The company outgrows the current CRM's capabilities. Pipedrive was fine at 20 reps; at 80 reps, it's breaking.
+- The company outgrows the current CRM's capabilities. Pipedrive was fine at 15 reps; at 50 reps, it's breaking.
 - AI deal scoring (UC-001) is a strategic priority and the current CRM can't support it without expensive add-ons.
 
 ## Current State

@@ -1,7 +1,7 @@
 ---
 title: Product Agent Usage Guide
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 scope: "Product team agents and operators"
 owner: "Brain Owner"
 status: production
@@ -153,7 +153,7 @@ When evaluating design concepts (UX, workflows, dashboards), assess against pers
 
 **For P-001 (VP Sales / CRO):**
 - Dashboard-first. Forecast and coaching insights visible without drilling down.
-- Outcomes prominent, mechanisms hidden. They want to see the score, not how it was calculated.
+- Outcomes first, explanations on demand. Show the score with a plain-English reason, not model internals or ML jargon. They do not trust black-box scores (see the product hooks in `personas/persona-vp-sales.md`).
 - Mobile-friendly. VP Sales reviews pipeline from their phone.
 
 **For P-002 (Sales Ops Manager):**

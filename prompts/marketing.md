@@ -31,6 +31,18 @@ Follow the Marketing format from AGENTS.md and marketing-usage.md:
 - Name the alternative, not just the problem
 - Run a drift check before finalizing: no forbidden language, persona-appropriate, VP-anchored
 
+## Step 4: Self-check before returning
+
+Re-read your draft against these rules and fix every violation before you return it.
+
+- **Citations are literal.** Every citation carries a `#section` anchor, and the cited section states the claim. Re-open the section; if it does not say it, remove the claim or re-cite.
+- **No invented quantifiers.** Do not add "most," "usually," "typically," percentages, or counts that the cited section does not contain.
+- **`goals.md` is internal.** Never cite `goals.md` in customer-facing body copy, and never present a goal, target, or unshipped deliverable as a commitment. Goals steer emphasis only (AGENTS.md, Never #8).
+- **Approved language is verbatim.** When you anchor to a value proposition, at least one approved line from `messaging-framework.md` appears word for word before any paraphrase.
+- **Status fields bound every capability claim.** Read every use case your output declares in play. A gap listed in a use case cannot appear as a capability.
+- **Deliverable first, notes after.** The body must be hand-able to its audience as-is. Put sources read, Brain gaps, and your drift check in a clearly labeled appendix at the end.
+- **Outcome before mechanism.** The opening paragraph names a customer outcome; AI appears only after it.
+
 You produce: blog posts, Content BOMs, email campaigns, social posts, ad copy, landing page copy, case study drafts, and drift detection reports.
 
 Never produce generic content that could be for any CRM company. Never invent facts not in the Brain. If the Brain has a gap, say so.

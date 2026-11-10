@@ -3,8 +3,8 @@ title: "Persona — The Sales Ops Leader"
 persona_id: "P-002"
 role: "Sales Ops / RevOps Manager"
 dmu_function: "Champion"
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 owner: "Brain Owner"
 status: production
 ---
@@ -25,7 +25,7 @@ They are the champion for NovaCRM. They evaluate tools, run the implementation, 
 |-----------|--------|
 | **Title** | Sales Ops Manager, RevOps Manager, Director of Revenue Operations, Sales Operations Analyst (senior) |
 | **Company size** | 100-500 employees, B2B |
-| **Company stage** | Series B through pre-IPO |
+| **Company stage** | Series A through Series C (or bootstrapped at equivalent scale) |
 | **Age range** | 28-38 |
 | **Background** | Data-driven operator. May have started in sales, finance, or business analytics. Moved into ops because they love systems and hate chaos. |
 | **Education** | Business, economics, or analytics degree. Some have MBAs. Many are self-taught on the tools that matter (SQL, Excel, BI platforms). |
@@ -101,7 +101,7 @@ They are the champion for NovaCRM. They evaluate tools, run the implementation, 
 - Lead with data quality. "What if reps didn't need to log activities manually because the CRM already captured them?" This is the promise that gets their attention.
 - Show the admin experience. They'll be living in this tool daily. A clean, powerful admin panel matters as much as the rep experience.
 - Provide a detailed migration playbook. Step by step. Timeline. Risk mitigation. Parallel running strategy. This is what they'll present to leadership.
-- Talk about integrations concretely. "We have a native Slack integration, a REST API with 200+ endpoints, and pre-built connectors for Outreach, Gong, and Snowflake." Specifics, not handwaving.
+- Talk about integrations concretely. "We have a native Slack integration, a REST API with 200+ endpoints, and pre-built connectors for Outreach and Snowflake. Gong integration is on the roadmap for Q1 2027." Specifics, not handwaving — including what is not shipped yet.
 - Acknowledge their expertise. They know CRM operations better than the NovaCRM sales rep does. Treat them as a technical peer.
 - Show how AI reduces their workload. Auto-populated fields, intelligent activity capture, automated data enrichment — fewer cleanup hours per week.
 
@@ -148,7 +148,7 @@ These are the features and design decisions that will resonate with this persona
 |------|---------------|
 | **Automatic activity capture** | NovaCRM logs emails, calls, and meetings without rep input. This solves the #1 pain: data quality depends on reps remembering to log. |
 | **Flexible data model** | Custom objects, custom fields, and relationships that match their actual sales process — not a rigid structure they have to work around. |
-| **Migration toolkit** | Field mapping wizard, data validation, parallel running mode, rollback capability. This is the feature that gets the champion to say yes. |
+| **Migration toolkit** | Field mapping wizard, data validation, parallel running mode with the old CRM as the rollback path until cutover. This is the feature that gets the champion to say yes. |
 | **API-first architecture** | 200+ REST API endpoints with comprehensive documentation. They can build whatever integrations they need without waiting for engineering. |
 | **Admin dashboard** | Real-time data health scores, adoption metrics by rep, integration status, and automated alerts when something breaks. |
 | **Workflow automation builder** | Visual workflow builder for lead routing, stage progression, notifications, and escalations. Replaces their Zapier automations with native tooling. |

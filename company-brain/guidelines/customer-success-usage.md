@@ -1,7 +1,7 @@
 ---
 title: Customer Success Agent Usage Guide
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 scope: "Customer Success team agents and operators"
 owner: "Brain Owner"
 status: production
@@ -126,13 +126,13 @@ Migration playbooks help customers transition from their current CRM to NovaCRM.
 | **Salesforce** | Complex customizations, admin dependency, data sprawl | Parallel migration. No admin required. AI learns from historical Salesforce data before cutover. |
 | **HubSpot CRM** | Marketing-sales data entanglement, limited sales AI | Clean separation of marketing and sales data. Sales-first AI from day one. |
 | **Pipedrive** | Lightweight tool to sophisticated tool transition, team readjustment | Familiar pipeline UX with AI layer. Reps don't lose the visual model they know. |
-| **Close** | Communication workflow dependency, call data migration | Communication integrations preserved. Call data imported for AI behavior analysis. |
+| **Close** | Not covered by the migration toolkit — uses the generic CSV import. Communication workflow dependency. | Historical deals and contacts import via CSV, so the AI still learns from history. Communication and calling integrations must be reconnected (`use-cases/uc-003-crm-migration.md#gaps`). |
 | **Spreadsheets / no CRM** | No historical data, no process discipline | AI starts learning from day one. No legacy data problems. Clean start advantage. |
 
 ### Migration Rules
 - **Never force a big-bang cutover.** Parallel migration is mandatory. The old CRM stays live until the team is confident.
 - **Validate data integrity before declaring migration complete.** Run comparison reports between old and new systems.
-- **Set realistic timelines.** Straightforward migrations (Pipedrive, Close) take 2-4 weeks. Complex migrations (Salesforce) take 4-8 weeks.
+- **Set realistic timelines.** The documented range is 4-6 weeks from kickoff to full cutover (`use-cases/uc-003-crm-migration.md#outcome`). Straightforward migrations (HubSpot, Pipedrive) land at the low end. Heavily customized Salesforce instances run to the high end or beyond and must be scoped before committing to a date.
 - **Flag customization risk early.** If the customer has heavy Salesforce customizations, scope the migration carefully and set expectations about what translates and what doesn't.
 
 ---
