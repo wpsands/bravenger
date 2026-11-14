@@ -5,7 +5,7 @@ title: "Onboarding guide — UC-001, migrating from HubSpot"
 
 ## Brief
 
-Generate an onboarding guide for pipeline forecasting (UC-001) for a new customer migrating from HubSpot.
+Generate an onboarding guide for pipeline forecasting (UC-001) for a new customer migrating from HubSpot. Their Sales Ops lead is running the setup and will own the guide day-to-day.
 
 ## Expectations
 

@@ -1,7 +1,7 @@
 ---
 title: Ideal Customer Profile
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 authority: primary
 owner: "Brain Owner"
 status: production
@@ -32,7 +32,7 @@ NovaCRM's ideal customer is a mid-market B2B company with a 10+ person sales tea
 
 | Attribute | Criteria |
 |-----------|----------|
-| **Current CRM** | HubSpot CRM (free, starter, or professional), Pipedrive, or Close.com. Occasionally Salesforce Essentials that they've outgrown in the wrong direction. |
+| **Current CRM** | HubSpot CRM (free, starter, or professional), Pipedrive, or Close.com. Or Salesforce — either Essentials they've outgrown in the wrong direction, or an overbuilt Enterprise instance their reps avoid. |
 | **Sales engagement** | Outreach, SalesLoft, Apollo, or manual email sequences via CRM |
 | **Conversation intelligence** | Gong, Chorus, or none. If they have Gong, they understand the value of analyzing sales conversations — NovaCRM extends this to all deal activity. |
 | **Forecasting** | Spreadsheets, CRM native forecasting (unreliable), or early-stage Clari/BoostUp. Often the VP Sales has a personal spreadsheet that is the "real" forecast. |
@@ -47,7 +47,7 @@ NovaCRM's ideal customer is a mid-market B2B company with a 10+ person sales tea
 These are the real problems we solve. They show up in every discovery call.
 
 ### P1: Reps sandbagging forecasts and managers inflating them {#P1}
-The VP Sales asks each manager for their forecast. Managers ask their reps. Reps undercommit because they got burned last quarter. Managers add 15% because they think reps are sandbagging. The VP adds a haircut because they don't trust the managers' math. The board gets a number that is the product of three layers of guesswork. Nobody trusts it. And they're right not to — the forecast misses by 20-30% every quarter. The problem is not the people. The problem is that nobody has data on which deals are actually going to close.
+The VP Sales asks each manager for their forecast. Managers ask their reps. Reps undercommit because they got burned last quarter. Managers add 15% because they think reps are sandbagging. The VP adds a haircut because they don't trust the managers' math. The board gets a number that is the product of three layers of guesswork. Nobody trusts it. And they're right not to — the forecast misses by 20-40% every quarter. The problem is not the people. The problem is that nobody has data on which deals are actually going to close.
 
 ### P2: CRM data is garbage {#P2}
 Reps hate updating the CRM. They log the minimum required to avoid getting flagged in the weekly pipeline review. Stage changes are late. Close dates are aspirational. Notes are sparse or nonexistent. Next steps are copy-pasted from last week. The CRM is technically populated, but the data is so unreliable that managers have learned to ignore it. They call reps 1:1 to get the "real" story on each deal. This is a $3M problem hiding as a "CRM adoption" issue.
@@ -122,7 +122,7 @@ Do not pursue these companies. They will waste time and not succeed with the pro
 | **Pre-revenue startups or companies with fewer than 5 reps** | Not enough sales data for the AI to learn meaningful patterns. The scoring engine needs volume to be useful. A 3-person sales team doesn't have enough deals for personalized AI. |
 | **Companies without a structured sales process** | If there's no defined pipeline stages, no CRM, no pipeline reviews — NovaCRM has nothing to augment. They need process before they need AI. |
 | **Purely PLG / self-serve motion with no sales team** | NovaCRM is built for human-led sales teams. If there are no reps running deals through a pipeline, the product has no surface area. |
-| **Salesforce enterprise customers who are happy** | If they've invested $200K+ in Salesforce customization and their team is trained on it, ripping it out is not realistic. We compete where Salesforce is overkill, not where it's entrenched. |
-| **Companies looking for an AI SDR or outbound automation** | NovaCRM is a CRM with AI deal scoring. We are not an outbound prospecting tool. If they want AI to write cold emails, point them to Apollo or Instantly. |
+| **Salesforce enterprise customers who are happy** | If they've invested $200K+ in Salesforce customization and their team is trained on it, ripping it out is not realistic. We compete where Salesforce is overkill, not where it's entrenched. The discriminator is satisfaction: heavy customization the team is happy with is anti-ICP; heavy customization the team resents is the migration profile in `use-cases/uc-003-crm-migration.md#current-state`. |
+| **Companies looking for an AI SDR or outbound automation** | NovaCRM is an AI-native CRM built around deal scoring. We are not an outbound prospecting tool. If they want AI to write cold emails, point them to Apollo or Instantly. |
 | **Organizations that won't connect their CRM data** | The AI needs data to learn. If legal, compliance, or cultural resistance prevents them from connecting their sales data, the product cannot deliver value. No data, no deal scores. |
 | **Companies with sales cycles under 7 days** | Very short sales cycles don't produce enough in-deal activity data for the AI to learn patterns. Transactional sales are better served by simpler tools. |

@@ -1,7 +1,7 @@
 ---
 title: Brand Vision
-version: "1.1.1"
-last_updated: "2026-11-08"
+version: "1.2.0"
+last_updated: "2026-11-10"
 owner: "Brain Owner"
 status: production
 ---
@@ -24,14 +24,14 @@ Every sales team has an AI copilot trained on their own winning patterns. Foreca
 
 NovaCRM is a CRM built from the ground up around an AI deal scoring engine that learns from individual rep behavior patterns. It watches how each rep runs discovery, how they multi-thread accounts, what their follow-up cadence looks like on deals they win versus deals they lose — and it turns those patterns into deal scores, coaching signals, and forecasts that reflect how your specific team sells.
 
-We are not an enterprise CRM with AI features bolted onto a 20-year-old data model. We are not a free-tier CRM hoping you outgrow us and upgrade. We are the CRM for sales teams that have outgrown HubSpot free/starter but are not ready for Salesforce enterprise — and who believe their own selling data should train their own AI, not get averaged into a generic model.
+We are not an enterprise CRM with AI features bolted onto a two-decade-old data model. We are not a free-tier CRM hoping you outgrow us and upgrade. We are the CRM for sales teams that have outgrown HubSpot free/starter but are not ready for Salesforce enterprise — and who believe their own selling data should train their own AI, not get averaged into a generic model.
 
 ---
 
 ## Core Values
 
 ### 1. Data Over Opinions
-Every recommendation NovaCRM makes is traceable to data — rep activity data, deal progression data, win/loss patterns. When a deal score changes, you can see why. When the AI suggests a next step, you can see the pattern it learned from. No black boxes. No "trust the algorithm." Show the work.
+Every recommendation NovaCRM makes is traceable to data — rep activity data, deal progression data, win/loss patterns. When a deal score changes, you can see why. When the AI flags a risk or a divergence from winning patterns, you can see the pattern it learned from. No black boxes. No "trust the algorithm." Show the work.
 
 ### 2. Reps First
 We build for the people who carry the quota. Every product decision starts with the question: does this make the rep's day easier or harder? If a feature adds friction to the rep's workflow — even if it makes the VP's dashboard prettier — it does not ship until we solve the friction.
@@ -71,10 +71,10 @@ We understand that sales is hard, quotas are real, and nobody wants another tool
 | Context | Tone | Example |
 |---------|------|---------|
 | **Website hero** | Direct, outcome-focused, specific | "Your CRM tracks activities. NovaCRM learns which activities actually close deals — for each rep on your team." |
-| **Sales outbound** | Empathetic, signal-driven, no-BS | "You just hired a new VP Sales. If the first forecast call is based on gut feel and spreadsheet math, you've got a problem NovaCRM solves in 30 days." |
+| **Sales outbound** | Empathetic, signal-driven, no-BS | "You just hired a new VP Sales. If the first forecast call is based on gut feel and spreadsheet math, you've got a problem NovaCRM starts fixing in 30 days — behavior-based scores replace gut feel in the first month, and forecast accuracy lands within 90." |
 | **Product documentation** | Clear, structured, data-model-aware | "Deal scores update daily based on rep activity patterns from the past 90 days. Scores range from 0-100. Factors include email cadence, meeting frequency, stakeholder breadth, and stage velocity." |
 | **Conference talk** | Story-driven, honest, show-the-data | "I'll show you what our AI actually learns from one sales team's data. No slides about 'the future of AI in sales.' Just real patterns from real deals." |
-| **CS onboarding** | Supportive, methodical, milestone-driven | "Let's connect your CRM data and get your first deal scores in week one. We'll review them together so you understand exactly what the model is learning." |
+| **CS onboarding** | Supportive, methodical, milestone-driven | "Let's connect your CRM data this week. You'll see your first deal scores inside the first 30 days, and we'll review them together so you understand exactly what the model is learning." |
 | **LinkedIn** | Opinionated, concise, grounded in reality | "Your forecast is wrong because your CRM doesn't know how your best reps sell. It just counts their activities. There's a difference." |
 
 ---
@@ -88,7 +88,7 @@ We understand that sales is hard, quotas are real, and nobody wants another tool
 | Personalized AI / learns from your data | The key differentiator. The AI is trained on each customer's own sales data. |
 | Forecast accuracy | The ultimate outcome we deliver. The metric that matters to CROs. |
 | Pipeline hygiene | A specific, actionable problem we solve. Stale deals, missing data, sandbagged stages. |
-| Deal intelligence | The insights the AI surfaces — next steps, risk signals, coaching opportunities. |
+| Deal intelligence | The insights the AI surfaces — risk signals, divergence from winning patterns, coaching opportunities. ("Next steps" and "recommendations" are reserved until coaching signals v2 ships; see `goals.md#priority-2`.) |
 | Win patterns | What the AI identifies — the specific behaviors that correlate with closed-won deals for each rep. |
 | Mid-market | Our audience. 100-500 employee B2B companies. |
 | Outgrowing HubSpot | Our positioning wedge. The moment a team needs more than a free/starter CRM. |
@@ -109,9 +109,9 @@ We understand that sales is hard, quotas are real, and nobody wants another tool
 | Leverage | Corporate jargon. Sales teams don't talk like this. | Use. |
 | Empower | Vague. Soft. | Equip, give, enable, show. |
 | Unlock | Implies something was locked. Dramatic. | Enable, surface, reveal, show. |
-| Solution | Vague. Means nothing. | CRM, platform, deal scoring engine. Say what it actually is. |
+| Solution | Vague. Means nothing. | CRM, deal scoring engine. Say what it actually is. |
 | End-to-end | Overused. Describe the actual scope. | Describe what NovaCRM covers: activity capture, deal scoring, forecasting, coaching signals. |
 | Synergy | No. | No. |
 | AI-first | Every B2B SaaS company claims to be AI-first now. It means nothing. | Describe what the AI actually does and how it learns. |
-| Disrupt | We are not disrupting the CRM market. We are building a better CRM for a specific segment. | Describe the specific improvement for the specific audience. |
+| Disrupt | We are not disrupting the CRM market. We are building a different kind of CRM — AI-native — for a specific segment. | Describe the specific improvement for the specific audience. |
 | Simple / easy | Dismissive of real implementation complexity. CRM migrations are never simple. | Straightforward, well-documented, guided. |

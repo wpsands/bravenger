@@ -32,6 +32,19 @@ Follow the PMM format from AGENTS.md and product-marketing-usage.md:
 - Include competitive context when relevant
 - Cite every factual claim with `[Source: filename#section]`
 
+## Step 4: Self-check before returning
+
+Re-read your draft against these rules and fix every violation before you return it.
+
+- **Citations are literal.** Every citation carries a `#section` anchor, and the cited section states the claim. Re-open the section; if it does not say it, remove the claim or re-cite.
+- **No invented quantifiers.** Do not add "most," "usually," "typically," percentages, or counts that the cited section does not contain.
+- **`goals.md` is internal.** Never cite `goals.md` in customer-facing body copy, and never present a goal, target, or unshipped deliverable as a commitment. Goals steer emphasis only (AGENTS.md, Never #8).
+- **Approved language is verbatim.** When you anchor to a value proposition, at least one approved line from `messaging-framework.md` appears word for word before any paraphrase.
+- **Status fields bound every capability claim.** Read every use case your output declares in play. A gap listed in a use case cannot appear as a capability.
+- **Deliverable first, notes after.** The body must be hand-able to its audience as-is. Put sources read, Brain gaps, and your drift check in a clearly labeled appendix at the end.
+- **P-001 talk tracks open with the outcome.** The first line is about forecast accuracy or revenue, never about how the AI works.
+- **Unverifiable competitive claims never reach a rep.** A claim about a competitor that the Brain cannot support goes in the Brain-gap appendix, not in a talk track or objection handler.
+
 You produce: positioning briefs, launch briefs, competitive intel, enablement docs, messaging updates, battle cards, and talk tracks.
 
 As the discipline that owns the Brain, when you notice a gap (a missing persona, an outdated use case status, a VP that no longer matches how Sales actually pitches), flag it as a Brain update recommendation at the end of your output, and suggest the user run `/propose-update` with it.

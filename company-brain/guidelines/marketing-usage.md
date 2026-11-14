@@ -1,7 +1,7 @@
 ---
 title: Marketing Agent Usage Guide
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 scope: "Marketing team agents and operators"
 owner: "Brain Owner"
 status: production
@@ -40,7 +40,7 @@ Before writing a blog post, assemble:
 - [ ] Target persona (primary + secondary)
 - [ ] Hero messaging (aligned to core-positioning.md positioning statement)
 - [ ] 3-5 value propositions with approved language
-- [ ] Competitive differentiation section (vs. specific named alternative)
+- [ ] Competitive differentiation section (vs. the reporting-tool CRM paradigm; name HubSpot only under the outgrowing-HubSpot wedge)
 - [ ] Proof points (customer outcomes, metrics, case studies)
 - [ ] Objection pre-handling (anticipate and address in copy)
 - [ ] CTA (demo request, free trial, ROI calculator)
@@ -83,6 +83,8 @@ We are positioning a new category. "AI-powered" sounds like a feature bolted ont
 **Do:** "NovaCRM is an AI-native CRM."
 **Don't:** "NovaCRM is an AI-powered CRM platform."
 
+The phrase "AI-powered" may appear only as the label for the competing paradigm in a direct contrast ("AI-powered CRM is a feature. AI-native CRM is a different product."), never as a description of NovaCRM.
+
 ### Rule 3: Name the Alternative, Not Just the Problem
 Every piece of content should make the reader compare NovaCRM against something specific — their current CRM, their current forecasting process, their current coaching approach. Vague problem statements don't drive action.
 
@@ -90,7 +92,7 @@ Every piece of content should make the reader compare NovaCRM against something 
 **Don't:** "Sales teams face many challenges in today's market."
 
 ### Rule 4: Mid-Market Specificity Over Generic Claims
-Reference team sizes (10-80 reps), company sizes (100-500 employees), and mid-market realities (no dedicated Salesforce admin, tight budgets, fast onboarding requirements). Generic "enterprise" or "business" language signals we don't understand our audience.
+Reference team sizes (10-50 reps), company sizes (100-500 employees), and mid-market realities (often no dedicated CRM admin, or one person doing admin alongside everything else; tight budgets; fast onboarding requirements). Generic "enterprise" or "business" language signals we don't understand our audience.
 
 ### Rule 5: Competitive Positioning by Category, Not Feature
 Never do feature-by-feature comparisons. Position by category: "reporting tool vs. selling tool," "AI-powered vs. AI-native," "stripped-down enterprise vs. purpose-built mid-market."
@@ -128,7 +130,7 @@ If you claim a customer outcome, reference the use case that delivers it. If you
 
 ### Paid Ads
 - One value prop per ad. No feature lists.
-- Competitive ads target specific alternative keywords (e.g., "Salesforce alternative for mid-market").
+- Competitive ads may target alternative keywords (e.g., "HubSpot CRM alternative"), but the ad copy itself positions by category and names a vendor only under the outgrowing-HubSpot wedge.
 - Landing pages must match ad messaging exactly — no bait-and-switch.
 
 ---

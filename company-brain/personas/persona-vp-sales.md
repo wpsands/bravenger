@@ -3,8 +3,8 @@ title: "Persona — The VP Sales"
 persona_id: "P-001"
 role: "VP Sales / CRO"
 dmu_function: "Economic Buyer"
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 owner: "Brain Owner"
 status: production
 ---
@@ -25,12 +25,12 @@ They are the economic buyer for NovaCRM. They sign the check. But they won't sig
 |-----------|--------|
 | **Title** | VP Sales, CRO, SVP Revenue, Head of Sales |
 | **Company size** | 100-500 employees, B2B |
-| **Company stage** | Series B through pre-IPO, $10M-$100M ARR |
+| **Company stage** | Series A through Series C (or bootstrapped at equivalent scale), $10M-$75M ARR |
 | **Age range** | 35-50 |
 | **Background** | Career sales leader. Started as an individual contributor, promoted through management. 10-20 years in B2B sales. |
 | **Education** | Business degree, MBA possible but not required. They value street smarts over credentials. |
 | **Reports to** | CEO or COO |
-| **Direct reports** | 5-15 AEs, 2-4 managers, possibly SDR team |
+| **Direct reports** | 10-50 reps, 2-5 frontline managers, possibly SDR team |
 | **Location** | Major metros or remote-first with quarterly offsites |
 
 ---
@@ -97,7 +97,7 @@ They are the economic buyer for NovaCRM. They sign the check. But they won't sig
 ## Messaging Dos and Don'ts
 
 ### Do
-- Lead with forecast accuracy. "What if your forecast was within 5% every quarter?" lands immediately.
+- Lead with forecast accuracy. "What if your forecast was within 10% every quarter?" lands immediately.
 - Show the AI working on real (anonymized) deal data. Let them see scores and explanations for deals they understand.
 - Reference the pain of the status quo. "You're already paying for a CRM your reps don't use."
 - Acknowledge that CRM migration is hard — and show exactly how NovaCRM reduces the risk.
@@ -131,7 +131,7 @@ They are the economic buyer for NovaCRM. They sign the check. But they won't sig
 Understanding how this persona spends their time helps NovaCRM show up at the right moments.
 
 - **7:00 AM** — Checks phone before coffee. Looks at pipeline dashboard, overnight deal movement, and any alerts. This is when the mobile-first forecast view matters.
-- **8:30 AM** — Team standup or manager sync. Reviews at-risk deals, new pipeline, and this week's commit number. NovaCRM's risk alerts and coaching suggestions feed this meeting.
+- **8:30 AM** — Team standup or manager sync. Reviews at-risk deals, new pipeline, and this week's commit number. NovaCRM's risk alerts and coaching signals feed this meeting.
 - **10:00 AM** — One-on-ones with managers or direct deal involvement on strategic accounts. Uses deal scoring to prioritize which deals need VP-level engagement.
 - **1:00 PM** — Internal meetings: product roadmap review, board prep, cross-functional alignment. Needs pipeline data they can trust without spending 30 minutes scrubbing.
 - **3:00 PM** — Reviews end-of-day pipeline. Compares this week's forecast to last week's. Looks for deals that moved backward and asks why.
@@ -146,10 +146,10 @@ These are the features and design decisions that will resonate with this persona
 | Hook | Why It Matters |
 |------|---------------|
 | **AI deal scores with plain-English explanations** | They don't trust black-box scores. If the AI says a deal is at 72%, they need to know why — "Rep sent proposal but hasn't gotten a response in 8 days, champion went dark." |
-| **Forecast dashboard that updates in real time** | They check the forecast daily. A dashboard that reflects actual rep behavior (not just stage changes) is worth the entire investment. |
+| **Forecast dashboard that updates daily from rep behavior** | They check the forecast daily. A dashboard that reflects actual rep behavior (not just stage changes) is worth the entire investment. |
 | **Rep behavior pattern analysis** | The differentiator. NovaCRM learns what winning reps do — email cadence, call timing, multi-threading — and surfaces it. This is what they can't get from Salesforce. |
 | **One-click board report** | They spend hours building the board deck. A one-click export of forecast, pipeline, and rep performance saves real time every quarter. |
 | **Migration risk dashboard** | Shows exactly what data maps cleanly, what needs manual review, and what the adoption curve looks like during transition. Reduces the "open-heart surgery" fear. |
 | **Mobile-first design** | VP Sales lives on their phone. If they can check pipeline and forecast from the Uber to the airport, they'll use it every day. |
-| **Rep-facing value (not just manager dashboards)** | If the CRM helps reps sell (smart reminders, deal insights, next-best-action), adoption happens naturally instead of being forced. |
+| **Rep-facing value (not just manager dashboards)** | If the CRM helps reps sell (smart reminders, deal insights, coaching signals), adoption happens naturally instead of being forced. |
 | **Pilot program on real data** | A 30-day pilot where NovaCRM ingests their current CRM data and shows what the AI would have scored — before they commit to migration. |

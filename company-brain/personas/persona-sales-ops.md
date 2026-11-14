@@ -3,8 +3,8 @@ title: "Persona — The Sales Ops Leader"
 persona_id: "P-002"
 role: "Sales Ops / RevOps Manager"
 dmu_function: "Champion"
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 owner: "Brain Owner"
 status: production
 ---
@@ -25,7 +25,7 @@ They are the champion for NovaCRM. They evaluate tools, run the implementation, 
 |-----------|--------|
 | **Title** | Sales Ops Manager, RevOps Manager, Director of Revenue Operations, Sales Operations Analyst (senior) |
 | **Company size** | 100-500 employees, B2B |
-| **Company stage** | Series B through pre-IPO |
+| **Company stage** | Series A through Series C (or bootstrapped at equivalent scale) |
 | **Age range** | 28-38 |
 | **Background** | Data-driven operator. May have started in sales, finance, or business analytics. Moved into ops because they love systems and hate chaos. |
 | **Education** | Business, economics, or analytics degree. Some have MBAs. Many are self-taught on the tools that matter (SQL, Excel, BI platforms). |
@@ -83,13 +83,13 @@ They are the champion for NovaCRM. They evaluate tools, run the implementation, 
 | **LinkedIn** | Follows RevOps thought leaders. Engages with tactical posts about process, automation, and tool comparisons. |
 | **Webinars** | Will attend if the topic is operational (migration playbook, integration architecture, data model design). Will not attend product marketing webinars. |
 | **Documentation** | Reads API docs, admin guides, and migration playbooks before requesting a demo. The quality of docs is a trust signal. |
-| **Email** | Reads emails that are specific to their operational challenges. "How Company X migrated 50K deals from HubSpot in 3 weeks" will get opened. |
+| **Email** | Reads emails that are specific to their operational challenges. "How Company X migrated 50K deals from HubSpot in 4 weeks" will get opened. |
 
 ### Content Preferences
 - Detailed over glossy
 - Architecture diagrams over screenshots
 - Migration timelines with real milestones
-- Comparison tables (NovaCRM vs. Salesforce vs. HubSpot for specific operational tasks)
+- Comparison tables (they want NovaCRM vs. Salesforce vs. HubSpot for specific operational tasks). Serve this with architecture-level comparisons per `messaging-positioning/core-positioning.md#competitive-response-principles`; vendor-named feature tables only in 1:1 sales conversations.
 - Templates and playbooks they can use immediately
 - Honest about limitations — they'll find them anyway
 
@@ -101,7 +101,7 @@ They are the champion for NovaCRM. They evaluate tools, run the implementation, 
 - Lead with data quality. "What if reps didn't need to log activities manually because the CRM already captured them?" This is the promise that gets their attention.
 - Show the admin experience. They'll be living in this tool daily. A clean, powerful admin panel matters as much as the rep experience.
 - Provide a detailed migration playbook. Step by step. Timeline. Risk mitigation. Parallel running strategy. This is what they'll present to leadership.
-- Talk about integrations concretely. "We have a native Slack integration, a REST API with 200+ endpoints, and pre-built connectors for Outreach, Gong, and Snowflake." Specifics, not handwaving.
+- Talk about integrations concretely. "We have a native Slack integration, a REST API with 200+ endpoints, and pre-built connectors for Outreach and Snowflake. Gong integration is on the roadmap for Q1 2027." Specifics, not handwaving — including what is not shipped yet.
 - Acknowledge their expertise. They know CRM operations better than the NovaCRM sales rep does. Treat them as a technical peer.
 - Show how AI reduces their workload. Auto-populated fields, intelligent activity capture, automated data enrichment — fewer cleanup hours per week.
 
@@ -123,7 +123,7 @@ They are the champion for NovaCRM. They evaluate tools, run the implementation, 
 | **"Our Salesforce instance is too customized to leave."** | Ask what percentage of those customizations are actually used. Most Salesforce instances have accumulated years of unused fields, triggers, and workflows. NovaCRM migration is a chance to clean house. Help them audit what matters vs. what's legacy. |
 | **"I don't have time to evaluate another tool."** | Respect their time. Offer a low-effort evaluation: a sandbox with their data schema pre-loaded, API documentation they can review asynchronously, and a migration assessment that takes 2 hours, not 2 weeks. |
 | **"What happens if NovaCRM doesn't work out?"** | Data export is available at any time in standard formats. No vendor lock-in. If they need to leave, their data leaves with them. This is a genuine differentiator against Salesforce's data portability challenges. |
-| **"The AI features sound nice but I need basic CRM to work first."** | Agree completely. Lead with the operational fundamentals: data model, workflow automation, reporting, integrations. The AI is a layer on top of a solid CRM foundation, not a substitute for one. |
+| **"The AI features sound nice but I need basic CRM to work first."** | Agree completely. Lead with the operational fundamentals: data model, workflow automation, reporting, integrations. The fundamentals — data model, workflow automation, reporting, integrations — are built around the AI engine, not bolted on beside it. Show the fundamentals first, then show that the AI is what makes them work. |
 
 ---
 
@@ -148,9 +148,9 @@ These are the features and design decisions that will resonate with this persona
 |------|---------------|
 | **Automatic activity capture** | NovaCRM logs emails, calls, and meetings without rep input. This solves the #1 pain: data quality depends on reps remembering to log. |
 | **Flexible data model** | Custom objects, custom fields, and relationships that match their actual sales process — not a rigid structure they have to work around. |
-| **Migration toolkit** | Field mapping wizard, data validation, parallel running mode, rollback capability. This is the feature that gets the champion to say yes. |
+| **Migration toolkit** | Field mapping wizard, data validation, parallel running mode with the old CRM as the rollback path until cutover. This is the feature that gets the champion to say yes. |
 | **API-first architecture** | 200+ REST API endpoints with comprehensive documentation. They can build whatever integrations they need without waiting for engineering. |
 | **Admin dashboard** | Real-time data health scores, adoption metrics by rep, integration status, and automated alerts when something breaks. |
 | **Workflow automation builder** | Visual workflow builder for lead routing, stage progression, notifications, and escalations. Replaces their Zapier automations with native tooling. |
-| **Smart field suggestions** | AI suggests field values based on email and call context. Reps confirm with one click instead of typing. Reduces friction while improving data quality. |
+| **Smart field suggestions** | AI suggests field values based on email and meeting activity context. Reps confirm with one click instead of typing. Reduces friction while improving data quality. |
 | **Comparison mode during migration** | Side-by-side view of old CRM vs. NovaCRM data during parallel running. Lets them validate that nothing was lost. |

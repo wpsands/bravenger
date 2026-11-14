@@ -1,7 +1,7 @@
 ---
 title: Customer Success Agent Usage Guide
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 scope: "Customer Success team agents and operators"
 owner: "Brain Owner"
 status: production
@@ -39,7 +39,8 @@ After a customer signs and migration begins, CS builds persona-specific onboardi
 ### Use case
 - **ID:** [UC-XXX]
 - **Status:** [from use case file]
-- **Primary user:** [persona who uses this day-to-day]
+- **Primary user:** [the hands-on persona: the use case's `setup_by` persona unless the customer names someone else. Write the guide for this persona and cite their persona file.]
+- **Who does what:** [one line per persona in the use case's `personas` block: who sets up, who uses, who evaluates]
 
 ### What this use case does
 [Outcome section from the use case file, adapted for the customer's context]
@@ -63,8 +64,8 @@ After a customer signs and migration begins, CS builds persona-specific onboardi
 ### Persona-Specific Onboarding Sequences
 
 **For P-001 VP Sales / CRO:**
-1. **Week 1:** Forecast dashboard walkthrough. Show behavior-based scores vs. deal-stage forecasts. Demonstrate the coaching alert feed.
-2. **Week 2:** First AI-generated forecast review. Compare NovaCRM forecast to their existing process. Highlight where scores diverged from gut feel.
+1. **Week 1:** Data-connection status and forecast dashboard tour. Show how behavior-based scores differ from deal-stage forecasts and when the first scores land (inside the 30-day window). Demonstrate the coaching alert feed.
+2. **Week 2:** First AI-generated forecast review, as soon as the first scores land. Compare NovaCRM forecast to their existing process. Highlight where scores diverged from gut feel.
 3. **Week 3:** Coaching workflow activation. Show how to act on coaching alerts. Connect alerts to 1:1 meeting prep.
 4. **Week 4:** Board reporting setup. Configure the forecast views the VP Sales needs for board and exec meetings.
 
@@ -125,14 +126,14 @@ Migration playbooks help customers transition from their current CRM to NovaCRM.
 |------|---------------|-------------------|
 | **Salesforce** | Complex customizations, admin dependency, data sprawl | Parallel migration. No admin required. AI learns from historical Salesforce data before cutover. |
 | **HubSpot CRM** | Marketing-sales data entanglement, limited sales AI | Clean separation of marketing and sales data. Sales-first AI from day one. |
-| **Pipedrive** | Lightweight tool to sophisticated tool transition, team readjustment | Familiar pipeline UX with AI layer. Reps don't lose the visual model they know. |
-| **Close** | Communication workflow dependency, call data migration | Communication integrations preserved. Call data imported for AI behavior analysis. |
-| **Spreadsheets / no CRM** | No historical data, no process discipline | AI starts learning from day one. No legacy data problems. Clean start advantage. |
+| **Pipedrive** | Lightweight tool to sophisticated tool transition, team readjustment | Familiar pipeline view; the AI reads the same pipeline the reps already know. Reps don't lose the visual model they know. |
+| **Close** | Not covered by the migration toolkit — uses the generic CSV import. Communication workflow dependency. | Historical deals and contacts import via CSV, so the AI still learns from history. Communication and calling integrations must be reconnected (`use-cases/uc-003-crm-migration.md#gaps`). |
+| **Spreadsheets / no CRM** | No historical data, no process discipline. Anti-ICP per `icp.md#anti-icp`; onboard only by exception. | Longest calibration path: the AI needs about 6 months of deal history before scores are accurate (`use-cases/uc-001-pipeline-forecasting.md#gotchas`). Set expectations that scores are directional until then. |
 
 ### Migration Rules
 - **Never force a big-bang cutover.** Parallel migration is mandatory. The old CRM stays live until the team is confident.
 - **Validate data integrity before declaring migration complete.** Run comparison reports between old and new systems.
-- **Set realistic timelines.** Straightforward migrations (Pipedrive, Close) take 2-4 weeks. Complex migrations (Salesforce) take 4-8 weeks.
+- **Set realistic timelines.** The documented range is 4-6 weeks from kickoff to full cutover (`use-cases/uc-003-crm-migration.md#outcome`). Straightforward migrations (HubSpot, Pipedrive) land at the low end. Heavily customized Salesforce instances run to the high end or beyond and must be scoped before committing to a date.
 - **Flag customization risk early.** If the customer has heavy Salesforce customizations, scope the migration carefully and set expectations about what translates and what doesn't.
 
 ---

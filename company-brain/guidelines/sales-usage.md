@@ -1,7 +1,7 @@
 ---
 title: Sales Agent Usage Guide
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 scope: "Sales team agents and operators"
 owner: "Brain Owner"
 status: production
@@ -33,14 +33,14 @@ NovaCRM's outbound motion is signal-driven. Do not send generic sequences. Every
 
 | Signal | Primary Message | Persona | Approach |
 |--------|----------------|---------|----------|
-| VP Sales / CRO new hire | "New CRO, same old CRM. You inherited a reporting tool." | P-001 VP Sales | Pain: forecast accuracy, rep visibility |
-| Sales Ops hire | "You were hired to optimize revenue ops. Your CRM is fighting you." | P-002 Sales Ops | Pain: admin burden, data quality |
-| Series B+ funding | "Scaling the sales team? Scale how they sell, not just headcount." | P-001 VP Sales | Outcome: consistent rep performance |
-| Salesforce complaints (G2, Reddit) | "Salesforce isn't built for teams your size. You know it." | P-002 Sales Ops | Competitive: mid-market positioning |
-| Sales team expansion (10+ reps) | "More reps, more variance. Your best reps' playbook should scale." | P-001 VP Sales | VP3: Learns from YOUR reps |
-| CTO hire at sales-led company | "Your new sales CRM should survive a technical evaluation." | P-003 CTO | Technical: explainability, architecture |
-| Missed earnings / forecast miss | "Forecast misses aren't a rep problem. They're a CRM problem." | P-001 VP Sales | VP2: Forecast from behavior |
-| Competitor CRM contract renewal | "Before you renew, ask: is your CRM helping your reps sell?" | P-002 Sales Ops | Category: reporting vs. selling tool |
+| New VP Sales or CRO hire | "New CRO, same old CRM. You inherited a reporting tool." | P-001 VP Sales | Pain: forecast accuracy, rep visibility |
+| Missed forecast two consecutive quarters | "Forecast misses aren't a rep problem. They're a CRM problem." | P-001 VP Sales | VP2: Forecast from Behavior, Not Deal Stages |
+| Hired a RevOps person | "You were hired to optimize revenue ops. Your CRM is fighting you." | P-002 Sales Ops | Pain: admin burden, data quality |
+| HubSpot or Pipedrive contract renewal approaching | "Before you renew, ask: is your CRM helping your reps sell?" | P-002 Sales Ops | Category: reporting vs. selling tool |
+| Sales team grew 50%+ in the past year | "More reps, more variance. Your best reps' playbook should scale." | P-001 VP Sales | VP3: Learns from YOUR Reps |
+| Posted a Sales Enablement or Sales Training role | "You're hiring to fix ramp and coaching. Your CRM should show what your top reps do differently." | P-001 VP Sales | VP4: Coaching Engine, Not Just a Dashboard |
+| Gong or Chorus customer | "You already analyze calls. Extend that to every deal activity." | P-001 VP Sales | VP3: Learns from YOUR Reps (conversation intelligence integration is on the roadmap — see `use-cases/uc-001-pipeline-forecasting.md#gaps`) |
+| Engineering or product blog post about AI/ML | "Your team already trusts AI that explains itself. Your CRM should too." | P-002 Sales Ops (CTO-facing material travels through the champion; the CTO almost never reads vendor email) | Technical: explainability, architecture |
 
 [Source: icp.md#buying-signals]
 
@@ -112,23 +112,23 @@ Use the objection responses from `messaging-positioning/messaging-framework.md#o
 ### When Talking to P-001 VP Sales / CRO
 - **Lead with:** Outcomes — forecast accuracy, rep performance, board confidence.
 - **Use:** Revenue language, quota language, pipeline metrics.
-- **Avoid:** Technical implementation details, data architecture, API specs.
+- **Avoid:** Data architecture, API specs. Do walk through the migration plan in detail — that is the implementation they want to see.
 - **Tone:** Peer-to-peer. Confident. Results-oriented.
 - **Key phrase:** "Your CRM should help your team sell, not just report on what they sold."
 
 ### When Talking to P-002 Sales Ops Manager
 - **Lead with:** Operational efficiency — less admin, better data, smarter workflows.
 - **Use:** Ops language, adoption metrics, workflow terms.
-- **Avoid:** Board-level outcomes (that's VP Sales territory), deep technical specs.
+- **Avoid:** Board-level outcomes (that's VP Sales territory). Be concrete on integrations and API specifics — treat them as a technical peer.
 - **Tone:** Empathetic to their pain. Practical. Outcome-oriented.
 - **Key phrase:** "You were hired to optimize the sales process. NovaCRM lets you actually do that."
 
 ### When Talking to P-003 CTO
-- **Lead with:** Architecture, security, explainability, integration.
+- **Lead with:** Security and compliance, data architecture, API quality, integration. Explainability comes second.
 - **Use:** Technical language, data model terms, compliance frameworks.
 - **Avoid:** Sales outcomes, quota language, coaching narratives.
 - **Tone:** Technical peer. Transparent. No hand-waving.
-- **Key phrase:** "Explainable AI. Customer-specific models. API-first. SOC 2 compliant."
+- **Key phrase:** "SOC 2 compliant. API-first. Customer-specific models. Explainable AI."
 
 ---
 
@@ -137,12 +137,12 @@ Use the objection responses from `messaging-positioning/messaging-framework.md#o
 When writing proposal or deal language:
 - **Scope:** Reference UC-001 Pipeline Forecasting, UC-002 Rep Coaching, UC-003 CRM Migration outcomes.
 - **Pricing:** Per-rep/month model. No hidden platform fees.
-- **Timeline:** Onboard in weeks. First deal scores in 30 days. Forecast impact in 90 days.
+- **Timeline:** Onboard in weeks. First deal scores in 30 days. Forecast impact in 90 days. POC track: a day-14 accuracy checkpoint on the prospect's own data (`goals.md#priority-1`), separate from the standard onboarding commitment.
 - **Deliverables:** AI-native CRM with behavior-based scoring, coaching engine, parallel migration support.
 
 ### Language to Use
 - "AI-native CRM that learns from your team's selling behavior."
-- "Behavior-based forecasting, rep coaching, and managed migration."
+- "Behavior-based forecasting, rep coaching signals, and a guided migration toolkit with parallel running."
 - "Purpose-built for mid-market B2B sales teams."
 
 ### Language to Avoid
@@ -157,13 +157,13 @@ When writing proposal or deal language:
 When competitors come up in conversation, reference `messaging-positioning/core-positioning.md#competitive-landscape`.
 
 ### Key Talking Points
-- **vs. Salesforce:** "Salesforce is a reporting tool with AI features added. NovaCRM is an AI-native CRM. The AI isn't a layer — it's the product."
+- **vs. Salesforce:** "Salesforce has the ecosystem and the depth. It's also a reporting-tool CRM with AI added as a feature layer. NovaCRM is an AI-native CRM. The AI isn't a layer — it's the product."
 - **vs. HubSpot CRM:** "HubSpot's AI is marketing-first. NovaCRM's AI is sales-first — built around rep behavior, not lead scoring."
-- **vs. Pipedrive:** "Pipedrive is a pipeline visualization tool. NovaCRM is a pipeline intelligence tool. Visualization shows you the board. Intelligence tells you which deals to play."
+- **vs. Pipedrive:** "Pipedrive is a pipeline visualization tool. NovaCRM is an AI-native CRM. Visualization shows you the board. Deal intelligence tells you which deals to play."
 - **vs. Close:** "Close optimizes the communication workflow. NovaCRM optimizes the selling strategy."
 
 ### Rules
-- Never disparage competitors by name. Describe the category gap.
+- Name a competitor only when the prospect raises it, and acknowledge its strengths first (`messaging-positioning/core-positioning.md#competitive-landscape`, response principles). Never disparage competitors by name. Describe the category gap.
 - Always bring it back to the "reporting tool vs. selling tool" distinction.
 - Position by architecture, not features.
 

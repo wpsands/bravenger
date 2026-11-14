@@ -1,7 +1,7 @@
 ---
 title: Messaging Framework
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 owner: "Brain Owner"
 status: production
 ---
@@ -11,7 +11,7 @@ status: production
 ## Value Propositions
 
 ### VP1: Your CRM Should Sell, Not Just Report
-**Statement:** NovaCRM replaces the CRM-as-database paradigm with a CRM that actively helps reps close deals. The AI learns from winning behavior and surfaces coaching in real time.
+**Statement:** NovaCRM replaces the CRM-as-database paradigm with a CRM that actively helps reps close deals. The AI learns from winning behavior and surfaces coaching every day. "What to do" means which deals need attention and which winning behavior is missing — the coaching-moment level documented in `use-cases/uc-002-rep-coaching.md#outcome`. It does not claim prescriptive per-rep recommendations, which ship with coaching signals v2.
 
 **Approved language:**
 - "Your CRM tells you what happened. NovaCRM tells you what to do."
@@ -19,7 +19,7 @@ status: production
 - "Stop reporting on pipeline. Start improving it."
 
 **Forbidden language:**
-- "AI-powered CRM" (we are AI-native, not AI-powered — positioning is a new category)
+- "AI-powered CRM" as a description of NovaCRM (we are AI-native, not AI-powered — positioning is a new category; the phrase is permitted only as the contrast label for the competing paradigm)
 - "Smart CRM" (vague, anthropomorphizing)
 - "Automate your sales process" (we augment reps, not replace them)
 
@@ -79,12 +79,12 @@ status: production
 ---
 
 ### VP5: Built for Mid-Market
-**Statement:** NovaCRM is purpose-built for 100-500 employee B2B companies. The pricing, onboarding, data model, and support are designed for teams with 10-80 reps — not stripped-down enterprise and not scaled-up SMB.
+**Statement:** NovaCRM is purpose-built for 100-500 employee B2B companies. The pricing, onboarding, data model, and support are designed for teams with 10-50 reps — not stripped-down enterprise and not scaled-up SMB.
 
 **Approved language:**
-- "Built for your stage. Not Salesforce with features turned off."
+- "Built for your stage. Not an enterprise CRM with features turned off."
 - "Onboard in weeks, not months. No dedicated admin required."
-- "Mid-market pricing. Mid-market onboarding. Enterprise-grade AI."
+- "Mid-market pricing. Mid-market onboarding. AI trained on your own team."
 
 **Forbidden language:**
 - "Affordable alternative" (positions us as cheap, not purposeful)
@@ -96,7 +96,7 @@ status: production
 ---
 
 ### VP6: Migration Without the Migraine
-**Statement:** NovaCRM runs in parallel with your existing CRM during migration. Historical data imports so the AI starts learning before your team switches over. No data loss. No quarter disruption. No big-bang cutover.
+**Statement:** NovaCRM runs in parallel with your existing CRM during migration. Historical data imports so the AI starts learning before your team switches over. Data validated before cutover. No quarter disruption. No big-bang cutover.
 
 **Approved language:**
 - "Migrate without breaking your quarter."
@@ -108,16 +108,16 @@ status: production
 - "One-click import" (oversimplifies a real process)
 - "Zero downtime" (implies a technical SLA we shouldn't promise casually)
 
-**Persona relevance:** Moderate with P-001 VP Sales (cares about quarter protection), Strong with P-002 Sales Ops (they manage the migration), Strong with P-003 CTO (cares about data integrity and architecture).
+**Persona relevance:** Strong with P-001 VP Sales (switching CRMs is a documented core pain; quarter protection is the ask), Strong with P-002 Sales Ops (they manage the migration), Strong with P-003 CTO (cares about data integrity and architecture).
 
 ---
 
 ## Objection Handling
 
 ### Objection 1: "We're already on Salesforce."
-**Response:** We know. Most of our customers come from Salesforce. The question isn't whether Salesforce can store your data — it can. The question is whether Salesforce is helping your reps sell. If your reps treat the CRM as a place they log activity after the fact, you have a reporting tool, not a selling tool. NovaCRM runs in parallel during migration, so you can prove the value before you commit to switching.
+**Response:** Understood. Most of our customers came to us after outgrowing HubSpot or Pipedrive; the Salesforce teams we work with are usually on Essentials or an overbuilt instance their reps avoid. The question isn't whether Salesforce can store your data — it can. The question is whether Salesforce is helping your reps sell. If your reps treat the CRM as a place they log activity after the fact, you have a reporting tool, not a selling tool. NovaCRM runs in parallel during migration, so you can prove the value before you commit to switching.
 
-**Proof point:** Ask them: "What percentage of your forecast accuracy comes from Salesforce versus your VP's gut feel?" If the answer involves the word "gut," the CRM isn't doing its job. [Source: messaging-positioning/core-positioning.md#competitive-landscape]
+**Proof point:** Ask them: "What percentage of your forecast accuracy comes from Salesforce versus your VP's gut feel?" If the answer involves the word "gut," the CRM isn't doing its job. [Source: messaging-positioning/core-positioning.md#competitive-landscape] [Source: icp.md#technographics] [Source: use-cases/uc-003-crm-migration.md#current-state]
 
 ### Objection 2: "AI scoring sounds like a black box."
 **Response:** Fair concern. Most AI scoring IS a black box. NovaCRM's scoring is explainable — every deal score shows which rep behaviors influenced the score and how. Managers can see why a deal is scored high or low. The CTO can audit the model. We built explainability into the architecture because black-box AI doesn't survive technical evaluation, and it shouldn't.
@@ -127,7 +127,7 @@ status: production
 ### Objection 3: "Our reps won't adopt another tool."
 **Response:** Adoption is the right concern — it kills more CRM implementations than bad technology. NovaCRM is designed for adoption: it captures behavior automatically from email, calendar, and meeting data. Reps don't need to log activity manually. The AI works in the background. The coaching surfaces where they already work. The less a rep has to do differently, the faster they adopt.
 
-**Proof point:** "What's your current CRM adoption rate? If reps aren't logging activity today, manual entry is the problem, not the tool. NovaCRM eliminates manual entry." [Source: use-cases/uc-003-crm-migration.md#gotchas]
+**Proof point:** "What's your current CRM adoption rate? If reps aren't logging activity today, manual entry is the problem, not the tool. NovaCRM captures behavior automatically — no manual entry required." Adoption is still a people problem: pair automatic capture with a structured rollout and champion reps. [Source: messaging-positioning/core-positioning.md#strategic-narratives] [Source: use-cases/uc-003-crm-migration.md#gotchas]
 
 ### Objection 4: "We just need better reporting."
 **Response:** Better reporting tells you what happened more clearly. That's useful, but it doesn't change outcomes. NovaCRM gives you reporting AND coaching. The AI doesn't just show you that a deal stalled — it tells you why it stalled and what behavior could unstall it. If you invest in better reporting, you get a better rearview mirror. If you invest in NovaCRM, you get a windshield.
@@ -137,7 +137,7 @@ status: production
 ### Objection 5: "We're too small / not ready for AI."
 **Response:** If you have 10+ reps and historical deal data, you have enough for the AI to learn from. The model doesn't need thousands of reps — it needs patterns, and patterns emerge quickly when you're analyzing behavior at the deal level. Companies that wait until they're "big enough" for AI end up migrating later at higher cost with more disruption. Start now. The AI learns while you grow.
 
-**Proof point:** "How many deals did your team close last year? If it's more than 50, there are patterns the AI can find. The question is whether you discover them now or your competitor does." [Source: icp.md#firmographics]
+**Proof point:** "How many reps do you have, and how far back does your deal history go? With 10+ reps and six months of closed-won and closed-lost history, there are patterns the AI can find. The question is whether you discover them now or your competitor does." [Source: icp.md#firmographics] [Source: use-cases/uc-001-pipeline-forecasting.md#gotchas]
 
 ### Objection 6: "How long until we see value?"
 **Response:** The AI starts learning from historical data during migration — before your team fully transitions. Within 30 days, you see behavior-based deal scores. Within 60 days, the coaching engine starts surfacing actionable patterns. Within 90 days, your forecast accuracy is measurably better. This is not a 12-month implementation. It is a 90-day value realization.
@@ -159,7 +159,7 @@ status: production
 **Goal:** Position NovaCRM as the right choice for mid-market B2B sales teams.
 
 - "NovaCRM learns how your best reps close deals and helps every rep sell that way."
-- "Behavior-based forecasting. AI coaching. Built for mid-market. No Salesforce admin required."
+- "Behavior-based forecasting. AI coaching. Built for mid-market. No dedicated CRM admin required."
 - "Run it in parallel with your current CRM. Prove the value before you switch."
 
 ### Decision
@@ -186,7 +186,7 @@ status: production
 | "Behavior doesn't lie. Deal stages do." | Strong | Strong | Neutral |
 | "Trained on your team's data. Not someone else's." | Strong | Moderate | Strong |
 | "Sales coaching every day, not once a quarter." | Strong | Moderate | Neutral |
-| "Built for your stage. Not Salesforce with features turned off." | Strong | Strong | Strong |
+| "Built for your stage. Not an enterprise CRM with features turned off." | Strong | Strong | Strong |
 | "Migrate without breaking your quarter." | Strong | Strong | Moderate |
 | "Explainable AI — audit every score." | Moderate | Moderate | Strong |
 | "No dedicated admin required." | Moderate | Strong | Strong |
@@ -199,7 +199,7 @@ status: production
 **Lead with:** Forecast accuracy and rep performance.
 **Support with:** Coaching engine, behavior-based scoring.
 **Close with:** 90-day value timeline, board-ready forecasts.
-**Avoid:** Technical architecture details, implementation specifics.
+**Avoid:** Data architecture and API specifics. Do walk through the migration plan and timeline in detail — they have been burned before (`personas/persona-vp-sales.md#messaging-dos-and-donts`).
 
 ### P-002 Sales Ops Manager
 **Lead with:** Operational efficiency, no admin overhead.
@@ -208,7 +208,7 @@ status: production
 **Avoid:** Abstract AI claims, enterprise jargon.
 
 ### P-003 CTO
-**Lead with:** Explainable AI, data architecture, security posture.
-**Support with:** Customer-specific models, API-first design, SOC 2.
+**Lead with:** Security posture (SOC 2, encryption, data residency), data architecture, API quality.
+**Support with:** Explainable AI, customer-specific models, API-first design.
 **Close with:** Clean integration, no vendor lock-in, auditable system.
 **Avoid:** Sales outcome language, quota metrics, coaching narratives.

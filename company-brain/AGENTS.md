@@ -1,7 +1,7 @@
 ---
 title: Agent Operating Instructions
-version: "1.2.1"
-last_updated: "2026-11-08"
+version: "1.3.0"
+last_updated: "2026-11-10"
 scope: "All AI agents consuming this Company Brain"
 owner: "Brain Owner"
 status: production
@@ -114,7 +114,7 @@ Every factual claim, positioning statement, persona insight, or use case referen
 ### Always
 1. **Read before writing.** Follow the mandatory read order. No exceptions.
 2. **Cite your sources.** Every factual claim gets a `[Source: filename#section]` citation.
-3. **Match the persona.** If the output is for the VP of Sales, lead with forecast accuracy and revenue impact. If it's for the Account Executive, lead with time saved and deal intelligence they can act on today. Read the messaging dos/don'ts.
+3. **Match the persona.** If the output is for the VP of Sales, lead with forecast accuracy and revenue impact. If it's for the Sales Ops leader, lead with data quality and the admin hours it removes. Read the messaging dos/don'ts.
 4. **Respect the voice.** Confident, practical, data-driven, anti-hype. Review `brand-vision.md#voice-attributes` before writing.
 5. **Use approved language.** Check `brand-vision.md#words-we-use` and `brand-vision.md#words-we-avoid` before writing. Check `messaging-framework.md` for persona-specific approved language.
 6. **Document what you don't know.** If the Brain has a gap, say so. Don't fill gaps with invention.
@@ -125,7 +125,7 @@ Every factual claim, positioning statement, persona insight, or use case referen
 2. **Never use forbidden language.** "Revolutionary," "game-changing," "magic," "automagically," "10x your pipeline" — these are explicitly banned in `brand-vision.md#words-we-avoid`.
 3. **Never skip the persona.** Generic content that doesn't target a specific persona is not aligned content. Pick a persona. Read the file.
 4. **Never overstate AI capabilities.** If the Brain says the scoring engine learns from rep behavior patterns, don't claim it "predicts the future" or "guarantees closed deals." Accuracy over aspiration. Sales leaders will call you on it.
-5. **Never position NovaCRM as enterprise-ready.** We sell to mid-market (100-500 employees). Claiming enterprise capability mispositions us and attracts deals we cannot win. [Source: icp.md#anti-icp]
+5. **Never position NovaCRM as enterprise-ready.** We sell to mid-market (100-500 employees). Claiming enterprise capability mispositions us and attracts deals we cannot win. [Source: icp.md#firmographics] [Source: icp.md#anti-icp]
 6. **Never ignore governance.** These rules are not suggestions. They are the mechanism that makes the Brain work.
 7. **Never disparage competitors by name.** State what NovaCRM does. Let the buyer draw the comparison. We win on specifics — AI trained on their data, not generic models — not on trash talk about Salesforce or HubSpot.
 8. **Never present internal targets as customer commitments.** `goals.md` documents what NovaCRM is trying to achieve internally — time-to-value targets, adoption goals, revenue metrics. Use them to prioritize; never reframe them as customer-facing promises, milestones, or SLAs. Customer-facing capability and timeline claims come only from use case `status` fields and `messaging-framework.md` funnel-stage messaging — and a `partially-supported` status must be surfaced, not papered over.

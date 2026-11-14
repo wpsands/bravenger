@@ -1,7 +1,7 @@
 ---
 title: Product Marketing Agent Usage Guide
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 scope: "Product Marketing team agents and operators"
 owner: "Brain Owner"
 status: production
@@ -199,7 +199,7 @@ PMM owns drift detection. This is the discipline's most critical ongoing respons
 
 | Severity | Definition | Action |
 |----------|-----------|--------|
-| **Critical** | Content says "AI-powered" or makes a false product claim | Fix immediately. Notify all disciplines. |
+| **Critical** | Content describes NovaCRM as "AI-powered" (naming the competing paradigm in a direct contrast is permitted) or makes a false product claim | Fix immediately. Notify all disciplines. |
 | **High** | VP or competitive positioning materially different from Brain | Fix within 1 week. |
 | **Medium** | Persona targeting is unclear or tone drifts | Fix in next content update cycle. |
 | **Low** | Minor language inconsistency, no customer impact | Log and fix when file is next updated. |

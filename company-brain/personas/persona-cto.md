@@ -3,8 +3,8 @@ title: "Persona — The CTO"
 persona_id: "P-003"
 role: "CTO / VP Engineering"
 dmu_function: "Technical Evaluator"
-version: "1.1.0"
-last_updated: "2026-03-24"
+version: "1.2.0"
+last_updated: "2026-11-10"
 owner: "Brain Owner"
 status: production
 ---
@@ -25,7 +25,7 @@ They are the technical evaluator for NovaCRM. They can block a deal single-hande
 |-----------|--------|
 | **Title** | CTO, VP Engineering, Head of Engineering, Principal Architect |
 | **Company size** | 100-500 employees, B2B |
-| **Company stage** | Series B through pre-IPO |
+| **Company stage** | Series A through Series C (or bootstrapped at equivalent scale) |
 | **Age range** | 30-45 |
 | **Background** | Software engineer who moved into leadership. 8-15 years of experience. Has built systems, managed teams, and evaluated dozens of vendors. |
 | **Education** | CS degree or equivalent experience. May have an MS or PhD if they're in an ML-adjacent domain. |
@@ -122,7 +122,7 @@ They are the technical evaluator for NovaCRM. They can block a deal single-hande
 | **"We don't have engineering bandwidth for a CRM migration."** | Quantify the current engineering cost of maintaining the existing CRM integrations. Then show that NovaCRM's API-first design and official SDKs reduce integration engineering hours by 60-70%. The migration is an investment that pays back in reduced maintenance. |
 | **"How do I know your AI isn't just a wrapper around GPT?"** | Explain the architecture honestly: NovaCRM uses proprietary models trained on sales behavior data, not general-purpose LLMs. Share the model architecture overview, training methodology, and how the model is evaluated. Offer to walk through the explainability dashboard with real examples. |
 | **"What happens to our data if NovaCRM goes under?"** | Full data export at any time via API or bulk export. Data is stored in standard formats. No proprietary encoding. The CTO can export everything today and verify they could reconstruct their dataset in another system. |
-| **"Your API rate limits are too low for our volume."** | Share the rate limit tiers by plan. Offer a custom rate limit for enterprise accounts. Provide the technical specs: burst capacity, throttling behavior, retry headers, and webhook alternatives for high-volume reads. |
+| **"Your API rate limits are too low for our volume."** | Share the rate limit tiers by plan. Offer a custom rate limit on request for high-volume Business-tier accounts. Provide the technical specs: burst capacity, throttling behavior, retry headers, and webhook alternatives for high-volume reads. |
 | **"I need to see a SOC 2 report before we go further."** | Have the SOC 2 Type II report ready to share immediately, not behind a form or a sales call. The speed of this response is itself a trust signal. Include the scope, audit period, and any exceptions. |
 
 ---
