@@ -1,7 +1,7 @@
 ---
 title: Company Goals
-version: "1.4.0"
-last_updated: "2026-11-10"
+version: "1.4.1"
+last_updated: "2026-11-14"
 owner: "Brain Owner"
 status: production
 review_cadence: quarterly
@@ -74,7 +74,7 @@ Discipline targets below are set by the Brain owner at the quarterly goals revie
 | **Time-to-value** | First deal scores visible within 7 days of contract start (internal target — the customer-facing commitment stays 30 days) | Fast TTV predicts retention. The moment a VP Sales sees an accurate deal score on a deal they were worried about, they're hooked. Delay that moment and churn risk rises. |
 | **Expansion pipeline** | 30% of Team-tier customers evaluating Business tier within 6 months | Expansion is the primary growth lever at $6M ARR. CS owns the relationship that drives it. The trigger is usually: "We want coaching signals for our managers too." |
 | **CRM adoption rate** | 80%+ of reps active in NovaCRM weekly within 60 days (the "Healthy" threshold in `guidelines/customer-success-usage.md#health-checks`) | CRM adoption is the existential metric. If reps work outside NovaCRM, behavior capture has blind spots, the scores degrade, and the customer churns. CS must drive adoption or nothing else matters. |
-| **NPS** | >50 NPS across all tiers | Our growth depends on VP Sales telling other VP Sales "we switched to NovaCRM and our forecast went from +/-35% to +/-8%" (`use-cases/uc-001-pipeline-forecasting.md#outcome`). That only happens well above typical B2B SaaS scores. |
+| **NPS** | >50 NPS across all tiers | Our growth depends on VP Sales telling other VP Sales that NovaCRM improved their forecast accuracy. The only proof point today is early: in NovaCRM internal dogfooding across 3 beta customers, forecast accuracy improved from +/-35% to +/-8% within one quarter of deployment (`use-cases/uc-001-pipeline-forecasting.md#outcome`). That only happens well above typical B2B SaaS scores. |
 
 ---
 
