@@ -1,8 +1,8 @@
 ---
 title: "Pipeline Forecasting with AI Deal Scoring"
 use_case_id: "UC-001"
-version: "1.2.0"
-last_updated: "2026-11-10"
+version: "1.2.1"
+last_updated: "2026-11-14"
 status: "fully-supported"
 owner: "Brain Owner"
 
@@ -59,7 +59,7 @@ After deploying NovaCRM's AI deal scoring:
 - **Every deal has a score based on rep behavior, not self-reported stages.** The AI analyzes email frequency, response times, meeting cadence, stakeholder engagement, and dozens of other signals that correlate with deal outcomes. The score updates automatically, daily.
 - **The forecast is generated from AI scores, not stage-weighted averages.** The VP Sales sees a forecast built on actual deal health signals. The model learns from their specific team's win/loss patterns — not generic benchmarks.
 - **Plain-English explanations for every score.** The AI doesn't just say "72%." It says: "This deal scored 72% because the champion is engaged (4 emails this week) but the economic buyer hasn't been contacted yet, and similar deals without EB engagement close at 30%."
-- **Forecast accuracy within 10% by the second quarter.** The model improves as it learns from more closed-won and closed-lost deals. Beta customers saw accuracy improve from +/-35% to +/-8% within one quarter.
+- **Forecast accuracy within 10% by the second quarter.** The model improves as it learns from more closed-won and closed-lost deals. In NovaCRM internal dogfooding across 3 beta customers, forecast accuracy improved from +/-35% to +/-8% within one quarter of deployment. This is a small early sample, not a guaranteed result; state the sample size and source whenever the figure is used.
 - **Board reports generated in one click.** Pipeline summary, forecast, rep performance, and deal risk — exported as a presentation-ready report.
 - **Weekly forecast calls become data-driven.** Instead of asking reps to "update their deals," the VP Sales reviews AI-flagged risk deals and coaching opportunities.
 
