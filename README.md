@@ -120,6 +120,10 @@ Personas add `persona_id` and `dmu_function`. Use cases add `use_case_id`, `stat
 
 **NovaCRM** (`company-brain/`) — A fictional AI-native CRM for mid-market sales teams. Series A, 45 employees. 3 personas, 3 use cases, full messaging framework, all 5 discipline guidelines. Replace with your own company data via `/setup`.
 
+## Who built this
+
+Built by Page Sands at [SandsDX](https://sandsdx.com/?utm_source=bravenger&utm_medium=referral&utm_campaign=readme). For help setting up a company brain with your team, see [how SandsDX approaches it](https://sandsdx.com/perspectives/executive/company-brain-for-ai-agents/?utm_source=bravenger&utm_medium=referral&utm_campaign=readme).
+
 ## License
 
 MIT
